@@ -4,12 +4,49 @@
   
   
   <entry>
+    <title>hexo常见命令速查</title>
+    <link href="/2023/02/22/hexo%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/"/>
+    <url>/2023/02/22/hexo%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</url>
+    
+    <content type="html"><![CDATA[<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">hexo</span> n <span class="hljs-string">&#x27;博客名&#x27;</span> <span class="hljs-comment">#生成博客</span><br>hexo g <span class="hljs-comment">#生成</span><br>hexo s <span class="hljs-comment">#本地预览</span><br>hexo d <span class="hljs-comment">#部署到云端</span><br>hexo s -g <span class="hljs-comment">#生成并预览</span><br>hexo d -g <span class="hljs-comment">#生成并上传</span><br></code></pre></td></tr></table></figure><p>参考资料</p><p><a href="https://blog.csdn.net/zyxhangiian123456789/article/details/101797464">https://blog.csdn.net/zyxhangiian123456789/article/details/101797464</a></p><p><a href="https://hexo.fluid-dev.com/docs/guide/">https://hexo.fluid-dev.com/docs/guide/</a></p><p><a href="https://github.com/fluid-dev/hexo-theme-fluid/blob/master/_config.yml">https://github.com/fluid-dev/hexo-theme-fluid/blob/master/_config.yml</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>博客运行</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>hexo</tag>
+      
+      <tag>命令</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>文章测试</title>
     <link href="/2023/02/21/%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/"/>
     <url>/2023/02/21/%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/</url>
     
-    <content type="html"><![CDATA[<p>公式测试</p><h1 id="定积分的求法"><a href="#定积分的求法" class="headerlink" title="定积分的求法"></a>定积分的求法</h1><p>运用基本性质: 如可加（找出有限个间断点），交换上下限</p><h2 id="变量代换法"><a href="#变量代换法" class="headerlink" title="变量代换法"></a>变量代换法</h2><blockquote><p> &#x3D;&#x3D;重要性质&#x3D;&#x3D;:$f(x)$在$[0,1]$连续,</p><p>$$\begin{aligned} \int_0^{\pi&#x2F;2} f(\sin x)dx&amp;&#x3D;\int_0^{\pi&#x2F;2} f(\cos x)dx  \\int_0^{\pi} xf(\sin x)dx&amp;&#x3D;\frac{\pi}{2}\int_0^{\pi} f(\sin x)dx \end{aligned}$$</p></blockquote><p>证明:(1) 令$t&#x3D;\frac{\pi}{2}-x$</p><p>(2) 令$t&#x3D;\pi-x$</p><blockquote><p>$\int_{0}^\pi xf(\sin x)dx&#x3D;\pi\int_0^{\pi}f(\sin x)dx-\int_{0}^\pi xf(\sin x)dx$</p></blockquote><blockquote><p>例 $\int_{0}^{\pi&#x2F;2}\frac{x\sin x}{1+\cos^2x}&#x3D;\frac{\pi}{2}\int_{0}^{\pi&#x2F;2} \frac{\sin x}{1+\cos^2x}$,后面再凑微分即可</p><p>$\int_0^{\pi&#x2F;2} \frac{x}{1+\sin x+\cos x}\overset{t&#x3D;\pi&#x2F;2-x}{&#x3D;} \frac{\pi}{4} \int_0^{\pi&#x2F;2} \frac{1}{1+\sin t+\cos t}dt$,之后用万能公式代换</p></blockquote><p>$\int_0^a \sqrt{a^2-x^2}dx&#x3D;\frac{\pi a^2}{4}$</p><p>图片测试<br><img src="/img/105371106_p0.jpg"></p>]]></content>
+    <content type="html"><![CDATA[<p>公式测试</p><h1 id="定积分的求法"><a href="#定积分的求法" class="headerlink" title="定积分的求法"></a>定积分的求法</h1><p>运用基本性质: 如可加（找出有限个间断点），交换上下限</p><h2 id="变量代换法"><a href="#变量代换法" class="headerlink" title="变量代换法"></a>变量代换法</h2><blockquote><p> 重要性质:$f(x)$在$[0,1]$连续,</p><p>$$\begin{aligned} \int_0^{\pi&#x2F;2} f(\sin x)dx&amp;&#x3D;\int_0^{\pi&#x2F;2} f(\cos x)dx  \ \int_0^{\pi} xf(\sin x)dx&amp;&#x3D;\frac{\pi}{2}\int_0^{\pi} f(\sin x)dx \end{aligned}$$</p></blockquote><p>证明:(1) 令$t&#x3D;\frac{\pi}{2}-x$</p><p>(2) 令$t&#x3D;\pi-x$</p><blockquote><p>$\int_{0}^\pi xf(\sin x)dx&#x3D;\pi\int_0^{\pi}f(\sin x)dx-\int_{0}^\pi xf(\sin x)dx$</p></blockquote><blockquote><p>例 $\int_{0}^{\pi&#x2F;2}\frac{x\sin x}{1+\cos^2x}&#x3D;\frac{\pi}{2}\int_{0}^{\pi&#x2F;2} \frac{\sin x}{1+\cos^2x}$,后面再凑微分即可</p><p>$\int_0^{\pi&#x2F;2} \frac{x}{1+\sin x+\cos x}\overset{t&#x3D;\pi&#x2F;2-x}{&#x3D;} \frac{\pi}{4} \int_0^{\pi&#x2F;2} \frac{1}{1+\sin t+\cos t}dt$,之后用万能公式代换</p></blockquote><p>$\int_0^a \sqrt{a^2-x^2}dx&#x3D;\frac{\pi a^2}{4}$</p><p>图片测试<br><img src="/img/105371106_p0.jpg"></p><p>代码测试</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-function"><span class="hljs-type">void</span> <span class="hljs-title">fft</span><span class="hljs-params">(db *x,<span class="hljs-type">int</span> n,<span class="hljs-type">int</span> type)</span></span>&#123;<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++) <span class="hljs-keyword">if</span>(i&lt;rev[i])<span class="hljs-built_in">swap</span>(x[i],x[rev[i]]);<br>    <span class="hljs-keyword">for</span>(<span class="hljs-type">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++)&#123;<br>        <br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>]]></content>
     
+    
+    <categories>
+      
+      <category>博客运行</category>
+      
+      <category>数学</category>
+      
+      <category>微积分</category>
+      
+    </categories>
     
     
   </entry>
@@ -23,6 +60,12 @@
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
+    
+    <categories>
+      
+      <category>博客运行</category>
+      
+    </categories>
     
     
   </entry>
