@@ -4,7 +4,36 @@
   
   
   <entry>
-    <title>hexo常见命令速查</title>
+    <title>配置pytorch环境</title>
+    <link href="/2023/02/22/%E9%85%8D%E7%BD%AEpytorch%E7%8E%AF%E5%A2%83/"/>
+    <url>/2023/02/22/%E9%85%8D%E7%BD%AEpytorch%E7%8E%AF%E5%A2%83/</url>
+    
+    <content type="html"><![CDATA[<p>记录一下自己在配置pytorch环境时遇到的问题。全程使用Ubuntu命令行操作，可以远程操作服务器<br>[TOC]</p><p><a href="https://www.jianshu.com/p/3e56648b55c6">env</a></p><h2 id="conda"><a href="#conda" class="headerlink" title="conda"></a>conda</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>先到<a href="https://docs.conda.io/en/latest/miniconda.html">miniconda的官网</a>找到对应的下载链接，然后用<code>wget</code>安装</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs sh">wget  https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh<br>bash Miniconda3-py38_23.1.0-1-Linux-x86_64.sh<br></code></pre></td></tr></table></figure><h3 id="建立环境"><a href="#建立环境" class="headerlink" title="建立环境"></a>建立环境</h3><p><code>conda create -n [环境名称] python=[版本号]</code></p><p>接着重启终端。然后才能激活环境</p><p><code>conda activate [环境名称]</code></p><h3 id="换源"><a href="#换源" class="headerlink" title="换源"></a>换源</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs awk">conda config --add channels https:<span class="hljs-regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="hljs-regexp">/anaconda/</span>cloud<span class="hljs-regexp">/msys2/</span><br>conda config --add channels https:<span class="hljs-regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="hljs-regexp">/anaconda/</span>cloud/conda-forge<br>conda config --add channels https:<span class="hljs-regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="hljs-regexp">/anaconda/</span>pkgs<span class="hljs-regexp">/free/</span><br>conda config --add channels https:<span class="hljs-regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="hljs-regexp">/anaconda/</span>cloud<span class="hljs-regexp">/pytorch/</span><br>conda config --add channels https:<span class="hljs-regexp">//mi</span>rrors.tuna.tsinghua.edu.cn<span class="hljs-regexp">/anaconda/</span>pkgs<span class="hljs-regexp">/main/</span><br></code></pre></td></tr></table></figure><h3 id="结合vscode和conda"><a href="#结合vscode和conda" class="headerlink" title="结合vscode和conda"></a>结合vscode和conda</h3><p><a href="https://zhuanlan.zhihu.com/p/269086227">参考资料</a></p><ol><li>用vscode打开一个文件夹</li><li>Ctrl+Shift+P打开vsc的命令行</li><li>选择Python：Select Interpreter</li><li>vsc会自动定位Python的位置 <code>~\miniconda3\envs\对应的版本</code>,选择对应版本号和环境名称即可</li></ol><p>设置好之后，每次启动vsc集成的终端时就会自动激活对应的环境。python代码也可以点击右上角一键运行了</p><h2 id="pip"><a href="#pip" class="headerlink" title="pip"></a>pip</h2><p>临时换源:</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">pip install -i https:<span class="hljs-regexp">//</span>pypi.tuna.tsinghua.edu.cn/simple 包的名字<br></code></pre></td></tr></table></figure><h2 id="pytorch安装"><a href="#pytorch安装" class="headerlink" title="pytorch安装"></a>pytorch安装</h2><p><code>conda install pytorch=[版本号]=[具体名字]</code></p><p>注意源自动匹配的版本可能不对。要检查名字后面不是带着<code>_cpu</code>, 而是<code>_cuda11.3_cudnn...</code>. 可以手动指定具体版本号</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">conda install pytorch=1.10.0=py3.8_cuda11.3_cudnn8.2.0_0<br></code></pre></td></tr></table></figure><p><a href="https://blog.csdn.net/weixin_43868021/article/details/122083729#:~:text=%E6%9F%A5%E7%9C%8B%E4%BA%86%E4%B8%8B%E5%BA%93%E7%9A%84%E4%BF%A1%E6%81%AF%EF%BC%8C%E5%8F%91%E7%8E%B0%E6%9C%89%E4%B8%80%E4%B8%AA%20pytorch%20-mutex%E5%BA%93%EF%BC%8C%E8%BF%99%E4%B8%AA%E5%B0%B1%E6%98%AF%E5%8E%9F%E5%9B%A0%E6%89%80%E5%9C%A8%EF%BC%8C%E5%B0%86%E5%85%B6%E5%8D%B8%E8%BD%BD%E5%90%8E%EF%BC%8C%E5%86%8D%E9%87%8D%E6%96%B0%20%E5%AE%89%E8%A3%85GPU%E7%89%88%E6%9C%AC%20%E5%B0%B1%E8%A7%A3%E5%86%B3%E4%BA%86%E3%80%82%20%E5%8D%B8%E8%BD%BD%20conda%20uninstall,conda%20install%20pytorch%20torchvision%20torchaudio%20cudatoolkit%3D11.3%20-c%20pytorch">pytorch和cudatoolkit版本对应</a></p><h3 id="torchvision"><a href="#torchvision" class="headerlink" title="torchvision"></a>torchvision</h3><p><a href="https://blog.csdn.net/shiwanghualuo/article/details/122860521">torch和torchvision版本对应关系</a></p><p>如果源自动匹配的不对，可以离线安装或者手动指定版本:<br><code>wget https://mirrors.bfsu.edu.cn/anaconda/cloud/pytorch/linux-64/torchvision-0.11.1-py38_cu113.tar.bz2</code></p><p><code>conda install --offline torchvision-0.11.1-py38_cu113.tar.bz2 </code></p><h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><p>GnuTLS recv error (-110): The TLS connection was non-properly terminated</p><p>输入<code>git config --global http.sslVerify false</code><br>因为git在拉取或者提交项目时，中间会有git的http和https代理，但是我们本地环境本身就有SSL协议了，所以取消git的https代理即可，不行再取消http的代理。</p><h2 id="ubuntu命令"><a href="#ubuntu命令" class="headerlink" title="ubuntu命令"></a>ubuntu命令</h2><h3 id="解压文件"><a href="#解压文件" class="headerlink" title="解压文件"></a>解压文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># .tar.gz 和 .tgz</span><br>tar -zxvf FileName.tar.gz               <span class="hljs-comment"># 解压</span><br>tar -zcvf FileName.tar.gz DirName       <span class="hljs-comment"># 将DirName和其下所有文件（夹）压缩</span><br>tar -C DesDirName -zxvf FileName.tar.gz <span class="hljs-comment"># 解压到目标路径</span><br><br><span class="hljs-comment"># 参考https://blog.csdn.net/songbinxu/article/details/80435665</span><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>机器学习</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>命令</tag>
+      
+      <tag>pytorch</tag>
+      
+      <tag>机器学习</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>hexo常见命令与参考资料速查</title>
     <link href="/2023/02/22/hexo%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/"/>
     <url>/2023/02/22/hexo%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4%E9%80%9F%E6%9F%A5/</url>
     
