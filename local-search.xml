@@ -4,6 +4,27 @@
   
   
   <entry>
+    <title>[自用]利用sympy推公式</title>
+    <link href="/2023/03/05/sympy%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <url>/2023/03/05/sympy%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    
+    <content type="html"><![CDATA[<p>先在vsc里新建一个jupyter notebook文件(.ipynb),然后点插入代码输入sympy的命令。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> sympy <span class="hljs-keyword">import</span> *<br>init_printing() <span class="hljs-comment">#公式输出</span><br></code></pre></td></tr></table></figure><h2 id="初始化符号">初始化符号</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">x=Symbol(<span class="hljs-string">&#x27;x&#x27;</span>)<br>a,b,c=symbols(<span class="hljs-string">&#x27;a b c&#x27;</span>)<br></code></pre></td></tr></table></figure><h2 id="输出">输出</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(u) <span class="hljs-comment"># 以命令行格式输出,如a/b</span><br><span class="hljs-built_in">print</span>(latex(u)) <span class="hljs-comment"># 输出latex \frac&#123;a&#125;&#123;b&#125;</span><br>u.simplify()<span class="hljs-comment">#会自动显示为公式格式</span><br></code></pre></td></tr></table></figure><h2 id="函数">函数</h2><p><a href="https://www.cnblogs.com/YuanZiming/p/13070883.html">Sympy常用函数总结</a></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>python</tag>
+      
+      <tag>sympy</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>空间解析几何</title>
     <link href="/2023/02/26/%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/"/>
     <url>/2023/02/26/%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95/</url>
