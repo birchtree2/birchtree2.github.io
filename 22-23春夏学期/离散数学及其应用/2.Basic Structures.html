@@ -957,7 +957,8 @@ if <span class="arithmatex">\(P(A) \subseteq P(B)\)</span> ,because <span class=
 <h3 id="cartesian-product">Cartesian Product</h3>
 <div class="arithmatex">\[A × (B∩C) = (A×B) ∩ (A×C),\\
 A × (B∪C) = (A×B) ∪ (A×C), \\
-A × (B - C) = (A×B) - (A×C)\\ \boxed{\overline{A\times B}=(\bar{A}\times \bar{B})\cup (\bar{A}\times B)\cup (A\times \bar{B})}\]</div>
+A × (B - C) = (A×B) - (A×C)\\ \boxed{\overline{A\times B}=(\bar{A}\times \bar{B})\cup (\bar{A}\times B)\cup (A\times \bar{B})}
+\]</div>
 <p>可以用二维坐标系的方法表示<img alt="1c7d0d72dbf7fcf64aff9daeb762c2cf.png" src="..\..\assets/images/1c7d0d72dbf7fcf64aff9daeb762c2cf.png"/></p>
 <h2 id="23-functions">2.3 Functions</h2>
 <p><span class="arithmatex">\(f:A \to B\)</span></p>
@@ -1134,6 +1135,39 @@ Hence, no such list can exist and hence the interval <span class="arithmatex">\(
 <li><a href="https://en.wikipedia.org/wiki/Cantor%27s_diagonal_argument#General_sets">wiki</a></li>
 <li><a href="https://iamncj.github.io/Discrete_Mathematics_Explained_in_Detail/CH02_Basic_Structures/CH02_03_Cardinality_of_Sets.html">DM explained in detail</a></li>
 </ul>
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

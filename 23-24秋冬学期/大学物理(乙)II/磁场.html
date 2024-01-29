@@ -1067,7 +1067,8 @@
 <h3 id="_1">电流</h3>
 <p>电流密度矢量<span class="arithmatex">\(j\)</span></p>
 <p>大小 </p>
-<div class="arithmatex">\[j=\frac{dI}{dS}\]</div>
+<div class="arithmatex">\[j=\frac{dI}{dS}
+\]</div>
 <p>, 方向是正电荷载流子速度方向</p>
 <p><span class="arithmatex">\(I=\iint_S \vec{j}\cdot{d\vec{S}}\)</span></p>
 <p><span class="arithmatex">\(j=env_d\)</span></p>
@@ -1112,9 +1113,9 @@ B=\int_{-\pi/2}^{\pi/2} \frac{\mu_0 I}{a^2/\cos^2\theta} \frac{a}{\cos^2\theta}\
 <ul>
 <li>圆心<span class="arithmatex">\(x=0\)</span>  n匝线圈×n</li>
 </ul>
-<div class="arithmatex">\[
-    \boxed{B=\frac{\mu_0 I}{2R}}
-    \]</div>
+<p>$$
+    \boxed{B=\frac{\mu_0 I}{2R}}</p>
+<p>$$</p>
 <ul>
 <li><span class="arithmatex">\(x&gt;&gt;r\)</span> <span class="arithmatex">\(B=\frac{\mu_0 IR^2}{x^3}=\frac{\mu_0IS}{2\pi x^3}\)</span> <span class="arithmatex">\(S\)</span>是圆的面积</li>
 </ul>
@@ -1252,6 +1253,39 @@ H=\frac{B}{\mu_0}-M
 </blockquote>
 <p>I=0   所以<span class="arithmatex">\(H\cdot 2\pi r= j_D\cdot\pi r^2,位移电流密度j_D=\frac{dD}{dt}=\frac{d\sigma}{dt},\sigma=\frac{dq}{\pi R^2}\)</span></p>
 <p>​       </p>
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

@@ -916,7 +916,8 @@ Suppose that <span class="arithmatex">\(\max \{i_i,d_k\}\leq n\)</span>,with <sp
 <li>证明两个集合之间存在双射(Bijective proof)</li>
 </ul>
 <p>Pascal's Identity. </p>
-<div class="arithmatex">\[\binom{n+1}{k}=\binom{n}{k-1}+\binom{n}{k}\]</div>
+<div class="arithmatex">\[\binom{n+1}{k}=\binom{n}{k-1}+\binom{n}{k}
+\]</div>
 <p>Proof:（Double Counting).   <span class="arithmatex">\(A=\{x,a_1,\dots a_n\}\)</span> The left side is the number of subsets of size k from set A.  For the right side, the subsets of size k </p>
 <ul>
 <li>contains <span class="arithmatex">\(x\)</span></li>
@@ -954,9 +955,9 @@ Suppose that <span class="arithmatex">\(\max \{i_i,d_k\}\leq n\)</span>,with <sp
 <ol>
 <li>distinguishable boxes. distinguishable objects. </li>
 </ol>
-<div class="arithmatex">\[
-    \frac{n!}{n_1!n_2!\dots n_k!} (\text{the kth boxes have\ }n_k\text{\ objects})
-    \]</div>
+<p>$$
+    \frac{n!}{n_1!n_2!\dots n_k!} (\text{the kth boxes have\ }n_k\text{\ objects})</p>
+<p>$$</p>
 <ol>
 <li>indistinguishable boxes. distinguishable objects. </li>
 </ol>
@@ -986,6 +987,39 @@ S(r,2)=\frac{2^n-2}{2}\\ S(r,r-1)=C(r,2)\\ S(r+1,n)=S(r,n-1)+nS(r,n)
 <p><img alt="d171fcb08a0b3ef5785d6dd05f3b4fd3.png" src="..\..\assets/images/d171fcb08a0b3ef5785d6dd05f3b4fd3.png"/></p>
 <p>124<strong>653</strong>-&gt; 125346</p>
 <p><img alt="595a4e054547b42dd4b32759902bae90.png" src="..\..\assets/images/595a4e054547b42dd4b32759902bae90.png"/></p>
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

@@ -730,7 +730,8 @@ Basis step:<span class="arithmatex">\(P(1)\)</span>is true
 Inductive step: <span class="arithmatex">\(\forall k (P(k)\to P(k+1))\)</span>
 <span class="arithmatex">\(\forall n P(n)\)</span></p>
 <p>use prepositional logic in Sec 1.6</p>
-<div class="arithmatex">\[(P(1)\wedge \forall k (P(k)\to P(k+1)))\to \forall n P(n)\]</div>
+<div class="arithmatex">\[(P(1)\wedge \forall k (P(k)\to P(k+1)))\to \forall n P(n)
+\]</div>
 <blockquote>
 <p><img alt="9aac2d7d6a7256ae82cd8f52dda68bca.png" src="..\..\assets/images/9aac2d7d6a7256ae82cd8f52dda68bca.png"/>
 <img alt="9dcdf2bc506184de00299c44ddee124a.png" src="..\..\assets/images/9dcdf2bc506184de00299c44ddee124a.png"/>
@@ -758,6 +759,39 @@ etc. a=4,b=11</p>
 </blockquote>
 <p>Assume <span class="arithmatex">\(\existssss x \neg B(x)\)</span>. <span class="arithmatex">\(S=\{x|\neg B(x)\}\)</span> is nonempty. Then by well-ordering property <span class="arithmatex">\(S\)</span> has a minimum element <span class="arithmatex">\(m\)</span>. because <span class="arithmatex">\(P(1)\)</span> is true, <span class="arithmatex">\(m &gt; 1\)</span>. so <span class="arithmatex">\(P(m-1)\)</span> is true, but <span class="arithmatex">\(P(n)\to P(n+1)\)</span> implies that <span class="arithmatex">\(P(m)\)</span> is true. There is a contradiction, so S must be empty.</p>
 <h3 id="structural-induction">Structural Induction</h3>
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

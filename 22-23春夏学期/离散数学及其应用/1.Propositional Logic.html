@@ -1214,13 +1214,15 @@ where the truth value of <span class="arithmatex">\(A\)</span> is not related to
 <h2 id="16-rule-of-inference">1.6 Rule of Inference ☆</h2>
 <p>Argument: A sequence of propositions: If <span class="arithmatex">\((p_1 \wedge p_2 \dots \wedge p_n)\to q\)</span> is tautology, then the argument is valid</p>
 <p><strong>Formal Form</strong>(考试时注意格式!不要忘了写∴)</p>
-<div class="arithmatex">\[\begin{aligned}&amp;p_1\\&amp;p_2\\\ &amp;\dots\\&amp;p_n\\ &amp;\_\_\_\_\\ ∴&amp;q \end{aligned}\]</div>
+<div class="arithmatex">\[\begin{aligned}&amp;p_1\\&amp;p_2\\\ &amp;\dots\\&amp;p_n\\ &amp;\_\_\_\_\\ ∴&amp;q \end{aligned}
+\]</div>
 <p>Trick:
 <span class="arithmatex">\(p_1\dots p_n(\text{premises}),(q \to r)(\text{conclusion}) \equiv p_1\dots p_n,q(\text{premises}) ,r\)</span></p>
 <p><img alt="bcef9efa3a970384b1881020a6a864f2.png" src="..\..\assets/images/bcef9efa3a970384b1881020a6a864f2.png"/></p>
 <p><img alt="83fff811ac4e39ab9753856590b348a5.png" src="..\..\assets/images/83fff811ac4e39ab9753856590b348a5.png"/></p>
 <p>Resolution:</p>
-<div class="arithmatex">\[((p \vee q)\wedge(\neg p \vee s)) \to (q\vee s)\]</div>
+<div class="arithmatex">\[((p \vee q)\wedge(\neg p \vee s)) \to (q\vee s)
+\]</div>
 <p><span class="arithmatex">\(p \vee q,\neg p \vee r ,\neg q \vee s\)</span>. 先对1,3，再对2用resolution</p>
 <h3 id="rules-of-inference-for-quantified-statements">Rules of inference for Quantified Statements</h3>
 <p><img alt="970e28c212d724abce7c882c87ebba1f.png" src="..\..\assets/images/970e28c212d724abce7c882c87ebba1f.png"/></p>
@@ -1241,6 +1243,39 @@ A不能推出B，B可以推出A</p>
 <p>Proof by contradiction:</p>
 <p>Assume that <span class="arithmatex">\(p,\neg q\)</span> is true, deduce <span class="arithmatex">\((p \and \neg q)\to \neg p\)</span>, <span class="arithmatex">\(p \and \neg p\)</span> forms a contradiction</p>
 <p>Proof of equivalence.</p>
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

@@ -895,9 +895,9 @@
 <p><span class="arithmatex">\(s_n\)</span> is zero, then <span class="arithmatex">\(s_{[1,n-1]}\)</span> must contain odd number of 0. from the opposite side, <span class="arithmatex">\(10^{n-1}-a_{n-1}\)</span></p>
 </li>
 </ul>
-<div class="arithmatex">\[
-    a_n=8a_{n-1}+10^{n-1}
-    \]</div>
+<p>$$
+    a_n=8a_{n-1}+10^{n-1}</p>
+<p>$$</p>
 <blockquote>
 <p>The number of bit strings of length <span class="arithmatex">\(n\)</span> that contain 3 consecutive 0s</p>
 </blockquote>
@@ -1001,7 +1001,8 @@ a_n=c_1a_{n-1}+\dots c_ka_{n-k}
 <p><span class="arithmatex">\(b_0=a_0^2,b_1=2a_1a_0,b_2=a_1^2+2a_0a_2\dots, B(x)=A^2(x)\)</span> </p>
 <p>注意有限项的生成函数,如<span class="arithmatex">\((1+x)^n\)</span></p>
 </blockquote>
-<div class="arithmatex">\[\sum_{k=0}^{m-1}x^k=\frac{1-x^m}{1-x}\]</div>
+<div class="arithmatex">\[\sum_{k=0}^{m-1}x^k=\frac{1-x^m}{1-x}
+\]</div>
 <blockquote>
 <p>Eg. <span class="arithmatex">\(a_n=C(10,n+1)\)</span>. <span class="arithmatex">\(\sum_{n=0}^\infty C(10,n+1)x^n=\frac{1}{x}\sum_{n=1}^\infty C(10,n)x^n=\frac{(1+x)^{10}-1}{x}\)</span></p>
 </blockquote>
@@ -1022,7 +1023,8 @@ a_n=c_1a_{n-1}+\dots c_ka_{n-k}
 <p>法一: <span class="arithmatex">\(\sum_{n\geq 0}(n+1)x^n=(\sum_{n \geq 0}x^{n+1})'=\frac{1}{(1-x)^2}\)</span></p>
 <p>法二(卷积): <span class="arithmatex">\(b_n=1\)</span>, <span class="arithmatex">\(a_n=\sum_{k=0}^nb_kb_{n-k}\)</span>.</p>
 <blockquote></blockquote>
-<div class="arithmatex">\[\boxed{a_n=C(m+n-1,m-1),f(x)=\frac{1}{(1-x)^m}}\]</div>
+<div class="arithmatex">\[\boxed{a_n=C(m+n-1,m-1),f(x)=\frac{1}{(1-x)^m}}
+\]</div>
 <p>Extended binomial Theorem（本质是<span class="arithmatex">\((1+x)^a\)</span>的泰勒级数) 根据</p>
 <div class="arithmatex">\[
 (1+x)^a=\sum_{k=0}^{\infty} \frac{a(a-1)\dots (a-k+1)}{k!}x^k=\sum_{k=0}^{\infty}\binom{a}{k}x^k(a \in \mathbb{R})
@@ -1123,6 +1125,39 @@ D_n=(n-1)(D_{n-1}+D_{n-2})
 <p>arran0,1,2,3,4,5,  no odd digit is in its original position</p>
 </blockquote>
 <p>枚举有几个奇数在原来的位置, <span class="arithmatex">\(6!-C(3,1)5!+C(3,2)4!-C(3,3)3!\)</span></p>
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>

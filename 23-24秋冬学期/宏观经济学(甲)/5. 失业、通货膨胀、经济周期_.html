@@ -982,17 +982,17 @@ IPD=\frac{名义GDP(以现期价格计算)}{实际GDP(以基期价格计算)}\ti
 <p>货币主义： 通货膨胀是货币供给增加的结果</p>
 </li>
 </ol>
-<div class="arithmatex">\[
-    MV=PT=PY\\
-    \ln M+\ln V=\ln P+\ln Y
-    \]</div>
+<p>$$
+    MV=PT=PY\
+    \ln M+\ln V=\ln P+\ln Y</p>
+<p>$$</p>
 <div class="language-text highlight"><pre><span></span><code>​       流通速度$V$不变
 
  取全微分，  $d\ln M=\frac{dM}{M}$  $dV=0$ 代入得
 </code></pre></div>
-<div class="arithmatex">\[
-    dP/P=dM/M-dY/Y
-    \]</div>
+<p>$$
+    dP/P=dM/M-dY/Y</p>
+<p>$$</p>
 <div class="language-text highlight"><pre><span></span><code>**通货膨胀率=货币增长率-实际收入增长率**
 </code></pre></div>
 <p>​      通货膨胀产生主要是因为货币供给增加</p>
@@ -1063,6 +1063,39 @@ IPD=\frac{名义GDP(以现期价格计算)}{实际GDP(以基期价格计算)}\ti
 <h3 id="-">乘数-加速数</h3>
 <p>总需求增加，会通过乘数效应带来总产出的加倍增加</p>
 <p>总产出的增加又会通过加速数效应要求企业进行新的投资</p>
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
