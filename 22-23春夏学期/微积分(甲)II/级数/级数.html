@@ -1,0 +1,1791 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html" rel="prev"/>
+<link href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/index.html" rel="next"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.5.3, mkdocs-material-9.5.4" name="generator"/>
+<title>级数 - 时雨的笔记本</title>
+<link href="../../../assets/stylesheets/main.50c56a3b.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="时雨的笔记本" class="md-header__button md-logo" data-md-component="logo" href="../../../index.html" title="时雨的笔记本">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            时雨的笔记本
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              级数
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="时雨的笔记本" class="md-nav__button md-logo" data-md-component="logo" href="../../../index.html" title="时雨的笔记本">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    时雨的笔记本
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../index.html">
+<span class="md-ellipsis">
+    时雨的课程笔记
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-ellipsis">
+    22 23春夏学期
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            22 23春夏学期
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+<span class="md-ellipsis">
+    微积分(甲)II
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_1">
+<span class="md-nav__icon md-icon"></span>
+            微积分(甲)II
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_1_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_1_1" id="__nav_2_1_1_label" tabindex="0">
+<span class="md-ellipsis">
+    多元函数微分学
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_1_1_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_1_1">
+<span class="md-nav__icon md-icon"></span>
+            多元函数微分学
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html">
+<span class="md-ellipsis">
+    习题(证明题、变量代换)
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%28%E4%BA%8C%29.html">
+<span class="md-ellipsis">
+    多元函数微分学(二)
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">
+<span class="md-ellipsis">
+    多元函数微分学
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html">
+<span class="md-ellipsis">
+    空间解析几何
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    多元函数积分学
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_1_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_1_2">
+<span class="md-nav__icon md-icon"></span>
+            多元函数积分学
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86_.html">
+<span class="md-ellipsis">
+    三重积分 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">
+<span class="md-ellipsis">
+    二重积分
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E5%9C%BA%E8%AE%BA_.html">
+<span class="md-ellipsis">
+    场论 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html">
+<span class="md-ellipsis">
+    曲面积分难题
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<span class="md-ellipsis">
+    第一类曲线曲面积分
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html">
+<span class="md-ellipsis">
+    第二类曲线积分
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<span class="md-ellipsis">
+    第二类曲面积分
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_1_3" id="__nav_2_1_3_label" tabindex="0">
+<span class="md-ellipsis">
+    级数
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_1_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_1_3">
+<span class="md-nav__icon md-icon"></span>
+            级数
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html">
+<span class="md-ellipsis">
+    级数 习题
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    级数
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="%E7%BA%A7%E6%95%B0.html">
+<span class="md-ellipsis">
+    级数
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      级数的定义
+    </span>
+</a>
+<nav aria-label="级数的定义" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      定义法判断收敛性
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      柯西收敛准则
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      利用特殊的级数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      利用级数之间的运算
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      正项级数的收敛性
+    </span>
+</a>
+<nav aria-label="正项级数的收敛性" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      充要条件(部分和有界)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      比较判别法
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      达朗贝尔比值法
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      柯西根值法
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
+<span class="md-ellipsis">
+      积分判别法
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+<span class="md-ellipsis">
+      交错级数
+    </span>
+</a>
+<nav aria-label="交错级数" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+<span class="md-ellipsis">
+      莱布尼兹定理*
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_14">
+<span class="md-ellipsis">
+      一般级数的收敛性
+    </span>
+</a>
+<nav aria-label="一般级数的收敛性" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_15">
+<span class="md-ellipsis">
+      绝对收敛和条件收敛
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_16">
+<span class="md-ellipsis">
+      绝对值的比值和根判别
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_17">
+<span class="md-ellipsis">
+      绝对收敛级数的性质
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_18">
+<span class="md-ellipsis">
+      函数项级数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_19">
+<span class="md-ellipsis">
+      幂级数
+    </span>
+</a>
+<nav aria-label="幂级数" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#abelcauchy-hadamard">
+<span class="md-ellipsis">
+      Abel定理和Cauchy-Hadamard定理
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_20">
+<span class="md-ellipsis">
+      求幂级数的收敛域
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_21">
+<span class="md-ellipsis">
+      幂级数的性质
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_22">
+<span class="md-ellipsis">
+      求幂级数和函数
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#taylor">
+<span class="md-ellipsis">
+      Taylor级数
+    </span>
+</a>
+<nav aria-label="Taylor级数" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_23">
+<span class="md-ellipsis">
+      函数展开成幂级数
+    </span>
+</a>
+<nav aria-label="函数展开成幂级数" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_24">
+<span class="md-ellipsis">
+      定义法
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_25">
+<span class="md-ellipsis">
+      利用幂级数的运算
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#taylor_1">
+<span class="md-ellipsis">
+      要记住的Taylor级数
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fourier">
+<span class="md-ellipsis">
+      Fourier级数
+    </span>
+</a>
+<nav aria-label="Fourier级数" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_26">
+<span class="md-ellipsis">
+      傅里叶级数的定义
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#-f-x-fx0xl-a_n0">
+<span class="md-ellipsis">
+      - 令\(f(-x)=-f(x)(0&lt;x&lt;l)\) 奇延拓(得到正弦级数) \(a_n=0\),
+    </span>
+</a>
+<nav aria-label="- 令\(f(-x)=-f(x)(0&lt;x&lt;l)\) 奇延拓(得到正弦级数) \(a_n=0\)," class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_27">
+<span class="md-ellipsis">
+      傅里叶级数的应用
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_28">
+<span class="md-ellipsis">
+      傅里叶级数的复数形式
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/index.html">
+<span class="md-ellipsis">
+    离散数学及其应用
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            离散数学及其应用
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/1.Propositional%20Logic.html">
+<span class="md-ellipsis">
+    1.Propositional Logic
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/10.Graph_.html">
+<span class="md-ellipsis">
+    10.Graph 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/11.Tree.html">
+<span class="md-ellipsis">
+    11.Tree
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/2.Basic%20Structures.html">
+<span class="md-ellipsis">
+    2.Basic Structures
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/3.Algorithms.html">
+<span class="md-ellipsis">
+    3.Algorithms
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/4.Number%20Theory_.html">
+<span class="md-ellipsis">
+    4.Number Theory 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/5.Mathematical%20Induction.html">
+<span class="md-ellipsis">
+    5.Mathematical Induction
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/6.Counting.html">
+<span class="md-ellipsis">
+    6.Counting
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/8.%20Advanced%20Counting%20Techniques.html">
+<span class="md-ellipsis">
+    8. Advanced Counting Techniques
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/9.Relation_.html">
+<span class="md-ellipsis">
+    9.Relation 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/ZJU%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8%202023%E6%98%A5%E5%A4%8F%E5%9B%9E%E5%BF%86%E9%A2%98.html">
+<span class="md-ellipsis">
+    ZJU离散数学及其应用 2023春夏回忆题
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E4%B8%8E%E5%8E%86%E5%B9%B4%E5%8D%B7%E9%A2%98%E7%9B%AE.html">
+<span class="md-ellipsis">
+    离散数学期末复习与历年卷题目
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/index.html">
+<span class="md-ellipsis">
+    计算机系统概论
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+            计算机系统概论
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+<span class="md-ellipsis">
+    Note
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_2_3_2">
+<span class="md-nav__icon md-icon"></span>
+            Note
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%201-3.html">
+<span class="md-ellipsis">
+    ICS Chapter 1 3
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%204%20and%20Chapter%205_.html">
+<span class="md-ellipsis">
+    ICS Chapter 4 and Chapter 5 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BAICS%20Chapter%206%20and%20after.html">
+<span class="md-ellipsis">
+    计算机系统概论ICS Chapter 6 and after
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-ellipsis">
+    23 24秋冬学期
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            23 24秋冬学期
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%9B%BE%E5%83%8F%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/index.html">
+<span class="md-ellipsis">
+    图像信息处理
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_1">
+<span class="md-nav__icon md-icon"></span>
+            图像信息处理
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/index.html">
+<span class="md-ellipsis">
+    大学物理(乙)II
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+            大学物理(乙)II
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E5%85%89%E5%AD%A6.html">
+<span class="md-ellipsis">
+    光学
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E7%A3%81%E5%9C%BA.html">
+<span class="md-ellipsis">
+    磁场
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E9%87%8F%E5%AD%90_.html">
+<span class="md-ellipsis">
+    量子 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E9%9D%99%E7%94%B5%E5%9C%BA2_.html">
+<span class="md-ellipsis">
+    静电场2 
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C/index.html">
+<span class="md-ellipsis">
+    大学物理实验
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_3">
+<span class="md-nav__icon md-icon"></span>
+            大学物理实验
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/index.html">
+<span class="md-ellipsis">
+    宏观经济学(甲)
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_4">
+<span class="md-nav__icon md-icon"></span>
+            宏观经济学(甲)
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/1.%20GDP_.html">
+<span class="md-ellipsis">
+    1. GDP 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/2.%20%E7%AE%80%E5%8D%95%E5%9B%BD%E6%B0%91%E6%94%B6%E5%85%A5%E5%86%B3%E5%AE%9A.html">
+<span class="md-ellipsis">
+    2. 简单国民收入决定
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/3.%20IS-LM%E6%9B%B2%E7%BA%BF_.html">
+<span class="md-ellipsis">
+    IS-LM曲线
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/4.%20AD-AS_.html">
+<span class="md-ellipsis">
+    4. AD AS 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/5.%20%E5%A4%B1%E4%B8%9A%E3%80%81%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80%E3%80%81%E7%BB%8F%E6%B5%8E%E5%91%A8%E6%9C%9F_.html">
+<span class="md-ellipsis">
+    5. 失业、通货膨胀、经济周期 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96_.html">
+<span class="md-ellipsis">
+    宏观经济政策 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/%E5%BC%80%E6%94%BE%E6%9D%A1%E4%BB%B6%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E_.html">
+<span class="md-ellipsis">
+    开放条件宏观经济 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%95%BF%E7%90%86%E8%AE%BA.html">
+<span class="md-ellipsis">
+    经济增长理论
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/index.html">
+<span class="md-ellipsis">
+    数字逻辑设计
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_5">
+<span class="md-nav__icon md-icon"></span>
+            数字逻辑设计
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/index.html">
+<span class="md-ellipsis">
+    数据结构基础
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_6_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_6">
+<span class="md-nav__icon md-icon"></span>
+            数据结构基础
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/FDS%E5%A4%8D%E4%B9%A0.html">
+<span class="md-ellipsis">
+    FDS复习
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_7" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/index.html">
+<span class="md-ellipsis">
+    概率论与数理统计
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_7_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_7">
+<span class="md-nav__icon md-icon"></span>
+            概率论与数理统计
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E6%A6%82%E7%BB%9F%E6%80%BB%E7%BB%93.html">
+<span class="md-ellipsis">
+    概统总结
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_8" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/index.html">
+<span class="md-ellipsis">
+    面向对象程序设计
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_8_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_8">
+<span class="md-nav__icon md-icon"></span>
+            面向对象程序设计
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Class_.html">
+<span class="md-ellipsis">
+    Class 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Exception.html">
+<span class="md-ellipsis">
+    Exception
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Inheritance_.html">
+<span class="md-ellipsis">
+    Inheritance 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Overloaded%20operator_.html">
+<span class="md-ellipsis">
+    Overloaded operator 
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Polymorphism.html">
+<span class="md-ellipsis">
+    Polymorphism
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Template.html">
+<span class="md-ellipsis">
+    Template
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%B7%9FOOP%E6%97%A0%E5%85%B3%E7%9A%84C%2B%2B%E7%89%B9%E6%80%A7.html">
+<span class="md-ellipsis">
+    跟OOP无关的C++特性
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      级数的定义
+    </span>
+</a>
+<nav aria-label="级数的定义" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      定义法判断收敛性
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      柯西收敛准则
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      利用特殊的级数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      利用级数之间的运算
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      正项级数的收敛性
+    </span>
+</a>
+<nav aria-label="正项级数的收敛性" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      充要条件(部分和有界)
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      比较判别法
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      达朗贝尔比值法
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      柯西根值法
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_11">
+<span class="md-ellipsis">
+      积分判别法
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_12">
+<span class="md-ellipsis">
+      交错级数
+    </span>
+</a>
+<nav aria-label="交错级数" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_13">
+<span class="md-ellipsis">
+      莱布尼兹定理*
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_14">
+<span class="md-ellipsis">
+      一般级数的收敛性
+    </span>
+</a>
+<nav aria-label="一般级数的收敛性" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_15">
+<span class="md-ellipsis">
+      绝对收敛和条件收敛
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_16">
+<span class="md-ellipsis">
+      绝对值的比值和根判别
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_17">
+<span class="md-ellipsis">
+      绝对收敛级数的性质
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_18">
+<span class="md-ellipsis">
+      函数项级数
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_19">
+<span class="md-ellipsis">
+      幂级数
+    </span>
+</a>
+<nav aria-label="幂级数" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#abelcauchy-hadamard">
+<span class="md-ellipsis">
+      Abel定理和Cauchy-Hadamard定理
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_20">
+<span class="md-ellipsis">
+      求幂级数的收敛域
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_21">
+<span class="md-ellipsis">
+      幂级数的性质
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_22">
+<span class="md-ellipsis">
+      求幂级数和函数
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#taylor">
+<span class="md-ellipsis">
+      Taylor级数
+    </span>
+</a>
+<nav aria-label="Taylor级数" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_23">
+<span class="md-ellipsis">
+      函数展开成幂级数
+    </span>
+</a>
+<nav aria-label="函数展开成幂级数" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_24">
+<span class="md-ellipsis">
+      定义法
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_25">
+<span class="md-ellipsis">
+      利用幂级数的运算
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#taylor_1">
+<span class="md-ellipsis">
+      要记住的Taylor级数
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fourier">
+<span class="md-ellipsis">
+      Fourier级数
+    </span>
+</a>
+<nav aria-label="Fourier级数" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_26">
+<span class="md-ellipsis">
+      傅里叶级数的定义
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#-f-x-fx0xl-a_n0">
+<span class="md-ellipsis">
+      - 令\(f(-x)=-f(x)(0&lt;x&lt;l)\) 奇延拓(得到正弦级数) \(a_n=0\),
+    </span>
+</a>
+<nav aria-label="- 令\(f(-x)=-f(x)(0&lt;x&lt;l)\) 奇延拓(得到正弦级数) \(a_n=0\)," class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_27">
+<span class="md-ellipsis">
+      傅里叶级数的应用
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_28">
+<span class="md-ellipsis">
+      傅里叶级数的复数形式
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1>级数</h1>
+<div class="toc">
+<ul>
+<li><a href="#_1">级数的定义</a><ul>
+<li><a href="#_2">定义法判断收敛性</a></li>
+<li><a href="#_3">柯西收敛准则</a></li>
+<li><a href="#_4">利用特殊的级数</a></li>
+<li><a href="#_5">利用级数之间的运算</a></li>
+</ul>
+</li>
+<li><a href="#_6">正项级数的收敛性</a><ul>
+<li><a href="#_7">充要条件(部分和有界)</a></li>
+<li><a href="#_8">比较判别法</a></li>
+<li><a href="#_9">达朗贝尔比值法</a></li>
+<li><a href="#_10">柯西根值法</a></li>
+<li><a href="#_11">积分判别法</a></li>
+</ul>
+</li>
+<li><a href="#_12">交错级数</a><ul>
+<li><a href="#_13">莱布尼兹定理*</a></li>
+</ul>
+</li>
+<li><a href="#_14">一般级数的收敛性</a><ul>
+<li><a href="#_15">绝对收敛和条件收敛</a></li>
+<li><a href="#_16">绝对值的比值和根判别</a></li>
+<li><a href="#_17">绝对收敛级数的性质</a></li>
+</ul>
+</li>
+<li><a href="#_18">函数项级数</a></li>
+<li><a href="#_19">幂级数</a><ul>
+<li><a href="#abelcauchy-hadamard">Abel定理和Cauchy-Hadamard定理</a></li>
+<li><a href="#_20">求幂级数的收敛域</a></li>
+<li><a href="#_21">幂级数的性质</a></li>
+<li><a href="#_22">求幂级数和函数</a></li>
+</ul>
+</li>
+<li><a href="#taylor">Taylor级数</a><ul>
+<li><a href="#_23">函数展开成幂级数</a><ul>
+<li><a href="#_24">定义法</a></li>
+</ul>
+</li>
+<li><a href="#_25">利用幂级数的运算</a></li>
+<li><a href="#taylor_1">要记住的Taylor级数</a></li>
+</ul>
+</li>
+<li><a href="#fourier">Fourier级数</a><ul>
+<li><a href="#_26">傅里叶级数的定义</a></li>
+</ul>
+</li>
+<li><a href="#-f-x-fx0xl-a_n0">- 令\(f(-x)=-f(x)(0&lt;x&lt;l)\) 奇延拓(得到正弦级数) \(a_n=0\),</a><ul>
+<li><a href="#_27">傅里叶级数的应用</a></li>
+<li><a href="#_28">傅里叶级数的复数形式</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="_1">级数的定义</h2>
+<div class="arithmatex">\[\sum_{n=0}^{\infin}a_n=\lim_{n \to \infin}S_n
+\]</div>
+<h3 id="_2">定义法判断收敛性</h3>
+<p>利用部分和<span class="arithmatex">\(S_n\)</span>的极限</p>
+<p>推论: <span class="arithmatex">\(\sum_{n=0}^{\infin}a_n\)</span>收敛，则<span class="arithmatex">\(\lim_{n \to \infin}a_n=0\)</span></p>
+<p>​          <span class="arithmatex">\(\lim_{n \to \infin}a_n\neq0\)</span>或不存在,则<strong>原级数发散</strong></p>
+<blockquote>
+<p>例: <span class="arithmatex">\(\sum \frac{n}{\ln^3n}\)</span>发散。  注意重要极限<span class="arithmatex">\(\lim_{n \to \infin} \frac{\ln n}{n^p}=0(p&gt;)\)</span></p>
+</blockquote>
+<h3 id="_3">柯西收敛准则</h3>
+<p>设<span class="arithmatex">\(\lim_{n \to \infin} S_n=s,r_n=s-S_n=a_{n+1}+a_{n+2}+\dots\)</span>,则</p>
+<p><span class="arithmatex">\(\lim_{n \to \infin}r_n=0\)</span>. 用极限的语言写</p>
+<p>柯西收敛准则: <span class="arithmatex">\(\forall \varepsilon&gt;0,\exist N,\text{当}n&gt;N\)</span>时对一切自然数<span class="arithmatex">\(p\)</span>, 有<span class="arithmatex">\(|u_{n+1}+u_{n+2}+\dots u_{n+p}|&lt;\varepsilon\)</span></p>
+<p><img alt="image-20230228221408902" src="C:\Users\19808\AppData\Roaming\Typora\typora-user-images\image-20230228221408902.png" style="zoom:50%;"/></p>
+<h3 id="_4">利用特殊的级数</h3>
+<p>几何级数: </p>
+<div class="arithmatex">\[ \sum_{n=0}^{\infin} aq^n \text{收敛到}\frac{a}{1-q}\text{当且仅当}|q|&lt;1 \\
+\]</div>
+<p>p级数</p>
+<div class="arithmatex">\[\sum_{n=1}^\infin \frac{1}{n^p} \text{收敛当且仅当}p&gt;1 \\
+\]</div>
+<h3 id="_5">利用级数之间的运算</h3>
+<p>数乘收敛性不变</p>
+<p>收敛±收敛=收敛</p>
+<p>收敛+发散=发散</p>
+<p>增加、减少、修改有限项收敛性不变（因为有限项的和是常数)</p>
+<p>收敛级数的结合性: </p>
+<ul>
+<li><strong>收敛级数加括号形成的级数仍然收敛</strong>（但发散不一定,如1 -1 1 -1)</li>
+<li><strong>加括号形成的级数发散，则原级数发散</strong> (如调和级数<span class="arithmatex">\(1+1/2+(1/3+1/4)+(1/5+1/6+1/7+1/8)+...(1/(2^m+1)+1/2^(m+1))&gt;1+1/2+2/4+4/8+....\)</span>发散)</li>
+</ul>
+<h2 id="_6">正项级数的收敛性</h2>
+<p>定义 <span class="arithmatex">\(\sum_{n=0}^{\infin}a_n(a_n&gt;0)\)</span></p>
+<h3 id="_7">充要条件(部分和有界)</h3>
+<p>正项级数<span class="arithmatex">\(\sum_{n=0}^{\infin}a_n\)</span>收敛当且仅当<span class="arithmatex">\(a_n\)</span>有界</p>
+<h3 id="_8">比较判别法</h3>
+<p>既可以直接放缩
+<img alt="63a55d34d276ef185b79d97e2d8b2e67.png" src="..\..\..\assets/images/63a55d34d276ef185b79d97e2d8b2e67.png"/></p>
+<p><span class="arithmatex">\(\sum 1/{\ln n}\)</span>发散
+也可以根据去掉有限项的性质，写成极限的形式:</p>
+<p><span class="arithmatex">\(\lim _{n \to \infin} \frac{u_n}{v_n}=l\)</span></p>
+<p><span class="arithmatex">\(0&lt;l&lt;+\infin\)</span>(这里不需要和1比） 则<span class="arithmatex">\(u_n\)</span>和<span class="arithmatex">\(v_n\)</span>敛散性相同（相当于等价<span class="arithmatex">\(u_n \sim lv_n\)</span>）</p>
+<p><span class="arithmatex">\(l=0\)</span>,  <span class="arithmatex">\(v_n\)</span> 收敛则 <span class="arithmatex">\(u_n\)</span> 收敛</p>
+<p><span class="arithmatex">\(l=+\infin\)</span>, <span class="arithmatex">\(v_n\)</span>发散则<span class="arithmatex">\(u_n\)</span>发散</p>
+<p>用极限形式就不需要严格的大小关系，
+多项式看最高次项, <span class="arithmatex">\(n! \sim n^n\)</span>
+<span class="arithmatex">\(\sin 1/n \sim 1/n (n\to \infin)\)</span></p>
+<blockquote>
+<p>例:</p>
+<p><span class="arithmatex">\(\sum(1-\cos \frac{a}{n}) \sim \sum \frac{a^2}{2n^2}\)</span> 收敛</p>
+<p><span class="arithmatex">\(\sum \frac{n\cos^2(n\pi/3)}{2^n}&lt;\sum \frac{n}{2^n}\)</span> 收敛</p>
+<p><span class="arithmatex">\(\sum \frac{1}{n}\sin \frac{1}{n}&lt;\frac{1}{n^2}\)</span></p>
+<p><span class="arithmatex">\(\sum n^{\frac{1}{n^2+1}}-1 \overset{取对数}{\sim} \sum \frac{\ln n}{n^2+}\)</span></p>
+</blockquote>
+<p><img alt="93bb0fc0b875bd21e127aa3cb5f387bb.png" src="..\..\..\assets/images/93bb0fc0b875bd21e127aa3cb5f387bb.png"/></p>
+<p><img alt="1304f8ecb7b64bfcbae1d635bfed8553.png" src="..\..\..\assets/images/1304f8ecb7b64bfcbae1d635bfed8553.png"/></p>
+<p><img alt="4d6764edcd6007f262219fa62789a800.png" src="..\..\..\assets/images/4d6764edcd6007f262219fa62789a800.png"/></p>
+<blockquote>
+<p>比较判别法推出的二级结论
+<span class="arithmatex">\(\sum u_n^2, \ \sum v_n^2\)</span>收敛,则<span class="arithmatex">\(\sum |u_nv_n| ,\sum(u_n+v_n)^2 ,\sum \frac{u_n}{n}\)</span>收敛</p>
+<p><span class="arithmatex">\(\sum u_n\)</span>收敛,则<span class="arithmatex">\(\sum u_n^2\)</span>收敛,逆命题不成立。
+第一个是因为<span class="arithmatex">\(|u_nv_n|\leq \frac{1}{2}(u_n^2+v_n^2)\)</span></p>
+</blockquote>
+<p>第二个是因为<span class="arithmatex">\(\exist N,\forall n&gt;N,u_n \leq M&lt;1,u_n^2 \leq Mu_n\)</span></p>
+<h3 id="_9">达朗贝尔比值法</h3>
+<div class="arithmatex">\[\lim_{n \to \infin} \frac{u_{n+1}}{u_{n}}=\gamma
+\]</div>
+<p><span class="arithmatex">\(\gamma&lt;1\)</span> 收敛</p>
+<p><span class="arithmatex">\(\gamma&gt;1\)</span>发散</p>
+<p><span class="arithmatex">\(\gamma=1\)</span>无法确定（比如p级数)</p>
+<p>适用于有阶乘、n次方的。</p>
+<blockquote>
+<p>例子:<span class="arithmatex">\(\sum \frac{n}{3^n}\)</span>, <span class="arithmatex">\(\sum \frac{n!}{n^n}\)</span></p>
+</blockquote>
+<p><span class="arithmatex">\(\lim_{n \to \infin}\frac{(n+1)!}{(n+1)^{n+1}}\cdot \frac{n^n}{n!}=\lim_{n \to \infin}(\frac{n}{n+1})^n=\lim_{n \to \infin} \frac{1}{(1+1/n)^n}=\frac{1}{e}\)</span>,收敛</p>
+<h3 id="_10">柯西根值法</h3>
+<div class="arithmatex">\[\lim_{n \to \infin} \sqrt[n]{u_{n}}=\gamma
+\]</div>
+<p><span class="arithmatex">\(\gamma&lt;1\)</span> 收敛</p>
+<p><span class="arithmatex">\(\gamma&gt;1\)</span>发散</p>
+<p><span class="arithmatex">\(\gamma=1\)</span>无法确定</p>
+<p>适用于能整体开根号的</p>
+<h3 id="_11">积分判别法</h3>
+<blockquote>
+<p>如果<span class="arithmatex">\(f(n)\)</span> 在<span class="arithmatex">\((b,+\infin)\)</span>递减，连续，非负,则<span class="arithmatex">\(\sum_{n=b}^{\infin} f(n)\text{和}\int_{b}^{+\infin}f(x)dx\)</span>收敛性相同。</p>
+</blockquote>
+<p>适用于和式。
+常见结论:<span class="arithmatex">\(\sum_{n=2}^{\infin}\frac{1}{x(\ln x)^p}\)</span>在<span class="arithmatex">\(p&gt;1\)</span>收敛,<span class="arithmatex">\(p \leq 1\)</span>发散</p>
+<p>还有题目是利用积分判别法化曲为直的思想来放缩</p>
+<blockquote>
+<p>例: <span class="arithmatex">\(\sum \frac{1}{1+\sqrt{2}+\dots \sqrt{n}}\)</span></p>
+</blockquote>
+<p>$$\frac{1}{1+\sqrt{2}+\dots \sqrt{n}}=\frac{\frac{1}{n\sqrt{n}}}{\frac{1}{n}(\sqrt{\frac{1}{n}}+\sqrt{\frac{2}{n}}+\dots \sqrt{\frac{n}{n}})}&lt;\frac{1}{n\sqrt{n}\int_0^1 \sqrt{x}}=\frac{3}{2} \frac{1}{n\sqrt{n}}
+$$
+由比较判别法，级数收敛</p>
+<h2 id="_12">交错级数</h2>
+<p><span class="arithmatex">\(\sum_{n=b}^{\infin} (-1)^{n-1} u_n(u_n&gt;0)\)</span>.或者<span class="arithmatex">\((-1)^n\)</span>也可以</p>
+<h3 id="_13">莱布尼兹定理*</h3>
+<blockquote>
+<p>三个条件
+- <span class="arithmatex">\(u_n \geq 0\)</span>
+- <span class="arithmatex">\(u_n\)</span>递减
+- <span class="arithmatex">\(\color{red}{\lim_{n \to \infin}u_n=0}\)</span>,则<span class="arithmatex">\(u_n\)</span>收敛</p>
+</blockquote>
+<p>比如<span class="arithmatex">\(\sum (-1)^n \frac{1}{n}\)</span>收敛</p>
+<p>注意不是所有交错级数都能用莱布尼兹判别法。</p>
+<h2 id="_14">一般级数的收敛性</h2>
+<h3 id="_15">绝对收敛和条件收敛</h3>
+<p><span class="arithmatex">\(\sum |a_n|\)</span>收敛，则<span class="arithmatex">\(\sum a_n\)</span>收敛，称为绝对收敛</p>
+<p><span class="arithmatex">\(\sum |a_n|\)</span>发散且<span class="arithmatex">\(\sum a_n\)</span>收敛，称为条件收敛</p>
+<p><span class="arithmatex">\(\sum a_n\)</span>发散</p>
+<p>如果<span class="arithmatex">\(\lim_{n \to \infin}|a_n|&gt;0\)</span>,则<span class="arithmatex">\(\lim_{n \to \infin}a_n\)</span>肯定不等于0，级数发散。etc. <span class="arithmatex">\(\lim_{n \to \infin} n^{1/n}=e^{\ln n/n}=1\)</span>. 所以<span class="arithmatex">\(\sum \frac{1}{n^{1/n}}\)</span>发散</p>
+<p><img alt="image-20230307191338603" src="C:\Users\19808\AppData\Roaming\Typora\typora-user-images\image-20230307191338603.png" style="zoom: 50%;"/></p>
+<h3 id="_16">绝对值的比值和根判别</h3>
+<p><img alt="image-20230307191651918" src="C:\Users\19808\AppData\Roaming\Typora\typora-user-images\image-20230307191651918.png" style="zoom:50%;"/></p>
+<h3 id="_17">绝对收敛级数的性质</h3>
+<blockquote>
+<p>绝对收敛级数任意重排后的级数也绝对收敛</p>
+<p>条件收敛级数重排之后可以收敛到任意实数 </p>
+</blockquote>
+<h2 id="_18">函数项级数</h2>
+<p>增加了一个参数x, 定义<span class="arithmatex">\(\sum_{n=1}^{\infin}u_n(x)\)</span>为函数项级数。代入不同的<span class="arithmatex">\(x\)</span>,得到不同的数项级数。所有让级数收敛的<span class="arithmatex">\(x\)</span>(收敛点）的集合称为收敛域。发散的称为发散域。</p>
+<p>求收敛域: 把<span class="arithmatex">\(x\)</span>看成常数，然后按数项级数的判断方法分类讨论。</p>
+<blockquote>
+<p>例: 求<span class="arithmatex">\(\sum (\ln x)^n\)</span>的收敛域</p>
+</blockquote>
+<p>利用绝对值比值判别法,得到<span class="arithmatex">\(|\ln x|&lt;1\)</span>. 收敛域<span class="arithmatex">\((\frac{1}{e},e)\)</span></p>
+<h2 id="_19">幂级数</h2>
+<p>标准形式:<span class="arithmatex">\(\sum a_nx^n\)</span></p>
+<p>但很多时候题目给出的可能是<span class="arithmatex">\(\sum a_n (ax+b)^n\)</span>,要换元。</p>
+<h3 id="abelcauchy-hadamard">Abel定理和Cauchy-Hadamard定理</h3>
+<blockquote>
+<p>Abel定理: 如果幂级数<span class="arithmatex">\(\sum a_nx^n\)</span>当<span class="arithmatex">\(x=x_0\)</span>时收敛，那么<span class="arithmatex">\(|x|&lt;|x_0|\)</span>时绝对收敛， <span class="arithmatex">\(|x|&gt;|x_0|\)</span>发散</p>
+<p>Cauchy-Hadamard公式: <span class="arithmatex">\(\sum a_nx^n\)</span>，设 <span class="arithmatex">\(\lim_{n \to \infin} \frac{|a_n|}{|a_{n+1}|}=R\)</span></p>
+<p><span class="arithmatex">\(0&lt;R&lt;+\infin\)</span> 则<span class="arithmatex">\((-R,R)\)</span>内绝对收敛</p>
+<p><span class="arithmatex">\(R=0\)</span>,则 <span class="arithmatex">\(x=0\)</span>收敛</p>
+<p><span class="arithmatex">\(R=+\infin\)</span>, 在<span class="arithmatex">\(\mathbb{R}\)</span>上收敛</p>
+</blockquote>
+<p>本质是比值判别法，注意端点处需要检验</p>
+<h3 id="_20">求幂级数的收敛域</h3>
+<ol>
+<li>先求收敛区间</li>
+<li>如果是标准形式，根据Cauchy-Hadamard公式求解</li>
+<li>如果是<span class="arithmatex">\(\sum a_n(kx+b)^n\)</span>，换元<span class="arithmatex">\(y=kx+b\)</span>化成标准形式求出<span class="arithmatex">\(R_y\)</span> ,最后要换回x,收敛半径<span class="arithmatex">\(R_x=\frac{R_y}{k},\)</span></li>
+<li>把<span class="arithmatex">\(x\)</span>看成常数,用数项级数的方法求解(适用于缺项的，如<span class="arithmatex">\(\sum_{n=0}^{\infin} \frac{x^{2n+1}}{n}\)</span>)</li>
+<li>代入端点进行讨论</li>
+</ol>
+<p><strong>注意换元时收敛区间、半径会变!!!</strong></p>
+<h3 id="_21">幂级数的性质</h3>
+<blockquote>
+<p>分析性质: </p>
+<ul>
+<li><span class="arithmatex">\(S(x)\)</span>在收敛域上连续</li>
+<li>在<span class="arithmatex">\((-R,R)\)</span>上任意阶逐项可积、可微，且收敛半径不变</li>
+<li>推论:<span class="arithmatex">\(a_0=S(0),a_n=\frac{S^{(n)}(0)}{n!}\)</span> (保证幂级数唯一性)</li>
+</ul>
+<p>代数性质:</p>
+<ul>
+<li>两个幂级数相加减，收敛半径为<span class="arithmatex">\(R=\min\{R_a,R_b\}\)</span></li>
+</ul>
+</blockquote>
+<h3 id="_22">求幂级数和函数</h3>
+<ol>
+<li>
+<p>确定收敛域</p>
+</li>
+<li>
+<p>确定和函数</p>
+<ul>
+<li>
+<p>线性运算、换元法:</p>
+</li>
+<li>
+<p>若逐项求导后的结果可以看出和函数，用<span class="arithmatex">\(S(x)=S(0)+\int_0^x S'(x)dx\)</span>. 注意这里要用到<span class="arithmatex">\(S(0)\)</span>是为了确定<span class="arithmatex">\(S'(x)\)</span>不定积分之后的<span class="arithmatex">\(C\)</span>.  比如有<span class="arithmatex">\(\frac{x^n}{n}\)</span></p>
+</li>
+<li>若逐项积分后的结果可以看出和函数,用<span class="arithmatex">\(S(x)=(\int_0^x S(x)dx)'\)</span> 比如有<span class="arithmatex">\(nx^{n-1}\)</span></li>
+</ul>
+</li>
+<li>
+<p>端点处要讨论: 端点处的值<span class="arithmatex">\(\sum_{n=0}^\infin a_n R^n=\lim_{x \to R^-} S(x)\)</span>. 如果<span class="arithmatex">\(S(x)\)</span>在<span class="arithmatex">\(x=R\)</span>连续,才可以直接用<span class="arithmatex">\(S(R)\)</span></p>
+</li>
+</ol>
+<p>注意求和符号的下界</p>
+<blockquote>
+<p>例:  求<span class="arithmatex">\(\sum_{n=1}^\infin \frac{x^{n-1}}{n}\)</span></p>
+</blockquote>
+<p>收敛半径<span class="arithmatex">\(R=1\)</span>,收敛域<span class="arithmatex">\([-1,1)\)</span></p>
+<p><span class="arithmatex">\(\sum_{n=1}^\infin \frac{x^{n-1}}{n}=\frac{1}{x} \sum_{n=1}^\infin \frac{x^n}{n}(x \neq 0)\)</span></p>
+<p>设<span class="arithmatex">\(S(x)=\sum_{n=1}^\infin \frac{x^n}{n},S(0)=0\)</span></p>
+<p><span class="arithmatex">\(S'(x)=\sum_{n=1}^\infin x^{n-1}=\frac{1}{1-x}\)</span></p>
+<p><span class="arithmatex">\(S(x)=S(0)-\ln(1-x)|^x_0=-\ln(1-x)\)</span></p>
+<p>当<span class="arithmatex">\(x=0\)</span>时<span class="arithmatex">\(\sum_{n=1}^\infin 0^{n-1}/n=1\)</span>.<strong>注意0次幂</strong></p>
+<p>因此<span class="arithmatex">\(\sum_{n=1}^\infin \frac{x^{n-1}}{n}=\begin{cases}  \frac{-\ln(1-x)}{x},[-1,0)\cup(0,1) \\ 1,x=0\end{cases}\)</span></p>
+<blockquote>
+<p>例: 求<span class="arithmatex">\(\sum_{n=1}^\infin \frac{x^n}{n+1}\)</span></p>
+</blockquote>
+<div class="arithmatex">\[\sum_{n=1}^\infin \frac{x^n}{n+1}=\frac{1}{x}\sum_{n=1}^\infin \frac{x^{n+1}}{n+1}=\frac{1}{x}\sum_{n=\mathbf{2}}^\infin \frac{x^n}{n}=\frac{1}{x}(-\ln(1-x)-x)
+\]</div>
+<p>x=0时显然等于0</p>
+<blockquote>
+<p>例: 求<span class="arithmatex">\(\sum_{n=1}^\infin(-1)^{n-1} \frac{2nx^{2n-1}}{(2n-1)!}\)</span></p>
+</blockquote>
+<p>易得收敛域为<span class="arithmatex">\(\mathbb{R}\)</span></p>
+<p>注意到<span class="arithmatex">\(2n\)</span>和<span class="arithmatex">\(2n-1\)</span>差1,考虑积分。
+$$\int_0^x s(x)dx=\sum_{n=1}^\infin (-1)^{n-1}\frac{x^{2n}}{(2n-1)!}=x\sum_{n=1}^{\infin} (-1)^{n-1}\frac{x^{2n-1}}{(2n-1)!}=x\sin x
+$$</p>
+<p>求导得到<span class="arithmatex">\(s(x)=x\cos x+\sin x(x \in R)\)</span></p>
+<blockquote>
+<p>例: 求<span class="arithmatex">\(\sum_{n=0}^\infin \frac{a(a-1)\dots(a-n+1)}{n!}x^n\)</span></p>
+</blockquote>
+<p>由Cauchy-Hadamard公式,收敛半径<span class="arithmatex">\(R=\lim_{n \to \infin}|\frac{n+1}{a-n}|=1\)</span></p>
+<p>求导有<span class="arithmatex">\(s'(x)=\sum_{n=1}^{\infin} \frac{a(a-1)\dots(a-n+1)}{(n-1)!}x^{n-1}=a+\sum_{n=1}^{\infin}\frac{a(a-1)\dots(a-n)}{n!}x^n\)</span></p>
+<p>注意到<span class="arithmatex">\(xs'(x)=\sum_{n=1}^{\infin} \frac{a(a-1)\dots(a-n+1)}{(n-1)!}x^{n}\)</span></p>
+<p>那么通分之后<span class="arithmatex">\(xs'(x)+s'(x)=\sum_{n=1}^{\infin} \frac{a^2(a-1)\dots(a-n+1)}{n!}x^{n}=as(x)\)</span></p>
+<p>解这个微分方程得<span class="arithmatex">\(s(x)=(1+x)^a (-1&lt;x&lt;1)\)</span></p>
+<blockquote>
+<p>例: 求<span class="arithmatex">\(\sum_{n=2}^\infin \frac{x^n}{n(n+1)}\)</span>
+利用和函数可以求一些数项级数的和。比如<span class="arithmatex">\(\sum \frac{n(n+1)}{2^n}\)</span>就可以看成<span class="arithmatex">\(s(\frac{1}{2}),s(x)=\sum n(n+1)x^n\)</span></p>
+</blockquote>
+<p>适当的拆分:
+<span class="arithmatex">\(n^2-n+1\)</span>拆成<span class="arithmatex">\(n(n-1)\)</span>(构造二阶导数)+1</p>
+<h2 id="taylor">Taylor级数</h2>
+<p>之前我们只知道展开到第n阶的情况。现在我们想知道<span class="arithmatex">\(x\)</span>满足什么条件时可以无限展开下去。</p>
+<h3 id="_23">函数展开成幂级数</h3>
+<h4 id="_24">定义法</h4>
+<ol>
+<li>先求<span class="arithmatex">\(f^{(n)}(x_0)\)</span>,并写出级数表达式</li>
+<li>确定收敛区间<span class="arithmatex">\(|x-x_0|&lt;R\)</span></li>
+<li>证明<span class="arithmatex">\(|x-x_0|&lt;R\)</span>内<span class="arithmatex">\(\lim_{n \to \infin}R_n(x)=0\)</span></li>
+</ol>
+<blockquote>
+<p>例：<span class="arithmatex">\(f(x)=e^x\)</span>展开为<span class="arithmatex">\(x\)</span>的幂级数</p>
+</blockquote>
+<p><span class="arithmatex">\(R=\lim_{n \to \infin}\frac{n!}{(n+1)!}=+\infin\)</span></p>
+<p>拉格朗日余项<span class="arithmatex">\(R_n(x)=\frac{e^{\xi}x^{n+1}}{n!}(|\xi|&lt;|x|)\)</span></p>
+<p><span class="arithmatex">\(\forall x\in(-\infin,+\infin)\)</span>, 则<span class="arithmatex">\(\lim_{n \to \infin}|R_n(x)| \leq \lim_{n \to \infin}|\frac{e^{|x|}|x|^{n+1}}{(n+1)!}|=e^{|x|}\cdot \lim_{n \to \infin}|\frac{|x|^{n+1}}{(n+1)!}|\)</span>. 又因为级数绝对收敛,根据收敛的必要条件，右边的极限一定为0.</p>
+<p>由此可见，通过定义证是很难的。因为要证明余项极限为0</p>
+<h3 id="_25">利用幂级数的运算</h3>
+<p>跟求和函数一样</p>
+<ul>
+<li>线性运算</li>
+<li>换元,注意是展开成<span class="arithmatex">\(x-x_0\)</span>的幂级数还是其他式子</li>
+<li>求导、积分.比如求<span class="arithmatex">\(\ln(1-x),\ln(1+x),\arctan x,\arcsin x\)</span>.</li>
+</ul>
+<blockquote>
+<p>例: <span class="arithmatex">\(f(x)=\frac{x}{x^2-x-3}\)</span> 展开为<span class="arithmatex">\(x\)</span>的幂级数</p>
+</blockquote>
+<p><span class="arithmatex">\(f(x)=\frac{1}{3} (\frac{1}{x+1}+\frac{2}{x-2})\)</span></p>
+<p><span class="arithmatex">\(\frac{2}{x-2}=-\frac{1}{1-\frac{x}{2}}=-\sum_{n=0}^{\infin}(\frac{x}{2})^n(-2&lt;x&lt;2)\)</span></p>
+<p>所以<span class="arithmatex">\(f(x)=\frac{1}{3}\sum ((-1)^n-\frac{1}{2^n})x^n\)</span></p>
+<blockquote>
+<p>例<span class="arithmatex">\(f(x)=x \arctan x-\ln \sqrt{1+x^2}=x\arctan x-\frac{1}{2}\ln(1+x^2)\)</span>.</p>
+</blockquote>
+<p>法一:利用初等函数的泰勒展开</p>
+<p>法二:注意到这是<span class="arithmatex">\(\arctan x\)</span>的积分
+<img alt="5bc8f637a9e26622929a4e4bd4c4a775.png" src="..\..\..\assets/images/5bc8f637a9e26622929a4e4bd4c4a775.png"/></p>
+<h3 id="taylor_1">要记住的Taylor级数</h3>
+<div class="arithmatex">\[\boxed{\frac{1}{\sqrt{1-x}}=1+\sum_{n=1}^{\infin} \frac{(2n-1)!!}{(2n)!!}x^n} [-1,1)
+$$
+$$\boxed{\frac{1}{\sqrt{1+x}}=1+\sum_{n=1}^{\infin} \frac{(-1)^n(2n-1)!!}{(2n)!!}x^n,\color{red}{-1&lt;x\leq 1}}
+$$
+$$\arctan x=\sum_{n=0}^{\infin}\frac{(-1)^n}{2n+1}x^{2n+1},\color{red}{-1\leq x \leq 1}
+\]</div>
+<div class="arithmatex">\[\ln(1+x)=\sum_{n=1}^\infin \frac{(-1)^{n-1}}{n}x^n ,\color{red}{x \in (-1,1]}
+\]</div>
+<div class="arithmatex">\[(1+x)^a=\sum_{n=0}^\infin \frac{a(a-1)\dots(a-n+1)}{n!}x^n, x  \in \begin{cases} (-1,1),a \leq -1\\ (-1,1],-1&lt;a&lt;0 \\ [-1,1],a&gt;0 \end{cases}
+\]</div>
+<h2 id="fourier">Fourier级数</h2>
+<p>感觉本质利用了线代里正交基的一些性质。假设我们要把<span class="arithmatex">\(\alpha\)</span>分解成<span class="arithmatex">\(k_1\alpha_1+k_2\alpha_2+\dots k_n\alpha_n\)</span>.其中<span class="arithmatex">\(\alpha_1\dots \alpha_n\)</span>是一组基,那么求<span class="arithmatex">\(k_1\dots k_n\)</span>需要解一个线性方程组，很复杂。
+但如果是一组正交基，两边内积<span class="arithmatex">\(\alpha_i\)</span>则<span class="arithmatex">\((\alpha,\alpha_i)=k_i(\alpha_i,\alpha_i)\)</span>. 求系数就很快了</p>
+<p>那么对于内积<span class="arithmatex">\((f(x),g(x))=\int_{-l}^l f(x)g(x)dx\)</span>. <span class="arithmatex">\(1,\cos \frac{\pi x}{l},\cos \frac{2\pi x}{l}\dots \cos \frac{n\pi x}{l},\sin \frac{\pi x}{l}\,\dots \sin\frac{n\pi x}{l}\)</span>.是一组正交基。代入上式结合内积定义就得到傅里叶级数的表达式</p>
+<h3 id="_26">傅里叶级数的定义</h3>
+<p>三角函数的函数项级数</p>
+<p><span class="arithmatex">\(f(x)\)</span>是周期函数,<span class="arithmatex">\(T=2l\)</span></p>
+<div class="arithmatex">\[S(x)=\frac{a_0}{2}+\sum_{n=0}^{\infin}(a_n\cos \frac{n\pi x}{l}+b_n\sin \frac{n\pi x}{l})
+\]</div>
+<p>称为<span class="arithmatex">\(f(x)\)</span>的傅里叶级数</p>
+<p>其中
+$$a_0=\frac{1}{l}\int_{-l}^l f(x)dx
+$$
+$$\boxed{a_n=\frac{1}{l}\int_{-l}^l f(x)\cos \frac{n\pi x}{l}dx, \ \ \ b_n=\frac{1}{l}\int_{-l}^l f(x)\sin \frac{n\pi x}{l}dx}
+$$</p>
+<blockquote>
+<p>推论1: 当<span class="arithmatex">\(f(x)\)</span>为奇函数的时候,<span class="arithmatex">\(a_n=0\)</span>. <span class="arithmatex">\(f(x)\)</span>为偶函数的时候,<span class="arithmatex">\(b_n=0\)</span></p>
+<p>Dirichlet定理: 若<span class="arithmatex">\(f(x)\)</span>在<span class="arithmatex">\([-l,l]\)</span>连续或只有有限个第一类间断点，并且至多只有有限个极值点，则<span class="arithmatex">\(f(x)\)</span>的傅里叶级数收敛</p>
+<p>$$S(x)=\frac{f(x-0)+f(x+0)}{2}
+$$
+其中<span class="arithmatex">\(f(x-0),f(x+0)\)</span>表示在<span class="arithmatex">\(x\)</span>点处的左右极限
+当<span class="arithmatex">\(x=\pm l\)</span>时,<span class="arithmatex">\(S(x)=\frac{f(-l+0)+f(l-0)}{2}\)</span> (由周期<span class="arithmatex">\(2l\)</span>显然)</p>
+</blockquote>
+<p>因此，写出级数后，还要讨论<span class="arithmatex">\(f(x)\)</span>的连续性,<strong>计算间断点处的极限，不能直接写等于</strong><span class="arithmatex">\(f(x)\)</span>
+$$\frac{a_0}{2}+\sum_{n=0}^{\infin}(a_n\cos \frac{n\pi x}{l}+b_n\sin \frac{n\pi x}{l})=\begin{cases} f(x), x \text{属于连续区间}\ \frac{f(x-0)+f(x+0)}{2},x是间断点点\end{cases}
+$$</p>
+<p><strong>易错的计算细节和技巧</strong></p>
+<ul>
+<li>记得除以<span class="arithmatex">\(l\)</span></li>
+<li>sin\cos的端点值。 <span class="arithmatex">\(\cos n\pi=(-1)^n\)</span></li>
+<li>sin\cos的分部积分注意正负号，<span class="arithmatex">\(-1\)</span>的</li>
+<li>常见积分结果<ul>
+<li><span class="arithmatex">\(\boxed{\int_0^{\pi}x\cos nx dx=\frac{(-1)^n-1}{n^2}}\)</span></li>
+<li><span class="arithmatex">\(\boxed{\int_0^{\pi}x^2\cos nx dx=\frac{2\pi(-1)^n}{n^2}}\)</span></li>
+<li><span class="arithmatex">\(\boxed{\int_0^{\pi}x\sin nx dx=\frac{(-1)^{n+1}\pi}{n}}\)</span></li>
+<li><span class="arithmatex">\(\boxed{\int_0^{\pi}x^2\sin nx dx=\frac{(-1)^{n+1}}{n}+\frac{2(1-(-1)^n)}{n^3}}\)</span></li>
+<li>跟<span class="arithmatex">\(e^x\)</span>有关的直接待定系数</li>
+</ul>
+</li>
+</ul>
+<p><strong>一般周期函数在[a,b]的傅里叶展开</strong></p>
+<p>令<span class="arithmatex">\(l=\frac{b-a}{2}\)</span>,积分区间换成<span class="arithmatex">\([a,b]\)</span></p>
+<blockquote>
+<p>例: <span class="arithmatex">\(f(x)=x-[x]\)</span>
+<img alt="38549ca36eb85c2b69b9325f18364989.png" src="..\..\..\assets/images/38549ca36eb85c2b69b9325f18364989.png"/></p>
+</blockquote>
+<p><strong>非周期函数在[0,l]的傅里叶展开</strong></p>
+<p>我们可以先把定义域延拓到<span class="arithmatex">\([-l,0]\)</span>, 令函数周期为<span class="arithmatex">\(2l\)</span>, 然后在 <span class="arithmatex">\([-l,l]\)</span> 上展开。根据推论1：</p>
+<h2 id="-f-x-fx0xl-a_n0">- 令<span class="arithmatex">\(f(-x)=-f(x)(0&lt;x&lt;l)\)</span> 奇延拓(得到<strong>正弦级数</strong>) <span class="arithmatex">\(a_n=0\)</span>,</h2>
+<div class="arithmatex">\[\boxed{b_n=\frac{2}{l}\int_{0}^lf(x)\sin \frac{n\pi x}{l}}
+$$
+-  (乘2是因为积分符号内是偶函数)
+- 令$f(-x)=f(x)(0&lt;x&lt;l)$偶延拓(得到**余弦级数**) 
+$$\boxed{a_n=\frac{2}{l}\int_{0}^lf(x)\cos \frac{n\pi x}{l},b_n=0}
+\]</div>
+<h3 id="_27">傅里叶级数的应用</h3>
+<blockquote>
+<p>帕塞瓦尔等式: 若<span class="arithmatex">\(f(x)\)</span>在 <span class="arithmatex">\([-l,l]\)</span>上连续</p>
+<div class="arithmatex">\[\frac{1}{l}\int_{-l}^l f^2(x)dx=\frac{a_0^2}{2}+\sum_{n=1}^\infin(a_n^2+b_n^2)
+\]</div>
+</blockquote>
+<p>求一些级数的和（幂级数无法做到)</p>
+<p><img alt="070e534f87fe6aa6a500633f08f95101.png" src="..\..\..\assets/images/070e534f87fe6aa6a500633f08f95101.png"/></p>
+<h3 id="_28">傅里叶级数的复数形式</h3>
+<h2 id="__comments">Comments</h2>
+<!-- Insert generated snippet here -->
+<script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
+</script>
+<!-- Synchronize Giscus theme with palette -->
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+      var theme = palette.color.scheme === "slate" ? "dark" : "light"
+      giscus.setAttribute("data-theme", theme) 
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function() {
+      var ref = document.querySelector("[data-md-component=palette]")
+      ref.addEventListener("change", function() {
+        var palette = __md_get("__palette")
+        if (palette && typeof palette.color === "object") {
+          var theme = palette.color.scheme === "slate" ? "dark" : "light"
+
+          /* Instruct Giscus to change theme */
+          var frame = document.querySelector(".giscus-frame")
+          frame.contentWindow.postMessage(
+            { giscus: { setConfig: { theme } } },
+            "https://giscus.app"
+          )
+        }
+      })
+    })
+  </script>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</body>
+</html>

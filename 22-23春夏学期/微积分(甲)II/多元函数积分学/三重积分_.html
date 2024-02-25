@@ -5,24 +5,24 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="4.Number%20Theory_.html" rel="prev"/>
-<link href="6.Counting.html" rel="next"/>
-<link href="../../assets/images/favicon.png" rel="icon"/>
+<link href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html" rel="prev"/>
+<link href="%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html" rel="next"/>
+<link href="../../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.5.3, mkdocs-material-9.5.4" name="generator"/>
-<title>5.Mathematical Induction - 时雨的笔记本</title>
-<link href="../../assets/stylesheets/main.50c56a3b.min.css" rel="stylesheet"/>
-<link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<title>三重积分 - 时雨的笔记本</title>
+<link href="../../../assets/stylesheets/main.50c56a3b.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </head>
 <body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#weak-induction">
+<a class="md-skip" href="#_1">
           Skip to content
         </a>
 </div>
@@ -30,7 +30,7 @@
 </div>
 <header class="md-header md-header--shadow" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="时雨的笔记本" class="md-header__button md-logo" data-md-component="logo" href="../../index.html" title="时雨的笔记本">
+<a aria-label="时雨的笔记本" class="md-header__button md-logo" data-md-component="logo" href="../../../index.html" title="时雨的笔记本">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -46,7 +46,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              5.Mathematical Induction
+              三重积分 
             
           </span>
 </div>
@@ -92,14 +92,14 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="时雨的笔记本" class="md-nav__button md-logo" data-md-component="logo" href="../../index.html" title="时雨的笔记本">
+<a aria-label="时雨的笔记本" class="md-nav__button md-logo" data-md-component="logo" href="../../../index.html" title="时雨的笔记本">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
     时雨的笔记本
   </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../index.html">
+<a class="md-nav__link" href="../../../index.html">
 <span class="md-ellipsis">
     时雨的课程笔记
   </span>
@@ -119,15 +119,15 @@
             22 23春夏学期
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
 <span class="md-ellipsis">
     微积分(甲)II
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_2_1_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_1">
 <span class="md-nav__icon md-icon"></span>
             微积分(甲)II
@@ -148,28 +148,28 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html">
 <span class="md-ellipsis">
     习题(证明题、变量代换)
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%28%E4%BA%8C%29.html">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%28%E4%BA%8C%29.html">
 <span class="md-ellipsis">
     多元函数微分学(二)
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">
 <span class="md-ellipsis">
     多元函数微分学
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html">
+<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html">
 <span class="md-ellipsis">
     空间解析几何
   </span>
@@ -178,64 +178,143 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_1_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_1_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
 <span class="md-ellipsis">
     多元函数积分学
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_1_2_label" class="md-nav" data-md-level="3">
+<nav aria-expanded="true" aria-labelledby="__nav_2_1_2_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_2_1_2">
 <span class="md-nav__icon md-icon"></span>
             多元函数积分学
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86_.html">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    三重积分 
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86_.html">
 <span class="md-ellipsis">
     三重积分 
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      基本方法
+    </span>
+</a>
+<nav aria-label="基本方法" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      投影法
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      平面截割法
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      换元
+    </span>
+</a>
+<nav aria-label="换元" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      柱坐标
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      球面坐标
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      对称性的应用
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      物理应用
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
     二重积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E5%9C%BA%E8%AE%BA_.html">
+<a class="md-nav__link" href="%E5%9C%BA%E8%AE%BA_.html">
 <span class="md-ellipsis">
     场论 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html">
+<a class="md-nav__link" href="%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html">
 <span class="md-ellipsis">
     曲面积分难题
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
     第一类曲线曲面积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
     第二类曲线积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
     第二类曲面积分
   </span>
@@ -259,14 +338,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html">
+<a class="md-nav__link" href="../%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html">
 <span class="md-ellipsis">
     级数 习题
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0.html">
+<a class="md-nav__link" href="../%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0.html">
 <span class="md-ellipsis">
     级数
   </span>
@@ -278,10 +357,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="index.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/index.html">
 <span class="md-ellipsis">
     离散数学及其应用
   </span>
@@ -290,145 +369,91 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_2">
 <span class="md-nav__icon md-icon"></span>
             离散数学及其应用
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="1.Propositional%20Logic.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/1.Propositional%20Logic.html">
 <span class="md-ellipsis">
     1.Propositional Logic
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="10.Graph_.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/10.Graph_.html">
 <span class="md-ellipsis">
     10.Graph 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="11.Tree.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/11.Tree.html">
 <span class="md-ellipsis">
     11.Tree
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="2.Basic%20Structures.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/2.Basic%20Structures.html">
 <span class="md-ellipsis">
     2.Basic Structures
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="3.Algorithms.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/3.Algorithms.html">
 <span class="md-ellipsis">
     3.Algorithms
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="4.Number%20Theory_.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/4.Number%20Theory_.html">
 <span class="md-ellipsis">
     4.Number Theory 
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    5.Mathematical Induction
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="5.Mathematical%20Induction.html">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/5.Mathematical%20Induction.html">
 <span class="md-ellipsis">
     5.Mathematical Induction
   </span>
 </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#weak-induction">
-<span class="md-ellipsis">
-      Weak Induction
-    </span>
-</a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#strong-induction">
-<span class="md-ellipsis">
-      Strong Induction
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#well-ordering-property">
-<span class="md-ellipsis">
-      Well-Ordering Property
-    </span>
-</a>
-<nav aria-label="Well-Ordering Property" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#proof-by-well-ordering-property">
-<span class="md-ellipsis">
-      Proof by well-ordering property
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#structural-induction">
-<span class="md-ellipsis">
-      Structural Induction
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="6.Counting.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/6.Counting.html">
 <span class="md-ellipsis">
     6.Counting
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="8.%20Advanced%20Counting%20Techniques.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/8.%20Advanced%20Counting%20Techniques.html">
 <span class="md-ellipsis">
     8. Advanced Counting Techniques
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="9.Relation_.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/9.Relation_.html">
 <span class="md-ellipsis">
     9.Relation 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="ZJU%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8%202023%E6%98%A5%E5%A4%8F%E5%9B%9E%E5%BF%86%E9%A2%98.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/ZJU%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8%202023%E6%98%A5%E5%A4%8F%E5%9B%9E%E5%BF%86%E9%A2%98.html">
 <span class="md-ellipsis">
     ZJU离散数学及其应用 2023春夏回忆题
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E4%B8%8E%E5%8E%86%E5%B9%B4%E5%8D%B7%E9%A2%98%E7%9B%AE.html">
+<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E4%B8%8E%E5%8E%86%E5%B9%B4%E5%8D%B7%E9%A2%98%E7%9B%AE.html">
 <span class="md-ellipsis">
     离散数学期末复习与历年卷题目
   </span>
@@ -440,7 +465,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/index.html">
+<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/index.html">
 <span class="md-ellipsis">
     计算机系统概论
   </span>
@@ -470,21 +495,21 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%201-3.html">
+<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%201-3.html">
 <span class="md-ellipsis">
     ICS Chapter 1 3
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%204%20and%20Chapter%205_.html">
+<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%204%20and%20Chapter%205_.html">
 <span class="md-ellipsis">
     ICS Chapter 4 and Chapter 5 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BAICS%20Chapter%206%20and%20after.html">
+<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BAICS%20Chapter%206%20and%20after.html">
 <span class="md-ellipsis">
     计算机系统概论ICS Chapter 6 and after
   </span>
@@ -516,7 +541,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%9B%BE%E5%83%8F%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/index.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%9B%BE%E5%83%8F%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/index.html">
 <span class="md-ellipsis">
     图像信息处理
   </span>
@@ -534,7 +559,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/index.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/index.html">
 <span class="md-ellipsis">
     大学物理(乙)II
   </span>
@@ -550,28 +575,28 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E5%85%89%E5%AD%A6.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E5%85%89%E5%AD%A6.html">
 <span class="md-ellipsis">
     光学
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E7%A3%81%E5%9C%BA.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E7%A3%81%E5%9C%BA.html">
 <span class="md-ellipsis">
     磁场
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E9%87%8F%E5%AD%90_.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E9%87%8F%E5%AD%90_.html">
 <span class="md-ellipsis">
     量子 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E9%9D%99%E7%94%B5%E5%9C%BA2_.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E9%9D%99%E7%94%B5%E5%9C%BA2_.html">
 <span class="md-ellipsis">
     静电场2 
   </span>
@@ -583,7 +608,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C/index.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C/index.html">
 <span class="md-ellipsis">
     大学物理实验
   </span>
@@ -601,7 +626,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/index.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/index.html">
 <span class="md-ellipsis">
     宏观经济学(甲)
   </span>
@@ -617,56 +642,56 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/1.%20GDP_.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/1.%20GDP_.html">
 <span class="md-ellipsis">
     1. GDP 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/2.%20%E7%AE%80%E5%8D%95%E5%9B%BD%E6%B0%91%E6%94%B6%E5%85%A5%E5%86%B3%E5%AE%9A.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/2.%20%E7%AE%80%E5%8D%95%E5%9B%BD%E6%B0%91%E6%94%B6%E5%85%A5%E5%86%B3%E5%AE%9A.html">
 <span class="md-ellipsis">
     2. 简单国民收入决定
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/3.%20IS-LM%E6%9B%B2%E7%BA%BF_.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/3.%20IS-LM%E6%9B%B2%E7%BA%BF_.html">
 <span class="md-ellipsis">
     IS-LM曲线
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/4.%20AD-AS_.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/4.%20AD-AS_.html">
 <span class="md-ellipsis">
     4. AD AS 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/5.%20%E5%A4%B1%E4%B8%9A%E3%80%81%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80%E3%80%81%E7%BB%8F%E6%B5%8E%E5%91%A8%E6%9C%9F_.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/5.%20%E5%A4%B1%E4%B8%9A%E3%80%81%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80%E3%80%81%E7%BB%8F%E6%B5%8E%E5%91%A8%E6%9C%9F_.html">
 <span class="md-ellipsis">
     5. 失业、通货膨胀、经济周期 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96_.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96_.html">
 <span class="md-ellipsis">
     宏观经济政策 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/%E5%BC%80%E6%94%BE%E6%9D%A1%E4%BB%B6%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E_.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/%E5%BC%80%E6%94%BE%E6%9D%A1%E4%BB%B6%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E_.html">
 <span class="md-ellipsis">
     开放条件宏观经济 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%95%BF%E7%90%86%E8%AE%BA.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%95%BF%E7%90%86%E8%AE%BA.html">
 <span class="md-ellipsis">
     经济增长理论
   </span>
@@ -678,7 +703,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/index.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/index.html">
 <span class="md-ellipsis">
     数字逻辑设计
   </span>
@@ -696,7 +721,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/index.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/index.html">
 <span class="md-ellipsis">
     数据结构基础
   </span>
@@ -712,7 +737,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/FDS%E5%A4%8D%E4%B9%A0.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/FDS%E5%A4%8D%E4%B9%A0.html">
 <span class="md-ellipsis">
     FDS复习
   </span>
@@ -724,7 +749,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3_7" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/index.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/index.html">
 <span class="md-ellipsis">
     概率论与数理统计
   </span>
@@ -740,7 +765,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E6%A6%82%E7%BB%9F%E6%80%BB%E7%BB%93.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E6%A6%82%E7%BB%9F%E6%80%BB%E7%BB%93.html">
 <span class="md-ellipsis">
     概统总结
   </span>
@@ -752,7 +777,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3_8" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/index.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/index.html">
 <span class="md-ellipsis">
     面向对象程序设计
   </span>
@@ -768,49 +793,49 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Class_.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Class_.html">
 <span class="md-ellipsis">
     Class 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Exception.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Exception.html">
 <span class="md-ellipsis">
     Exception
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Inheritance_.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Inheritance_.html">
 <span class="md-ellipsis">
     Inheritance 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Overloaded%20operator_.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Overloaded%20operator_.html">
 <span class="md-ellipsis">
     Overloaded operator 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Polymorphism.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Polymorphism.html">
 <span class="md-ellipsis">
     Polymorphism
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Template.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Template.html">
 <span class="md-ellipsis">
     Template
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%B7%9FOOP%E6%97%A0%E5%85%B3%E7%9A%84C%2B%2B%E7%89%B9%E6%80%A7.html">
+<a class="md-nav__link" href="../../../23-24%E7%A7%8B%E5%86%AC%E5%AD%A6%E6%9C%9F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%B7%9FOOP%E6%97%A0%E5%85%B3%E7%9A%84C%2B%2B%E7%89%B9%E6%80%A7.html">
 <span class="md-ellipsis">
     跟OOP无关的C++特性
   </span>
@@ -837,31 +862,24 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#weak-induction">
+<a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-      Weak Induction
+      基本方法
     </span>
 </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#strong-induction">
-<span class="md-ellipsis">
-      Strong Induction
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#well-ordering-property">
-<span class="md-ellipsis">
-      Well-Ordering Property
-    </span>
-</a>
-<nav aria-label="Well-Ordering Property" class="md-nav">
+<nav aria-label="基本方法" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#proof-by-well-ordering-property">
+<a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      Proof by well-ordering property
+      投影法
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      平面截割法
     </span>
 </a>
 </li>
@@ -869,9 +887,41 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#structural-induction">
+<a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
-      Structural Induction
+      换元
+    </span>
+</a>
+<nav aria-label="换元" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      柱坐标
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_6">
+<span class="md-ellipsis">
+      球面坐标
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+<span class="md-ellipsis">
+      对称性的应用
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      物理应用
     </span>
 </a>
 </li>
@@ -882,42 +932,93 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>5.Mathematical Induction</h1>
-<h3 id="weak-induction">Weak Induction</h3>
-<p>Prove <span class="arithmatex">\(\forall n P(n)\)</span>
-Basis step:<span class="arithmatex">\(P(1)\)</span>is true
-Inductive step: <span class="arithmatex">\(\forall k (P(k)\to P(k+1))\)</span>
-<span class="arithmatex">\(\forall n P(n)\)</span></p>
-<p>use prepositional logic in Sec 1.6</p>
-<div class="arithmatex">\[(P(1)\wedge \forall k (P(k)\to P(k+1)))\to \forall n P(n)
+<h1>三重积分 </h1>
+<div class="toc">
+<ul>
+<li><a href="#_1">基本方法</a><ul>
+<li><a href="#_2">投影法</a></li>
+<li><a href="#_3">平面截割法</a></li>
+</ul>
+</li>
+<li><a href="#_4">换元</a><ul>
+<li><a href="#_5">柱坐标</a></li>
+<li><a href="#_6">球面坐标</a></li>
+</ul>
+</li>
+<li><a href="#_7">对称性的应用</a></li>
+<li><a href="#_8">物理应用</a></li>
+</ul>
+</div>
+<h2 id="_1">基本方法</h2>
+<h3 id="_2">投影法</h3>
+<p>外面是二重积分，里面是定积分
+$$</p>
+<p>$$</p>
+<h3 id="_3">平面截割法</h3>
+<p>外面是定积分，里面是二重积分</p>
+<p>如</p>
+<ul>
+<li>积分函数只是与一个变量有关，或利用对称性拆</li>
+<li>截面积好计算，如<span class="arithmatex">\(S=\pi ab\)</span>. 椭球. 这样就可以转换成密度(常量)乘截面积</li>
+</ul>
+<blockquote>
+<p>例：<span class="arithmatex">\(\iiint_{V}(x^2+y^2+z^2)dV,V:\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2} \leq 1\)</span></p>
+</blockquote>
+<div class="arithmatex">\[
+\iiint_{V}z^2dV=\int_{-c}^cdz\iint_{S} z^2 dS, S:x^2/a^2+y^2/b^2 \leq (1-\frac{z^2}{c^2})
 \]</div>
+<p>椭圆面积<span class="arithmatex">\(\pi ab(1-\frac{z^2}{c^2})\)</span>,所以原式=</p>
+<p><span class="arithmatex">\(\pi ab\int_{-c}^c z^2(1-\frac{z^2}{c^2})dz=\frac{4}{15}\pi abcc^2\)</span></p>
+<p>同理对<span class="arithmatex">\(x^2,y^2\)</span>积分,最终答案是<span class="arithmatex">\(\frac{4}{15}\pi abc(a^2+b^2+c^2)\)</span></p>
+<h2 id="_4">换元</h2>
+<p>三阶Jacobi行列式</p>
+<h3 id="_5">柱坐标</h3>
+<p><span class="arithmatex">\(J=r\)</span></p>
+<p>注意</p>
+<ul>
+<li><span class="arithmatex">\(x^2+y^2=r^2\)</span>代换</li>
+</ul>
+<h3 id="_6">球面坐标</h3>
+<p><span class="arithmatex">\(J=r^2\sin \varphi\)</span></p>
+<p><span class="arithmatex">\(x=r\sin \varphi\cos \theta,y=r\sin \varphi\sin \theta,z=r\cos \varphi\)</span></p>
+<p>适用情况(对应球面坐标系中的坐标曲面:</p>
+<ul>
+<li>球面 <span class="arithmatex">\(r\)</span>好确定</li>
+<li>锥面 <span class="arithmatex">\(\varphi\)</span>好确定   </li>
+</ul>
 <blockquote>
-<p><img alt="9aac2d7d6a7256ae82cd8f52dda68bca.png" src="..\..\assets/images/9aac2d7d6a7256ae82cd8f52dda68bca.png"/>
-<img alt="9dcdf2bc506184de00299c44ddee124a.png" src="..\..\assets/images/9dcdf2bc506184de00299c44ddee124a.png"/>
-空格出现在1个正方形中
-在另外3个中间放一个L形的，就剩下3个有空格的</p>
+<p>例：计算曲面围成体积 <span class="arithmatex">\(x^2+y^2+z^2=a^2,x^2+y^2+z^2=b^2,x^2+y^2=z^2(z \geq 0,0&lt;a&lt;b)\)</span></p>
 </blockquote>
-<h3 id="strong-induction">Strong Induction</h3>
-<p>Basis step :<span class="arithmatex">\(P(1)\)</span>is true
-Inductive step: <span class="arithmatex">\(\forall k ((P(1)\wedge P(2)\wedge \dots P(k))\to P(k+1))\)</span></p>
+<p><span class="arithmatex">\(0 \leq \varphi \leq \frac{\pi}{4},a \leq r \leq b\)</span>
+$$
+V=\int_0^{2\pi}d\theta\int_0^{\frac{\pi}{4}}d\varphi \int_a^b\rho^2\sin \varphi d \rho\=\frac{\pi}{3}(2-\sqrt{2})(b^2-a^2)
+$$
+对于<span class="arithmatex">\(z=a,z=b,x^2+y^2=z^2\)</span>围成区域，也可这样处理。但范围变成<span class="arithmatex">\(\frac{a}{\cos \varphi}\leq r \leq \frac{b}{\cos \varphi}\)</span></p>
 <blockquote>
-<p>The Frobenius Coin Problem(postage stamp problem)</p>
-<p>Given <span class="arithmatex">\(a,b \in N^+\)</span>, find minimum <span class="arithmatex">\(k\)</span> such that <span class="arithmatex">\(\forall n&gt;k(n \in N),n=xa+yb(x,y\in N)\)</span></p>
-<p>if <span class="arithmatex">\(\gcd(a,b)=1\)</span>, then <span class="arithmatex">\(k=ab-a-b\)</span> </p>
-<p>也就是说从<span class="arithmatex">\(\boxed{ab-a-b+1}\)</span>开始</p>
-<p>(更一般的情况可以推广到n个整数，但3个整数时没有封闭形式的解，n个整数的情况是NP-hard的)
-etc. a=4,b=11</p>
+<p>例: 习题9-5 11</p>
+<p>例：第九章补充题 7(2)</p>
+<p><span class="arithmatex">\(x^2+y^2+(z-1)^2 \leq 1\)</span>被<span class="arithmatex">\(y=0,z=1\)</span>截的部分</p>
+<p><span class="arithmatex">\(0 \leq \theta\leq 2\pi, 0 \leq \varphi \leq \frac{\pi}{4}, \frac{1}{\cos \varphi} \leq \rho \leq 2\cos\varphi\)</span></p>
 </blockquote>
-<p>我们首先证明<span class="arithmatex">\(n \geq 4\times11-4-11+1=30\)</span>都可以表示</p>
-<p>法一(Weak induction): <span class="arithmatex">\(P(30)\)</span> is true. Suppose that <span class="arithmatex">\(P(k)\)</span> is true, <span class="arithmatex">\(k=4p+11q\)</span>. because <span class="arithmatex">\(k \geq 30\)</span>, then <span class="arithmatex">\(p \geq 8\)</span> or <span class="arithmatex">\(q \geq 1\)</span>. <span class="arithmatex">\(k+1=4(p+3)+11(q-)\)</span></p>
-<p>法二(Strong induction): 容易证明<span class="arithmatex">\(P(30),P(31),P(32),P(33)\)</span>. Suppose that <span class="arithmatex">\(P(j)\)</span> is true for <span class="arithmatex">\(30\leq j\leq k\)</span>, where <span class="arithmatex">\(k \geq 33\)</span> then <span class="arithmatex">\(k+1-4\geq 30\)</span>. <span class="arithmatex">\(P(k+1)\)</span> is true.</p>
-<h3 id="well-ordering-property">Well-Ordering Property</h3>
-<h4 id="proof-by-well-ordering-property">Proof by well-ordering property</h4>
-<blockquote>
-<p>Premise:<span class="arithmatex">\(P(1)\)</span>, <span class="arithmatex">\(P(n)\to P(n+1)\)</span>. Conclusion <span class="arithmatex">\(P(n)\)</span> is true for all <span class="arithmatex">\(n \in A\)</span>, <span class="arithmatex">\(A\)</span> is a well-ordered set</p>
-</blockquote>
-<p>Assume <span class="arithmatex">\(\existssss x \neg B(x)\)</span>. <span class="arithmatex">\(S=\{x|\neg B(x)\}\)</span> is nonempty. Then by well-ordering property <span class="arithmatex">\(S\)</span> has a minimum element <span class="arithmatex">\(m\)</span>. because <span class="arithmatex">\(P(1)\)</span> is true, <span class="arithmatex">\(m &gt; 1\)</span>. so <span class="arithmatex">\(P(m-1)\)</span> is true, but <span class="arithmatex">\(P(n)\to P(n+1)\)</span> implies that <span class="arithmatex">\(P(m)\)</span> is true. There is a contradiction, so S must be empty.</p>
-<h3 id="structural-induction">Structural Induction</h3>
+<h2 id="_7">对称性的应用</h2>
+<ul>
+<li>关于x,y,z平面的对称性</li>
+<li>轮换对称性
+<img alt="8c89bb7fe5edf18f5d55988b862f22f7.png" src="..\..\..\assets/images/8c89bb7fe5edf18f5d55988b862f22f7.png"/>
+同理zx是关于x的奇函数，所以后面的都为零
+又根据<span class="arithmatex">\(x^2,y^2\)</span>轮换对称性,最后积分化为
+<span class="arithmatex">\(\iiint(2x^2+z^2)dxdydz\)</span></li>
+</ul>
+<h2 id="_8">物理应用</h2>
+<p>注意看清是对曲面还是立体</p>
+<p>引力
+$$
+\boxed{F_x=Gm\int \frac{\mu(P)(x-x_0)}{r^3}d\omega}
+$$
+ 转动惯量(Oz轴)
+$$
+I=\int \mu(P)(x^2+y^2)d\omega
+$$</p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
@@ -974,9 +1075,9 @@ etc. a=4,b=11</p>
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../assets/javascripts/bundle.7389ff0e.min.js"></script>
-<script src="../../javascripts/mathjax.js"></script>
+<script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+<script src="../../../javascripts/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
