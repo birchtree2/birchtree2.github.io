@@ -982,6 +982,27 @@
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/ADS/Lec4-Heaps.html">
+<span class="md-ellipsis">
+    Lec4 Heaps
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/ADS/Lec5_%20Binomial%20Heap.html">
+<span class="md-ellipsis">
+    Lec5  Binomial Heap
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/ADS/Lec6_%20Divide%20and%20Conquer.html">
+<span class="md-ellipsis">
+    Lec6  Divide and Conquer
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1221,43 +1242,43 @@
 <li>在二维正态前提下，X,Y不相关等价于X,Y不独立</li>
 </ul>
 <h2 id="_4">协方差</h2>
-<p>用定义求
-$$
+<p>用定义求</p>
+<p>$$
 Cov(X,Y)=E(XY)-E(X)E(Y)
 $$
 - 可反过来求<span class="arithmatex">\(E(XY)\)</span></p>
 <p>用相关系数<span class="arithmatex">\(Cov(X,Y)=\rho\sqrt{D(X)D(Y)}\)</span></p>
-<p>方差没有期望的线性性!: <span class="arithmatex">\(E(X\pm Y)=E(X)\pm E(Y)\)</span>
-$$
+<p>方差没有期望的线性性!: <span class="arithmatex">\(E(X\pm Y)=E(X)\pm E(Y)\)</span></p>
+<div class="arithmatex">\[
 \boxed{
 \begin{aligned}
-D(X+Y)=D(X)+D(Y)\color{cyan}+2Cov(X,Y)\
+D(X+Y)=D(X)+D(Y)\color{cyan}+2Cov(X,Y)\\
 D(X-Y)=D(X)+D(Y)\color{cyan}-2Cov(X,Y)
 \end{aligned}
 }
-$$
-处理括号中的和式:
-$$
+\]</div>
+<p>处理括号中的和式:</p>
+<div class="arithmatex">\[
 \boxed{Cov(X_1\pm X_2,Y)=Cov(X_1,Y)+Cov(X_2,Y)}
-$$
-结合<span class="arithmatex">\(Cov(X,X)=D(X)\)</span>.  如<span class="arithmatex">\(Cov(X+Y,X-Y)=D(X)-D(Y)\)</span></p>
-<p>一堆相加的，两两组合，两个独立的协方差为0消去，只剩下少数项
-$$
-Cov(\bar{X},\bar{Y})=\frac{1}{n^2}Cov(X_1+\dots X_n,Y_1+\dots Y_n)\
-=\frac{1}{n^2}(Cov(X_1,Y_1)+Cov(X_2,Y_2)+\dots)\
+\]</div>
+<p>结合<span class="arithmatex">\(Cov(X,X)=D(X)\)</span>.  如<span class="arithmatex">\(Cov(X+Y,X-Y)=D(X)-D(Y)\)</span></p>
+<p>一堆相加的，两两组合，两个独立的协方差为0消去，只剩下少数项</p>
+<div class="arithmatex">\[
+Cov(\bar{X},\bar{Y})=\frac{1}{n^2}Cov(X_1+\dots X_n,Y_1+\dots Y_n)\\
+=\frac{1}{n^2}(Cov(X_1,Y_1)+Cov(X_2,Y_2)+\dots)\\
 =\frac{1}{n^2}n\rho_{xy}\sqrt{\sigma_x\sigma_y}
-$$</p>
+\]</div>
 <p><span class="arithmatex">\(Cov(aX+b,cY+d)=acCov(X,Y)\)</span></p>
 <h2 id="_5">大数定律</h2>
 <h3 id="_6">中心极限定理</h3>
-<p>和的分布 近似于正态分布
-$$
+<p>和的分布 近似于正态分布</p>
+<div class="arithmatex">\[
 \begin{aligned}
-&amp;\sum_{i=1}^n X_i \sim N(n\mu,n\sigma^2)\
+&amp;\sum_{i=1}^n X_i \sim N(n\mu,n\sigma^2)\\
 &amp;\frac{1}{n}\sum_{i=1}^n X_i \sim N(\mu,\frac{\sigma^2}{n})
 \end{aligned}
-$$
-<span class="arithmatex">\(B(n,p)\sim N(np,np(1-p))\)</span></p>
+\]</div>
+<p><span class="arithmatex">\(B(n,p)\sim N(np,np(1-p))\)</span></p>
 <p>不管求和的是什么,转化为求<span class="arithmatex">\(f(X_i)\)</span>的期望和方差。 注意<span class="arithmatex">\(E(f(X))\neq f(E(X))\)</span>. 要<strong>乘上密度函数积分</strong></p>
 <h2 id="_7">参数估计</h2>
 <p><span class="arithmatex">\(X\)</span>的概率分布 <span class="arithmatex">\(f_{\theta}(x)\)</span>    给出测量值<span class="arithmatex">\(X_1\dots X_n\)</span>,  求参数<span class="arithmatex">\(\theta\)</span>(比如<span class="arithmatex">\(U(a,b)\)</span>的a,b  <span class="arithmatex">\(\theta(\lambda)\)</span>的<span class="arithmatex">\(\lambda\)</span>等)  </p>
@@ -1291,25 +1312,25 @@ $$
 </ul>
 <h2 id="_11">统计量的分布</h2>
 <h3 id="_12">卡方分布</h3>
-<p><span class="arithmatex">\(X_i\sim N(0,1),\sum_{i=1}^n X_i^2 \sim \chi^2(n)\)</span>
-$$
+<p><span class="arithmatex">\(X_i\sim N(0,1),\sum_{i=1}^n X_i^2 \sim \chi^2(n)\)</span></p>
+<div class="arithmatex">\[
 \boxed{E(\chi^2(n))=n,D(\chi^2(n))=2n}
-$$</p>
+\]</div>
 <h3 id="_13">正态总体统计量的分布</h3>
-<p><span class="arithmatex">\(\bar{X}\sim N(\mu,\frac{\sigma^2}{n}),\boxed{\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}\sim N(0,1)}\)</span>
-$$
+<p><span class="arithmatex">\(\bar{X}\sim N(\mu,\frac{\sigma^2}{n}),\boxed{\frac{\bar{X}-\mu}{\sigma/\sqrt{n}}\sim N(0,1)}\)</span></p>
+<div class="arithmatex">\[
 \boxed{\frac{(n-1)S^2}{\sigma^2}=\sum_{i=1}^n (\frac{X_i-\color{cyan}\bar{X}}{\sigma})^2\sim \chi^2(n-1)}
-$$
-<span class="arithmatex">\(]\boxed{E(S^2)=\sigma^2,D(S^2)=\frac{2\sigma^4}{n}}\)</span></p>
-<p>注意区分<span class="arithmatex">\(\sum_{i=1}^n (\frac{X_i-\color{cyan}{\mu}}{\sigma})^2 \sim \chi^2(n)\)</span>
-$$
+\]</div>
+<p><span class="arithmatex">\(\boxed{E(S^2)=\sigma^2,D(S^2)=\frac{2\sigma^4}{n}}\)</span></p>
+<p>注意区分<span class="arithmatex">\(\sum_{i=1}^n (\frac{X_i-\color{cyan}{\mu}}{\sigma})^2 \sim \chi^2(n)\)</span></p>
+<div class="arithmatex">\[
 \boxed{\frac{\bar{X}-\mu}{S/\sqrt{n}}\sim t(n-1)}
-$$</p>
+\]</div>
 <p><span class="arithmatex">\(\boxed{\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}\sim F(n_1-1,n_2-1)}\)</span></p>
-<p>构造F还可以用定义
-$$
+<p>构造F还可以用定义</p>
+<div class="arithmatex">\[
 \frac{\chi^2(n_1)/n_1}{\chi^2(n_2)/n_2}\sim F(n_1,n_2). 
-$$</p>
+\]</div>
 <h2 id="_14">假设检验和区间估计</h2>
 <p>注意H0是反面,想得到支持的是H1</p>
 <p>区间乘过去</p>

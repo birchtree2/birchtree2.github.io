@@ -7,7 +7,7 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/ADS/Lec3-Information%20Retrieval.html" rel="canonical"/>
 <link href="Lec1-AVL%2CSplay.html" rel="prev"/>
-<link href="../DB/index.html" rel="next"/>
+<link href="Lec4-Heaps.html" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.5.3, mkdocs-material-9.5.4" name="generator"/>
 <title>Lec3 Information Retrieval - 时雨的笔记本</title>
@@ -907,6 +907,27 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Lec4-Heaps.html">
+<span class="md-ellipsis">
+    Lec4 Heaps
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Lec5_%20Binomial%20Heap.html">
+<span class="md-ellipsis">
+    Lec5  Binomial Heap
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Lec6_%20Divide%20and%20Conquer.html">
+<span class="md-ellipsis">
+    Lec6  Divide and Conquer
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1071,16 +1092,16 @@
 </ul>
 <h2 id="ranked-retrieval">Ranked retrieval</h2>
 <p>按照相关度排序</p>
-<p>term-document count matrix: <span class="arithmatex">\(tf_{t,d}\)</span>是词<span class="arithmatex">\(t\)</span>在文档<span class="arithmatex">\(d\)</span>出现的次数
-$$
+<p>term-document count matrix: <span class="arithmatex">\(tf_{t,d}\)</span>是词<span class="arithmatex">\(t\)</span>在文档<span class="arithmatex">\(d\)</span>出现的次数</p>
+<p>$$
 score=\sum_{t\in q\cap d}(1+\log tf_{t,d})
 $$
 <span class="arithmatex">\(q\)</span>是查询</p>
 <p>但是只有本文中的数据不够。考虑一个词在所有文章中出现的次数<span class="arithmatex">\(df_t\)</span> 。出现次数越少的(比如专有名词),信息量更大,权重应该更高</p>
-<p>（<em>感觉和信息熵的思想类似，频率越低，信息熵越大</em>）
-$$
+<p>（<em>感觉和信息熵的思想类似，频率越低，信息熵越大</em>）</p>
+<div class="arithmatex">\[
 idf_t=\log_{10}(N/df_t)
-$$</p>
+\]</div>
 <h2 id="performance-mesurement">Performance mesurement</h2>
 <p><img alt="image.png" src="https://s2.loli.net/2024/03/16/d8x2Hym1t4v9EMF.png"/></p>
 <p>Precision: 预测结果为正例的样本中实际为正样本的比例</p>
