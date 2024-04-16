@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/ADS/Lec5-Binomial%20Heap.html" rel="canonical"/>
-<link href="Lec4-Heaps.html" rel="prev"/>
-<link href="Lec6-Divide%20and%20Conquer.html" rel="next"/>
+<link href="https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/DB/SQL_.html" rel="canonical"/>
+<link href="Database%20design.html" rel="prev"/>
+<link href="../../%E5%B7%A5%E5%85%B7/index.html" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.5.3, mkdocs-material-9.5.4" name="generator"/>
-<title>Lec5 Binomial Heap - 时雨的笔记本</title>
+<title>SQL - 时雨的笔记本</title>
 <link href="../../assets/stylesheets/main.50c56a3b.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Lec5 Binomial Heap
+              SQL 
             
           </span>
 </div>
@@ -814,10 +814,10 @@
             24春夏
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="index.html">
+<a class="md-nav__link" href="../ADS/index.html">
 <span class="md-ellipsis">
     ADS
   </span>
@@ -826,30 +826,72 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_4_1">
 <span class="md-nav__icon md-icon"></span>
             ADS
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="Lec1-AVL%2CSplay.html">
+<a class="md-nav__link" href="../ADS/Lec1-AVL%2CSplay.html">
 <span class="md-ellipsis">
     Lec1 AVL,Splay
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="Lec3-Information%20Retrieval.html">
+<a class="md-nav__link" href="../ADS/Lec3-Information%20Retrieval.html">
 <span class="md-ellipsis">
     Lec3 Information Retrieval
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="Lec4-Heaps.html">
+<a class="md-nav__link" href="../ADS/Lec4-Heaps.html">
 <span class="md-ellipsis">
     Lec4 Heaps
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ADS/Lec5-Binomial%20Heap.html">
+<span class="md-ellipsis">
+    Lec5 Binomial Heap
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ADS/Lec6-Divide%20and%20Conquer.html">
+<span class="md-ellipsis">
+    Lec6 Divide and Conquer
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="index.html">
+<span class="md-ellipsis">
+    DB
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_2">
+<span class="md-nav__icon md-icon"></span>
+            DB
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="Database%20design.html">
+<span class="md-ellipsis">
+    Database design
   </span>
 </a>
 </li>
@@ -857,13 +899,13 @@
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    Lec5 Binomial Heap
+    SQL 
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<a class="md-nav__link md-nav__link--active" href="Lec5-Binomial%20Heap.html">
+<a class="md-nav__link md-nav__link--active" href="SQL_.html">
 <span class="md-ellipsis">
-    Lec5 Binomial Heap
+    SQL 
   </span>
 </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
@@ -875,53 +917,153 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-      二项树
+      基本概念
     </span>
 </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ddl">
+<span class="md-ellipsis">
+      DDL
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#relation-algebrasql">
+<span class="md-ellipsis">
+      Relation Algebra&amp;SQL
+    </span>
+</a>
+<nav aria-label="Relation Algebra&amp;SQL" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#selectprojectcartesian-product">
+<span class="md-ellipsis">
+      Select/Project/Cartesian Product
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#rename">
+<span class="md-ellipsis">
+      Rename
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#set-operation">
+<span class="md-ellipsis">
+      Set operation
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aggregate">
+<span class="md-ellipsis">
+      Aggregate
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nested-query">
+<span class="md-ellipsis">
+      Nested Query
+    </span>
+</a>
+<nav aria-label="Nested Query" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#where">
+<span class="md-ellipsis">
+      where
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#from">
+<span class="md-ellipsis">
+      from
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#with">
+<span class="md-ellipsis">
+      With
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#null-value">
+<span class="md-ellipsis">
+      Null Value
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#join">
+<span class="md-ellipsis">
+      Join
+    </span>
+</a>
+<nav aria-label="Join" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#join_1">
+<span class="md-ellipsis">
+      利用join来简化笛卡尔积
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#outer-join">
+<span class="md-ellipsis">
+      利用outer join
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      二项队列
+      查询的总结
     </span>
 </a>
-<nav aria-label="二项队列" class="md-nav">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modification">
+<span class="md-ellipsis">
+      Modification
+    </span>
+</a>
+<nav aria-label="Modification" class="md-nav">
 <ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#meld">
-<span class="md-ellipsis">
-      meld(合并)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#delete-min">
-<span class="md-ellipsis">
-      delete min
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#decrease-key">
-<span class="md-ellipsis">
-      decrease key
-    </span>
-</a>
-</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
-      复杂度分析
+      删除
     </span>
 </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
-      斐波那契堆
+      插入
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      更新
     </span>
 </a>
 </li>
@@ -929,46 +1071,25 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="Lec6-Divide%20and%20Conquer.html">
+<a class="md-nav__link" href="#integrity-constraints">
 <span class="md-ellipsis">
-    Lec6 Divide and Conquer
-  </span>
+      Integrity Constraints
+    </span>
+</a>
+<nav aria-label="Integrity Constraints" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#foreign-key">
+<span class="md-ellipsis">
+      foreign key
+    </span>
 </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
-<div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../DB/index.html">
-<span class="md-ellipsis">
-    DB
-  </span>
-</a>
-<label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_4_2">
-<span class="md-nav__icon md-icon"></span>
-            DB
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../DB/Database%20design.html">
-<span class="md-ellipsis">
-    Database design
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../DB/SQL_.html">
-<span class="md-ellipsis">
-    SQL 
-  </span>
-</a>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1049,43 +1170,72 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-      二项树
+      基本概念
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#ddl">
 <span class="md-ellipsis">
-      二项队列
+      DDL
     </span>
 </a>
-<nav aria-label="二项队列" class="md-nav">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#relation-algebrasql">
+<span class="md-ellipsis">
+      Relation Algebra&amp;SQL
+    </span>
+</a>
+<nav aria-label="Relation Algebra&amp;SQL" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#meld">
+<a class="md-nav__link" href="#selectprojectcartesian-product">
 <span class="md-ellipsis">
-      meld(合并)
+      Select/Project/Cartesian Product
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#delete-min">
+<a class="md-nav__link" href="#rename">
 <span class="md-ellipsis">
-      delete min
+      Rename
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#decrease-key">
+<a class="md-nav__link" href="#set-operation">
 <span class="md-ellipsis">
-      decrease key
+      Set operation
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#aggregate">
 <span class="md-ellipsis">
-      复杂度分析
+      Aggregate
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#nested-query">
+<span class="md-ellipsis">
+      Nested Query
+    </span>
+</a>
+<nav aria-label="Nested Query" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#where">
+<span class="md-ellipsis">
+      where
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#from">
+<span class="md-ellipsis">
+      from
     </span>
 </a>
 </li>
@@ -1093,11 +1243,103 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#with">
 <span class="md-ellipsis">
-      斐波那契堆
+      With
     </span>
 </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#null-value">
+<span class="md-ellipsis">
+      Null Value
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#join">
+<span class="md-ellipsis">
+      Join
+    </span>
+</a>
+<nav aria-label="Join" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#join_1">
+<span class="md-ellipsis">
+      利用join来简化笛卡尔积
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#outer-join">
+<span class="md-ellipsis">
+      利用outer join
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      查询的总结
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#modification">
+<span class="md-ellipsis">
+      Modification
+    </span>
+</a>
+<nav aria-label="Modification" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      删除
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      插入
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      更新
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#integrity-constraints">
+<span class="md-ellipsis">
+      Integrity Constraints
+    </span>
+</a>
+<nav aria-label="Integrity Constraints" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#foreign-key">
+<span class="md-ellipsis">
+      foreign key
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1106,46 +1348,231 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Lec5 Binomial Heap</h1>
-<p>Lec5: Binomial Heap</p>
-<h2 id="_1">二项树</h2>
-<blockquote>
-<p>k阶二项树  <span class="arithmatex">\(B_k\)</span></p>
-<ol>
-<li>由两个k-1阶合并 根有k个儿子</li>
+<h1>SQL </h1>
+<h2 id="_1">基本概念</h2>
+<p>数据类型:</p>
+<ul>
+<li><code>varchar(n)</code>: 长度至多为n字节的字符串</li>
+<li><code>numeric(p,d)</code></li>
+<li><code>float(n)</code></li>
+<li><code>real,double,precision</code></li>
+</ul>
+<h2 id="ddl">DDL</h2>
+<p>创建表</p>
+<p><code>A</code>是属性名(attribute),  D是相当于数据类型的值域(domain)</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="p">(</span>
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">    </span><span class="n">A1</span><span class="w"> </span><span class="n">D1</span><span class="p">,</span>
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">    </span><span class="n">A2</span><span class="w"> </span><span class="n">D2</span><span class="p">,</span>
+</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="p">...</span>
+</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">    </span><span class="k">CONSTRAINTS</span>
+</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">)</span>
+</span></code></pre></div>
+<p>Integrity constr:</p>
+<ul>
 <li>
-<p>满足堆的性质</p>
+<p><code>primary key</code> : (<strong>注意自动限制not null的</strong>)</p>
 </li>
 <li>
-<p><span class="arithmatex">\(B_k\)</span>的第<span class="arithmatex">\(d\)</span>层有<span class="arithmatex">\(\binom{k}{d}\)</span>个节点,一共<span class="arithmatex">\(2^k\)</span>个节点 如B3:1 3 3 1</p>
+<p><code>unique</code></p>
 </li>
-<li>证明: <span class="arithmatex">\(\binom{k-1}{d}(绿色)+\binom{k-1}{d-1}(蓝色)=\binom{k}{d}\)</span></li>
-</ol>
-</blockquote>
-<p><img alt="img" src="https://note.isshikih.top/cour_note/D2CX_AdvancedDataStructure/img/42.svg"/></p>
-<p>合并</p>
-<p>代码实现上，用left child right sibling的方式存储</p>
-<h2 id="_2">二项队列</h2>
-<p><strong>二项队列(Binomial Queue)</strong>是一系列<strong>二项树(Binomial Tree)</strong>的集合，其中每个二项树的阶数k不同。</p>
-<p>因为每个二项树有且仅有<span class="arithmatex">\(2^k\)</span>个节点，所以构造n个节点的二项队列可以把n用<strong>二进制表示</strong>，拆成<span class="arithmatex">\(O(\log n)\)</span>个二项树</p>
-<h3 id="meld">meld(合并)</h3>
-<p>类比二进制加法，找到n1,n2的二进制表示。从小到大，两个<span class="arithmatex">\(B_k\)</span>合并得到<span class="arithmatex">\(B_{k+1}\)</span>,继续合并</p>
-<h3 id="delete-min">delete min</h3>
-<p>实现:</p>
+<li>
+<p><code>not null</code> </p>
+</li>
+<li>
+<p><code>foreign key (xxx) references table_y</code></p>
+</li>
+</ul>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">drop</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">R</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">R</span><span class="w"> </span><span class="k">add</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="n">D</span><span class="w"> </span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">alter</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">R</span><span class="w"> </span><span class="k">drop</span><span class="w"> </span><span class="n">A</span><span class="w"> </span>
+</span></code></pre></div>
+<h2 id="relation-algebrasql">Relation Algebra&amp;SQL</h2>
+<p>关系代数: 输入和输出都是关系 (SQL中的表)</p>
+<h3 id="selectprojectcartesian-product">Select/Project/Cartesian Product</h3>
+<ul>
+<li>
+<p>select: <span class="arithmatex">\(\sigma_p(r)=\{t|(t\in r) \wedge p(t)\}\)</span>   筛选出满足条件<span class="arithmatex">\(p\)</span>的所有</p>
+</li>
+<li>
+<p>project: <span class="arithmatex">\(\prod_{a_1\dots a_n}(r)\)</span>    原来的关系r中只保留属性<span class="arithmatex">\(a_1\dots a_n\)</span>的列。在关系代数中，会自动去重</p>
+<ul>
+<li><strong>但在SQL里面,不会去重</strong></li>
+</ul>
+</li>
+<li>
+<p>cartesian product</p>
+</li>
+</ul>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="k">select</span><span class="w"> </span><span class="n">a1</span><span class="p">,</span><span class="n">a2</span><span class="p">...</span><span class="n">an</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="k">from</span><span class="w"> </span><span class="n">r1</span><span class="p">,</span><span class="n">r2</span><span class="p">...</span><span class="n">rn</span>
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">where</span><span class="w"> </span><span class="n">p</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">select</span><span class="w"> </span><span class="k">distinct</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">p</span><span class="o">#</span><span class="err">去重</span>
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">r</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">#</span><span class="err">保留所有属性</span><span class="p">,</span><span class="err">可以用来打印整个表</span>
+</span></code></pre></div>
+<p>where的用法:</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">where</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s1">'sdf'</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">salary</span><span class="o">&gt;</span><span class="mi">100</span><span class="w"> </span><span class="o">#</span><span class="err">可用</span><span class="k">and</span><span class="p">,</span><span class="k">or</span><span class="p">,</span><span class="k">not</span>
+</span></code></pre></div>
+<p>字符串可用正则</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">where</span><span class="w"> </span><span class="n">name</span><span class="w"> </span><span class="k">like</span><span class="w"> </span><span class="o">`</span><span class="n">zhang</span><span class="o">%`</span>
+</span></code></pre></div>
+<p>from的用法  <code>a1,a2,a3...</code>, 表示笛卡尔积, 常常和select一起用,<code>a.primary_key=b.foreign_key</code></p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">select</span><span class="w"> </span><span class="n">card</span><span class="p">.</span><span class="n">name</span><span class="p">,</span><span class="n">book</span><span class="p">.</span><span class="n">title</span><span class="p">,</span><span class="n">borrow</span><span class="p">.</span><span class="n">borrow_date</span><span class="w">  </span>
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="k">from</span><span class="w"> </span><span class="n">book</span><span class="p">,</span><span class="n">card</span><span class="p">,</span><span class="n">borrow</span>
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="k">where</span><span class="w"> </span><span class="n">card</span><span class="p">.</span><span class="n">name</span><span class="o">=</span><span class="s1">'张三'</span><span class="w"> </span><span class="k">and</span>
+</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">      </span><span class="n">card</span><span class="p">.</span><span class="n">cno</span><span class="o">=</span><span class="n">borrow</span><span class="p">.</span><span class="n">cno</span><span class="w"> </span><span class="k">and</span>
+</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">      </span><span class="n">book</span><span class="p">.</span><span class="n">bno</span><span class="o">=</span><span class="n">borrow</span><span class="p">.</span><span class="n">bno</span>
+</span></code></pre></div>
+<h3 id="rename">Rename</h3>
+<p><code>as</code> 对表和属性进行重命名</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">select</span><span class="w"> </span><span class="n">a</span><span class="o">/</span><span class="mi">2</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">b</span>
+</span></code></pre></div>
+<p>找比某个CS老师工资高的老师</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="k">select</span><span class="w"> </span><span class="k">distinct</span><span class="w"> </span><span class="n">T</span><span class="p">.</span><span class="n">name</span>
+</span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="k">from</span><span class="w"> </span><span class="n">instructor</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">T</span><span class="p">,</span><span class="n">instructor</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">S</span>
+</span><span id="__span-8-3"><a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a><span class="k">where</span><span class="w"> </span><span class="n">T</span><span class="p">.</span><span class="n">salary</span><span class="o">&gt;</span><span class="n">S</span><span class="p">.</span><span class="n">salary</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">S</span><span class="p">.</span><span class="n">dept</span><span class="o">=</span><span class="s1">'CS'</span>
+</span></code></pre></div>
+<h3 id="set-operation">Set operation</h3>
+<p><code>A,B</code>是两个<code>select</code>子句</p>
+<ul>
+<li><span class="arithmatex">\(A\cup B\)</span>:<code>A union B</code> </li>
+<li><span class="arithmatex">\(A-B\)</span> <code>A except B</code></li>
+<li><span class="arithmatex">\(A\cap B\)</span> <code>A intersect B</code></li>
+</ul>
+<p>和<code>select</code>不一样，SQL集合运算会自动去重. 如果要不去重，要写成<code>union all</code></p>
+<h3 id="aggregate">Aggregate</h3>
+<ul>
+<li>对于关系中所有G1,G2...Gn值<strong>都相同</strong>的元素进行聚合</li>
+<li>注意没有写在G前面和后面的属性会被去掉</li>
+</ul>
+<p><img alt="a33a1e5098de14ee3463ee3b4ce50588.png" src="..\..\assets/images/a33a1e5098de14ee3463ee3b4ce50588.png"/></p>
+<p>having: 对聚合的结果做查询（这样就不用嵌套一个select)</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">select</span><span class="w"> </span><span class="n">dept</span><span class="p">,</span><span class="k">avg</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">avg_s</span>
+</span><span id="__span-9-2"><a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="k">from</span><span class="w"> </span><span class="n">instructor</span>
+</span><span id="__span-9-3"><a href="#__codelineno-9-3" id="__codelineno-9-3" name="__codelineno-9-3"></a><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">dept</span>
+</span><span id="__span-9-4"><a href="#__codelineno-9-4" id="__codelineno-9-4" name="__codelineno-9-4"></a><span class="k">having</span><span class="w"> </span><span class="k">avg</span><span class="p">(</span><span class="n">salary</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">42000</span>
+</span></code></pre></div>
+<p><code>group by a,b</code>  可以添加多个，只有a,b都一样的才会被聚合到一起</p>
+<h3 id="nested-query">Nested Query</h3>
+<h4 id="where">where</h4>
+<p><code>where A in S</code>    找出表中属性A的值在集合S中的元素(sql查询结果)
+<img alt="d995fc28e70450cfe839bb6876df5421.png" src="..\..\assets/images/d995fc28e70450cfe839bb6876df5421.png"/></p>
+<p>some: 只要在集合中存在一个满足条件，就返回true 
+<span class="arithmatex">\(5 \neq some \{0,5\}\)</span></p>
+<p><img alt="f00ab1c3d156d10253a1ff200196df53.png" src="..\..\assets/images/f00ab1c3d156d10253a1ff200196df53.png"/></p>
+<p>all:  全部满足条件
+exists: 不需要指定列，只需要判断前面空/不空</p>
+<p><img alt="8d76b40ff025e514f7e8208b6eb0d4c8.png" src="..\..\assets/images/8d76b40ff025e514f7e8208b6eb0d4c8.png"/></p>
+<p>not exist:
+<img alt="5b96bec6e99d6635ecec5de23df313a9.png" src="..\..\assets/images/5b96bec6e99d6635ecec5de23df313a9.png"/>
+其实都可以用笛卡尔积写，但不直观</p>
+<h4 id="from">from</h4>
+<p>可以不用having</p>
+<h3 id="with">With</h3>
+<p>定义一个子表(只能在当前查询里面用)</p>
+<h3 id="null-value">Null Value</h3>
+<ul>
+<li><code>where a is null</code> 用来查询null, <strong>不能写=null</strong></li>
+<li>任意数和null的算术运算返回null</li>
+<li>任意数和null的逻辑运算返回unknown</li>
+<li>除了<code>count(*)</code>之外的聚合操作如<code>sum,avg</code>忽略<code>null</code></li>
+</ul>
+<h3 id="join">Join</h3>
+<p>The join operation allows us to combine  a select operation and a  Cartesian-Product  operation into a single operation</p>
+<p>Natural join 自然连接</p>
+<ul>
+<li>同名属性被当作同一个属性</li>
+<li>如果同名意义不同如<code>course.name,stu.name</code>就不能natural join. </li>
+</ul>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">select</span><span class="w"> </span><span class="n">a</span>
+</span><span id="__span-10-2"><a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="k">from</span><span class="w"> </span><span class="n">r1</span><span class="w"> </span><span class="k">natural</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">r2</span>
+</span></code></pre></div>
+<ul>
+<li>sql server不支持natural join语法</li>
+</ul>
+<p>Outer-Join:
+<img alt="f154acf7e7f5673560363a29ce25a850.png" src="..\..\assets/images/f154acf7e7f5673560363a29ce25a850.png"/></p>
+<p><img alt="4bb7841698008f8c747d290152a02d6c.png" src="..\..\assets/images/4bb7841698008f8c747d290152a02d6c.png"/></p>
+<p><img alt="" src="..\..\assets/images/b7afe4c60146ead684cc0ad1044fcdec.png"/></p>
+<h4 id="join_1">利用join来简化笛卡尔积</h4>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-11-1"><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">select</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">student</span><span class="w"> </span><span class="k">join</span><span class="w"> </span><span class="n">takes</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="n">student</span><span class="p">.</span><span class="n">ID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">takes</span><span class="p">.</span><span class="n">ID</span><span class="p">;</span>
+</span></code></pre></div>
+<h4 id="outer-join">利用outer join</h4>
 <ol>
-<li>在<span class="arithmatex">\(O(\log n)\)</span> 个二项树的根中找最小的一个</li>
-<li>删除根，产生k个新的子树。每个子树都是二项树(<span class="arithmatex">\(B_0,B_1\dots B_{k-1}\)</span>) , 再跟剩下的部分合并</li>
+<li>利用outer join, 找出所有没有学生的顾问的姓名: (left outer join)</li>
 </ol>
-<h3 id="decrease-key">decrease key</h3>
-<p>定义: 把<span class="arithmatex">\(x\)</span>的值减少为<span class="arithmatex">\(k\)</span>  （应用: dijkstra更新dist值)</p>
-<p>实现: 不断跟父亲交换，直到满足堆性质    </p>
-<p>复杂度<span class="arithmatex">\(O(\log n)\)</span> </p>
-<h3 id="_3">复杂度分析</h3>
-<p><strong>插入是<span class="arithmatex">\(O(1)\)</span>, extract-min和delete-min是<span class="arithmatex">\(O(\log n)\)</span></strong></p>
-<p>插入的势能分析</p>
-<h2 id="_4">斐波那契堆</h2>
-<p>insert和extract-min和二项队列一样</p>
-<p>decrease key <span class="arithmatex">\(O(1)\)</span></p>
+<p>注意判断为空用is null</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-12-1"><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">i</span><span class="p">.</span><span class="n">name</span>
+</span><span id="__span-12-2"><a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">instructor</span><span class="w"> </span><span class="n">i</span>
+</span><span id="__span-12-3"><a href="#__codelineno-12-3" id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="k">LEFT</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">advisor</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">i</span><span class="p">.</span><span class="n">ID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">i_ID</span>
+</span><span id="__span-12-4"><a href="#__codelineno-12-4" id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">s_ID</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="k">NULL</span><span class="p">;</span>
+</span></code></pre></div>
+<ol>
+<li>找出有超过 5 个来自 "CS" 学院的学生的顾问的姓名:</li>
+</ol>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-13-1"><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="k">SELECT</span><span class="w"> </span><span class="n">i</span><span class="p">.</span><span class="n">name</span>
+</span><span id="__span-13-2"><a href="#__codelineno-13-2" id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="k">FROM</span><span class="w"> </span><span class="n">instructor</span><span class="w"> </span><span class="n">i</span>
+</span><span id="__span-13-3"><a href="#__codelineno-13-3" id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="k">JOIN</span><span class="w"> </span><span class="n">advisor</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">i</span><span class="p">.</span><span class="n">ID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">i_ID</span>
+</span><span id="__span-13-4"><a href="#__codelineno-13-4" id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="k">JOIN</span><span class="w"> </span><span class="n">student</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">a</span><span class="p">.</span><span class="n">s_ID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">ID</span>
+</span><span id="__span-13-5"><a href="#__codelineno-13-5" id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="k">WHERE</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">dept_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'CS'</span>
+</span><span id="__span-13-6"><a href="#__codelineno-13-6" id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">i</span><span class="p">.</span><span class="n">ID</span>
+</span><span id="__span-13-7"><a href="#__codelineno-13-7" id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="k">HAVING</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span>
+</span></code></pre></div>
+<h2 id="_2">查询的总结</h2>
+<ul>
+<li>group by  写在where后面</li>
+<li>排序: order by author_id asc</li>
+<li>case:  when... then  end   https://leetcode.com/problems/capital-gainloss/</li>
+</ul>
+<p>找最大的</p>
+<p>select=max
+select top</p>
+<p>找选所有课的:  可用not exist</p>
+<p>https://leetcode.com/problems/customers-who-bought-all-products/</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-14-1"><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="k">select</span><span class="w"> </span><span class="n">customer_id</span>
+</span><span id="__span-14-2"><a href="#__codelineno-14-2" id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="k">from</span><span class="w"> </span><span class="n">Customer</span>
+</span><span id="__span-14-3"><a href="#__codelineno-14-3" id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="k">group</span><span class="w"> </span><span class="k">by</span><span class="w"> </span><span class="n">customer_id</span>
+</span><span id="__span-14-4"><a href="#__codelineno-14-4" id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="k">having</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="k">distinct</span><span class="w"> </span><span class="n">product_key</span><span class="p">)</span><span class="o">=</span><span class="p">(</span>
+</span><span id="__span-14-5"><a href="#__codelineno-14-5" id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="w">    </span><span class="k">select</span><span class="w"> </span><span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">Product</span>
+</span><span id="__span-14-6"><a href="#__codelineno-14-6" id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="modification">Modification</h2>
+<h3 id="_3">删除</h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-15-1"><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="k">delete</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">tablename</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="p">...</span>
+</span></code></pre></div>
+<h3 id="_4">插入</h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-16-1"><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="k">insert</span><span class="w"> </span><span class="k">into</span><span class="w"> </span><span class="n">tablename</span><span class="w"> </span><span class="k">values</span><span class="w"> </span><span class="p">(...)</span>
+</span></code></pre></div>
+<h3 id="_5">更新</h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-17-1"><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="k">update</span><span class="w"> </span><span class="n">tablename</span><span class="w"> </span><span class="k">set</span><span class="w"> </span><span class="n">xxx</span><span class="o">=</span><span class="n">yyy</span><span class="w"> </span><span class="k">where</span><span class="w"> </span><span class="p">...</span>
+</span><span id="__span-17-2"><a href="#__codelineno-17-2" id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="k">update</span><span class="w"> </span><span class="n">instructor</span>
+</span><span id="__span-17-3"><a href="#__codelineno-17-3" id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="k">set</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">case</span>
+</span><span id="__span-17-4"><a href="#__codelineno-17-4" id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="k">when</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">100000</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="n">salary</span><span class="o">*</span><span class="mi">1</span><span class="p">.</span><span class="mi">05</span>
+</span><span id="__span-17-5"><a href="#__codelineno-17-5" id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="k">when</span><span class="w"> </span><span class="mi">100000</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="o">&lt;=</span><span class="mi">200000</span><span class="w"> </span><span class="k">then</span><span class="w"> </span><span class="n">salary</span><span class="o">*</span><span class="mi">1</span><span class="p">.</span><span class="mi">04</span>
+</span><span id="__span-17-6"><a href="#__codelineno-17-6" id="__codelineno-17-6" name="__codelineno-17-6"></a><span class="k">else</span><span class="w"> </span><span class="n">salary</span><span class="w"> </span><span class="o">*</span><span class="mi">1</span><span class="p">.</span><span class="mi">03</span>
+</span><span id="__span-17-7"><a href="#__codelineno-17-7" id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="k">end</span>
+</span></code></pre></div>
+<p><img alt="57cf88f9531efa22b9c407b52edfe4ff.png" src="..\..\assets/images/57cf88f9531efa22b9c407b52edfe4ff.png"/></p>
+<h2 id="integrity-constraints">Integrity Constraints</h2>
+<h3 id="foreign-key">foreign key</h3>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">course</span><span class="p">(</span>
+</span><span id="__span-18-2"><a href="#__codelineno-18-2" id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="w">    </span><span class="n">dept_id</span><span class="w"> </span><span class="nb">int</span><span class="p">,</span>
+</span><span id="__span-18-3"><a href="#__codelineno-18-3" id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="w">    </span><span class="k">foreign</span><span class="w"> </span><span class="k">key</span><span class="w"> </span><span class="p">(</span><span class="n">dept_id</span><span class="p">)</span><span class="w"> </span><span class="k">references</span><span class="w"> </span><span class="n">department</span><span class="p">,</span>
+</span><span id="__span-18-4"><a href="#__codelineno-18-4" id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="p">)</span>
+</span></code></pre></div>
+<p>foreign key可以指向相同表，如用来刻画等级关系()</p>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-19-1"><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="k">create</span><span class="w"> </span><span class="k">table</span><span class="w"> </span><span class="n">employee</span><span class="p">(</span>
+</span><span id="__span-19-2"><a href="#__codelineno-19-2" id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="w">    </span><span class="n">id</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span>
+</span><span id="__span-19-3"><a href="#__codelineno-19-3" id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="w">    </span><span class="n">manager</span><span class="w"> </span><span class="nb">varchar</span><span class="p">(</span><span class="mi">255</span><span class="p">),</span>
+</span><span id="__span-19-4"><a href="#__codelineno-19-4" id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="w">    </span><span class="k">primary</span><span class="w"> </span><span class="k">key</span><span class="p">(</span><span class="n">id</span><span class="p">),</span>
+</span><span id="__span-19-5"><a href="#__codelineno-19-5" id="__codelineno-19-5" name="__codelineno-19-5"></a><span class="w">    </span><span class="k">foreign</span><span class="w"> </span><span class="k">key</span><span class="w"> </span><span class="p">(</span><span class="n">manager</span><span class="p">)</span><span class="w"> </span><span class="k">references</span><span class="w"> </span><span class="n">employee</span>
+</span><span id="__span-19-6"><a href="#__codelineno-19-6" id="__codelineno-19-6" name="__codelineno-19-6"></a><span class="p">)</span>
+</span></code></pre></div>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-20-1"><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="k">create</span><span class="w"> </span><span class="n">tahtable1</span><span class="p">(</span>
+</span><span id="__span-20-2"><a href="#__codelineno-20-2" id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="k">foreign</span><span class="w"> </span><span class="k">key</span><span class="w"> </span><span class="p">(</span><span class="n">key1</span><span class="p">)</span><span class="w"> </span><span class="k">references</span><span class="w"> </span><span class="n">table2</span><span class="p">(</span><span class="n">key1</span><span class="p">)</span><span class="w"> </span><span class="k">on</span><span class="w"> </span><span class="k">delete</span><span class="w"> </span><span class="k">cascade</span>
+</span><span id="__span-20-3"><a href="#__codelineno-20-3" id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="p">)</span>
+</span></code></pre></div>
+<p>级联删除:  如果table2中key1=x元素被删除，table1中所有key1=x的也被删除</p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
