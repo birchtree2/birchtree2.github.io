@@ -23,6 +23,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          Skip to content
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -865,6 +868,13 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../ADS/Lec7%20Backtracking.html">
+<span class="md-ellipsis">
+    Lec7 Backtracking
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../ADS/Lec7-Backtracking.html">
 <span class="md-ellipsis">
     Lec7 Backtracking
@@ -1047,6 +1057,44 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      计算机组成 杨坤
+    </span>
+</a>
+<nav aria-label="计算机组成 杨坤" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      课程介绍
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      经验
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
+<span class="md-ellipsis">
+      有用资源
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -1054,12 +1102,49 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1>Index</h1>
-<p>笔记： https://xuan-insr.github.io/computer_organization</p>
-<p>RISC-V转机器码：https://venus.cs61c.org/</p>
-<p>实验：
-https://artessay.github.io/ZJU-Computer-Organization-Lab-2023/</p>
-<p>https://github.com/liangchenwater/RISC-V-CPU</p>
-<p>xc7a100tcsg</p>
+<h2 id="_1">计算机组成   杨坤</h2>
+<h3 id="_2">课程介绍</h3>
+<ul>
+<li>教师：杨坤</li>
+<li>成绩组成： 有4次小测(助教出题，但有时候题量会比较爆炸)，3次签到(貌似只要来了2次就可以拿满），5个lab+1bonus, 期末考试(可带一张<strong>手写</strong>A4)</li>
+<li>教材Computer_Organization_RiscV_Edition_5th</li>
+</ul>
+<h3 id="_3">经验</h3>
+<p>计组感觉是这学期相对学的比较好的一科。知识点相对DB没有那么繁杂，而且框架比较清晰。第2章开始的RISC-V如果学过计概的话能很快上手。第3章和数逻重复的比较大。第4章从流水线开始会比较复杂，思想好理解但细节很多，如寄存器堆上升沿/下降沿写，分支预测在ID,EX还是MEM。第5章Cache的部分还算简单，但虚拟内存还是需要些时间搞明白的，个人感觉关键是把作业里的例题搞懂。总之马德智云yyds.   感觉ppt里的一句话很能概括计组这门课的特征： The basic idea is easy. The devil is in the details</p>
+<p><img alt="image-20240705135934163" src="https://s2.loli.net/2024/07/05/LaAwGiQ5z6upeF9.png"/></p>
+<p>实验方面：计组实验是本学期投入时间较多的，<strong>个人感觉也是收获很大的</strong>。实验4,5都认真写了核心模块(如4的CPU控制器和Datapath, 5的stall控制模块)，对理解理论课的内容真的有很大帮助。而且从零开始写一个能支持绝大多数RISC-V指令的CPU非常有成就感。特别是lab5对着仿真波形调stall调了一周，特别感谢同班dalao的帮助。现在看来<strong>计组实验应该尽早开始</strong>，最好在春学期完成lab4-2(4-3指令扩展和4-4中断可以放到后面)，不然期末的时候和minisql撞在一起会很难受(被迫放弃lab6)。</p>
+<p>但是想吐槽的点也很多: 首先实验需要写的没有意义的连线代码太多了，如果参考DB的minisql实验，助教搭框架学生编写指定模块代码，可能学习的效率会高一些。其次下发的代码里面充满各种低级错误，比如接口字母的大小写,<code>Jump</code>写成<code>Junp</code>。同时可能是因为今年换了板子，github上部分代码的顶层模块CSSTE和vga模块需要修改。</p>
+<h3 id="_4">有用资源</h3>
+<p>笔记</p>
+<ul>
+<li>马德的ppt</li>
+<li>看马德ppt并抄到A4上,或参考<a href="https://note.hobbitqia.cc/CO/co6/">这篇博客</a></li>
+</ul>
+<p>A4：个人感觉这次抄的比较全，基本没有A4 miss的情况(笑)</p>
+<ul>
+<li>IEEE754浮点数，特别是NaN和inf</li>
+<li>
+<p>汇编：最好抄一个汇编写递归的程序如斐波那契，考试时照猫画虎。以及长距离跳转,lui+add构建32位立即数, 数组越界判断(bgeu)等常用指令组合</p>
+</li>
+<li>
+<p>CPU这块看个人，感觉抄了的都没考（心虚</p>
+</li>
+<li>Cache抄bit数的计算，虚拟内存，TLB画个图</li>
+<li>I/O抄了 三种方式(polling,interrupt-driven,DMA)的定义, 硬盘读取时间的计算，Amdahl's Law, 同步和异步总线</li>
+</ul>
+<p>实验</p>
+<ul>
+<li><a href="https://artessay.github.io/ZJU-Computer-Organization-Lab-2023/#/">2023实验文档</a>  (目前我也想把实验中的坑做一个整理，但是还在新建文件夹阶段)</li>
+<li>
+<p><a href="https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/vivado.html">vivado的一些小技巧</a></p>
+</li>
+<li>
+<p><a href="https://venus.cs61c.org/">RISC-V模拟器</a></p>
+</li>
+</ul>
+<p>历年卷: 之前98大佬已经做过<a href="https://www.cc98.org/topic/5922030">整理</a></p>
+<p><a href="https://github.com/QSCTech/zju-icicles/blob/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/%E6%95%99%E6%9D%90/%E7%AC%AC%E4%BA%94%E7%89%88RiscV%E7%AD%94%E6%A1%88.pdf">作业答案</a>  答案的错误不少，需要自己的独立思考</p>
+<p><a href="https://file.cc98.org/v2-upload/2024-07-05/mg3rp50r.pdf">A4纸下载</a></p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
