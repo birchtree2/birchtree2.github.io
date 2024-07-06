@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://birchtree2.github.io/23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/1.Propositional%20Logic.html" rel="canonical"/>
-<link href="index.html" rel="prev"/>
-<link href="10.Graph_.html" rel="next"/>
+<link href="https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/DeepLearning%E7%9B%B8%E5%85%B3/%E9%85%8D%E7%BD%AEpytorch%E7%8E%AF%E5%A2%83.html" rel="canonical"/>
+<link href="vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html" rel="prev"/>
+<link href="../System%E7%9B%B8%E5%85%B3/wsl2%E5%AE%89%E8%A3%85.html" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
-<title>1.Propositional Logic - 时雨的笔记本</title>
+<title>配置pytorch环境 - 时雨的笔记本</title>
 <link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#11propositional-logic">
+<a class="md-skip" href="#conda">
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              1.Propositional Logic
+              配置pytorch环境
             
           </span>
 </div>
@@ -137,15 +137,15 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
 <span class="md-ellipsis">
     23春夏
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_2">
 <span class="md-nav__icon md-icon"></span>
             23春夏
@@ -180,28 +180,28 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html">
 <span class="md-ellipsis">
     习题(证明题、变量代换)
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%28%E4%BA%8C%29.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%28%E4%BA%8C%29.html">
 <span class="md-ellipsis">
     多元函数微分学(二)
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">
 <span class="md-ellipsis">
     多元函数微分学
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html">
 <span class="md-ellipsis">
     空间解析几何
   </span>
@@ -225,49 +225,49 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86_.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86_.html">
 <span class="md-ellipsis">
     三重积分 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
     二重积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E5%9C%BA%E8%AE%BA_.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E5%9C%BA%E8%AE%BA_.html">
 <span class="md-ellipsis">
     场论 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html">
 <span class="md-ellipsis">
     曲面积分难题
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
     第一类曲线曲面积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
     第二类曲线积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
     第二类曲面积分
   </span>
@@ -291,14 +291,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html">
 <span class="md-ellipsis">
     级数 习题
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0.html">
 <span class="md-ellipsis">
     级数
   </span>
@@ -310,10 +310,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="index.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/index.html">
 <span class="md-ellipsis">
     离散数学及其应用
   </span>
@@ -322,270 +322,91 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_2_2">
 <span class="md-nav__icon md-icon"></span>
             离散数学及其应用
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    1.Propositional Logic
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="1.Propositional%20Logic.html">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/1.Propositional%20Logic.html">
 <span class="md-ellipsis">
     1.Propositional Logic
   </span>
 </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#11propositional-logic">
-<span class="md-ellipsis">
-      1.1Propositional Logic
-    </span>
-</a>
-<nav aria-label="1.1Propositional Logic" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#logic-operators">
-<span class="md-ellipsis">
-      Logic Operators
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#12-applications-of-logic">
-<span class="md-ellipsis">
-      1.2 Applications of Logic
-    </span>
-</a>
-<nav aria-label="1.2 Applications of Logic" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#translating-english-sentences">
-<span class="md-ellipsis">
-      Translating English Sentences
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#system-specifications">
-<span class="md-ellipsis">
-      System Specifications
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#logic-puzzles">
-<span class="md-ellipsis">
-      Logic Puzzles
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#13-propositional-equivalences">
-<span class="md-ellipsis">
-      1.3 Propositional Equivalences
-    </span>
-</a>
-<nav aria-label="1.3 Propositional Equivalences" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#logical-equivalences">
-<span class="md-ellipsis">
-      Logical Equivalences
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#satisfiability">
-<span class="md-ellipsis">
-      Satisfiability
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#normal-form">
-<span class="md-ellipsis">
-      Normal Form
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#14-predicates-and-quantifiers">
-<span class="md-ellipsis">
-      1.4 Predicates and Quantifiers
-    </span>
-</a>
-<nav aria-label="1.4 Predicates and Quantifiers" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#predicates">
-<span class="md-ellipsis">
-      Predicates
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#quantifiers">
-<span class="md-ellipsis">
-      Quantifiers
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#binding-variables">
-<span class="md-ellipsis">
-      Binding Variables
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#logical-equivalences-involving-quantifiers">
-<span class="md-ellipsis">
-      Logical Equivalences Involving Quantifiers
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#15-nested-quantifiers">
-<span class="md-ellipsis">
-      1.5 Nested Quantifiers
-    </span>
-</a>
-<nav aria-label="1.5 Nested Quantifiers" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#translating-from-english-to-quantifiers">
-<span class="md-ellipsis">
-      Translating from English to Quantifiers
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#16-rule-of-inference">
-<span class="md-ellipsis">
-      1.6 Rule of Inference ☆
-    </span>
-</a>
-<nav aria-label="1.6 Rule of Inference ☆" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#rules-of-inference-for-quantified-statements">
-<span class="md-ellipsis">
-      Rules of inference for Quantified Statements
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#proofs">
-<span class="md-ellipsis">
-      Proofs
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="10.Graph_.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/10.Graph_.html">
 <span class="md-ellipsis">
     10.Graph 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="11.Tree.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/11.Tree.html">
 <span class="md-ellipsis">
     11.Tree
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="2.Basic%20Structures.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/2.Basic%20Structures.html">
 <span class="md-ellipsis">
     2.Basic Structures
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="3.Algorithms.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/3.Algorithms.html">
 <span class="md-ellipsis">
     3.Algorithms
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="4.Number%20Theory_.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/4.Number%20Theory_.html">
 <span class="md-ellipsis">
     4.Number Theory 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="5.Mathematical%20Induction.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/5.Mathematical%20Induction.html">
 <span class="md-ellipsis">
     5.Mathematical Induction
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="6.Counting.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/6.Counting.html">
 <span class="md-ellipsis">
     6.Counting
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="8.%20Advanced%20Counting%20Techniques.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/8.%20Advanced%20Counting%20Techniques.html">
 <span class="md-ellipsis">
     8. Advanced Counting Techniques
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="9.Relation_.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/9.Relation_.html">
 <span class="md-ellipsis">
     9.Relation 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="ZJU%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8%202023%E6%98%A5%E5%A4%8F%E5%9B%9E%E5%BF%86%E9%A2%98.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/ZJU%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8%202023%E6%98%A5%E5%A4%8F%E5%9B%9E%E5%BF%86%E9%A2%98.html">
 <span class="md-ellipsis">
     ZJU离散数学及其应用 2023春夏回忆题
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E4%B8%8E%E5%8E%86%E5%B9%B4%E5%8D%B7%E9%A2%98%E7%9B%AE.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E4%B8%8E%E5%8E%86%E5%B9%B4%E5%8D%B7%E9%A2%98%E7%9B%AE.html">
 <span class="md-ellipsis">
     离散数学期末复习与历年卷题目
   </span>
@@ -597,7 +418,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/index.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/index.html">
 <span class="md-ellipsis">
     计算机系统概论
   </span>
@@ -627,21 +448,21 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%201-3.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%201-3.html">
 <span class="md-ellipsis">
     ICS Chapter 1 3
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%204%20and%20Chapter%205_.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%204%20and%20Chapter%205_.html">
 <span class="md-ellipsis">
     ICS Chapter 4 and Chapter 5 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BAICS%20Chapter%206%20and%20after.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BAICS%20Chapter%206%20and%20after.html">
 <span class="md-ellipsis">
     计算机系统概论ICS Chapter 6 and after
   </span>
@@ -1171,10 +992,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/index.html">
+<a class="md-nav__link" href="../index.html">
 <span class="md-ellipsis">
     工具
   </span>
@@ -1183,46 +1004,125 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
             工具
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_5_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
 <span class="md-ellipsis">
     DeepLearning相关
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_5_2_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_5_2_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_5_2">
 <span class="md-nav__icon md-icon"></span>
             DeepLearning相关
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/DeepLearning%E7%9B%B8%E5%85%B3/Linux%20bash.html">
+<a class="md-nav__link" href="Linux%20bash.html">
 <span class="md-ellipsis">
     Linux bash
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/DeepLearning%E7%9B%B8%E5%85%B3/vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html">
+<a class="md-nav__link" href="vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html">
 <span class="md-ellipsis">
     Vscode调试配置总结
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/DeepLearning%E7%9B%B8%E5%85%B3/%E9%85%8D%E7%BD%AEpytorch%E7%8E%AF%E5%A2%83.html">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    配置pytorch环境
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="%E9%85%8D%E7%BD%AEpytorch%E7%8E%AF%E5%A2%83.html">
 <span class="md-ellipsis">
     配置pytorch环境
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conda">
+<span class="md-ellipsis">
+      conda
+    </span>
+</a>
+<nav aria-label="conda" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      下载
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      建立环境
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      换源
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vscodeconda">
+<span class="md-ellipsis">
+      结合vscode和conda
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pip">
+<span class="md-ellipsis">
+      pip
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pytorch">
+<span class="md-ellipsis">
+      pytorch安装
+    </span>
+</a>
+<nav aria-label="pytorch安装" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#torchvision">
+<span class="md-ellipsis">
+      torchvision
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -1242,7 +1142,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/System%E7%9B%B8%E5%85%B3/wsl2%E5%AE%89%E8%A3%85.html">
+<a class="md-nav__link" href="../System%E7%9B%B8%E5%85%B3/wsl2%E5%AE%89%E8%A3%85.html">
 <span class="md-ellipsis">
     WSL2
   </span>
@@ -1266,21 +1166,21 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion.html">
+<a class="md-nav__link" href="../%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion.html">
 <span class="md-ellipsis">
     Stable diffusion
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion%E8%BF%9B%E9%98%B6.html">
+<a class="md-nav__link" href="../%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion%E8%BF%9B%E9%98%B6.html">
 <span class="md-ellipsis">
     Stable diffusion进阶
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/sympy%E7%9A%84%E4%BD%BF%E7%94%A8.html">
+<a class="md-nav__link" href="../%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/sympy%E7%9A%84%E4%BD%BF%E7%94%A8.html">
 <span class="md-ellipsis">
     Sympy的使用
   </span>
@@ -1304,7 +1204,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/%E7%A1%AC%E4%BB%B6%E7%9B%B8%E5%85%B3/vivado.html">
+<a class="md-nav__link" href="../%E7%A1%AC%E4%BB%B6%E7%9B%B8%E5%85%B3/vivado.html">
 <span class="md-ellipsis">
     计组vivado使用
   </span>
@@ -1331,17 +1231,38 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#11propositional-logic">
+<a class="md-nav__link" href="#conda">
 <span class="md-ellipsis">
-      1.1Propositional Logic
+      conda
     </span>
 </a>
-<nav aria-label="1.1Propositional Logic" class="md-nav">
+<nav aria-label="conda" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#logic-operators">
+<a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-      Logic Operators
+      下载
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      建立环境
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      换源
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vscodeconda">
+<span class="md-ellipsis">
+      结合vscode和conda
     </span>
 </a>
 </li>
@@ -1349,150 +1270,29 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#12-applications-of-logic">
+<a class="md-nav__link" href="#pip">
 <span class="md-ellipsis">
-      1.2 Applications of Logic
+      pip
     </span>
 </a>
-<nav aria-label="1.2 Applications of Logic" class="md-nav">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pytorch">
+<span class="md-ellipsis">
+      pytorch安装
+    </span>
+</a>
+<nav aria-label="pytorch安装" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#translating-english-sentences">
+<a class="md-nav__link" href="#torchvision">
 <span class="md-ellipsis">
-      Translating English Sentences
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#system-specifications">
-<span class="md-ellipsis">
-      System Specifications
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#logic-puzzles">
-<span class="md-ellipsis">
-      Logic Puzzles
+      torchvision
     </span>
 </a>
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#13-propositional-equivalences">
-<span class="md-ellipsis">
-      1.3 Propositional Equivalences
-    </span>
-</a>
-<nav aria-label="1.3 Propositional Equivalences" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#logical-equivalences">
-<span class="md-ellipsis">
-      Logical Equivalences
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#satisfiability">
-<span class="md-ellipsis">
-      Satisfiability
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#normal-form">
-<span class="md-ellipsis">
-      Normal Form
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#14-predicates-and-quantifiers">
-<span class="md-ellipsis">
-      1.4 Predicates and Quantifiers
-    </span>
-</a>
-<nav aria-label="1.4 Predicates and Quantifiers" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#predicates">
-<span class="md-ellipsis">
-      Predicates
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#quantifiers">
-<span class="md-ellipsis">
-      Quantifiers
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#binding-variables">
-<span class="md-ellipsis">
-      Binding Variables
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#logical-equivalences-involving-quantifiers">
-<span class="md-ellipsis">
-      Logical Equivalences Involving Quantifiers
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#15-nested-quantifiers">
-<span class="md-ellipsis">
-      1.5 Nested Quantifiers
-    </span>
-</a>
-<nav aria-label="1.5 Nested Quantifiers" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#translating-from-english-to-quantifiers">
-<span class="md-ellipsis">
-      Translating from English to Quantifiers
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#16-rule-of-inference">
-<span class="md-ellipsis">
-      1.6 Rule of Inference ☆
-    </span>
-</a>
-<nav aria-label="1.6 Rule of Inference ☆" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#rules-of-inference-for-quantified-statements">
-<span class="md-ellipsis">
-      Rules of inference for Quantified Statements
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#proofs">
-<span class="md-ellipsis">
-      Proofs
-    </span>
-</a>
 </li>
 </ul>
 </nav>
@@ -1501,276 +1301,61 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>1.Propositional Logic</h1>
-<p><em>Discrete Mathematics and Its Applications</em>, Kenneth H. Rosen</p>
-<p>有点鬼畜的Latex代码: <span class="arithmatex">\(\neg\)</span>是<code>\neg</code>, <span class="arithmatex">\(\vee\)</span>是<code>\vee</code>,<span class="arithmatex">\(\wedge\)</span>是<code>\wedge</code></p>
-<h2 id="11propositional-logic">1.1Propositional Logic</h2>
-<blockquote>
-<p>Propositions is a <strong>statement</strong> that is either true or false,but not both</p>
-</blockquote>
-<h3 id="logic-operators">Logic Operators</h3>
+<h1>配置pytorch环境</h1>
+<hr/>
+<p>title: 配置pytorch环境
+date: 2023-02-22 15:29:35
+categories:
+- 机器学习
+tags: 
+- pytorch
+- 机器学习
+- 命令</p>
+<hr/>
+<p>记录一下自己在配置pytorch环境时遇到的问题。全程使用Ubuntu命令行操作，可以远程操作服务器</p>
+<p><a href="https://www.jianshu.com/p/3e56648b55c6">env</a></p>
+<h2 id="conda">conda</h2>
+<h3 id="_1">下载</h3>
+<p>先到<a href="https://docs.conda.io/en/latest/miniconda.html">miniconda的官网</a>找到对应的下载链接，然后用<code>wget</code>安装
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>wget<span class="w">  </span>https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>bash<span class="w"> </span>Miniconda3-py38_23.1.0-1-Linux-x86_64.sh
+</span></code></pre></div></p>
+<h3 id="_2">建立环境</h3>
+<p><code>conda create -n [环境名称] python=[版本号]</code></p>
+<p>接着重启终端。然后才能激活环境</p>
+<p><code>conda activate [环境名称]</code></p>
+<h3 id="_3">换源</h3>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/msys2/
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/conda-forge
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/pkgs/free/
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/pytorch/
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/pkgs/main/
+</span></code></pre></div>
+<p>或者直接vim .condarc</p>
+<h3 id="vscodeconda">结合vscode和conda</h3>
+<p><a href="https://zhuanlan.zhihu.com/p/269086227">参考资料</a></p>
 <ol>
-<li>Negation: <span class="arithmatex">\(\neg p\)</span></li>
-<li>Conjunction(and) <span class="arithmatex">\(p \wedge q\)</span></li>
-<li>Disjunction(or) <span class="arithmatex">\(p \vee q\)</span></li>
-<li>Exclusive or(xor)  </li>
-<li>Implication(If p then q / p implies q / p only if q) <span class="arithmatex">\(p \to q\)</span></li>
+<li>用vscode打开一个文件夹</li>
+<li>Ctrl+Shift+P打开vsc的命令行</li>
+<li>选择Python：Select Interpreter</li>
+<li>vsc会自动定位Python的位置 <code>~\miniconda3\envs\对应的版本</code>,选择对应版本号和环境名称即可</li>
 </ol>
-<p>注意p only if q 也是 <span class="arithmatex">\(p \to q\)</span>，相当于必要条件 </p>
-<table>
-<thead>
-<tr>
-<th>p</th>
-<th>q</th>
-<th>p -&gt;q</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>0</td>
-<td>1</td>
-<td>1</td>
-</tr>
-<tr>
-<td>0</td>
-<td>0</td>
-<td>1</td>
-</tr>
-</tbody>
-</table>
-<p>Everything implies true. False implies everything</p>
-<ol>
-<li>Biconditional : <span class="arithmatex">\(p \leftrightarrow q\)</span></li>
-</ol>
-<h2 id="12-applications-of-logic">1.2 Applications of Logic</h2>
-<h3 id="translating-english-sentences">Translating English Sentences</h3>
-<p>感觉在考英语</p>
-<p><span class="arithmatex">\(p \to q:\)</span></p>
-<p>if p, then q.</p>
-<p><strong>p only if q</strong></p>
-<p><strong>q unless <span class="arithmatex">\(\neg p\)</span></strong></p>
-<p>p is sufficient for q  /  q is necessary for p</p>
-<p>q whenever p / <strong>q follows from p</strong></p>
-<p>To p,you must q</p>
-<p><span class="arithmatex">\(p \leftrightarrow q:\)</span></p>
-<p>p is necessary and sufficient for q / ....and conversely/ p iff q</p>
-<p><span class="arithmatex">\(p \to q\)</span></p>
-<ul>
-<li>converse: <span class="arithmatex">\(q \to p\)</span></li>
-<li>inverse <span class="arithmatex">\(\neg p \to \neg q\)</span></li>
-<li>contrapositive <span class="arithmatex">\(\neg q \to \neg p\)</span></li>
-</ul>
-<p>Converse and Inverse are logically equivalant. Constrapositive and original proposition are logically equivalant</p>
-<h3 id="system-specifications">System Specifications</h3>
-<p>先翻译，然后转化成了<strong>给出一系列逻辑表达式，判断是否存在赋值的方法使得这些表达式全为True</strong>。先从单目入手，然后再考虑<span class="arithmatex">\(p\to q=F\)</span>的时候可以确定赋值。如果<span class="arithmatex">\(p \to q=T\)</span>，就枚举</p>
-<h3 id="logic-puzzles">Logic Puzzles</h3>
-<p>可以转化成逻辑表达式的方式，也可以直接枚举真值</p>
-<h2 id="13-propositional-equivalences">1.3 Propositional Equivalences</h2>
-<blockquote>
-<p><strong>Tautology</strong>: Compound propositions that are always true( e.g. <span class="arithmatex">\(p \vee\neg p\)</span>)</p>
-<p><strong>Contradiction</strong>:  Compound propositions that are always false</p>
-<p>Compound propositions that have the same truth values in all cases are called logically equivalent. <span class="arithmatex">\(p \equiv q\)</span></p>
-</blockquote>
-<h3 id="logical-equivalences">Logical Equivalences</h3>
-<p>Using truth tables, we can prove these equivalences:</p>
-<p><span class="arithmatex">\(p \vee 0=p \wedge 1=p\)</span></p>
-<p><span class="arithmatex">\(p \vee 1=1,p \wedge 0=0\)</span></p>
-<p>De Morgan's Laws: 
-<span class="arithmatex">\(\neg(p \wedge q)=\neg p \vee \neg q,\neg(p \vee q)=\neg p \wedge \neg q\)</span></p>
-<p>Distribution: 
-<span class="arithmatex">\(p \wedge(q \vee r)=(p \wedge q) \vee(p \wedge r)\)</span></p>
-<p>​                       <span class="arithmatex">\(p \vee(q\wedge r)=(p \vee q)\wedge (p \vee r)\)</span></p>
-<p>注意有时也反向用分配律合并同类项</p>
-<p><strong>Absorption Laws</strong>: <span class="arithmatex">\(\boxed{p \vee(p \wedge q)=p, p \wedge(p \vee q)=p}\)</span></p>
-<p>implication law: </p>
-<p><span class="arithmatex">\(p \to q \equiv \neg p \vee q\)</span></p>
-<p>(Because p implies q is false only if p=1 and q=0)</p>
-<p>Then using these laws we can prove:</p>
-<p>Conditional statements:</p>
-<p><span class="arithmatex">\(p \to q \equiv \neg q \to \neg p\)</span></p>
-<p><span class="arithmatex">\(\neg(p \to q)=p\wedge \neg q\)</span></p>
-<p>Biconditional statements:</p>
-<p><span class="arithmatex">\(p \leftrightarrow q \equiv (p \to q)\wedge(q\to p)\)</span></p>
-<p><span class="arithmatex">\(p \leftrightarrow q \equiv \neg p \leftrightarrow \neg q\)</span></p>
-<p><span class="arithmatex">\(p \leftrightarrow q \equiv (p \wedge q)\vee(\neg p \wedge \neg q)\)</span></p>
-<p>第三条从真值表来看是显然的。但是也可以用上面的定律证,多次用分配律拆括号,然后用<span class="arithmatex">\(p \wedge \neg p=0\)</span>的性质</p>
-<p><img alt="16e787cd097c97b41794fd24cbcfbecf.png" src="..\..\assets/images/16e787cd097c97b41794fd24cbcfbecf.png"/></p>
-<p><img alt="90b008e6b1bf4c41db72f664d6beaad4.png" src="..\..\assets/images/90b008e6b1bf4c41db72f664d6beaad4.png"/></p>
-<p>Assume that the second proposition is false. Then <span class="arithmatex">\(q \to s=F,p \to r=T\)</span>. so <span class="arithmatex">\(q=T,s=F\)</span>. Enumerate all 3 cases of <span class="arithmatex">\(p,r\)</span>, then we can get <span class="arithmatex">\(p=F,q=T,r=F,s=F\)</span> as a counterexample.</p>
-<h3 id="satisfiability">Satisfiability</h3>
-<blockquote>
-<p>A compound proposition is satisfiable if there is an assignment of truth values to its variables that makes it true</p>
-</blockquote>
-<h3 id="normal-form">Normal Form</h3>
-<p>Literal: <span class="arithmatex">\(p\)</span> or <span class="arithmatex">\(\neg p\)</span></p>
-<p>Distributive Normal Form (DNF) : A formula is said to be in disjunctive normal form if it is written as a disjunction, in which all the terms are conjunctions of literals(a variable or its negation). etc. <span class="arithmatex">\((p \wedge \neg q)\vee r\)</span>.  We can also define Conjunctive Normal Form(CNF)
-<img alt="2e8077e251d71b7d0162226fca6b7375.png" src="..\..\assets/images/2e8077e251d71b7d0162226fca6b7375.png"/></p>
-<p><img alt="d7d678adc8f3d20a71bfee418da7942a.png" src="..\..\assets/images/d7d678adc8f3d20a71bfee418da7942a.png"/></p>
-<p>A minterm is a conjunction of literals in which each variable is represented <strong>exactly once</strong>. For<span class="arithmatex">\(p,q,r\)</span> <span class="arithmatex">\(p \wedge q\)</span> s not a minterm.  <span class="arithmatex">\(p \wedge q  \wedge r\)</span> is a minterm.</p>
-<p><span class="arithmatex">\(2^n\)</span> minterms.</p>
-<p>Transforming into Full DNF:<strong>First  <span class="arithmatex">\(\wedge(p \vee \neg p)\)</span>, then use distributive law</strong></p>
-<p><img alt="2b401fa3fed571b89920f5aec6a0989a.png" src="..\..\assets/images/2b401fa3fed571b89920f5aec6a0989a.png"/></p>
-<p><strong>Full</strong> DNF can be used to <strong>construct a proposition with a given truth table</strong>.  etc. proposition consisting of 3 variables p,q,r is true when exactly two variables are true. <span class="arithmatex">\((p \wedge q\wedge \neg r)\vee(p \wedge \neg q\wedge  r)\vee(\neg p \wedge q\wedge  r)\)</span>. Therefore, <strong>every compound proposition is logically equivalent to a full DNF.</strong></p>
-<ul>
-<li>
-<p>Each minterm is true for <strong>exactly one</strong> assignment</p>
-</li>
-<li>
-<p>minterm <span class="arithmatex">\(A,B,A\neq B \to A\wedge B=F\)</span></p>
-</li>
-<li>
-<p>Same Full DNF <span class="arithmatex">\(\leftrightarrow\)</span> Logically equivalent.</p>
-</li>
-</ul>
-<p>A collection of logical operators is called <strong>functionally complete</strong> if every compound proposition is logically equivalent to a  compound proposition consisting of only these operators.</p>
-<p>For example</p>
-<ul>
-<li>
-<p><span class="arithmatex">\(\neg\)</span> and <span class="arithmatex">\(\wedge\)</span>  form a functionally complete collection.</p>
-</li>
-<li>
-<p><span class="arithmatex">\(\downarrow\)</span>(NOR <span class="arithmatex">\(\neg(p \vee q)\)</span>) is a functionally complete collection.   <span class="arithmatex">\(|\)</span>(NAND)  is functionally complete. </p>
-</li>
-<li>
-<p><span class="arithmatex">\(p \downarrow p \equiv \neg p, (p \downarrow q)\downarrow(p\downarrow q)=\neg(p\downarrow q)=p\vee q\)</span></p>
-</li>
-</ul>
-<h2 id="14-predicates-and-quantifiers">1.4 Predicates and Quantifiers</h2>
-<h3 id="predicates">Predicates</h3>
-<blockquote>
-<p>A predicate (propositional function) is a statement that contains variables. Once the values of the variables are specified, the function has a truth value.</p>
-<p><span class="arithmatex">\(P(x_1,x_2\dots x_n)\)</span> is called n-ary or n-place predicate. such as <span class="arithmatex">\(P(x)= x&gt;0\)</span></p>
-</blockquote>
-<h3 id="quantifiers">Quantifiers</h3>
-<blockquote>
-<p>Universal Quantifier: <span class="arithmatex">\(\forall x\ p(x)\)</span>
-Existential Quantifier: <span class="arithmatex">\(\exists x\ p(x)\)</span></p>
-<p>Domain (domain of discourse / universe of discourse): range of the possible values of the variable x</p>
-</blockquote>
-<p>Precedence: <span class="arithmatex">\(\forall\)</span> and <span class="arithmatex">\(\exists\)</span> have <strong>higher precedence than all logical operators</strong></p>
-<table>
-<thead>
-<tr>
-<th>Precedence</th>
-<th>Operators</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td><span class="arithmatex">\(\forall,\exists\)</span></td>
-</tr>
-<tr>
-<td>2</td>
-<td><span class="arithmatex">\(\neg\)</span></td>
-</tr>
-<tr>
-<td>3</td>
-<td><span class="arithmatex">\(\wedge,\vee\)</span></td>
-</tr>
-<tr>
-<td>4</td>
-<td><span class="arithmatex">\(\to,\leftrightarrow\)</span></td>
-</tr>
-</tbody>
-</table>
-<p><span class="arithmatex">\(\forall x P(x) \vee Q(x) \equiv (\forall x P(x)) \vee Q(x)\)</span></p>
-<h3 id="binding-variables">Binding Variables</h3>
-<p>Bound variable: a variable is bound if it is quantified.</p>
-<p>All the variables in a propositional function must be quantified or set equal to a particular value to turn it into a proposition.</p>
-<h3 id="logical-equivalences-involving-quantifiers">Logical Equivalences Involving Quantifiers</h3>
-<p>Distribution:</p>
-<p><span class="arithmatex">\(\forall (p(x) \wedge q(x)) \equiv\forall x p(x) \wedge \forall x q(x)\)</span></p>
-<p><span class="arithmatex">\(\exists (p(x) \vee q(x)) \equiv \exists x p(x) \vee\exists x q(x)\)</span></p>
-<p>note that **you cannot distribute  Universal Quantifier over OR ** </p>
-<p>De Morgan's Law:
- <span class="arithmatex">\(\neg (\forall x\ p(x)) \equiv \exists x \ \neg p(x)\)</span>
-<span class="arithmatex">\(\neg (\exists x\ p(x)) \equiv\forall x \ \neg p(x)\)</span>
-注意右推左在证明里很常用
-(1) <span class="arithmatex">\(\quad \forall x P(x) \vee A \equiv\forall x(P(x) \vee A)\)</span>
-(2) <span class="arithmatex">\(\forall x P(x) \wedge A \equiv \forall x(P(x) \wedge A)\)</span>
-(3) <span class="arithmatex">\(\quad \exists x P(x) \vee A \equiv \exists x(P(x) \vee A)\)</span>
-(4) <span class="arithmatex">\(\exists x P(x) \wedge A \equiv \exists x(P(x) \wedge A)\)</span>
-(5) <span class="arithmatex">\(\quad \forall x(A \rightarrow P(x)) \equiv A \rightarrow \forall x P(x)\)</span>
-(6) <span class="arithmatex">\(\exists x(A \rightarrow P(x)) \equiv A \rightarrow \exists x P(x)\)</span>
-(7) <span class="arithmatex">\(\forall x(P(x) \rightarrow A) \equiv \exists x P(x) \rightarrow A\)</span>
-(8) <span class="arithmatex">\(\quad \exists x(P(x) \rightarrow A) \equiv \forall x P(x) \rightarrow A\)</span>
-where the truth value of <span class="arithmatex">\(A\)</span> is not related to </p>
-<p>记忆方法：除了A做结果的时候改变量词，其他与、或等都可以直接提出括号</p>
-<p>Proof:
-(1)-(4) Discuss the truth value of A
-(5)-(8) Use the <strong>implication law</strong></p>
-<p><span class="arithmatex">\(\exists x (\neg P(x)\vee A)=\exists x \neg P(x) \vee A=\neg(\forall x P(x))\vee A=\forall xP(x) \to A\)</span></p>
-<p><span class="arithmatex">\(\exists x (P(x) \to Q(x))=\exists (\neg P(x) \wedge Q(x))\)</span></p>
-<h2 id="15-nested-quantifiers">1.5 Nested Quantifiers</h2>
-<p><span class="arithmatex">\(\forall x \exists y P(x,y) \neq \exists x \forall y P(x,y)\)</span>. etc. <span class="arithmatex">\(P(x,y)=x\)</span> loves <span class="arithmatex">\(y\)</span></p>
-<p>Negation: 交换符号、最后的条件否定</p>
-<p>Prenex Normal Form:</p>
-<p><img alt="b57e71faf9ccc5ca734fd0c945a10e74.png" src="..\..\assets/images/b57e71faf9ccc5ca734fd0c945a10e74.png"/></p>
-<ol>
-<li>Get rid of arrowsImplication Law</li>
-<li>Move negative</li>
-<li>Change names</li>
-<li>To the front</li>
-</ol>
-<h3 id="translating-from-english-to-quantifiers">Translating from English to Quantifiers</h3>
-<p>etc. All lions are fierce</p>
-<p><span class="arithmatex">\(\forall x(P(x) \to Q(x))\)</span>, where the domain of <span class="arithmatex">\(x\)</span> is all animal</p>
-<p>Note that we <strong>can't write</strong> <span class="arithmatex">\(\forall (P(x) \wedge Q(x))\)</span>, which means all animals are lions and all animals are fierce</p>
-<p>Some students in the class have visited Mexico</p>
-<p><span class="arithmatex">\(\exists x(P(x)\wedge Q(x))\)</span>, where the domain of <span class="arithmatex">\(x\)</span> is all people</p>
-<p>Note that we can't write <span class="arithmatex">\(\exists (P(x) \to Q(x))\)</span>, because there can be <span class="arithmatex">\(x\)</span> that <span class="arithmatex">\(P(x)=F,Q(x)=T\)</span></p>
-<p><img alt="c53c25b3a4abd562faf25c82fc8a7f2e.png" src="..\..\assets/images/c53c25b3a4abd562faf25c82fc8a7f2e.png" style="zoom:33%;"/></p>
-<p>Nested Quantifiers</p>
-<p>There is only one <span class="arithmatex">\(x\)</span> that <span class="arithmatex">\(P(x)\)</span>.  <span class="arithmatex">\(\exists x\forall y(x=y\leftrightarrow P(y))\)</span></p>
-<p>or <span class="arithmatex">\(\exists x\forall y(P(x)\wedge(x\neq y \to \neg P(y)))\)</span></p>
-<p>Everyone except one <span class="arithmatex">\(x\)</span> that <span class="arithmatex">\(P(x)\)</span>. <span class="arithmatex">\(\exists x\forall y(x\neq y\leftrightarrow P(x))\)</span></p>
-<p>There is at least 2  <span class="arithmatex">\(\exists x \exists y (x \neq y \wedge P(x) \wedge P(y))\)</span></p>
-<p><img alt="8843f1a6e3bc564354568972396f41d3.png" src="..\..\assets/images/8843f1a6e3bc564354568972396f41d3.png"/></p>
-<p><img alt="180dd8a23a5e5c5f9499f808d5aa5d13.png" src="..\..\assets/images/180dd8a23a5e5c5f9499f808d5aa5d13.png"/></p>
-<p>翻译成英文之后不要出现x,y,z等字母</p>
-<h2 id="16-rule-of-inference">1.6 Rule of Inference ☆</h2>
-<p>Argument: A sequence of propositions: If <span class="arithmatex">\((p_1 \wedge p_2 \dots \wedge p_n)\to q\)</span> is tautology, then the argument is valid</p>
-<p><strong>Formal Form</strong>(考试时注意格式!不要忘了写∴)</p>
-<div class="arithmatex">\[\begin{aligned}&amp;p_1\\&amp;p_2\\\ &amp;\dots\\&amp;p_n\\ &amp;\_\_\_\_\\ ∴&amp;q \end{aligned}
-\]</div>
-<p>Trick:
-<span class="arithmatex">\(p_1\dots p_n(\text{premises}),(q \to r)(\text{conclusion}) \equiv p_1\dots p_n,q(\text{premises}) ,r\)</span></p>
-<p><img alt="bcef9efa3a970384b1881020a6a864f2.png" src="..\..\assets/images/bcef9efa3a970384b1881020a6a864f2.png"/></p>
-<p><img alt="83fff811ac4e39ab9753856590b348a5.png" src="..\..\assets/images/83fff811ac4e39ab9753856590b348a5.png"/></p>
-<p>Resolution:</p>
-<div class="arithmatex">\[((p \vee q)\wedge(\neg p \vee s)) \to (q\vee s)
-\]</div>
-<p><span class="arithmatex">\(p \vee q,\neg p \vee r ,\neg q \vee s\)</span>. 先对1,3，再对2用resolution</p>
-<h3 id="rules-of-inference-for-quantified-statements">Rules of inference for Quantified Statements</h3>
-<p><img alt="970e28c212d724abce7c882c87ebba1f.png" src="..\..\assets/images/970e28c212d724abce7c882c87ebba1f.png"/></p>
-<p>A:<span class="arithmatex">\(\forall x \exists y P(x,y)\)</span>
-B:<span class="arithmatex">\(\exists x\forall y P(x,y)\)</span>
-A不能推出B，B可以推出A</p>
-<h2 id="proofs">Proofs</h2>
-<p>Terminology:
-- theorem 定理
-- axioms 公理
-- lemma 引理
-- corollary 推论
-- conjecture 猜想</p>
-<p>Vacuous proof: <span class="arithmatex">\(p=F,p \to q=T\)</span>.  Trivial Proof:<span class="arithmatex">\(q=T\)</span></p>
-<p>Proof by contraposition:</p>
-<p><span class="arithmatex">\(p \to q \equiv \neg q \to \neg p\)</span></p>
-<p>Assume that <span class="arithmatex">\(\neg q\)</span> is true</p>
-<p>Proof by contradiction:</p>
-<p>Assume that <span class="arithmatex">\(p,\neg q\)</span> is true, deduce <span class="arithmatex">\((p \and \neg q)\to \neg p\)</span>, <span class="arithmatex">\(p \and \neg p\)</span> forms a contradiction</p>
-<p>Proof of equivalence.</p>
+<p>设置好之后，每次启动vsc集成的终端时就会自动激活对应的环境。python代码也可以点击右上角一键运行了</p>
+<h2 id="pip">pip</h2>
+<p>临时换源:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>https://mirrors.zju.edu.cn/pypi/web/simple
+</span></code></pre></div></p>
+<h2 id="pytorch">pytorch安装</h2>
+<p><code>conda install pytorch=[版本号]=[具体名字]</code></p>
+<p>注意源自动匹配的版本可能不对。要检查名字后面不是带着<code>_cpu</code>, 而是<code>_cuda11.3_cudnn...</code>. 可以手动指定具体版本号</p>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>conda<span class="w"> </span>install<span class="w"> </span><span class="nv">pytorch</span><span class="o">=</span><span class="m">1</span>.10.0<span class="o">=</span>py3.8_cuda11.3_cudnn8.2.0_0
+</span></code></pre></div>
+<a href="https://blog.csdn.net/weixin_43868021/article/details/122083729#:~:text=%E6%9F%A5%E7%9C%8B%E4%BA%86%E4%B8%8B%E5%BA%93%E7%9A%84%E4%BF%A1%E6%81%AF%EF%BC%8C%E5%8F%91%E7%8E%B0%E6%9C%89%E4%B8%80%E4%B8%AA%20pytorch%20-mutex%E5%BA%93%EF%BC%8C%E8%BF%99%E4%B8%AA%E5%B0%B1%E6%98%AF%E5%8E%9F%E5%9B%A0%E6%89%80%E5%9C%A8%EF%BC%8C%E5%B0%86%E5%85%B6%E5%8D%B8%E8%BD%BD%E5%90%8E%EF%BC%8C%E5%86%8D%E9%87%8D%E6%96%B0%20%E5%AE%89%E8%A3%85GPU%E7%89%88%E6%9C%AC%20%E5%B0%B1%E8%A7%A3%E5%86%B3%E4%BA%86%E3%80%82%20%E5%8D%B8%E8%BD%BD%20conda%20uninstall,conda%20install%20pytorch%20torchvision%20torchaudio%20cudatoolkit%3D11.3%20-c%20pytorch">pytorch和cudatoolkit版本对应</a></p>
+<h3 id="torchvision">torchvision</h3>
+<p><a href="https://blog.csdn.net/shiwanghualuo/article/details/122860521">torch和torchvision版本对应关系</a></p>
+<p>如果源自动匹配的不对，可以离线安装或者手动指定版本:
+<code>wget https://mirrors.bfsu.edu.cn/anaconda/cloud/pytorch/linux-64/torchvision-0.11.1-py38_cu113.tar.bz2</code></p>
+<p><code>conda install --offline torchvision-0.11.1-py38_cu113.tar.bz2</code></p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
