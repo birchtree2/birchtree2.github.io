@@ -141,17 +141,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%201-3.html</loc>
+         <loc>https://birchtree2.github.io/23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/ICS%20Chapter%201-3.html</loc>
          <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%204%20and%20Chapter%205_.html</loc>
+         <loc>https://birchtree2.github.io/23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/ICS%20Chapter%204%20and%20Chapter%205_.html</loc>
          <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BAICS%20Chapter%206%20and%20after.html</loc>
+         <loc>https://birchtree2.github.io/23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BAICS%20Chapter%206%20and%20after.html</loc>
          <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -336,11 +336,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/ADS/Lec7%20Backtracking.html</loc>
-         <lastmod>2024-07-06</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/ADS/Lec7-Backtracking.html</loc>
          <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
@@ -421,17 +416,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion.html</loc>
+         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion.html</loc>
          <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion%E8%BF%9B%E9%98%B6.html</loc>
+         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion%E8%BF%9B%E9%98%B6.html</loc>
          <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/sympy%E7%9A%84%E4%BD%BF%E7%94%A8.html</loc>
+         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/sympy%E7%9A%84%E4%BD%BF%E7%94%A8.html</loc>
+         <lastmod>2024-07-06</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/%E5%A5%BD%E7%94%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%85%B6%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95.html</loc>
          <lastmod>2024-07-06</lastmod>
          <changefreq>daily</changefreq>
     </url>

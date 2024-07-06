@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/ADS/Lec7%20Backtracking.html" rel="canonical"/>
-<link href="Lec6-Divide%20and%20Conquer.html" rel="prev"/>
-<link href="Lec7-Backtracking.html" rel="next"/>
+<link href="https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion.html" rel="canonical"/>
+<link href="../System%E7%9B%B8%E5%85%B3/wsl2%E5%AE%89%E8%A3%85.html" rel="prev"/>
+<link href="stable%20diffusion%E8%BF%9B%E9%98%B6.html" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
-<title>Lec7 Backtracking - 时雨的笔记本</title>
+<title>Stable diffusion - 时雨的笔记本</title>
 <link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#stable-diffusion">
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Lec7 Backtracking
+              Stable diffusion
             
           </span>
 </div>
@@ -433,43 +433,26 @@
             计算机系统概论
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_2_3_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
-<span class="md-ellipsis">
-    Note
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_2_3_2_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_2_3_2">
-<span class="md-nav__icon md-icon"></span>
-            Note
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%201-3.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/ICS%20Chapter%201-3.html">
 <span class="md-ellipsis">
     ICS Chapter 1 3
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/ICS%20Chapter%204%20and%20Chapter%205_.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/ICS%20Chapter%204%20and%20Chapter%205_.html">
 <span class="md-ellipsis">
     ICS Chapter 4 and Chapter 5 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/Note/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BAICS%20Chapter%206%20and%20after.html">
+<a class="md-nav__link" href="../../23%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BAICS%20Chapter%206%20and%20after.html">
 <span class="md-ellipsis">
     计算机系统概论ICS Chapter 6 and after
   </span>
 </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -807,24 +790,24 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
 <span class="md-ellipsis">
     24春夏
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
             24春夏
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="index.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/ADS/index.html">
 <span class="md-ellipsis">
     ADS
   </span>
@@ -833,92 +816,56 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_4_1">
 <span class="md-nav__icon md-icon"></span>
             ADS
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="Lec1-AVL%2CSplay.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/ADS/Lec1-AVL%2CSplay.html">
 <span class="md-ellipsis">
     Lec1 AVL,Splay
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="Lec3-Information%20Retrieval.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/ADS/Lec3-Information%20Retrieval.html">
 <span class="md-ellipsis">
     Lec3 Information Retrieval
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="Lec4-Heaps.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/ADS/Lec4-Heaps.html">
 <span class="md-ellipsis">
     Lec4 Heaps
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="Lec5-Binomial%20Heap.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/ADS/Lec5-Binomial%20Heap.html">
 <span class="md-ellipsis">
     Lec5 Binomial Heap
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="Lec6-Divide%20and%20Conquer.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/ADS/Lec6-Divide%20and%20Conquer.html">
 <span class="md-ellipsis">
     Lec6 Divide and Conquer
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    Lec7 Backtracking
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="Lec7%20Backtracking.html">
-<span class="md-ellipsis">
-    Lec7 Backtracking
-  </span>
-</a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-<span class="md-ellipsis">
-      基本概念
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#alpha-beta">
-<span class="md-ellipsis">
-      alpha-beta剪枝
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="Lec7-Backtracking.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/ADS/Lec7-Backtracking.html">
 <span class="md-ellipsis">
     Lec7 Backtracking
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/ADS/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0.html">
 <span class="md-ellipsis">
     期末复习
   </span>
@@ -930,7 +877,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../DB/index.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/DB/index.html">
 <span class="md-ellipsis">
     DB
   </span>
@@ -946,14 +893,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../DB/Database%20design.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/DB/Database%20design.html">
 <span class="md-ellipsis">
     Database design
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../DB/SQL_.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/DB/SQL_.html">
 <span class="md-ellipsis">
     SQL 
   </span>
@@ -965,7 +912,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/index.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/index.html">
 <span class="md-ellipsis">
     计组
   </span>
@@ -981,35 +928,35 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/1_Prelude.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/1_Prelude.html">
 <span class="md-ellipsis">
     1 Prelude
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/2_RISC-V%20ISA.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/2_RISC-V%20ISA.html">
 <span class="md-ellipsis">
     2 RISC V ISA
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/3_Arithmetic.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/3_Arithmetic.html">
 <span class="md-ellipsis">
     3 Arithmetic
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/4_Processor.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/4_Processor.html">
 <span class="md-ellipsis">
     4 Processor
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/5_Memory.html">
+<a class="md-nav__link" href="../../24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/5_Memory.html">
 <span class="md-ellipsis">
     5 Memory
   </span>
@@ -1021,10 +968,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/index.html">
+<a class="md-nav__link" href="../index.html">
 <span class="md-ellipsis">
     工具
   </span>
@@ -1033,7 +980,7 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
             工具
@@ -1054,21 +1001,21 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/DeepLearning%E7%9B%B8%E5%85%B3/Linux%20bash.html">
+<a class="md-nav__link" href="../DeepLearning%E7%9B%B8%E5%85%B3/Linux%20bash.html">
 <span class="md-ellipsis">
     Linux bash
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/DeepLearning%E7%9B%B8%E5%85%B3/vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html">
+<a class="md-nav__link" href="../DeepLearning%E7%9B%B8%E5%85%B3/vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html">
 <span class="md-ellipsis">
     Vscode调试配置总结
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/DeepLearning%E7%9B%B8%E5%85%B3/%E9%85%8D%E7%BD%AEpytorch%E7%8E%AF%E5%A2%83.html">
+<a class="md-nav__link" href="../DeepLearning%E7%9B%B8%E5%85%B3/%E9%85%8D%E7%BD%AEpytorch%E7%8E%AF%E5%A2%83.html">
 <span class="md-ellipsis">
     配置pytorch环境
   </span>
@@ -1092,7 +1039,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/System%E7%9B%B8%E5%85%B3/wsl2%E5%AE%89%E8%A3%85.html">
+<a class="md-nav__link" href="../System%E7%9B%B8%E5%85%B3/wsl2%E5%AE%89%E8%A3%85.html">
 <span class="md-ellipsis">
     WSL2
   </span>
@@ -1101,38 +1048,106 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_5_4" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
 <span class="md-ellipsis">
-    发现的一些有意思的工具
+    一些有意思的工具
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_5_4_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_5_4_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_5_4">
 <span class="md-nav__icon md-icon"></span>
-            发现的一些有意思的工具
+            一些有意思的工具
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion.html">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Stable diffusion
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="stable%20diffusion.html">
 <span class="md-ellipsis">
     Stable diffusion
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#windows">
+<span class="md-ellipsis">
+      本地(Windows)
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion%E8%BF%9B%E9%98%B6.html">
+<a class="md-nav__link" href="#ubuntu-1804">
+<span class="md-ellipsis">
+      服务器(Ubuntu 18.04)
+    </span>
+</a>
+<nav aria-label="服务器(Ubuntu 18.04)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      有梯子
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      无梯子
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      使用
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lora">
+<span class="md-ellipsis">
+      Lora安装
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="stable%20diffusion%E8%BF%9B%E9%98%B6.html">
 <span class="md-ellipsis">
     Stable diffusion进阶
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/%E5%8F%91%E7%8E%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/sympy%E7%9A%84%E4%BD%BF%E7%94%A8.html">
+<a class="md-nav__link" href="sympy%E7%9A%84%E4%BD%BF%E7%94%A8.html">
 <span class="md-ellipsis">
     Sympy的使用
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="%E5%A5%BD%E7%94%A8%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E5%8F%8A%E5%85%B6%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95.html">
+<span class="md-ellipsis">
+    好用的浏览器插件及其配置方法
   </span>
 </a>
 </li>
@@ -1154,7 +1169,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E5%B7%A5%E5%85%B7/%E7%A1%AC%E4%BB%B6%E7%9B%B8%E5%85%B3/vivado.html">
+<a class="md-nav__link" href="../%E7%A1%AC%E4%BB%B6%E7%9B%B8%E5%85%B3/vivado.html">
 <span class="md-ellipsis">
     计组vivado使用
   </span>
@@ -1181,16 +1196,48 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#windows">
 <span class="md-ellipsis">
-      基本概念
+      本地(Windows)
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#alpha-beta">
+<a class="md-nav__link" href="#ubuntu-1804">
 <span class="md-ellipsis">
-      alpha-beta剪枝
+      服务器(Ubuntu 18.04)
+    </span>
+</a>
+<nav aria-label="服务器(Ubuntu 18.04)" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      有梯子
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      无梯子
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
+<span class="md-ellipsis">
+      使用
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lora">
+<span class="md-ellipsis">
+      Lora安装
     </span>
 </a>
 </li>
@@ -1201,132 +1248,89 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Lec7 Backtracking</h1>
-<h3 id="_1">基本概念</h3>
-<p>!!!  example ""</p>
-<ul>
-<li>What makes the time complexity analysis of a backtracking algorithm very difficult is that <strong>the number of solutions that do satisfy the restriction is hard to estimate</strong>.（True）</li>
-<li>What makes the time complexity analysis of a backtracking algorithm very difficult is that the sizes of solution spaces may vary.（False）</li>
-</ul>
-<h3 id="alpha-beta">alpha-beta剪枝</h3>
-<p><a href="https://oi-wiki.org/search/alpha-beta/">OI-Wiki</a></p>
-<p>记 <span class="arithmatex">\(v\)</span> 为节点的分数，<span class="arithmatex">\(\alpha\)</span> 为返回分数的最大下界，<span class="arithmatex">\(\beta\)</span> 为最小上界。</p>
-<ul>
-<li>如果当前节点是max节点，带着当前的<span class="arithmatex">\(\alpha,\beta\)</span>值递归搜索子节点，然后把返回值和父节点的<span class="arithmatex">\(\alpha\)</span> 取max。父节点<span class="arithmatex">\(\beta\)</span>不变</li>
-<li>如果是min, 同理和<span class="arithmatex">\(\beta\)</span> 取min</li>
-<li>如果搜到<span class="arithmatex">\(\alpha\geq \beta\)</span>.  剩下的孩子就不用搜索了</li>
-</ul>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">alpha_beta</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">alph</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">beta</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_max</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">son_num</span><span class="p">[</span><span class="n">u</span><span class="p">])</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">val</span><span class="p">[</span><span class="n">u</span><span class="p">];</span>
-</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">is_max</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">son_num</span><span class="p">[</span><span class="n">u</span><span class="p">];</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="w">      </span><span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">son</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
-</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="w">      </span><span class="n">alph</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">max</span><span class="p">(</span><span class="n">alph</span><span class="p">,</span><span class="w"> </span><span class="n">alpha_beta</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">alph</span><span class="p">,</span><span class="w"> </span><span class="n">beta</span><span class="p">,</span><span class="w"> </span><span class="n">is_max</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="mi">1</span><span class="p">));</span>
-</span><span id="__span-0-7"><a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">alph</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">beta</span><span class="p">)</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
-</span><span id="__span-0-8"><a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-9"><a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">alph</span><span class="p">;</span>
-</span><span id="__span-0-10"><a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-11"><a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">son_num</span><span class="p">[</span><span class="n">u</span><span class="p">];</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-12"><a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="w">      </span><span class="kt">int</span><span class="w"> </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">son</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
-</span><span id="__span-0-13"><a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="w">      </span><span class="n">beta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">min</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span><span class="w"> </span><span class="n">alpha_beta</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="w"> </span><span class="n">alph</span><span class="p">,</span><span class="w"> </span><span class="n">beta</span><span class="p">,</span><span class="w"> </span><span class="n">is_max</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="mi">1</span><span class="p">));</span>
-</span><span id="__span-0-14"><a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">alph</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">beta</span><span class="p">)</span><span class="w"> </span><span class="k">break</span><span class="p">;</span>
-</span><span id="__span-0-15"><a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-16"><a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">beta</span><span class="p">;</span>
-</span><span id="__span-0-17"><a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-0-18"><a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="p">}</span>
+<hr/>
+<p>title: Stable Diffusion部署
+date: 2023-4-4 18:13:58
+tags:
+- python
+- pytorch
+categories:
+- [机器学习]
+excerpt: Windows和Ubuntu下的部署方法</p>
+<hr/>
+<h1 id="stable-diffusion">Stable Diffusion部署</h1>
+<p>分别介绍了在window下和Ubuntu服务器下的部署方法</p>
+<h2 id="windows">本地(Windows)</h2>
+<p>直接b站下整合包即可。
+https://www.bilibili.com/video/BV1ne4y1V7QU</p>
+<h2 id="ubuntu-1804">服务器(Ubuntu 18.04)</h2>
+<p>参考<a href="https://birchtree2.github.io/2023/02/22/%E9%85%8D%E7%BD%AEpytorch%E7%8E%AF%E5%A2%83/">Ubuntu下配置pytorch环境</a></p>
+<p>1.conda新建虚拟环境,注意python版本</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>conda<span class="w"> </span>create<span class="w"> </span>-n<span class="w"> </span>sd<span class="w"> </span><span class="nv">python</span><span class="o">=</span><span class="m">3</span>.10.6
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>conda<span class="w"> </span>activate<span class="w"> </span>sd
 </span></code></pre></div>
-<p>供展示的代码</p>
-<p>??? note "code"</p>
-<div class="language-cpp highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="cp">#include</span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
-</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
-</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="n">son</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="kt">int</span><span class="w"> </span><span class="n">val</span><span class="p">[</span><span class="mi">100</span><span class="p">];</span>
-</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="kt">int</span><span class="w"> </span><span class="nf">alpha_beta</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">alph</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">beta</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">is_max</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-7"><a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="w">  </span><span class="c1">//输出当前节点编号+(max/min) alpha,beta,,格式要美观 如果值为inf,输出字母,不输出数值</span>
-</span><span id="__span-1-8"><a href="#__codelineno-1-8" id="__codelineno-1-8" name="__codelineno-1-8"></a><span class="w">  </span><span class="k">auto</span><span class="w"> </span><span class="n">print</span><span class="o">=</span><span class="p">[</span><span class="o">&amp;</span><span class="p">](){</span>
-</span><span id="__span-1-9"><a href="#__codelineno-1-9" id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">u</span><span class="o">&lt;&lt;</span><span class="p">(</span><span class="n">is_max</span><span class="o">?</span><span class="s">"(max)"</span><span class="o">:</span><span class="s">"(min)"</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="s">" "</span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">"alpha="</span><span class="p">;</span>
-</span><span id="__span-1-10"><a href="#__codelineno-1-10" id="__codelineno-1-10" name="__codelineno-1-10"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">alph</span><span class="o">==</span><span class="n">INT_MIN</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"-inf"</span><span class="p">;</span>
-</span><span id="__span-1-11"><a href="#__codelineno-1-11" id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">alph</span><span class="p">;</span>
-</span><span id="__span-1-12"><a href="#__codelineno-1-12" id="__codelineno-1-12" name="__codelineno-1-12"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">" beta="</span><span class="p">;</span>
-</span><span id="__span-1-13"><a href="#__codelineno-1-13" id="__codelineno-1-13" name="__codelineno-1-13"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">beta</span><span class="o">==</span><span class="n">INT_MAX</span><span class="p">)</span><span class="w"> </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"inf"</span><span class="p">;</span>
-</span><span id="__span-1-14"><a href="#__codelineno-1-14" id="__codelineno-1-14" name="__codelineno-1-14"></a><span class="w">    </span><span class="k">else</span><span class="w"> </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">beta</span><span class="p">;</span>
-</span><span id="__span-1-15"><a href="#__codelineno-1-15" id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-</span><span id="__span-1-16"><a href="#__codelineno-1-16" id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="w">  </span><span class="p">};</span>
-</span><span id="__span-1-17"><a href="#__codelineno-1-17" id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="w">  </span><span class="n">print</span><span class="p">();</span>
-</span><span id="__span-1-18"><a href="#__codelineno-1-18" id="__codelineno-1-18" name="__codelineno-1-18"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">son</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">size</span><span class="p">())</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">val</span><span class="p">[</span><span class="n">u</span><span class="p">];</span>
-</span><span id="__span-1-19"><a href="#__codelineno-1-19" id="__codelineno-1-19" name="__codelineno-1-19"></a><span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">is_max</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-20"><a href="#__codelineno-1-20" id="__codelineno-1-20" name="__codelineno-1-20"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">son</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">size</span><span class="p">();</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-21"><a href="#__codelineno-1-21" id="__codelineno-1-21" name="__codelineno-1-21"></a><span class="w">      </span><span class="n">alph</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">max</span><span class="p">(</span><span class="n">alph</span><span class="p">,</span><span class="w"> </span><span class="n">alpha_beta</span><span class="p">(</span><span class="n">son</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">alph</span><span class="p">,</span><span class="w"> </span><span class="n">beta</span><span class="p">,</span><span class="w"> </span><span class="n">is_max</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="mi">1</span><span class="p">));</span>
-</span><span id="__span-1-22"><a href="#__codelineno-1-22" id="__codelineno-1-22" name="__codelineno-1-22"></a><span class="w">      </span><span class="n">print</span><span class="p">();</span>
-</span><span id="__span-1-23"><a href="#__codelineno-1-23" id="__codelineno-1-23" name="__codelineno-1-23"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">alph</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">beta</span><span class="p">){</span>
-</span><span id="__span-1-24"><a href="#__codelineno-1-24" id="__codelineno-1-24" name="__codelineno-1-24"></a><span class="w">        </span><span class="c1">//输出被剪掉</span>
-</span><span id="__span-1-25"><a href="#__codelineno-1-25" id="__codelineno-1-25" name="__codelineno-1-25"></a><span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">son</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">)</span>
-</span><span id="__span-1-26"><a href="#__codelineno-1-26" id="__codelineno-1-26" name="__codelineno-1-26"></a><span class="w">            </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">son</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="s">" is pruned"</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-</span><span id="__span-1-27"><a href="#__codelineno-1-27" id="__codelineno-1-27" name="__codelineno-1-27"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
-</span><span id="__span-1-28"><a href="#__codelineno-1-28" id="__codelineno-1-28" name="__codelineno-1-28"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-1-29"><a href="#__codelineno-1-29" id="__codelineno-1-29" name="__codelineno-1-29"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-30"><a href="#__codelineno-1-30" id="__codelineno-1-30" name="__codelineno-1-30"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">alph</span><span class="p">;</span>
-</span><span id="__span-1-31"><a href="#__codelineno-1-31" id="__codelineno-1-31" name="__codelineno-1-31"></a><span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-32"><a href="#__codelineno-1-32" id="__codelineno-1-32" name="__codelineno-1-32"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="n">son</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">size</span><span class="p">();</span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-33"><a href="#__codelineno-1-33" id="__codelineno-1-33" name="__codelineno-1-33"></a><span class="w">      </span><span class="n">beta</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">min</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span><span class="w"> </span><span class="n">alpha_beta</span><span class="p">(</span><span class="n">son</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">alph</span><span class="p">,</span><span class="w"> </span><span class="n">beta</span><span class="p">,</span><span class="w"> </span><span class="n">is_max</span><span class="w"> </span><span class="o">^</span><span class="w"> </span><span class="mi">1</span><span class="p">));</span>
-</span><span id="__span-1-34"><a href="#__codelineno-1-34" id="__codelineno-1-34" name="__codelineno-1-34"></a><span class="w">      </span><span class="n">print</span><span class="p">();</span>
-</span><span id="__span-1-35"><a href="#__codelineno-1-35" id="__codelineno-1-35" name="__codelineno-1-35"></a><span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">alph</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">beta</span><span class="p">){</span>
-</span><span id="__span-1-36"><a href="#__codelineno-1-36" id="__codelineno-1-36" name="__codelineno-1-36"></a><span class="w">         </span><span class="k">if</span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">son</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">size</span><span class="p">()</span><span class="mi">-1</span><span class="p">)</span>
-</span><span id="__span-1-37"><a href="#__codelineno-1-37" id="__codelineno-1-37" name="__codelineno-1-37"></a><span class="w">            </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">son</span><span class="p">[</span><span class="n">u</span><span class="p">][</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;&lt;</span><span class="s">" is pruned"</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-</span><span id="__span-1-38"><a href="#__codelineno-1-38" id="__codelineno-1-38" name="__codelineno-1-38"></a><span class="w">        </span><span class="k">break</span><span class="p">;</span>
-</span><span id="__span-1-39"><a href="#__codelineno-1-39" id="__codelineno-1-39" name="__codelineno-1-39"></a><span class="w">      </span><span class="p">}</span>
-</span><span id="__span-1-40"><a href="#__codelineno-1-40" id="__codelineno-1-40" name="__codelineno-1-40"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-41"><a href="#__codelineno-1-41" id="__codelineno-1-41" name="__codelineno-1-41"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">beta</span><span class="p">;</span>
-</span><span id="__span-1-42"><a href="#__codelineno-1-42" id="__codelineno-1-42" name="__codelineno-1-42"></a><span class="w">  </span><span class="p">}</span>
-</span><span id="__span-1-43"><a href="#__codelineno-1-43" id="__codelineno-1-43" name="__codelineno-1-43"></a><span class="p">}</span>
-</span><span id="__span-1-44"><a href="#__codelineno-1-44" id="__codelineno-1-44" name="__codelineno-1-44"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(){</span>
-</span><span id="__span-1-45"><a href="#__codelineno-1-45" id="__codelineno-1-45" name="__codelineno-1-45"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="n">tot</span><span class="p">,</span><span class="n">flag</span><span class="p">;</span>
-</span><span id="__span-1-46"><a href="#__codelineno-1-46" id="__codelineno-1-46" name="__codelineno-1-46"></a><span class="w">    </span><span class="c1">//选择模式：完全二叉树/自定义树</span>
-</span><span id="__span-1-47"><a href="#__codelineno-1-47" id="__codelineno-1-47" name="__codelineno-1-47"></a><span class="w">    </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"1 for complete binary tree, 2 for custom tree:"</span><span class="p">;</span>
-</span><span id="__span-1-48"><a href="#__codelineno-1-48" id="__codelineno-1-48" name="__codelineno-1-48"></a><span class="w">    </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
-</span><span id="__span-1-49"><a href="#__codelineno-1-49" id="__codelineno-1-49" name="__codelineno-1-49"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">n</span><span class="o">==</span><span class="mi">1</span><span class="p">){</span>
-</span><span id="__span-1-50"><a href="#__codelineno-1-50" id="__codelineno-1-50" name="__codelineno-1-50"></a><span class="w">        </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"input number of leaf nodes:"</span><span class="p">;</span>
-</span><span id="__span-1-51"><a href="#__codelineno-1-51" id="__codelineno-1-51" name="__codelineno-1-51"></a><span class="w">        </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
-</span><span id="__span-1-52"><a href="#__codelineno-1-52" id="__codelineno-1-52" name="__codelineno-1-52"></a><span class="w">        </span><span class="n">tot</span><span class="o">=</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="mi">-1</span><span class="p">;</span><span class="c1">//总共有2n-1个节点 其中n个叶子节点</span>
-</span><span id="__span-1-53"><a href="#__codelineno-1-53" id="__codelineno-1-53" name="__codelineno-1-53"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="mi">2</span><span class="o">*</span><span class="n">n</span><span class="mi">-1</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-</span><span id="__span-1-54"><a href="#__codelineno-1-54" id="__codelineno-1-54" name="__codelineno-1-54"></a><span class="w">            </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">val</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-</span><span id="__span-1-55"><a href="#__codelineno-1-55" id="__codelineno-1-55" name="__codelineno-1-55"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-1-56"><a href="#__codelineno-1-56" id="__codelineno-1-56" name="__codelineno-1-56"></a><span class="w">        </span><span class="c1">//建完全二叉树</span>
-</span><span id="__span-1-57"><a href="#__codelineno-1-57" id="__codelineno-1-57" name="__codelineno-1-57"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="mi">-1</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-</span><span id="__span-1-58"><a href="#__codelineno-1-58" id="__codelineno-1-58" name="__codelineno-1-58"></a><span class="w">            </span><span class="n">son</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="p">);</span>
-</span><span id="__span-1-59"><a href="#__codelineno-1-59" id="__codelineno-1-59" name="__codelineno-1-59"></a><span class="w">            </span><span class="n">son</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
-</span><span id="__span-1-60"><a href="#__codelineno-1-60" id="__codelineno-1-60" name="__codelineno-1-60"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-1-61"><a href="#__codelineno-1-61" id="__codelineno-1-61" name="__codelineno-1-61"></a><span class="w">        </span><span class="c1">//输入根节点是min还是max</span>
-</span><span id="__span-1-62"><a href="#__codelineno-1-62" id="__codelineno-1-62" name="__codelineno-1-62"></a><span class="w">        </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"1 for max, 0 for min:"</span><span class="p">;</span>
-</span><span id="__span-1-63"><a href="#__codelineno-1-63" id="__codelineno-1-63" name="__codelineno-1-63"></a><span class="w">        </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">flag</span><span class="p">;</span>
-</span><span id="__span-1-64"><a href="#__codelineno-1-64" id="__codelineno-1-64" name="__codelineno-1-64"></a><span class="w">        </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">alpha_beta</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">INT_MIN</span><span class="p">,</span><span class="n">INT_MAX</span><span class="p">,</span><span class="n">flag</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-</span><span id="__span-1-65"><a href="#__codelineno-1-65" id="__codelineno-1-65" name="__codelineno-1-65"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-66"><a href="#__codelineno-1-66" id="__codelineno-1-66" name="__codelineno-1-66"></a><span class="w">    </span><span class="k">else</span><span class="p">{</span>
-</span><span id="__span-1-67"><a href="#__codelineno-1-67" id="__codelineno-1-67" name="__codelineno-1-67"></a><span class="w">        </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">n</span><span class="p">;</span>
-</span><span id="__span-1-68"><a href="#__codelineno-1-68" id="__codelineno-1-68" name="__codelineno-1-68"></a><span class="w">        </span><span class="n">tot</span><span class="o">=</span><span class="n">n</span><span class="p">;</span>
-</span><span id="__span-1-69"><a href="#__codelineno-1-69" id="__codelineno-1-69" name="__codelineno-1-69"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-</span><span id="__span-1-70"><a href="#__codelineno-1-70" id="__codelineno-1-70" name="__codelineno-1-70"></a><span class="w">            </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">val</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-</span><span id="__span-1-71"><a href="#__codelineno-1-71" id="__codelineno-1-71" name="__codelineno-1-71"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-1-72"><a href="#__codelineno-1-72" id="__codelineno-1-72" name="__codelineno-1-72"></a><span class="w">        </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="mi">-1</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
-</span><span id="__span-1-73"><a href="#__codelineno-1-73" id="__codelineno-1-73" name="__codelineno-1-73"></a><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">;</span>
-</span><span id="__span-1-74"><a href="#__codelineno-1-74" id="__codelineno-1-74" name="__codelineno-1-74"></a><span class="w">            </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">x</span><span class="o">&gt;&gt;</span><span class="n">y</span><span class="p">;</span>
-</span><span id="__span-1-75"><a href="#__codelineno-1-75" id="__codelineno-1-75" name="__codelineno-1-75"></a><span class="w">            </span><span class="n">son</span><span class="p">[</span><span class="n">x</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">y</span><span class="p">);</span>
-</span><span id="__span-1-76"><a href="#__codelineno-1-76" id="__codelineno-1-76" name="__codelineno-1-76"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-1-77"><a href="#__codelineno-1-77" id="__codelineno-1-77" name="__codelineno-1-77"></a><span class="w">        </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="s">"1 for max, 0 for min:"</span><span class="p">;</span>
-</span><span id="__span-1-78"><a href="#__codelineno-1-78" id="__codelineno-1-78" name="__codelineno-1-78"></a><span class="w">        </span><span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">flag</span><span class="p">;</span>
-</span><span id="__span-1-79"><a href="#__codelineno-1-79" id="__codelineno-1-79" name="__codelineno-1-79"></a><span class="w">        </span><span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">alpha_beta</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">INT_MIN</span><span class="p">,</span><span class="n">INT_MAX</span><span class="p">,</span><span class="n">flag</span><span class="p">)</span><span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
-</span><span id="__span-1-80"><a href="#__codelineno-1-80" id="__codelineno-1-80" name="__codelineno-1-80"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-81"><a href="#__codelineno-1-81" id="__codelineno-1-81" name="__codelineno-1-81"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-1-82"><a href="#__codelineno-1-82" id="__codelineno-1-82" name="__codelineno-1-82"></a>
-</span><span id="__span-1-83"><a href="#__codelineno-1-83" id="__codelineno-1-83" name="__codelineno-1-83"></a><span class="p">}</span>
-</span><span id="__span-1-84"><a href="#__codelineno-1-84" id="__codelineno-1-84" name="__codelineno-1-84"></a><span class="cm">/*</span>
-</span><span id="__span-1-85"><a href="#__codelineno-1-85" id="__codelineno-1-85" name="__codelineno-1-85"></a><span class="cm">1</span>
-</span><span id="__span-1-86"><a href="#__codelineno-1-86" id="__codelineno-1-86" name="__codelineno-1-86"></a><span class="cm">8</span>
-</span><span id="__span-1-87"><a href="#__codelineno-1-87" id="__codelineno-1-87" name="__codelineno-1-87"></a><span class="cm">65 68 86 38 65 50 77 33</span>
-</span><span id="__span-1-88"><a href="#__codelineno-1-88" id="__codelineno-1-88" name="__codelineno-1-88"></a><span class="cm">1</span>
-</span><span id="__span-1-89"><a href="#__codelineno-1-89" id="__codelineno-1-89" name="__codelineno-1-89"></a><span class="cm">*/</span>
+<p>接下来根据服务器是否能科学上网有两种方法</p>
+<h3 id="_1">有梯子</h3>
+<ol>
+<li>
+<p>git clone
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>http.sslVerify<span class="w"> </span><span class="nb">false</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/AUTOMATIC1111/stable-diffusion-webui.git
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="nb">cd</span><span class="w"> </span>./stable-diffusion-webui
+</span></code></pre></div></p>
+</li>
+<li>
+<p>安装相关依赖</p>
+</li>
+</ol>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">torch</span><span class="o">==</span><span class="m">1</span>.12.1+cu113<span class="w"> </span><span class="nv">torchvision</span><span class="o">==</span><span class="m">0</span>.13.1+cu113
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements_versions.txt
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
 </span></code></pre></div>
+4. 启动(第一次的时候还要安装几个依赖的包)</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>python<span class="w"> </span>launch.py
+</span></code></pre></div>
+<h3 id="_2">无梯子</h3>
+<p>如果没有梯子,第3,4步可能会卡住。我们需要手动换源安装。参考的是<a href="https://zhuanlan.zhihu.com/p/601977978">知乎专栏</a></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">torch</span><span class="o">==</span><span class="m">1</span>.12.1+cu113<span class="w"> </span><span class="nv">torchvision</span><span class="o">==</span><span class="m">0</span>.13.1+cu113<span class="w"> </span>--extra-index-url<span class="w"> </span>https://download.pytorch.org/whl/cu113<span class="w"> </span>--trusted-host<span class="w"> </span>download.pytorch.org<span class="w"> </span>-i<span class="w"> </span>https://pypi.doubanio.com/simple
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements_versions.txt<span class="w"> </span>--prefer-binary<span class="w"> </span>-i<span class="w"> </span>https://pypi.douban.com/simple/
+</span><span id="__span-4-4"><a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>
+</span><span id="__span-4-5"><a href="#__codelineno-4-5" id="__codelineno-4-5" name="__codelineno-4-5"></a>pip<span class="w"> </span>install<span class="w"> </span>git+https://gitee.com/hznn/GFPGAN.git<span class="w"> </span>--prefer-binary
+</span><span id="__span-4-6"><a href="#__codelineno-4-6" id="__codelineno-4-6" name="__codelineno-4-6"></a>pip<span class="w"> </span>install<span class="w"> </span>git+https://gitee.com/hznn/CLIP.git<span class="w"> </span>--prefer-binary
+</span><span id="__span-4-7"><a href="#__codelineno-4-7" id="__codelineno-4-7" name="__codelineno-4-7"></a>pip<span class="w"> </span>install<span class="w"> </span>git+https://gitee.com/jerrylinkun/DeepDanbooru.git<span class="w"> </span>--prefer-binary
+</span><span id="__span-4-8"><a href="#__codelineno-4-8" id="__codelineno-4-8" name="__codelineno-4-8"></a>
+</span><span id="__span-4-9"><a href="#__codelineno-4-9" id="__codelineno-4-9" name="__codelineno-4-9"></a>
+</span><span id="__span-4-10"><a href="#__codelineno-4-10" id="__codelineno-4-10" name="__codelineno-4-10"></a>git<span class="w"> </span>clone<span class="w"> </span>https://gitee.com/jerrylinkun/stable-diffusion.git<span class="w"> </span>./repositories/stable-diffusion
+</span><span id="__span-4-11"><a href="#__codelineno-4-11" id="__codelineno-4-11" name="__codelineno-4-11"></a>
+</span><span id="__span-4-12"><a href="#__codelineno-4-12" id="__codelineno-4-12" name="__codelineno-4-12"></a>
+</span><span id="__span-4-13"><a href="#__codelineno-4-13" id="__codelineno-4-13" name="__codelineno-4-13"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/CompVis/taming-transformers.git<span class="w"> </span>./repositories/taming-transformers
+</span><span id="__span-4-14"><a href="#__codelineno-4-14" id="__codelineno-4-14" name="__codelineno-4-14"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/crowsonkb/k-diffusion.git<span class="w"> </span>./repositories/K-diffusion
+</span><span id="__span-4-15"><a href="#__codelineno-4-15" id="__codelineno-4-15" name="__codelineno-4-15"></a>
+</span><span id="__span-4-16"><a href="#__codelineno-4-16" id="__codelineno-4-16" name="__codelineno-4-16"></a>
+</span><span id="__span-4-17"><a href="#__codelineno-4-17" id="__codelineno-4-17" name="__codelineno-4-17"></a>git<span class="w"> </span>clone<span class="w"> </span>https://gitee.com/arcsion/CodeFormer.git<span class="w"> </span>./repositories/CodeFormer
+</span><span id="__span-4-18"><a href="#__codelineno-4-18" id="__codelineno-4-18" name="__codelineno-4-18"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/salesforce/BLIP.git<span class="w"> </span>./repositories/BLIP
+</span><span id="__span-4-19"><a href="#__codelineno-4-19" id="__codelineno-4-19" name="__codelineno-4-19"></a>
+</span><span id="__span-4-20"><a href="#__codelineno-4-20" id="__codelineno-4-20" name="__codelineno-4-20"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>./repositories/CodeFormer/requirements.txt<span class="w"> </span>-i<span class="w"> </span>https://pypi.tuna.tsinghua.edu.cn/simple
+</span><span id="__span-4-21"><a href="#__codelineno-4-21" id="__codelineno-4-21" name="__codelineno-4-21"></a>pip<span class="w"> </span>install<span class="w"> </span>opencv-python-headless<span class="w"> </span>-i<span class="w"> </span>https://pypi.douban.com/simple/
+</span><span id="__span-4-22"><a href="#__codelineno-4-22" id="__codelineno-4-22" name="__codelineno-4-22"></a>
+</span><span id="__span-4-23"><a href="#__codelineno-4-23" id="__codelineno-4-23" name="__codelineno-4-23"></a>pip<span class="w"> </span>install<span class="w"> </span>git+https://gitee.com/ufhy/open_clip.git<span class="w"> </span>--prefer-binary
+</span></code></pre></div>
+<p>然后再执行</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>python<span class="w"> </span>launch.py
+</span></code></pre></div>
+<p>即可</p>
+<h3 id="_3">使用</h3>
+<p>每次启动前别忘了激活环境</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>conda<span class="w"> </span>activate<span class="w"> </span>sd
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>python<span class="w"> </span>launch.py
+</span></code></pre></div>
+<h2 id="lora">Lora安装</h2>
+<p>进入WebUI界面找到<code>Settings/Extensions</code>, 安装<code>sd-webui-additional-networks</code>. 如果因为梯子的原因找不到，可以直接点Install from URL 然后填入<code>https://ghproxy.com/https://github.com/kohya-ss/sd-webui-additional-networks.git</code></p>
+<p>我们在civitai等网站上下载模型后要放到指定目录。注意放模型的位置不是 <code>/models/Lora</code>而是在 
+<code>/extensions/sd-webui-additional-networks/models/lora</code></p>
+<p>重启UI之后，应该能看到<code>Additional Network</code>这一栏，然后勾选<strong>Enable</strong></p>
+<p>然后再选择模型和权重</p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
