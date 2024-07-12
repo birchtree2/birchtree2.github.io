@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/Deep%20Learning%E7%9B%B8%E5%85%B3/%E9%85%8D%E7%BD%AEpytorch%E7%8E%AF%E5%A2%83.html" rel="canonical"/>
-<link href="vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html" rel="prev"/>
-<link href="../%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion.html" rel="next"/>
+<link href="https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/Deep%20Learning%E7%9B%B8%E5%85%B3/pip%E5%92%8Cconda%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html" rel="canonical"/>
+<link href="Linux%20bash.html" rel="prev"/>
+<link href="vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
-<title>配置pytorch环境 - 时雨的笔记本</title>
+<title>Pip和conda配置环境 - 时雨的笔记本</title>
 <link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              配置pytorch环境
+              Pip和conda配置环境
             
           </span>
 </div>
@@ -633,13 +633,6 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../23%E7%A7%8B%E5%86%AC/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/%E5%A4%B1%E4%B8%9A%E3%80%81%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80%E3%80%81%E7%BB%8F%E6%B5%8E%E5%91%A8%E6%9C%9F.html">
-<span class="md-ellipsis">
-    失业、通货膨胀、经济周期
-  </span>
-</a>
-</li>
 </ul>
 </nav>
 </li>
@@ -1007,24 +1000,17 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html">
-<span class="md-ellipsis">
-    Vscode调试配置总结
-  </span>
-</a>
-</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    配置pytorch环境
+    Pip和conda配置环境
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<a class="md-nav__link md-nav__link--active" href="%E9%85%8D%E7%BD%AEpytorch%E7%8E%AF%E5%A2%83.html">
+<a class="md-nav__link md-nav__link--active" href="pip%E5%92%8Cconda%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html">
 <span class="md-ellipsis">
-    配置pytorch环境
+    Pip和conda配置环境
   </span>
 </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
@@ -1042,21 +1028,21 @@
 <nav aria-label="conda" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#conda_1">
 <span class="md-ellipsis">
-      下载
+      安装conda
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
       建立环境
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
       换源
     </span>
@@ -1066,6 +1052,13 @@
 <a class="md-nav__link" href="#vscodeconda">
 <span class="md-ellipsis">
       结合vscode和conda
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conda_2">
+<span class="md-ellipsis">
+      conda环境打包
     </span>
 </a>
 </li>
@@ -1099,6 +1092,13 @@
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html">
+<span class="md-ellipsis">
+    Vscode调试配置总结
+  </span>
+</a>
 </li>
 </ul>
 </nav>
@@ -1199,6 +1199,47 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+<span class="md-ellipsis">
+    科研
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_6">
+<span class="md-nav__icon md-icon"></span>
+            科研
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_6_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+<span class="md-ellipsis">
+    AI4Bio
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_6_1_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_6_1">
+<span class="md-nav__icon md-icon"></span>
+            AI4Bio
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A7%91%E7%A0%94/AI4Bio/%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E5%BD%92%E6%A1%A3.html">
+<span class="md-ellipsis">
+    一些问题归档
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </div>
@@ -1222,21 +1263,21 @@
 <nav aria-label="conda" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#conda_1">
 <span class="md-ellipsis">
-      下载
+      安装conda
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
       建立环境
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
       换源
     </span>
@@ -1246,6 +1287,13 @@
 <a class="md-nav__link" href="#vscodeconda">
 <span class="md-ellipsis">
       结合vscode和conda
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conda_2">
+<span class="md-ellipsis">
+      conda环境打包
     </span>
 </a>
 </li>
@@ -1284,30 +1332,49 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>配置pytorch环境</h1>
-<hr/>
-<p>title: 配置pytorch环境
-date: 2023-02-22 15:29:35
-categories:
-- 机器学习
-tags: 
-- pytorch
-- 机器学习
-- 命令</p>
+<h1>Pip和conda配置环境</h1>
 <hr/>
 <p>记录一下自己在配置pytorch环境时遇到的问题。全程使用Ubuntu命令行操作，可以远程操作服务器</p>
 <p><a href="https://www.jianshu.com/p/3e56648b55c6">env</a></p>
 <h2 id="conda">conda</h2>
-<h3 id="_1">下载</h3>
-<p>先到<a href="https://docs.conda.io/en/latest/miniconda.html">miniconda的官网</a>找到对应的下载链接，然后用<code>wget</code>安装
-<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>wget<span class="w">  </span>https://repo.anaconda.com/miniconda/Miniconda3-py38_23.1.0-1-Linux-x86_64.sh
-</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>bash<span class="w"> </span>Miniconda3-py38_23.1.0-1-Linux-x86_64.sh
-</span></code></pre></div></p>
-<h3 id="_2">建立环境</h3>
+<h3 id="conda_1">安装conda</h3>
+<p>先到<a href="https://docs.conda.io/en/latest/miniconda.html">miniconda的官网</a>找到对应的下载链接，然后用<code>wget</code>安装。
+- 如果下载速度很慢，可以用<a href="https://mirrors.zju.edu.cn/docs/anaconda/miniconda">镜像源</a>, 找到-latest-linux x86_64</p>
+<p><div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>wget<span class="w">  </span>https://mirrors.zju.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>bash<span class="w"> </span>Miniconda3-latest-Linux-x86_64.sh<span class="w"> </span>
+</span></code></pre></div>
+1. 按ENTER浏览用户协议</p>
+<ol>
+<li>
+<p>之后一路选择yes, 环境会创建到~/miniconda3/envs</p>
+</li>
+<li>
+<p>```
+    Do you wish to update your shell profile to automatically initialize conda?
+    This will activate conda on startup and change the command prompt when activated.
+    If you'd prefer that conda's base environment not be activated on startup,
+       run the following command when conda is activated:</p>
+<p>conda config --set auto_activate_base false</p>
+<p>You can undo this by running <code>conda init --reverse $SHELL</code>? [yes|no]
+```</p>
+<p>出现这个的时候，选择yes  这样启动终端时会自动激活conda</p>
+</li>
+<li>
+<p>安装完成后，执行source ~/.bashrc 重启终端，最左边会出现(base)字样，说明安装完成</p>
+</li>
+</ol>
+<h3 id="_1">建立环境</h3>
 <p><code>conda create -n [环境名称] python=[版本号]</code></p>
+<p>已有的环境</p>
+<p>nas上环境</p>
 <p>接着重启终端。然后才能激活环境</p>
 <p><code>conda activate [环境名称]</code></p>
-<h3 id="_3">换源</h3>
+<h3 id="_2">换源</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+</div>
+<p>​   mirrors.zju.edu.cn目前只支持校园内网访问，外网访问时会自动重定向到清华源</p>
+<p>以zju源为例</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/msys2/
 </span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/conda-forge
 </span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/pkgs/free/
@@ -1324,14 +1391,39 @@ tags:
 <li>vsc会自动定位Python的位置 <code>~\miniconda3\envs\对应的版本</code>,选择对应版本号和环境名称即可</li>
 </ol>
 <p>设置好之后，每次启动vsc集成的终端时就会自动激活对应的环境。python代码也可以点击右上角一键运行了</p>
+<h3 id="conda_2">conda环境打包</h3>
+<p>打包:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>conda-pack
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>conda<span class="w"> </span>pack<span class="w"> </span>-n<span class="w"> </span>my_env
+</span></code></pre></div>
+<p>如果该环境下有<code>-e</code>安装的包，则要使用<code>--ignore-editable-packages</code>，排除<code>-e</code>的包</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>conda<span class="w"> </span>pack<span class="w"> </span>-n<span class="w"> </span>my_env<span class="w"> </span>--ignore-editable-packages
+</span></code></pre></div>
+<p>之后会得到my_env.tar.gz文件</p>
+<p>重建:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>mkdir<span class="w"> </span>~/miniconda3/envs/my_env
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>tar<span class="w"> </span>-xzvf<span class="w"> </span>my_env.tar.gz<span class="w"> </span>-C<span class="w"> </span>~/miniconda3/envs/my_env
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>conda<span class="w"> </span>env<span class="w"> </span>list<span class="w"> </span><span class="c1">#查看结果</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>如果在环境中混用pip和conda安装包，conda打包的时候有部分包会被漏掉，因此重建之后需要手动pip install缺失的包</p>
+</div>
 <h2 id="pip">pip</h2>
+<p>pip查找包并安装的速度一般比conda快</p>
 <p>临时换源:
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-i<span class="w"> </span>https://mirrors.zju.edu.cn/pypi/web/simple
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>pip<span class="w"> </span>install<span class="w"> </span>package_name<span class="w"> </span>-i<span class="w"> </span>https://mirrors.zju.edu.cn/pypi/web/simple
 </span></code></pre></div></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>package_name
+</span></code></pre></div>
 <h2 id="pytorch">pytorch安装</h2>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+</div>
+<p>​   此部分的内容需要更新</p>
 <p><code>conda install pytorch=[版本号]=[具体名字]</code></p>
 <p>注意源自动匹配的版本可能不对。要检查名字后面不是带着<code>_cpu</code>, 而是<code>_cuda11.3_cudnn...</code>. 可以手动指定具体版本号</p>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>conda<span class="w"> </span>install<span class="w"> </span><span class="nv">pytorch</span><span class="o">=</span><span class="m">1</span>.10.0<span class="o">=</span>py3.8_cuda11.3_cudnn8.2.0_0
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>conda<span class="w"> </span>install<span class="w"> </span><span class="nv">pytorch</span><span class="o">=</span><span class="m">1</span>.10.0<span class="o">=</span>py3.8_cuda11.3_cudnn8.2.0_0
 </span></code></pre></div>
 <a href="https://blog.csdn.net/weixin_43868021/article/details/122083729#:~:text=%E6%9F%A5%E7%9C%8B%E4%BA%86%E4%B8%8B%E5%BA%93%E7%9A%84%E4%BF%A1%E6%81%AF%EF%BC%8C%E5%8F%91%E7%8E%B0%E6%9C%89%E4%B8%80%E4%B8%AA%20pytorch%20-mutex%E5%BA%93%EF%BC%8C%E8%BF%99%E4%B8%AA%E5%B0%B1%E6%98%AF%E5%8E%9F%E5%9B%A0%E6%89%80%E5%9C%A8%EF%BC%8C%E5%B0%86%E5%85%B6%E5%8D%B8%E8%BD%BD%E5%90%8E%EF%BC%8C%E5%86%8D%E9%87%8D%E6%96%B0%20%E5%AE%89%E8%A3%85GPU%E7%89%88%E6%9C%AC%20%E5%B0%B1%E8%A7%A3%E5%86%B3%E4%BA%86%E3%80%82%20%E5%8D%B8%E8%BD%BD%20conda%20uninstall,conda%20install%20pytorch%20torchvision%20torchaudio%20cudatoolkit%3D11.3%20-c%20pytorch">pytorch和cudatoolkit版本对应</a></p>
 <h3 id="torchvision">torchvision</h3>
