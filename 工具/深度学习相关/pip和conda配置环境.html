@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/Deep%20Learning%E7%9B%B8%E5%85%B3/Linux%20bash.html" rel="canonical"/>
-<link href="../index.html" rel="prev"/>
-<link href="pip%E5%92%8Cconda%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html" rel="next"/>
+<link href="https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/pip%E5%92%8Cconda%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html" rel="canonical"/>
+<link href="Linux%20bash.html" rel="prev"/>
+<link href="vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
-<title>Linux bash - 时雨的笔记本</title>
+<title>Pip和conda配置环境 - 时雨的笔记本</title>
 <link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#conda">
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Linux bash
+              Pip和conda配置环境
             
           </span>
 </div>
@@ -979,197 +979,16 @@
             工具
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_5_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
-<span class="md-ellipsis">
-    Deep Learning相关
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_5_2_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_5_2">
-<span class="md-nav__icon md-icon"></span>
-            Deep Learning相关
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    Linux bash
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="Linux%20bash.html">
-<span class="md-ellipsis">
-    Linux bash
-  </span>
-</a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-<span class="md-ellipsis">
-      常见指令
-    </span>
-</a>
-<nav aria-label="常见指令" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
-<span class="md-ellipsis">
-      查看目录
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-<span class="md-ellipsis">
-      解压文件
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-<span class="md-ellipsis">
-      环境变量
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
-<span class="md-ellipsis">
-      软链接
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_6">
-<span class="md-ellipsis">
-      进程管理
-    </span>
-</a>
-<nav aria-label="进程管理" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_7">
-<span class="md-ellipsis">
-      后台运行
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_8">
-<span class="md-ellipsis">
-      终端中运行的命令放到后台
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_9">
-<span class="md-ellipsis">
-      后台指令放到终端
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_10">
-<span class="md-ellipsis">
-      用户管理
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_11">
-<span class="md-ellipsis">
-      远程登录
-    </span>
-</a>
-<nav aria-label="远程登录" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ssh">
-<span class="md-ellipsis">
-      配置ssh
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_12">
-<span class="md-ellipsis">
-      登录
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#scp">
-<span class="md-ellipsis">
-      scp拷贝文件
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#git">
-<span class="md-ellipsis">
-      git
-    </span>
-</a>
-<nav aria-label="git" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_13">
-<span class="md-ellipsis">
-      远程仓库
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="pip%E5%92%8Cconda%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html">
-<span class="md-ellipsis">
-    Pip和conda配置环境
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html">
-<span class="md-ellipsis">
-    Vscode调试配置总结
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_5_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_5_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
 <span class="md-ellipsis">
     一些有意思的工具
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_5_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_5_3">
+<nav aria-expanded="false" aria-labelledby="__nav_5_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
 <span class="md-nav__icon md-icon"></span>
             一些有意思的工具
           </label>
@@ -1199,6 +1018,130 @@
 <a class="md-nav__link" href="../%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90.html">
 <span class="md-ellipsis">
     浏览器插件推荐
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+<span class="md-ellipsis">
+    深度学习相关
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_5_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_3">
+<span class="md-nav__icon md-icon"></span>
+            深度学习相关
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="Linux%20bash.html">
+<span class="md-ellipsis">
+    Linux bash
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Pip和conda配置环境
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="pip%E5%92%8Cconda%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html">
+<span class="md-ellipsis">
+    Pip和conda配置环境
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conda">
+<span class="md-ellipsis">
+      conda
+    </span>
+</a>
+<nav aria-label="conda" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conda_1">
+<span class="md-ellipsis">
+      安装conda
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      建立环境
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+<span class="md-ellipsis">
+      换源
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vscodeconda">
+<span class="md-ellipsis">
+      结合vscode和conda
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conda_2">
+<span class="md-ellipsis">
+      conda环境打包
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pip">
+<span class="md-ellipsis">
+      pip
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pytorch">
+<span class="md-ellipsis">
+      pytorch安装
+    </span>
+</a>
+<nav aria-label="pytorch安装" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#torchvision">
+<span class="md-ellipsis">
+      torchvision
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html">
+<span class="md-ellipsis">
+    Vscode调试配置总结
   </span>
 </a>
 </li>
@@ -1312,38 +1255,45 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#conda">
 <span class="md-ellipsis">
-      常见指令
+      conda
     </span>
 </a>
-<nav aria-label="常见指令" class="md-nav">
+<nav aria-label="conda" class="md-nav">
 <ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#conda_1">
+<span class="md-ellipsis">
+      安装conda
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      建立环境
+    </span>
+</a>
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      查看目录
+      换源
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#vscodeconda">
 <span class="md-ellipsis">
-      解压文件
+      结合vscode和conda
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#conda_2">
 <span class="md-ellipsis">
-      环境变量
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
-<span class="md-ellipsis">
-      软链接
+      conda环境打包
     </span>
 </a>
 </li>
@@ -1351,88 +1301,24 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_6">
+<a class="md-nav__link" href="#pip">
 <span class="md-ellipsis">
-      进程管理
+      pip
     </span>
 </a>
-<nav aria-label="进程管理" class="md-nav">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#pytorch">
+<span class="md-ellipsis">
+      pytorch安装
+    </span>
+</a>
+<nav aria-label="pytorch安装" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_7">
+<a class="md-nav__link" href="#torchvision">
 <span class="md-ellipsis">
-      后台运行
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_8">
-<span class="md-ellipsis">
-      终端中运行的命令放到后台
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_9">
-<span class="md-ellipsis">
-      后台指令放到终端
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_10">
-<span class="md-ellipsis">
-      用户管理
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_11">
-<span class="md-ellipsis">
-      远程登录
-    </span>
-</a>
-<nav aria-label="远程登录" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#ssh">
-<span class="md-ellipsis">
-      配置ssh
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_12">
-<span class="md-ellipsis">
-      登录
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#scp">
-<span class="md-ellipsis">
-      scp拷贝文件
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#git">
-<span class="md-ellipsis">
-      git
-    </span>
-</a>
-<nav aria-label="git" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_13">
-<span class="md-ellipsis">
-      远程仓库
+      torchvision
     </span>
 </a>
 </li>
@@ -1446,135 +1332,104 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>Linux bash</h1>
-<p>Linux Bash</p>
-<p>参考资料</p>
-<ul>
-<li><a href="https://101.lug.ustc.edu.cn/#structure">USTC Linux 101</a></li>
-<li><a href="https://zjusct.pages.zjusct.io/summer_hpc101_2024/hpc-101-labs-2024/Lab0-LinuxCrashCourse/">linux crash course</a></li>
-</ul>
-<h2 id="_1">常见指令</h2>
-<p><code>cp</code>和<code>rm</code>处理文件夹的时候要加<code>-r</code></p>
-<h3 id="_2">查看目录</h3>
-<ul>
-<li><code>ls -a</code>查看隐藏文件：以“.”开头的文件或目录默认被视为隐藏文件或目录，通常是一些系统配置文件。</li>
-<li><code>ls -l</code> 查看文件和目录的详细信息，包括文件权限，文件数量，文件所有者，文件大小（以字节为单位），和最近修改的时间。如果想以更易读的方式查看文件大小（例如KB，MB等），可以使用<code>ls -lh</code></li>
-</ul>
-<h3 id="_3">解压文件</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># .tar.gz 和 .tgz</span>
-</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>tar<span class="w"> </span>-zxvf<span class="w"> </span>FileName.tar.gz<span class="w">               </span><span class="c1"># 解压</span>
-</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>tar<span class="w"> </span>-zcvf<span class="w"> </span>FileName.tar.gz<span class="w"> </span>DirName<span class="w">       </span><span class="c1"># 将DirName和其下所有文件（夹）压缩</span>
-</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>tar<span class="w"> </span>-C<span class="w"> </span>DesDirName<span class="w"> </span>-zxvf<span class="w"> </span>FileName.tar.gz<span class="w"> </span><span class="c1"># 解压到目标路径</span>
-</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>
-</span><span id="__span-0-6"><a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="c1">#.zip</span>
-</span><span id="__span-0-7"><a href="#__codelineno-0-7" id="__codelineno-0-7" name="__codelineno-0-7"></a>unzip<span class="w"> </span>file.zip<span class="w"> </span>
-</span><span id="__span-0-8"><a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a>unzip<span class="w"> </span>file.zip<span class="w"> </span>-d<span class="w"> </span>/path/to/destination/directory/
-</span><span id="__span-0-10"><a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>-P<span class="w"> </span>password
-</span><span id="__span-0-11"><a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="c1"># 参考https://blog.csdn.net/songbinxu/article/details/80435665</span>
+<h1>Pip和conda配置环境</h1>
+<p>记录一下自己在配置pytorch环境时遇到的问题。全程使用Ubuntu命令行操作，可以远程操作服务器</p>
+<p><a href="https://www.jianshu.com/p/3e56648b55c6">env</a></p>
+<h2 id="conda">conda</h2>
+<h3 id="conda_1">安装conda</h3>
+<p>先到<a href="https://docs.conda.io/en/latest/miniconda.html">miniconda的官网</a>找到对应的下载链接，然后用<code>wget</code>安装。
+- 如果下载速度很慢，可以用<a href="https://mirrors.zju.edu.cn/docs/anaconda/miniconda">镜像源</a>, 找到-latest-linux x86_64</p>
+<p><div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>wget<span class="w">  </span>https://mirrors.zju.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>bash<span class="w"> </span>Miniconda3-latest-Linux-x86_64.sh<span class="w"> </span>
 </span></code></pre></div>
-<h3 id="_4">环境变量</h3>
-<p>查看cpu状态</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>nvidia-smi
-</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>nvtop
+1. 按ENTER浏览用户协议</p>
+<ol>
+<li>
+<p>之后一路选择yes, 环境会创建到~/miniconda3/envs</p>
+</li>
+<li>
+<p>```
+    Do you wish to update your shell profile to automatically initialize conda?
+    This will activate conda on startup and change the command prompt when activated.
+    If you'd prefer that conda's base environment not be activated on startup,
+       run the following command when conda is activated:</p>
+<p>conda config --set auto_activate_base false</p>
+<p>You can undo this by running <code>conda init --reverse $SHELL</code>? [yes|no]
+```</p>
+<p>出现这个的时候，选择yes  这样启动终端时会自动激活conda</p>
+</li>
+<li>
+<p>安装完成后，执行source ~/.bashrc 重启终端，最左边会出现(base)字样，说明安装完成</p>
+</li>
+</ol>
+<h3 id="_1">建立环境</h3>
+<p><code>conda create -n [环境名称] python=[版本号]</code></p>
+<p>已有的环境</p>
+<p>nas上环境</p>
+<p>接着重启终端。然后才能激活环境</p>
+<p><code>conda activate [环境名称]</code></p>
+<h3 id="_2">换源</h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>mirrors.zju.edu.cn目前只支持校园内网访问，外网访问时会自动重定向到清华源</p>
+</div>
+<p>以zju源为例</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/msys2/
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/conda-forge
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/pkgs/free/
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/cloud/pytorch/
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>conda config --add channels https://mirrors.zju.edu.cn/anaconda/pkgs/main/
 </span></code></pre></div>
-<p>例子: 设置GPU.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">0</span><span class="w">    </span>python<span class="w">  </span>your_file.py<span class="w">  </span><span class="c1"># 指定GPU集群中第一块GPU使用,其他的屏蔽掉</span>
-</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">1</span><span class="w">           </span><span class="c1">#Only device 1 will be seen</span>
-</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">0</span>,1<span class="w">         </span><span class="c1">#Devices 0 and 1 will be visible</span>
+<p>或者直接vim .condarc</p>
+<h3 id="vscodeconda">结合vscode和conda</h3>
+<p><a href="https://zhuanlan.zhihu.com/p/269086227">参考资料</a></p>
+<ol>
+<li>用vscode打开一个文件夹</li>
+<li>Ctrl+Shift+P打开vsc的命令行</li>
+<li>选择Python：Select Interpreter</li>
+<li>vsc会自动定位Python的位置 <code>~\miniconda3\envs\对应的版本</code>,选择对应版本号和环境名称即可</li>
+</ol>
+<p>设置好之后，每次启动vsc集成的终端时就会自动激活对应的环境。python代码也可以点击右上角一键运行了</p>
+<h3 id="conda_2">conda环境打包</h3>
+<p>打包:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>conda-pack
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>conda<span class="w"> </span>pack<span class="w"> </span>-n<span class="w"> </span>my_env
 </span></code></pre></div>
-<h3 id="_5">软链接</h3>
-<p>创建: </p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>
+<p>如果该环境下有<code>-e</code>安装的包，则要使用<code>--ignore-editable-packages</code>，排除<code>-e</code>的包</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>conda<span class="w"> </span>pack<span class="w"> </span>-n<span class="w"> </span>my_env<span class="w"> </span>--ignore-editable-packages
 </span></code></pre></div>
-<p>用<code>ls -l 目录名</code> 来查看目录下是否有软链接。如果有，可以看到形如:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>lrwxrwxrwx 1 ypyypy 38  6月 23  2024 原目录 -&gt; 新目录
+<p>之后会得到my_env.tar.gz文件</p>
+<p>重建:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>mkdir<span class="w"> </span>~/miniconda3/envs/my_env
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a>tar<span class="w"> </span>-xzvf<span class="w"> </span>my_env.tar.gz<span class="w"> </span>-C<span class="w"> </span>~/miniconda3/envs/my_env
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>conda<span class="w"> </span>env<span class="w"> </span>list<span class="w"> </span><span class="c1">#查看结果</span>
+</span></code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>如果在环境中混用pip和conda安装包，conda打包的时候有部分包会被漏掉，因此重建之后需要手动pip install缺失的包</p>
+</div>
+<h2 id="pip">pip</h2>
+<p>pip查找包并安装的速度一般比conda快</p>
+<p>临时换源:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>pip<span class="w"> </span>install<span class="w"> </span>package_name<span class="w"> </span>-i<span class="w"> </span>https://mirrors.zju.edu.cn/pypi/web/simple
 </span></code></pre></div></p>
-<h2 id="_6">进程管理</h2>
-<p>终端中Ctrl+Z暂停命令, Ctrl+C停止</p>
-<h3 id="_7">后台运行</h3>
-<p>nohup后台运行command</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>nohup<span class="w"> </span><span class="nb">command</span><span class="w"> </span>&gt;<span class="w"> </span>output.txt<span class="w"> </span><span class="p">&amp;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>package_name
 </span></code></pre></div>
-<h3 id="_8">终端中运行的命令放到后台</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>ps
+<h2 id="pytorch">pytorch安装</h2>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+</div>
+<p>​    此部分的内容需要更新</p>
+<p><code>conda install pytorch=[版本号]=[具体名字]</code></p>
+<p>注意源自动匹配的版本可能不对。要检查名字后面不是带着<code>_cpu</code>, 而是<code>_cuda11.3_cudnn...</code>. 可以手动指定具体版本号</p>
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>conda<span class="w"> </span>install<span class="w"> </span><span class="nv">pytorch</span><span class="o">=</span><span class="m">1</span>.10.0<span class="o">=</span>py3.8_cuda11.3_cudnn8.2.0_0
 </span></code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nb">kill</span><span class="w"> </span>PID<span class="w"> </span><span class="c1">#PID为正在运行进程的</span>
-</span></code></pre></div>
-<h3 id="_9">后台指令放到终端</h3>
-<p>首先使用 <code>jobs</code> 命令查看当前所有的后台任务，例如：</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nb">jobs</span>
-</span></code></pre></div>
-<p>输出类似这样：</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="o">[</span><span class="m">1</span><span class="o">]</span>-<span class="w">  </span>Running<span class="w">                 </span>long-command-1<span class="w"> </span><span class="p">&amp;</span>
-</span><span id="__span-9-2"><a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="o">[</span><span class="m">2</span><span class="o">]</span>+<span class="w">  </span>Running<span class="w">                 </span>long-command-2<span class="w"> </span><span class="p">&amp;</span>
-</span></code></pre></div>
-<p>然后使用 <code>fg</code> 命令将你需要的任务调至前台，例如将第二个任务调至前台：</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nb">fg</span><span class="w"> </span>%2
-</span></code></pre></div>
-<h2 id="_10">用户管理</h2>
-<ul>
-<li>
-<p>添加名为<code>newuser</code>的用户</p>
-<p><code>sudo adduser newuser</code>,然后填写信息</p>
-</li>
-<li>
-<p>给用户添加sudo 权限<code>sudo usermod -aG sudo newuser</code></p>
-</li>
-</ul>
-<h2 id="_11">远程登录</h2>
-<h3 id="ssh">配置ssh</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>#将该同学提供的id_rsa.pub添加到对应用户~/.ssh/authorized_keys中
-</span></code></pre></div>
-<h3 id="_12">登录</h3>
-<h3 id="scp">scp拷贝文件</h3>
-<h2 id="git">git</h2>
-<h3 id="_13">远程仓库</h3>
-<ol>
-<li><strong>添加远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>&lt;repository-url&gt;<span class="w"> </span><span class="c1">#添加</span>
-</span><span id="__span-12-2"><a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>origin<span class="w"> </span>&lt;new-repository-url&gt;<span class="w"> </span><span class="c1">#修改</span>
-</span></code></pre></div>
-   这里的<code>origin</code>是远程仓库的默认短名称，<code>&lt;repository-url&gt;</code>是你想要连接的远程仓库的URL。</li>
-</ol>
-<p>如果有多个远程仓库，可以自定义名称</p>
-<ol>
-<li>
-<p><strong>列出所有远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v
-</span></code></pre></div>
-<code>-v</code>参数表示显示远程仓库的详细信息，包括它们的URL。</p>
-</li>
-<li>
-<p><strong>拉取远程仓库的更新并自动合并</strong>：</p>
-</li>
-</ol>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>branch-name
-</span></code></pre></div>
-   这个命令会从远程仓库的<code>branch-name</code>分支拉取内容并尝试自动合并到当前分支。</p>
-<ol>
-<li>
-<p><strong>推送本地更改到远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>branch-name
-</span></code></pre></div>
-   将分支<code>branch-name</code>的内容推送到远程仓库。</p>
-</li>
-<li>
-<p><strong>推送当前分支的所有本地更改到远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a>git<span class="w"> </span>push
-</span></code></pre></div>
-   如果当前分支与远程分支有跟踪关系，这个命令会默认推送当前分支。</p>
-</li>
-<li>
-<p><strong>从远程仓库拉取内容</strong>/手动合并：</p>
-</li>
-</ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a>git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span><span class="c1">#拉取，不合并</span>
-</span></code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a>git<span class="w"> </span>merge<span class="w"> </span>origin/branch-name
-</span></code></pre></div>
-<p>将远程仓库的<code>branch-name</code>分支合并到当前分支。</p>
+<a href="https://blog.csdn.net/weixin_43868021/article/details/122083729#:~:text=%E6%9F%A5%E7%9C%8B%E4%BA%86%E4%B8%8B%E5%BA%93%E7%9A%84%E4%BF%A1%E6%81%AF%EF%BC%8C%E5%8F%91%E7%8E%B0%E6%9C%89%E4%B8%80%E4%B8%AA%20pytorch%20-mutex%E5%BA%93%EF%BC%8C%E8%BF%99%E4%B8%AA%E5%B0%B1%E6%98%AF%E5%8E%9F%E5%9B%A0%E6%89%80%E5%9C%A8%EF%BC%8C%E5%B0%86%E5%85%B6%E5%8D%B8%E8%BD%BD%E5%90%8E%EF%BC%8C%E5%86%8D%E9%87%8D%E6%96%B0%20%E5%AE%89%E8%A3%85GPU%E7%89%88%E6%9C%AC%20%E5%B0%B1%E8%A7%A3%E5%86%B3%E4%BA%86%E3%80%82%20%E5%8D%B8%E8%BD%BD%20conda%20uninstall,conda%20install%20pytorch%20torchvision%20torchaudio%20cudatoolkit%3D11.3%20-c%20pytorch">pytorch和cudatoolkit版本对应</a></p>
+<h3 id="torchvision">torchvision</h3>
+<p><a href="https://blog.csdn.net/shiwanghualuo/article/details/122860521">torch和torchvision版本对应关系</a></p>
+<p>如果源自动匹配的不对，可以离线安装或者手动指定版本:
+<code>wget https://mirrors.bfsu.edu.cn/anaconda/cloud/pytorch/linux-64/torchvision-0.11.1-py38_cu113.tar.bz2</code></p>
+<p><code>conda install --offline torchvision-0.11.1-py38_cu113.tar.bz2</code></p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">

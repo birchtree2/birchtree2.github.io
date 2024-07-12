@@ -391,21 +391,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/Deep%20Learning%E7%9B%B8%E5%85%B3/Linux%20bash.html</loc>
-         <lastmod>2024-07-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/Deep%20Learning%E7%9B%B8%E5%85%B3/pip%E5%92%8Cconda%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html</loc>
-         <lastmod>2024-07-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/Deep%20Learning%E7%9B%B8%E5%85%B3/vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html</loc>
-         <lastmod>2024-07-12</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion.html</loc>
          <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
@@ -422,6 +407,21 @@
     </url>
     <url>
          <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90.html</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/Linux%20bash.html</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/pip%E5%92%8Cconda%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html</loc>
+         <lastmod>2024-07-12</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html</loc>
          <lastmod>2024-07-12</lastmod>
          <changefreq>daily</changefreq>
     </url>
