@@ -1575,6 +1575,24 @@
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a>git<span class="w"> </span>merge<span class="w"> </span>origin/branch-name
 </span></code></pre></div>
 <p>将远程仓库的<code>branch-name</code>分支合并到当前分支。</p>
+<p>git remote add origin xxx //xxx为远程仓库地址如上</p>
+<p>git remote -v  //查看是否添加成功</p>
+<p>git fetch origin  //向远程仓库拉取内容</p>
+<p>git branch -a //查看远程分支</p>
+<p>//操作一：切换分支
+git checkout xxx //xxx分支名
+//提交文件
+git add . //将所有文件放入暂存区
+git commit -m xxx //xxx描述信息 添加描述并提交
+git push</p>
+<p>//操作二：创建分支并切换
+git checkout -b xxx //xxx新分支
+git add xxx //xxx文件名
+git commit  -m xxx //xxx描述</p>
+<p>//当第一次上传时，git push 如下
+git push --set-upstream origin xxx //xxx为新分支的名，由于新分支没有历史流，远程没有记录，所以需要--set-upstream
+或
+git push -u origin xxx </p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
