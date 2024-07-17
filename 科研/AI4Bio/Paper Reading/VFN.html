@@ -6,7 +6,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://birchtree2.github.io/%E7%A7%91%E7%A0%94/AI4Bio/Paper%20Reading/VFN.html" rel="canonical"/>
-<link href="../%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E5%BD%92%E6%A1%A3.html" rel="prev"/>
+<link href="ESM.html" rel="prev"/>
 <link href="../../Diffusion%20Models/Score%20Based.html" rel="next"/>
 <link href="../../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
@@ -1169,6 +1169,13 @@
             Paper Reading
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="ESM.html">
+<span class="md-ellipsis">
+    ESM
+  </span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -1342,9 +1349,6 @@
 <p>（<span class="arithmatex">\(d\)</span> 和 <span class="arithmatex">\(V\)</span> 是人为设定的, d=128,V=32（见4.1)</p>
 <p><span class="arithmatex">\(T_i\)</span> 是每个氨基酸内部原子的局部坐标系</p>
 <p><span class="arithmatex">\(T_{i \to j}\)</span> 是两个氨基酸间的变换矩阵,用于对不同点的 <span class="arithmatex">\(v_i\)</span> 进行变换</p>
-<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F12243460%2Fitems%2F54BJP3T7%22%2C%22annotationKey%22%3A%22CXMVPS47%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%224%22%2C%22position%22%3A%7B%22pageIndex%22%3A3%2C%22rects%22%3A%5B%5B446.703%2C298.88%2C549.647%2C307.946%5D%2C%5B62.362%2C287.971%2C551.386%2C297.037%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F12243460%2Fitems%2F3BD2VAZX%22%5D%2C%22locator%22%3A%224%22%7D%7D" ztype="zhighlight"><a href="zotero://open-pdf/library/items/54BJP3T7?page=4&amp;annotation=CXMVPS47">“Specifically, each residue is taken as a node in the graph and the edges are built between it and its k-nearest neighbors sorted on euclidean distance.”</a></span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F12243460%2Fitems%2F3BD2VAZX%22%5D%2C%22locator%22%3A%224%22%7D%5D%2C%22properties%22%3A%7B%7D%7D" ztype="zcitation">(<span class="citation-item"><a href="zotero://select/library/items/3BD2VAZX">Mao 等, 2023, p. 4</a></span>)</span></p>
-<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F12243460%2Fitems%2F54BJP3T7%22%2C%22annotationKey%22%3A%22IHNQP83K%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%224%22%2C%22position%22%3A%7B%22pageIndex%22%3A3%2C%22rects%22%3A%5B%5B185.945%2C277.062%2C550.882%2C285.969%5D%2C%5B62.362%2C266.153%2C549.653%2C275.06%5D%2C%5B62.362%2C255.244%2C178.893%2C264.151%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F12243460%2Fitems%2F3BD2VAZX%22%5D%2C%22locator%22%3A%224%22%7D%7D" ztype="zhighlight"><a href="zotero://open-pdf/library/items/54BJP3T7?page=4&amp;annotation=IHNQP83K">“featurizer [GTL22] is used to extract hand-crafted geometric features, e.g., the distance, direction and rotation matrix between the atoms or the residue local frames, for initializing the node and edge hidden representation in our networ”</a></span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F12243460%2Fitems%2F3BD2VAZX%22%5D%2C%22locator%22%3A%224%22%7D%5D%2C%22properties%22%3A%7B%7D%7D" ztype="zcitation">(<span class="citation-item"><a href="zotero://select/library/items/3BD2VAZX">Mao 等, 2023, p. 4</a></span>)</span></p>
-<p><span class="highlight" data-annotation="%7B%22attachmentURI%22%3A%22http%3A%2F%2Fzotero.org%2Fusers%2F12243460%2Fitems%2F54BJP3T7%22%2C%22annotationKey%22%3A%22WKEXC8VF%22%2C%22color%22%3A%22%23ffd400%22%2C%22pageLabel%22%3A%224%22%2C%22position%22%3A%7B%22pageIndex%22%3A3%2C%22rects%22%3A%5B%5B255.059%2C233.426%2C549.644%2C244.033%5D%2C%5B62.362%2C222.517%2C463.533%2C231.424%5D%5D%7D%2C%22citationItem%22%3A%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F12243460%2Fitems%2F3BD2VAZX%22%5D%2C%22locator%22%3A%224%22%7D%7D" ztype="zhighlight"><a href="zotero://open-pdf/library/items/54BJP3T7?page=4&amp;annotation=WKEXC8VF">“message-passing neural network (MPNN) [GSR+20] is applied on those hidden representations to extract the geometric feature between neighbors via an attention mechanism.”</a></span> <span class="citation" data-citation="%7B%22citationItems%22%3A%5B%7B%22uris%22%3A%5B%22http%3A%2F%2Fzotero.org%2Fusers%2F12243460%2Fitems%2F3BD2VAZX%22%5D%2C%22locator%22%3A%224%22%7D%5D%2C%22properties%22%3A%7B%7D%7D" ztype="zcitation">(<span class="citation-item"><a href="zotero://select/library/items/3BD2VAZX">Mao 等, 2023, p. 4</a></span>)</span></p>
 <ul>
 <li>node aggregation</li>
 <li>edge aggregation</li>
@@ -1380,7 +1384,6 @@
 <p>和attention对应相乘:<code>把sij中的d个数分为H组,每组和aij中的一个head(是数)做数乘，最后再拼接起来</code></p>
 <p><img alt='\&lt;img alt="" data-attachment-key="ADU7YWI5" width="1502" height="313" src="attachments/ADU7YWI5.png" ztype="zimage"&gt;' src="attachments/ADU7YWI5.png"/></p>
 <p><img alt='\&lt;img alt="" data-attachment-key="MHIXKVIJ" width="1542" height="1036" src="attachments/MHIXKVIJ.png" ztype="zimage"&gt;' src="attachments/MHIXKVIJ.png"/></p>
-<p>Referred in <a class="internal-link" href="zotero://note/u/PPXLLGH6/?ignore=1&amp;line=-1" rel="noopener noreferrer nofollow" zhref="zotero://note/u/PPXLLGH6/?ignore=1&amp;line=-1" ztype="znotelink">vfn+esm</a></p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
