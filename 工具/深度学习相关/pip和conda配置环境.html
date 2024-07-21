@@ -1434,13 +1434,13 @@
 <p>之后一路选择yes, 环境会创建到~/miniconda3/envs</p>
 </li>
 <li>
-<p>```
+<p>激活conda的设置```
     Do you wish to update your shell profile to automatically initialize conda?
     This will activate conda on startup and change the command prompt when activated.
     If you'd prefer that conda's base environment not be activated on startup,
        run the following command when conda is activated:</p>
 <p>conda config --set auto_activate_base false</p>
-<p>You can undo this by running <code>conda init --reverse $SHELL</code>? [yes|no]
+<p>You can undo this by running conda init --reverse $SHELL? [yes|no]
 ```</p>
 <p>出现这个的时候，选择yes  这样启动终端时会自动激活conda</p>
 </li>
@@ -1450,8 +1450,6 @@
 </ol>
 <h3 id="_1">建立环境</h3>
 <p><code>conda create -n [环境名称] python=[版本号]</code></p>
-<p>已有的环境</p>
-<p>nas上环境</p>
 <p>接着重启终端。然后才能激活环境</p>
 <p><code>conda activate [环境名称]</code></p>
 <h3 id="_2">换源</h3>

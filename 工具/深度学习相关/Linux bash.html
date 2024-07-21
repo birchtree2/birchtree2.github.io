@@ -1572,7 +1572,7 @@
 </span></code></pre></div>
 <h3 id="_5">软链接</h3>
 <p>创建: </p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>ln -s 原目录 新目录
 </span></code></pre></div>
 <p>用<code>ls -l 目录名</code> 来查看目录下是否有软链接。如果有，可以看到形如:
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>lrwxrwxrwx 1 ypyypy 38  6月 23  2024 原目录 -&gt; 新目录
@@ -1581,23 +1581,24 @@
 <p>终端中Ctrl+Z暂停命令, Ctrl+C停止</p>
 <h3 id="_7">后台运行</h3>
 <p>nohup后台运行command</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>nohup<span class="w"> </span><span class="nb">command</span><span class="w"> </span>&gt;<span class="w"> </span>output.txt<span class="w"> </span><span class="p">&amp;</span>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>nohup<span class="w"> </span><span class="nb">command</span><span class="w"> </span>&gt;<span class="w"> </span>output.txt<span class="w"> </span><span class="p">&amp;</span>
 </span></code></pre></div>
 <h3 id="_8">终端中运行的命令放到后台</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>ps
-</span></code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nb">kill</span><span class="w"> </span>PID<span class="w"> </span><span class="c1">#PID为正在运行进程的</span>
+<p>如果已经启动了一个前台命令，可以按 Ctrl + Z 暂停它，然后将它移到后台并继续运行：</p>
+<div class="language-shell highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1"># 按 Ctrl + Z 暂停命令</span>
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="nb">bg</span><span class="w"> </span><span class="c1">#将命令移到后台</span>
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="nb">disown</span><span class="w"> </span>-h<span class="w"> </span><span class="c1">#使用 disown 解除与终端的关联，这样退出终端后，该进程不会退出</span>
 </span></code></pre></div>
 <h3 id="_9">后台指令放到终端</h3>
 <p>首先使用 <code>jobs</code> 命令查看当前所有的后台任务，例如：</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nb">jobs</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nb">jobs</span>
 </span></code></pre></div>
 <p>输出类似这样：</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="o">[</span><span class="m">1</span><span class="o">]</span>-<span class="w">  </span>Running<span class="w">                 </span>long-command-1<span class="w"> </span><span class="p">&amp;</span>
-</span><span id="__span-9-2"><a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="o">[</span><span class="m">2</span><span class="o">]</span>+<span class="w">  </span>Running<span class="w">                 </span>long-command-2<span class="w"> </span><span class="p">&amp;</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="o">[</span><span class="m">1</span><span class="o">]</span>-<span class="w">  </span>Running<span class="w">                 </span>long-command-1<span class="w"> </span><span class="p">&amp;</span>
+</span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="o">[</span><span class="m">2</span><span class="o">]</span>+<span class="w">  </span>Running<span class="w">                 </span>long-command-2<span class="w"> </span><span class="p">&amp;</span>
 </span></code></pre></div>
 <p>然后使用 <code>fg</code> 命令将你需要的任务调至前台，例如将第二个任务调至前台：</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nb">fg</span><span class="w"> </span>%2
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="nb">fg</span><span class="w"> </span>%2
 </span></code></pre></div>
 <h2 id="_10">用户管理</h2>
 <ul>
@@ -1611,16 +1612,31 @@
 </ul>
 <h2 id="_11">远程登录</h2>
 <h3 id="ssh">配置ssh</h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>#将该同学提供的id_rsa.pub添加到对应用户~/.ssh/authorized_keys中
+<p>在远程服务器上:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="c1">#将本机的id_rsa.pub添加到远程服务器上对应用户~/.ssh/authorized_keys中</span>
+</span><span id="__span-10-2"><a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a>cat<span class="w"> </span>id_rsa.pub<span class="w"> </span>&gt;&gt;<span class="w"> </span>~/.ssh/authorized_keys
+</span></code></pre></div></p>
+<p>在本地，编写<code>~/.ssh/config</code>文件，添加如下内容：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a>Host<span class="w"> </span>myname<span class="w"> </span><span class="c1">#自定义名称,也可以是ip地址</span>
+</span><span id="__span-11-2"><a href="#__codelineno-11-2" id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="w">    </span>HostName<span class="w"> </span>hostname<span class="w"> </span><span class="c1">#远程服务器的ip地址</span>
+</span><span id="__span-11-3"><a href="#__codelineno-11-3" id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="w">    </span>User<span class="w"> </span>username<span class="w"> </span><span class="c1">#远程服务器的用户名</span>
+</span><span id="__span-11-4"><a href="#__codelineno-11-4" id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="w">    </span>IdentityFile<span class="w"> </span>~/.ssh/id_rsa<span class="w"> </span><span class="c1">#本地私钥文件,默认为~/.ssh/id_rsa，如果有多个私钥文件，可以指定</span>
+</span><span id="__span-11-5"><a href="#__codelineno-11-5" id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="w">    </span>Port<span class="w"> </span>xxxx<span class="w"> </span><span class="c1">#远程服务器的端口号,默认22</span>
 </span></code></pre></div>
 <h3 id="_12">登录</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a>ssh<span class="w"> </span>myname
+</span><span id="__span-12-2"><a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="c1">#或</span>
+</span><span id="__span-12-3"><a href="#__codelineno-12-3" id="__codelineno-12-3" name="__codelineno-12-3"></a>ssh<span class="w"> </span>username@hostname<span class="w"> </span>-p<span class="w"> </span>xxxx
+</span></code></pre></div>
 <h3 id="scp">scp拷贝文件</h3>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a>scp<span class="w"> </span>-r<span class="w"> </span>/path/to/local/file<span class="w"> </span>username@hostname:/path/to/remote/file
+</span></code></pre></div>
 <h2 id="git">git</h2>
 <h3 id="_13">远程仓库</h3>
 <ol>
 <li><strong>添加远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-12-1"><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>&lt;repository-url&gt;<span class="w"> </span><span class="c1">#添加</span>
-</span><span id="__span-12-2"><a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>origin<span class="w"> </span>&lt;new-repository-url&gt;<span class="w"> </span><span class="c1">#修改</span>
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>&lt;repository-url&gt;<span class="w"> </span><span class="c1">#添加</span>
+</span><span id="__span-14-2"><a href="#__codelineno-14-2" id="__codelineno-14-2" name="__codelineno-14-2"></a>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>origin<span class="w"> </span>&lt;new-repository-url&gt;<span class="w"> </span><span class="c1">#修改</span>
 </span></code></pre></div>
    这里的<code>origin</code>是远程仓库的默认短名称，<code>&lt;repository-url&gt;</code>是你想要连接的远程仓库的URL。</li>
 </ol>
@@ -1628,7 +1644,7 @@
 <ol>
 <li>
 <p><strong>列出所有远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v
 </span></code></pre></div>
 <code>-v</code>参数表示显示远程仓库的详细信息，包括它们的URL。</p>
 </li>
@@ -1636,19 +1652,19 @@
 <p><strong>拉取远程仓库的更新并自动合并</strong>：</p>
 </li>
 </ol>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>branch-name
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>branch-name
 </span></code></pre></div>
    这个命令会从远程仓库的<code>branch-name</code>分支拉取内容并尝试自动合并到当前分支。</p>
 <ol>
 <li>
 <p><strong>推送本地更改到远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>branch-name
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>branch-name
 </span></code></pre></div>
    将分支<code>branch-name</code>的内容推送到远程仓库。</p>
 </li>
 <li>
 <p><strong>推送当前分支的所有本地更改到远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a>git<span class="w"> </span>push
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a>git<span class="w"> </span>push
 </span></code></pre></div>
    如果当前分支与远程分支有跟踪关系，这个命令会默认推送当前分支。</p>
 </li>
@@ -1656,9 +1672,9 @@
 <p><strong>从远程仓库拉取内容</strong>/手动合并：</p>
 </li>
 </ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a>git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span><span class="c1">#拉取，不合并</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a>git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span><span class="c1">#拉取，不合并</span>
 </span></code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a>git<span class="w"> </span>merge<span class="w"> </span>origin/branch-name
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a>git<span class="w"> </span>merge<span class="w"> </span>origin/branch-name
 </span></code></pre></div>
 <p>将远程仓库的<code>branch-name</code>分支合并到当前分支。</p>
 <p>git remote add origin xxx //xxx为远程仓库地址如上</p>

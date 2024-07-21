@@ -1338,7 +1338,7 @@
 RMSD=\sqrt{\frac{1}{N}\sum_{i=1}^N \delta_i^2}
 \]</div>
 <ul>
-<li><span class="arithmatex">\(N\)</span>是原子数, <span class="arithmatex">\(\delta_i^2=(x_i-\hat{x_i})^2+(y_i-\hat{y_i})^2+(z_i-\hat{z_i})^2\)</span>   表示每对ground truth原子和预测原子之间的距离。但是如何配对很关键</li>
+<li><span class="arithmatex">\(N\)</span>是原子数, <span class="arithmatex">\(\delta_i^2=(x_i-\hat{x_i})^2+(y_i-\hat{y_i})^2+(z_i-\hat{z_i})^2\)</span>   表示每对ground truth原子和预测原子之间的距离。但是如何配对很关键 <a href="https://en.wikipedia.org/wiki/Kabsch_algorithm"></a></li>
 </ul>
 <div class="arithmatex">\[
 dRMSD=\sqrt{\frac{2}{N(N-1)}\sum_i \sum_j(d_{ij}-\hat{d_{ij}})^2}
