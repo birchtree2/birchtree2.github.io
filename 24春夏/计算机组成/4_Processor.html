@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/5_Memory.html" rel="canonical"/>
-<link href="4_Processor.html" rel="prev"/>
-<link href="../../%E5%B7%A5%E5%85%B7/index.html" rel="next"/>
+<link href="https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/4_Processor.html" rel="canonical"/>
+<link href="3_Arithmetic.html" rel="prev"/>
+<link href="5_Memory.html" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
-<title>5 Memory - 时雨的笔记本</title>
+<title>4 Processor - 时雨的笔记本</title>
 <link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#cache">
+<a class="md-skip" href="#pipeline">
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              5 Memory
+              4 Processor
             
           </span>
 </div>
@@ -907,9 +907,9 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../DB/E-R.html">
+<a class="md-nav__link" href="../DB/ER%E5%9B%BE.html">
 <span class="md-ellipsis">
-    E R
+    ER图
   </span>
 </a>
 </li>
@@ -923,22 +923,71 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="index.html">
+<a class="md-nav__link" href="../%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/index.html">
 <span class="md-ellipsis">
-    计组
+    信息安全原理
   </span>
 </a>
 <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_4_3">
 <span class="md-nav__icon md-icon"></span>
-            计组
+            信息安全原理
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E5%AD%A6.html">
+<span class="md-ellipsis">
+    公钥密码学
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%AE%89%E5%85%A8%E8%AE%BE%E5%A4%87.html">
+<span class="md-ellipsis">
+    安全设备
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80.html">
+<span class="md-ellipsis">
+    密码学基础
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8%E7%9A%84%E6%A6%82%E5%BF%B5.html">
+<span class="md-ellipsis">
+    计算机安全的概念
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_4" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="index.html">
+<span class="md-ellipsis">
+    计算机组成
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="true" aria-labelledby="__nav_4_4_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_4">
+<span class="md-nav__icon md-icon"></span>
+            计算机组成
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -962,24 +1011,17 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="4_Processor.html">
-<span class="md-ellipsis">
-    4 Processor
-  </span>
-</a>
-</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    5 Memory
+    4 Processor
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<a class="md-nav__link md-nav__link--active" href="5_Memory.html">
+<a class="md-nav__link md-nav__link--active" href="4_Processor.html">
 <span class="md-ellipsis">
-    5 Memory
+    4 Processor
   </span>
 </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
@@ -989,39 +1031,46 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cache">
+<a class="md-nav__link" href="#pipeline">
 <span class="md-ellipsis">
-      Cache
+      Pipeline
     </span>
 </a>
-<nav aria-label="Cache" class="md-nav">
+<nav aria-label="Pipeline" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-placement">
+<a class="md-nav__link" href="#data-hazard">
 <span class="md-ellipsis">
-      Block Placement
+      Data Hazard
     </span>
 </a>
-<nav aria-label="Block Placement" class="md-nav">
+<nav aria-label="Data Hazard" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#direct-mapped-cache">
+<a class="md-nav__link" href="#fowardhazard-detection">
 <span class="md-ellipsis">
-      Direct mapped cache
+      没有foward和hazard detection
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#fully-associative">
+<a class="md-nav__link" href="#forwarding">
 <span class="md-ellipsis">
-      Fully associative
+      Forwarding
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#set-associative">
+<a class="md-nav__link" href="#harzard">
 <span class="md-ellipsis">
-      Set associative
+      Harzard的条件
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stalling">
+<span class="md-ellipsis">
+      Stalling
     </span>
 </a>
 </li>
@@ -1029,55 +1078,38 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-identification">
+<a class="md-nav__link" href="#double-bump">
 <span class="md-ellipsis">
-      Block Identification
+      寄存器堆的double bump机制
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-replacement">
+<a class="md-nav__link" href="#control-harzard">
 <span class="md-ellipsis">
-      Block replacement
+      Control Harzard
     </span>
 </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#write-strategy">
-<span class="md-ellipsis">
-      Write strategy
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#performance">
-<span class="md-ellipsis">
-      Performance
-    </span>
-</a>
-<nav aria-label="Performance" class="md-nav">
+<nav aria-label="Control Harzard" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#memory-width">
+<a class="md-nav__link" href="#stall-on-branch">
 <span class="md-ellipsis">
-      Memory Width
+      Stall on branch
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-size">
+<a class="md-nav__link" href="#reduce-branch-delay">
 <span class="md-ellipsis">
-      Block size
+      Reduce Branch delay
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#mesuring-cache-performance">
+<a class="md-nav__link" href="#dynamic-branch-prediction">
 <span class="md-ellipsis">
-      Mesuring Cache Performance
+      dynamic branch prediction
     </span>
 </a>
 </li>
@@ -1087,6 +1119,91 @@
 </ul>
 </nav>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exception-and-interrupt">
+<span class="md-ellipsis">
+      Exception and Interrupt
+    </span>
+</a>
+<nav aria-label="Exception and Interrupt" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#instructions">
+<span class="md-ellipsis">
+      Instructions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#interrupt-registers">
+<span class="md-ellipsis">
+      Interrupt Registers
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#multiple-issue">
+<span class="md-ellipsis">
+      Multiple Issue
+    </span>
+</a>
+<nav aria-label="Multiple Issue" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#static-dual-issue">
+<span class="md-ellipsis">
+      Static Dual Issue
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#loop-unrolling">
+<span class="md-ellipsis">
+      Loop Unrolling
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dynamic">
+<span class="md-ellipsis">
+      Dynamic
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="5_Memory.html">
+<span class="md-ellipsis">
+    5 Memory
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_5" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../%E9%A9%AC%E5%8E%9F/index.html">
+<span class="md-ellipsis">
+    马原
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_4_5_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_5">
+<span class="md-nav__icon md-icon"></span>
+            马原
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
 </ul>
 </nav>
 </li>
@@ -1274,13 +1391,6 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A7%91%E7%A0%94/AI4Bio/Comment-%20We%20plan%20to%20add%20more%20content-codes.%20Please%20let%20us%20know%20if%20there%20are%20any%20comments.html">
-<span class="md-ellipsis">
-    Comment  We plan to add more content codes. Please let us know if there are any comments
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="../../%E7%A7%91%E7%A0%94/AI4Bio/metrics.html">
 <span class="md-ellipsis">
     Metrics
@@ -1295,15 +1405,15 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_6_1_4" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6_1_4" id="__nav_6_1_4_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_6_1_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_1_3" id="__nav_6_1_3_label" tabindex="0">
 <span class="md-ellipsis">
     Paper Reading
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_6_1_4_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_6_1_4">
+<nav aria-expanded="false" aria-labelledby="__nav_6_1_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_6_1_3">
 <span class="md-nav__icon md-icon"></span>
             Paper Reading
           </label>
@@ -1394,39 +1504,46 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cache">
+<a class="md-nav__link" href="#pipeline">
 <span class="md-ellipsis">
-      Cache
+      Pipeline
     </span>
 </a>
-<nav aria-label="Cache" class="md-nav">
+<nav aria-label="Pipeline" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-placement">
+<a class="md-nav__link" href="#data-hazard">
 <span class="md-ellipsis">
-      Block Placement
+      Data Hazard
     </span>
 </a>
-<nav aria-label="Block Placement" class="md-nav">
+<nav aria-label="Data Hazard" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#direct-mapped-cache">
+<a class="md-nav__link" href="#fowardhazard-detection">
 <span class="md-ellipsis">
-      Direct mapped cache
+      没有foward和hazard detection
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#fully-associative">
+<a class="md-nav__link" href="#forwarding">
 <span class="md-ellipsis">
-      Fully associative
+      Forwarding
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#set-associative">
+<a class="md-nav__link" href="#harzard">
 <span class="md-ellipsis">
-      Set associative
+      Harzard的条件
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stalling">
+<span class="md-ellipsis">
+      Stalling
     </span>
 </a>
 </li>
@@ -1434,23 +1551,66 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-identification">
+<a class="md-nav__link" href="#double-bump">
 <span class="md-ellipsis">
-      Block Identification
+      寄存器堆的double bump机制
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-replacement">
+<a class="md-nav__link" href="#control-harzard">
 <span class="md-ellipsis">
-      Block replacement
+      Control Harzard
+    </span>
+</a>
+<nav aria-label="Control Harzard" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#stall-on-branch">
+<span class="md-ellipsis">
+      Stall on branch
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#write-strategy">
+<a class="md-nav__link" href="#reduce-branch-delay">
 <span class="md-ellipsis">
-      Write strategy
+      Reduce Branch delay
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dynamic-branch-prediction">
+<span class="md-ellipsis">
+      dynamic branch prediction
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#exception-and-interrupt">
+<span class="md-ellipsis">
+      Exception and Interrupt
+    </span>
+</a>
+<nav aria-label="Exception and Interrupt" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#instructions">
+<span class="md-ellipsis">
+      Instructions
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#interrupt-registers">
+<span class="md-ellipsis">
+      Interrupt Registers
     </span>
 </a>
 </li>
@@ -1458,31 +1618,31 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#performance">
+<a class="md-nav__link" href="#multiple-issue">
 <span class="md-ellipsis">
-      Performance
+      Multiple Issue
     </span>
 </a>
-<nav aria-label="Performance" class="md-nav">
+<nav aria-label="Multiple Issue" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#memory-width">
+<a class="md-nav__link" href="#static-dual-issue">
 <span class="md-ellipsis">
-      Memory Width
+      Static Dual Issue
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-size">
+<a class="md-nav__link" href="#loop-unrolling">
 <span class="md-ellipsis">
-      Block size
+      Loop Unrolling
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#mesuring-cache-performance">
+<a class="md-nav__link" href="#dynamic">
 <span class="md-ellipsis">
-      Mesuring Cache Performance
+      Dynamic
     </span>
 </a>
 </li>
@@ -1496,85 +1656,109 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>5 Memory</h1>
-<p><a href="https://classroom.zju.edu.cn/livingroom?course_id=49844&amp;sub_id=857572&amp;tenant_code=112">智云</a> </p>
-<p>24-5-08 (两种cache  cache performance)</p>
-<p>24-5-13(page table)  24-5-15(期中)</p>
-<h2 id="cache">Cache</h2>
-<h3 id="block-placement">Block Placement</h3>
-<p>1个word 是4 byte.  Cache的大小是若干KB，一个block是若干word.  得到block个数n。</p>
-<h4 id="direct-mapped-cache">Direct mapped cache</h4>
-<p>假设缓存有<span class="arithmatex">\(2^n\)</span>个block, block size是<span class="arithmatex">\(2^k\)</span>个 <strong>word</strong>     内存address是m位(默认是byte address)</p>
+<h1>4 Processor</h1>
+<p>复习题: 4.6</p>
+<h2 id="pipeline">Pipeline</h2>
+<p>流水线: 4-6</p>
+<p>异常: <a href="https://classroom.zju.edu.cn/livingroom?course_id=38071&amp;sub_id=609471&amp;tenant_code=112">马德智云</a>  4-25的一部分</p>
+<p>多发射: <a href="https://classroom.zju.edu.cn/livingroom?course_id=38071&amp;sub_id=609485&amp;tenant_code=112">马德智云2</a></p>
+<p>4个中间阶段寄存器组 IF/ID  ID/EX  EX/MEM MEM/WB </p>
 <ul>
-<li>index: <span class="arithmatex">\(\log_2(\text{\#block})\)</span></li>
-<li>byte offset: <span class="arithmatex">\(\log_2(\text{block bytes})\)</span>    比如说下面是4-word block, 对应<strong>16个bytes</strong>, 所以byte offset=4</li>
-<li>tag: <span class="arithmatex">\(m-\text{index}-\text{byte\_offset}\)</span> 位   </li>
-<li>valid bit: 1位</li>
-<li>data bits:   <span class="arithmatex">\(2^k\times 32=2^{k+5}\)</span>  (一个words 32 bit)</li>
+<li>EX/MEM中的是ID/EX的上一条指令</li>
+<li>MEM/WB是</li>
 </ul>
-<p>总大小是<span class="arithmatex">\(2^n(tag+data+valid)\)</span></p>
-<p><img alt="" src="https://xuan-insr.github.io/assets/1652753397820-7f30a36f-aab7-41b1-bbbf-89c151253a49.png"/></p>
-<p>注意4-word block 对应16个byte, 所以需要4位来索引每个byte, tag 那里才需要-2-2</p>
-<p><img alt="47c00f680644932018438dd23c5734fa.png" src="..\..\assets/images/47c00f680644932018438dd23c5734fa.png"/></p>
-<p>$$
-\lfloor address/\text{bytes per block} \rfloor \bmod blocknum
-$$
-一个block里的address范围  因为<code>16*75=1200</code></p>
-<p><img alt="a6edd2632c65330e97cb7f698a511138.png" src="..\..\assets/images/a6edd2632c65330e97cb7f698a511138.png"/></p>
-<h4 id="fully-associative">Fully associative</h4>
-<p>block可以去任何地方</p>
-<h4 id="set-associative">Set associative</h4>
-<p>cache分为多个set, 内存里每个block对应的set是确定的，但是set内部可以任意放 .  每个set里面的block个数称为set associativity</p>
-<p>index 就是用来确定放在哪个 set 中的。因此，index 的位数就对应着 set 的个数</p>
-<div class="arithmatex">\[
-\text{index bits}=\log_2(\#sets)=\log_2(\frac{\#blocks}{\text{associativity}})
-\]</div>
-<p><img alt="image.png" src="https://xuan-insr.github.io/assets/1652756607490-1017df1c-5566-4e2a-a28b-116f0e333638.png"/></p>
-<p>Directed map实际上就是1-way set , Fully-associative实际上就是n-way set</p>
-<p><img alt="94373f71c0f080140740b7d73652a928.png" src="..\..\assets/images/94373f71c0f080140740b7d73652a928.png"/>
-miss rate比direct map低</p>
-<p>set associativity对miss rate的影响</p>
-<p>如果每个set里面只有1个block  miss rate就会很高。 但是block多了, 找到对应的block就会很慢</p>
-<p><img alt="7810fa6bfb0506e9075873d76b5ad533.png" src="..\..\assets/images/7810fa6bfb0506e9075873d76b5ad533.png"/></p>
-<h3 id="block-identification">Block Identification</h3>
-<p>怎么判断hit/miss</p>
-<p>Direct mapped只需要找到内存地址对应的block，看下Tag是否跟当前地址对应</p>
-<p>Fully associative: 每次要和所有block比较</p>
-<p><img alt="image.png" src="https://xuan-insr.github.io/assets/1652756194622-6e4626af-f977-45b0-86dc-7cbfcef52bfd.png"/></p>
-<h3 id="block-replacement">Block replacement</h3>
-<p>DB也讲过</p>
+<h3 id="data-hazard">Data Hazard</h3>
+<p><img alt="image.png" src="https://xuan-insr.github.io/assets/1655054499226-ac885ac8-6b68-4191-ad18-776f62a0b762.png"/></p>
+<h4 id="fowardhazard-detection">没有foward和hazard detection</h4>
+<p>如果没有fowarding解决harzard：</p>
 <ul>
-<li>Random replacement: 随机替换</li>
-<li>LRU: 选择上一次使用时间最早的替换</li>
-<li>FIFO: 选择进入时间最早的block替换</li>
+<li>某条指令 (例如 <code>#10</code> ) <code>WB</code> 阶段做的寄存器更改，其之后<strong>第三条指令</strong> ( <code>#13</code> ) 的 <code>ID</code> 阶段才能读出新的值；</li>
+<li>某条指令 (例如 <code>#10</code> ) <code>MEM</code> 阶段产生 <code>PCSrc = 1</code> 的信号，此时其之后<strong>第三条指令</strong> ( <code>#13</code> ) 正在运行 <code>IF</code> 阶段，它运行结束后才会将 <code>PC</code> 置为实际上要跳转的指令</li>
 </ul>
-<h3 id="write-strategy">Write strategy</h3>
-<p>当cache里面的block被更新</p>
+<p>如果处理器无法解决harzard, 要想让程序正确执行,就需要在有关联的2条指令之间<strong>插入nop指令</strong> </p>
+<p>见<a href="https://xuan-insr.github.io/computer_organization/4_processor/#424-control-hazards--branch-hazards">例题 </a> 和课后题4.18,4.20</p>
+<h4 id="forwarding">Forwarding</h4>
+<p>修改Datapath,使ALU的输入可以来源于EX/MEM中(对应前1条指令ALU计算结果)，或MEM/WB中的寄存器(对应前2条指令计算结果)</p>
+<p><img alt="image.png" src="https://xuan-insr.github.io/assets/1654861103791-a16d1edb-9e66-46ed-849a-c292bba99b03.png"/></p>
+<h4 id="harzard">Harzard的条件</h4>
+<p><img alt="image-20240509141222664" src="https://s2.loli.net/2024/05/09/8v9qIOfQlgisMbH.png"/></p>
+<p><img alt="image-20240509145059068" src="https://s2.loli.net/2024/05/09/XIjiSTQ7tLwNmry.png"/></p>
+<p>1a,1b是来自于上一条指令。2a,2b是来自于再上一条指令指令</p>
+<p><img alt="image-20240509141744598" src="https://s2.loli.net/2024/05/09/shVeSCZ1BlumF4T.png"/></p>
+<h4 id="stalling">Stalling</h4>
+<p>Forwarding可以，是因为EX和ID差了1轮</p>
+<p>如果上一条指令是Load某个寄存器，当前指令要用该寄存器，但MEM和Reg差了2轮，所以获取不到。只能等下一轮.</p>
+<p>条件: <code>if (EX.MemRead &amp;&amp; EX.Rd == ID.RsX)</code> <code>RsX</code>代表Rs1或Rs2</p>
+<p>如何Stall?</p>
 <ul>
-<li>write through: 立刻把更改写到内存里 </li>
-<li>write back: 不是立即写到内存里。  等到这个block要被覆盖掉的时候再写到内存里。 由于对同一个 block 通常会被多次写入，因此这种方式消耗的总带宽是更小的。<ul>
-<li>要加入dirty bits来标记是否被修改</li>
-<li>使用write buffer</li>
-<li>如果write miss,有两种方式 <strong>1)write allocate</strong>，即像 read miss 一样先把 block 拿到 cache 里再写入<strong>2)write around</strong> (or <strong>no write allocate</strong>)，考虑到既然本来就要去一次 main memory，不如直接在里面写了，就不再拿到 cache 里了。</li>
-<li>write-back 只能使用 write allocate；一般来说，write-through 使用 write around，其原因是明显的。</li>
+<li>ID/EX.WB,M,EX控制信号设为0</li>
+<li>不更新PC和IF/ID寄存器</li>
 </ul>
-</li>
+<p><img alt="image.png" src="https://xuan-insr.github.io/assets/1655054716560-ae2d14e7-454d-45d2-857c-4aa1b93107be.png"/></p>
+<h3 id="double-bump">寄存器堆的double bump机制</h3>
+<p><img alt="image-20240618110505743" src="..\..\assets/images\image-20240618110505743.png"/></p>
+<h3 id="control-harzard">Control Harzard</h3>
+<h4 id="stall-on-branch">Stall on branch</h4>
+<p>原因：<code>beq x1,x0,LABEL</code>等要EX完才知道PC要跳转到哪里。EX和IF差了2轮。所以要stall, 等上一条<code>beq</code>执行完,再根据PC取指令</p>
+<h4 id="reduce-branch-delay">Reduce Branch delay</h4>
+<p>在ID阶段，增加Target address adder(提前计算PC+offset).  Register comparator (提前对rs1,rs2进行比较)</p>
+<h4 id="dynamic-branch-prediction">dynamic branch prediction</h4>
+<p>branch prediction buffer 记录跳转目标地址. 有一个bit来指示预测的分支地址是被“采纳”（take）还是被忽略（not take）。这个位就是所谓的“take bit”。</p>
+<p>1-bit: 如果每错一次就改变，那么可能会连续错2次。如二重循环。</p>
+<p>2-bit mispredictor: 连续错2次，才改变预测</p>
+<h2 id="exception-and-interrupt">Exception and Interrupt</h2>
+<ul>
+<li>exception: CPU内部</li>
+<li>interrupt: CPU外部  如I/O</li>
 </ul>
-<h2 id="performance">Performance</h2>
-<h3 id="memory-width">Memory Width</h3>
-<p>假设内存宽度为1 word. cache block为4 word.  </p>
-<p>但是如果miss, 整个block都要更新。一共4个word,要访问内存4次。总时间是1+4(1+15)=65  带宽=16/65</p>
-<p>但是如果增大内存宽度为2word, 就可以减少miss的时候访存次数. 总时间变为1+2(1+15)  带宽=33/65</p>
-<p><img alt="1a545595619a06060a2e9990b6ed9a0d.png" src="..\..\assets/images/1a545595619a06060a2e9990b6ed9a0d.png"/></p>
-<h3 id="block-size">Block size</h3>
-<p>增加block size, 减少miss rate</p>
-<h3 id="mesuring-cache-performance">Mesuring Cache Performance</h3>
-<p><img alt="d597f63d8d1ab2a25a04819477e3b544.png" src="..\..\assets/images/d597f63d8d1ab2a25a04819477e3b544.png"/>
-如果CPI减少:</p>
-<p><img alt="5dff3d39b0f78625ce7bc30e3c43c95b.png" src="..\..\assets/images/5dff3d39b0f78625ce7bc30e3c43c95b.png"/>
-如果CPU时钟频率变快: <strong>内存的速度是不变的</strong>,<strong>所以miss penalty</strong> <strong>从100 cycle变到200 cycle</strong>   周期数需要重新计算</p>
-<p><img alt="e62b78d88a943725c5950a76a1955777.png" src="..\..\assets/images/e62b78d88a943725c5950a76a1955777.png"/></p>
-<p>这说明内存的速度会拖慢CPU的性能提高</p>
+<p>RISC-V Privilege Mode</p>
+<ul>
+<li>U(user) &lt; S(supervisor) &lt; M(Machine)  优先级从低到高   </li>
+<li>每个模式有自己的ISA extensions</li>
+</ul>
+<h3 id="instructions">Instructions</h3>
+<h3 id="interrupt-registers">Interrupt Registers</h3>
+<ul>
+<li>mstatus</li>
+<li>mtvec:  中断触发后跳转到的地址 Mode=0 固定地址  </li>
+</ul>
+<p><img alt="image-20240511143534740" src="https://s2.loli.net/2024/05/11/2eIWMnoUZBpKDrj.png"/></p>
+<ul>
+<li>mepc: 存储中断发生时的PC值</li>
+</ul>
+<p><img alt="image-20240511143637694" src="https://s2.loli.net/2024/05/11/fKm24TyU3JIPFSa.png"/></p>
+<ul>
+<li>mcause: 中断原因   可跟mtvec一起，跳转</li>
+</ul>
+<p><img alt="image-20240511143514225" src="https://s2.loli.net/2024/05/11/entUbZ2rdsFzyEu.png"/></p>
+<h2 id="multiple-issue">Multiple Issue</h2>
+<p>流水线只是减少了时钟周期的长度,但是平均下来每个周期<span class="arithmatex">\(CPI=1\)</span></p>
+<p>多发射</p>
+<h3 id="static-dual-issue">Static Dual Issue</h3>
+<p>ALU没用到MEM, Store没用到WB.  流水线利用不够充分</p>
+<ul>
+<li>添加一个加法器来计算Load/Store指令的地址</li>
+</ul>
+<p>一个时钟周期同时执行一条ALU 和L/S指令</p>
+<p><img alt="image-20240511133724780" src="https://s2.loli.net/2024/05/11/6ElzjiGaAmFOg4r.png"/></p>
+<p>但是可能有依赖关系，不一定能同时执行</p>
+<p><img alt="image-20240511133902377" src="https://s2.loli.net/2024/05/11/UWdKXknxQVJypNu.png"/></p>
+<h3 id="loop-unrolling">Loop Unrolling</h3>
+<p><img alt="image-20240511134302458" src="https://s2.loli.net/2024/05/11/RlTGaY1JpMSyo6d.png"/></p>
+<p>循环展开，每个循环不是处理数组1个数，而是每个循环处理4个数，存到x28-x31 3个寄存器。4条ld,add,sd指令.  用C语言来类比:</p>
+<div class="language-c highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="n">n</span><span class="mi">-1</span><span class="p">;</span><span class="n">i</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+=</span><span class="n">x</span><span class="p">;</span>
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1">//展开后:</span>
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="n">n</span><span class="mi">-4</span><span class="p">;</span><span class="n">i</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">-=</span><span class="mi">4</span><span class="p">){</span>
+</span><span id="__span-0-4"><a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="w">    </span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">+=</span><span class="n">x</span><span class="p">;</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">+=</span><span class="n">x</span><span class="p">;</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="p">]</span><span class="o">+=</span><span class="n">x</span><span class="p">;</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">3</span><span class="p">]</span><span class="o">+=</span><span class="n">x</span><span class="p">;</span>
+</span><span id="__span-0-5"><a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="p">}</span>
+</span></code></pre></div>
+<p>register renaming </p>
+<h3 id="dynamic">Dynamic</h3>
+<p><img alt="image-20240511135415862" src="https://s2.loli.net/2024/05/11/8ZA9c6yMaVIhesv.png"/></p>
+<p><img alt="image-20240511135754488" src="..\..\assets/images\image-20240511135754488.png"/></p>
+<ul>
+<li>Pipeline : the basic idea is easy, the devil is in the details(data hazards...etc)</li>
+</ul>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">

@@ -361,7 +361,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/DB/E-R.html</loc>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/DB/ER%E5%9B%BE.html</loc>
          <lastmod>2024-07-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -371,32 +371,62 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/index.html</loc>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/index.html</loc>
          <lastmod>2024-07-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/1_Prelude.html</loc>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E5%AD%A6.html</loc>
          <lastmod>2024-07-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/2_RISC-V%20ISA.html</loc>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%AE%89%E5%85%A8%E8%AE%BE%E5%A4%87.html</loc>
          <lastmod>2024-07-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/3_Arithmetic.html</loc>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80.html</loc>
          <lastmod>2024-07-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/4_Processor.html</loc>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8%E7%9A%84%E6%A6%82%E5%BF%B5.html</loc>
          <lastmod>2024-07-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/5_Memory.html</loc>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/index.html</loc>
+         <lastmod>2024-07-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/1_Prelude.html</loc>
+         <lastmod>2024-07-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/2_RISC-V%20ISA.html</loc>
+         <lastmod>2024-07-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3_Arithmetic.html</loc>
+         <lastmod>2024-07-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/4_Processor.html</loc>
+         <lastmod>2024-07-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/5_Memory.html</loc>
+         <lastmod>2024-07-25</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E9%A9%AC%E5%8E%9F/index.html</loc>
          <lastmod>2024-07-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -447,11 +477,6 @@
     </url>
     <url>
          <loc>https://birchtree2.github.io/%E5%B7%A5%E5%85%B7/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3/wsl2%E5%AE%89%E8%A3%85.html</loc>
-         <lastmod>2024-07-25</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://birchtree2.github.io/%E7%A7%91%E7%A0%94/AI4Bio/Comment-%20We%20plan%20to%20add%20more%20content-codes.%20Please%20let%20us%20know%20if%20there%20are%20any%20comments.html</loc>
          <lastmod>2024-07-25</lastmod>
          <changefreq>daily</changefreq>
     </url>
