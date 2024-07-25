@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/5_Memory.html" rel="canonical"/>
-<link href="4_Processor.html" rel="prev"/>
-<link href="../../%E5%B7%A5%E5%85%B7/index.html" rel="next"/>
+<link href="https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/DB/E-R.html" rel="canonical"/>
+<link href="Database%20design.html" rel="prev"/>
+<link href="SQL.html" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
-<title>5 Memory - 时雨的笔记本</title>
+<title>E R - 时雨的笔记本</title>
 <link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#cache">
+<a class="md-skip" href="#e-r">
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              5 Memory
+              E R
             
           </span>
 </div>
@@ -881,10 +881,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../DB/index.html">
+<a class="md-nav__link" href="index.html">
 <span class="md-ellipsis">
     DB
   </span>
@@ -893,79 +893,16 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_4_2_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_4_2">
 <span class="md-nav__icon md-icon"></span>
             DB
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../DB/Database%20design.html">
+<a class="md-nav__link" href="Database%20design.html">
 <span class="md-ellipsis">
     Database design
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../DB/E-R.html">
-<span class="md-ellipsis">
-    E R
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../DB/SQL.html">
-<span class="md-ellipsis">
-    SQL
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
-<div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="index.html">
-<span class="md-ellipsis">
-    计组
-  </span>
-</a>
-<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
-<span class="md-nav__icon md-icon"></span>
-</label>
-</div>
-<nav aria-expanded="true" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_4_3">
-<span class="md-nav__icon md-icon"></span>
-            计组
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="1_Prelude.html">
-<span class="md-ellipsis">
-    1 Prelude
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="2_RISC-V%20ISA.html">
-<span class="md-ellipsis">
-    2 RISC V ISA
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="3_Arithmetic.html">
-<span class="md-ellipsis">
-    3 Arithmetic
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="4_Processor.html">
-<span class="md-ellipsis">
-    4 Processor
   </span>
 </a>
 </li>
@@ -973,13 +910,13 @@
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    5 Memory
+    E R
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<a class="md-nav__link md-nav__link--active" href="5_Memory.html">
+<a class="md-nav__link md-nav__link--active" href="E-R.html">
 <span class="md-ellipsis">
-    5 Memory
+    E R
   </span>
 </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
@@ -989,39 +926,39 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cache">
+<a class="md-nav__link" href="#e-r">
 <span class="md-ellipsis">
-      Cache
+      E-R
     </span>
 </a>
-<nav aria-label="Cache" class="md-nav">
+<nav aria-label="E-R" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-placement">
+<a class="md-nav__link" href="#entityrelationship">
 <span class="md-ellipsis">
-      Block Placement
+      Entity/Relationship
     </span>
 </a>
-<nav aria-label="Block Placement" class="md-nav">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#constraints">
+<span class="md-ellipsis">
+      Constraints
+    </span>
+</a>
+<nav aria-label="Constraints" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#direct-mapped-cache">
+<a class="md-nav__link" href="#mapping-cardinality">
 <span class="md-ellipsis">
-      Direct mapped cache
+      mapping cardinality
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#fully-associative">
+<a class="md-nav__link" href="#participation">
 <span class="md-ellipsis">
-      Fully associative
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#set-associative">
-<span class="md-ellipsis">
-      Set associative
+      participation
     </span>
 </a>
 </li>
@@ -1029,55 +966,23 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-identification">
+<a class="md-nav__link" href="#weak-entity-set">
 <span class="md-ellipsis">
-      Block Identification
+      Weak Entity set*
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-replacement">
+<a class="md-nav__link" href="#reduction-to-schema">
 <span class="md-ellipsis">
-      Block replacement
+      Reduction to schema*
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#write-strategy">
+<a class="md-nav__link" href="#aggregation">
 <span class="md-ellipsis">
-      Write strategy
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#performance">
-<span class="md-ellipsis">
-      Performance
-    </span>
-</a>
-<nav aria-label="Performance" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#memory-width">
-<span class="md-ellipsis">
-      Memory Width
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#block-size">
-<span class="md-ellipsis">
-      Block size
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mesuring-cache-performance">
-<span class="md-ellipsis">
-      Mesuring Cache Performance
+      Aggregation
     </span>
 </a>
 </li>
@@ -1086,6 +991,69 @@
 </li>
 </ul>
 </nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="SQL.html">
+<span class="md-ellipsis">
+    SQL
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/index.html">
+<span class="md-ellipsis">
+    计组
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_4_3">
+<span class="md-nav__icon md-icon"></span>
+            计组
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/1_Prelude.html">
+<span class="md-ellipsis">
+    1 Prelude
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/2_RISC-V%20ISA.html">
+<span class="md-ellipsis">
+    2 RISC V ISA
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/3_Arithmetic.html">
+<span class="md-ellipsis">
+    3 Arithmetic
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/4_Processor.html">
+<span class="md-ellipsis">
+    4 Processor
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/5_Memory.html">
+<span class="md-ellipsis">
+    5 Memory
+  </span>
+</a>
 </li>
 </ul>
 </nav>
@@ -1394,39 +1362,39 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cache">
+<a class="md-nav__link" href="#e-r">
 <span class="md-ellipsis">
-      Cache
+      E-R
     </span>
 </a>
-<nav aria-label="Cache" class="md-nav">
+<nav aria-label="E-R" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-placement">
+<a class="md-nav__link" href="#entityrelationship">
 <span class="md-ellipsis">
-      Block Placement
-    </span>
-</a>
-<nav aria-label="Block Placement" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct-mapped-cache">
-<span class="md-ellipsis">
-      Direct mapped cache
+      Entity/Relationship
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#fully-associative">
+<a class="md-nav__link" href="#constraints">
 <span class="md-ellipsis">
-      Fully associative
+      Constraints
+    </span>
+</a>
+<nav aria-label="Constraints" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mapping-cardinality">
+<span class="md-ellipsis">
+      mapping cardinality
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#set-associative">
+<a class="md-nav__link" href="#participation">
 <span class="md-ellipsis">
-      Set associative
+      participation
     </span>
 </a>
 </li>
@@ -1434,55 +1402,23 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-identification">
+<a class="md-nav__link" href="#weak-entity-set">
 <span class="md-ellipsis">
-      Block Identification
+      Weak Entity set*
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#block-replacement">
+<a class="md-nav__link" href="#reduction-to-schema">
 <span class="md-ellipsis">
-      Block replacement
+      Reduction to schema*
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#write-strategy">
+<a class="md-nav__link" href="#aggregation">
 <span class="md-ellipsis">
-      Write strategy
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#performance">
-<span class="md-ellipsis">
-      Performance
-    </span>
-</a>
-<nav aria-label="Performance" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#memory-width">
-<span class="md-ellipsis">
-      Memory Width
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#block-size">
-<span class="md-ellipsis">
-      Block size
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mesuring-cache-performance">
-<span class="md-ellipsis">
-      Mesuring Cache Performance
+      Aggregation
     </span>
 </a>
 </li>
@@ -1496,85 +1432,63 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>5 Memory</h1>
-<p><a href="https://classroom.zju.edu.cn/livingroom?course_id=49844&amp;sub_id=857572&amp;tenant_code=112">智云</a> </p>
-<p>24-5-08 (两种cache  cache performance)</p>
-<p>24-5-13(page table)  24-5-15(期中)</p>
-<h2 id="cache">Cache</h2>
-<h3 id="block-placement">Block Placement</h3>
-<p>1个word 是4 byte.  Cache的大小是若干KB，一个block是若干word.  得到block个数n。</p>
-<h4 id="direct-mapped-cache">Direct mapped cache</h4>
-<p>假设缓存有<span class="arithmatex">\(2^n\)</span>个block, block size是<span class="arithmatex">\(2^k\)</span>个 <strong>word</strong>     内存address是m位(默认是byte address)</p>
+<h1>E R</h1>
+<p>E-R</p>
+<h2 id="e-r">E-R</h2>
+<h3 id="entityrelationship">Entity/Relationship</h3>
+<p>实体(方形)：</p>
 <ul>
-<li>index: <span class="arithmatex">\(\log_2(\text{\#block})\)</span></li>
-<li>byte offset: <span class="arithmatex">\(\log_2(\text{block bytes})\)</span>    比如说下面是4-word block, 对应<strong>16个bytes</strong>, 所以byte offset=4</li>
-<li>tag: <span class="arithmatex">\(m-\text{index}-\text{byte\_offset}\)</span> 位   </li>
-<li>valid bit: 1位</li>
-<li>data bits:   <span class="arithmatex">\(2^k\times 32=2^{k+5}\)</span>  (一个words 32 bit)</li>
+<li>和table的设计不同, Entity的属性只包含和自己有关的部分.  如teacher表里有dept_name属性，但是E-R图里应该把dept拿出来做一个teacher和department之间的relationship </li>
 </ul>
-<p>总大小是<span class="arithmatex">\(2^n(tag+data+valid)\)</span></p>
-<p><img alt="" src="https://xuan-insr.github.io/assets/1652753397820-7f30a36f-aab7-41b1-bbbf-89c151253a49.png"/></p>
-<p>注意4-word block 对应16个byte, 所以需要4位来索引每个byte, tag 那里才需要-2-2</p>
-<p><img alt="47c00f680644932018438dd23c5734fa.png" src="..\..\assets/images/47c00f680644932018438dd23c5734fa.png"/></p>
-<p>$$
-\lfloor address/\text{bytes per block} \rfloor \bmod blocknum
-$$
-一个block里的address范围  因为<code>16*75=1200</code></p>
-<p><img alt="a6edd2632c65330e97cb7f698a511138.png" src="..\..\assets/images/a6edd2632c65330e97cb7f698a511138.png"/></p>
-<h4 id="fully-associative">Fully associative</h4>
-<p>block可以去任何地方</p>
-<h4 id="set-associative">Set associative</h4>
-<p>cache分为多个set, 内存里每个block对应的set是确定的，但是set内部可以任意放 .  每个set里面的block个数称为set associativity</p>
-<p>index 就是用来确定放在哪个 set 中的。因此，index 的位数就对应着 set 的个数</p>
-<div class="arithmatex">\[
-\text{index bits}=\log_2(\#sets)=\log_2(\frac{\#blocks}{\text{associativity}})
-\]</div>
-<p><img alt="image.png" src="https://xuan-insr.github.io/assets/1652756607490-1017df1c-5566-4e2a-a28b-116f0e333638.png"/></p>
-<p>Directed map实际上就是1-way set , Fully-associative实际上就是n-way set</p>
-<p><img alt="94373f71c0f080140740b7d73652a928.png" src="..\..\assets/images/94373f71c0f080140740b7d73652a928.png"/>
-miss rate比direct map低</p>
-<p>set associativity对miss rate的影响</p>
-<p>如果每个set里面只有1个block  miss rate就会很高。 但是block多了, 找到对应的block就会很慢</p>
-<p><img alt="7810fa6bfb0506e9075873d76b5ad533.png" src="..\..\assets/images/7810fa6bfb0506e9075873d76b5ad533.png"/></p>
-<h3 id="block-identification">Block Identification</h3>
-<p>怎么判断hit/miss</p>
-<p>Direct mapped只需要找到内存地址对应的block，看下Tag是否跟当前地址对应</p>
-<p>Fully associative: 每次要和所有block比较</p>
-<p><img alt="image.png" src="https://xuan-insr.github.io/assets/1652756194622-6e4626af-f977-45b0-86dc-7cbfcef52bfd.png"/></p>
-<h3 id="block-replacement">Block replacement</h3>
-<p>DB也讲过</p>
+<p>关系(菱形):</p>
+<p>属性:</p>
 <ul>
-<li>Random replacement: 随机替换</li>
-<li>LRU: 选择上一次使用时间最早的替换</li>
-<li>FIFO: 选择进入时间最早的block替换</li>
+<li>primary key加下划线，多值属性用<code>{phone}</code>这样代表一个集合</li>
+<li>实体的属性写在框里面relationship的额外属性，用虚线连出一个方框</li>
 </ul>
-<h3 id="write-strategy">Write strategy</h3>
-<p>当cache里面的block被更新</p>
+<p><img alt="image-20240404120046127" src="https://s2.loli.net/2024/04/04/XIcLw7WTzn64MdO.png"/></p>
+<h3 id="constraints">Constraints</h3>
+<h4 id="mapping-cardinality">mapping cardinality</h4>
+<p>一对一，一对多，多对一，多对多</p>
 <ul>
-<li>write through: 立刻把更改写到内存里 </li>
-<li>write back: 不是立即写到内存里。  等到这个block要被覆盖掉的时候再写到内存里。 由于对同一个 block 通常会被多次写入，因此这种方式消耗的总带宽是更小的。<ul>
-<li>要加入dirty bits来标记是否被修改</li>
-<li>使用write buffer</li>
-<li>如果write miss,有两种方式 <strong>1)write allocate</strong>，即像 read miss 一样先把 block 拿到 cache 里再写入<strong>2)write around</strong> (or <strong>no write allocate</strong>)，考虑到既然本来就要去一次 main memory，不如直接在里面写了，就不再拿到 cache 里了。</li>
-<li>write-back 只能使用 write allocate；一般来说，write-through 使用 write around，其原因是明显的。</li>
+<li>ER图上用箭头表示，<strong>箭头指向"1"</strong></li>
+</ul>
+<p>或者也可以用<code>l..r</code>表示  <code>1..*</code>表示对应1~无数个。</p>
+<p><img alt="image-20240404120153076" src="https://s2.loli.net/2024/04/04/mHkcewdOvfqA2nR.png"/></p>
+<h4 id="participation">participation</h4>
+<ul>
+<li>total participation： 若一个实体集全部参与到关系中，要用两条线</li>
+<li>partical participation 部分参与</li>
+</ul>
+<h3 id="weak-entity-set">Weak Entity set*</h3>
+<p>弱实体集weak entity set：一些实体集的属性不足以形成主键</p>
+<ul>
+<li>用于表示一些关系中的依赖性，弱实体集需要和强实体集关联才有意义    如course和section.  section的主键是(course_id,sec_id,year),包含了course的主键course_id.   不存在没有class的section<ul>
+<li>被依赖的强实体集叫做identifying entity set, 对应的关系叫做identifying relationship</li>
+<li>那么就把属于强实体集的属性course_id放到实体course里面, 弱实体section只存储其他的属性(用<strong>下划线</strong>标识，称为discriminator/partial key)</li>
 </ul>
 </li>
+<li>经常出现在一对多的关系中，在ER图中需要用<strong>双菱形</strong>表示identifying relationship</li>
 </ul>
-<h2 id="performance">Performance</h2>
-<h3 id="memory-width">Memory Width</h3>
-<p>假设内存宽度为1 word. cache block为4 word.  </p>
-<p>但是如果miss, 整个block都要更新。一共4个word,要访问内存4次。总时间是1+4(1+15)=65  带宽=16/65</p>
-<p>但是如果增大内存宽度为2word, 就可以减少miss的时候访存次数. 总时间变为1+2(1+15)  带宽=33/65</p>
-<p><img alt="1a545595619a06060a2e9990b6ed9a0d.png" src="..\..\assets/images/1a545595619a06060a2e9990b6ed9a0d.png"/></p>
-<h3 id="block-size">Block size</h3>
-<p>增加block size, 减少miss rate</p>
-<h3 id="mesuring-cache-performance">Mesuring Cache Performance</h3>
-<p><img alt="d597f63d8d1ab2a25a04819477e3b544.png" src="..\..\assets/images/d597f63d8d1ab2a25a04819477e3b544.png"/>
-如果CPI减少:</p>
-<p><img alt="5dff3d39b0f78625ce7bc30e3c43c95b.png" src="..\..\assets/images/5dff3d39b0f78625ce7bc30e3c43c95b.png"/>
-如果CPU时钟频率变快: <strong>内存的速度是不变的</strong>,<strong>所以miss penalty</strong> <strong>从100 cycle变到200 cycle</strong>   周期数需要重新计算</p>
-<p><img alt="e62b78d88a943725c5950a76a1955777.png" src="..\..\assets/images/e62b78d88a943725c5950a76a1955777.png"/></p>
-<p>这说明内存的速度会拖慢CPU的性能提高</p>
+<h3 id="reduction-to-schema">Reduction to schema*</h3>
+<p>怎么把E-R图转化为sql的表</p>
+<ul>
+<li>每个实体集(矩形)都建一个表<ul>
+<li>强实体集直接用原来的属性建表</li>
+<li>弱实体集=某个强实体集的属性+partial key</li>
+</ul>
+</li>
+<li>每个关系(菱形)根据mapping判断<ul>
+<li><strong>多对多一定要单独建表</strong>  如<code>advisor(s_id,i_id)</code>      那就有student,instructor,advisor 3个表</li>
+<li>一对多: 大部分情况不建表，把"一"作为"多"的foreign key.  如<code>[instructor]--&lt;inst_dept&gt;--&gt;[department]</code>.  那就<code>instructor(dept_name)</code>       但是单横线可能会引入null值, 如果不想要null值， 可以单独建表也可。</li>
+<li>弱实体集的identifying relationship不用建表(建弱实体集的表就可以了)</li>
+</ul>
+</li>
+<li>组合属性: 取最底层的信息</li>
+<li>多值属性(<code>{}</code>)  单独建表：每个值占一行。如一个老师有多个电话,建一个表<code>phone(teacher_id,phone_number)</code></li>
+</ul>
+<h3 id="aggregation">Aggregation</h3>
+<p>画一个框  看成虚拟entity (见作业题？)</p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">

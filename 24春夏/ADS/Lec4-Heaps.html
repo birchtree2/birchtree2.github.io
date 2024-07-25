@@ -823,6 +823,20 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="Lec15-External%20Sorting.html">
+<span class="md-ellipsis">
+    Lec15 External Sorting
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Lec2-RBTree%2CBplusTree.html">
+<span class="md-ellipsis">
+    Lec2 RBTree,BplusTree
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="Lec3-Information%20Retrieval.html">
 <span class="md-ellipsis">
     Lec3 Information Retrieval
@@ -976,9 +990,16 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../DB/SQL_.html">
+<a class="md-nav__link" href="../DB/E-R.html">
 <span class="md-ellipsis">
-    SQL 
+    E R
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../DB/SQL.html">
+<span class="md-ellipsis">
+    SQL
   </span>
 </a>
 </li>
@@ -1225,6 +1246,13 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../%E7%A7%91%E7%A0%94/AI4Bio/Comment-%20We%20plan%20to%20add%20more%20content-codes.%20Please%20let%20us%20know%20if%20there%20are%20any%20comments.html">
+<span class="md-ellipsis">
+    Comment  We plan to add more content codes. Please let us know if there are any comments
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../%E7%A7%91%E7%A0%94/AI4Bio/metrics.html">
 <span class="md-ellipsis">
     Metrics
@@ -1239,15 +1267,15 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_6_1_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_6_1_3" id="__nav_6_1_3_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_6_1_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_6_1_4" id="__nav_6_1_4_label" tabindex="0">
 <span class="md-ellipsis">
     Paper Reading
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_6_1_3_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_6_1_3">
+<nav aria-expanded="false" aria-labelledby="__nav_6_1_4_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_6_1_4">
 <span class="md-nav__icon md-icon"></span>
             Paper Reading
           </label>
@@ -1450,7 +1478,7 @@
 </span></code></pre></div>
 <h3 id="_5">时间复杂度</h3>
 <blockquote>
-<p>一棵有 n个节点的二叉树，根的 dist 不超过<span class="arithmatex">\(\log(n)+1\)</span> <img alt="\left\lceil\log (n+1)\right\rceil" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/>，因为一棵根的dist为x的二叉树至少有x-1层是满二叉树，那么就至少有 <span class="arithmatex">\(2^x-1\)</span>个节点。注意这个性质是所有二叉树都具有的，并不是左偏树所特有的。</p>
+<p>一棵有 n个节点的二叉树，根的 dist 不超过<span class="arithmatex">\(\log(n)+1\)</span> ，因为一棵根的dist为x的二叉树至少有x-1层是满二叉树，那么就至少有 <span class="arithmatex">\(2^x-1\)</span>个节点。注意这个性质是所有二叉树都具有的，并不是左偏树所特有的。</p>
 </blockquote>
 <p>对于左偏树，每次递归dist会-1  因为<span class="arithmatex">\(dist(x)=dist(rson(x))+1\)</span>      所以合并的复杂度是<span class="arithmatex">\(O(\log n)\)</span></p>
 <h2 id="_6">斜堆</h2>
@@ -1481,7 +1509,7 @@
 <p>定义势函数<span class="arithmatex">\(\Phi\)</span>为当前树中 <strong>heavy node的总数量</strong></p>
 <p><span class="arithmatex">\(c=t_{worst}+\Phi(H_{new})-\Phi(H_x)-\Phi(H_y)\)</span></p>
 <ul>
-<li><span class="arithmatex">\(t_{worst}\)</span>为真实的cost(就是模板中的<span class="arithmatex">\(a_i\)</span>)   最坏情况下是两树的右侧路径长度 <span class="arithmatex">\(h_x+l_x+h_y+l_y\)</span></li>
+<li><span class="arithmatex">\(t_{worst}\)</span>为真实的cost ( 就是模板中的<span class="arithmatex">\(a_i\)</span> )   最坏情况下是两树的右侧路径长度 <span class="arithmatex">\(h_x+l_x+h_y+l_y\)</span></li>
 <li><span class="arithmatex">\(\Phi(H_{new})=h_x^0+h_y^0+h'_x+h'_y \leq h_x^0+h_y^0+l_x+l_y\)</span>.       因为原来的<span class="arithmatex">\(h_x,h_y\)</span>全部变成light了，而<span class="arithmatex">\(l_x,l_y\)</span>有可能变成heavy</li>
 </ul>
 <h2 id="__comments">Comments</h2>

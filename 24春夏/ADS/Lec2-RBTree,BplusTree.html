@@ -5,12 +5,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/%E8%AE%A1%E7%BB%84/5_Memory.html" rel="canonical"/>
-<link href="4_Processor.html" rel="prev"/>
-<link href="../../%E5%B7%A5%E5%85%B7/index.html" rel="next"/>
+<link href="https://birchtree2.github.io/24%E6%98%A5%E5%A4%8F/ADS/Lec2-RBTree%2CBplusTree.html" rel="canonical"/>
+<link href="Lec15-External%20Sorting.html" rel="prev"/>
+<link href="Lec3-Information%20Retrieval.html" rel="next"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
-<title>5 Memory - 时雨的笔记本</title>
+<title>Lec2 RBTree,BplusTree - 时雨的笔记本</title>
 <link href="../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#cache">
+<a class="md-skip" href="#_1">
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              5 Memory
+              Lec2 RBTree,BplusTree
             
           </span>
 </div>
@@ -797,10 +797,10 @@
             24春夏
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../ADS/index.html">
+<a class="md-nav__link" href="index.html">
 <span class="md-ellipsis">
     ADS
   </span>
@@ -809,70 +809,99 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="true" aria-labelledby="__nav_4_1_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_4_1">
 <span class="md-nav__icon md-icon"></span>
             ADS
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ADS/Lec1-AVL%2CSplay.html">
+<a class="md-nav__link" href="Lec1-AVL%2CSplay.html">
 <span class="md-ellipsis">
     Lec1 AVL,Splay
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ADS/Lec15-External%20Sorting.html">
+<a class="md-nav__link" href="Lec15-External%20Sorting.html">
 <span class="md-ellipsis">
     Lec15 External Sorting
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../ADS/Lec2-RBTree%2CBplusTree.html">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Lec2 RBTree,BplusTree
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="Lec2-RBTree%2CBplusTree.html">
 <span class="md-ellipsis">
     Lec2 RBTree,BplusTree
   </span>
 </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      红黑树
+    </span>
+</a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ADS/Lec3-Information%20Retrieval.html">
+<a class="md-nav__link" href="#b">
+<span class="md-ellipsis">
+      B+树
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="Lec3-Information%20Retrieval.html">
 <span class="md-ellipsis">
     Lec3 Information Retrieval
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ADS/Lec4-Heaps.html">
+<a class="md-nav__link" href="Lec4-Heaps.html">
 <span class="md-ellipsis">
     Lec4 Heaps
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ADS/Lec5-Binomial%20Heap.html">
+<a class="md-nav__link" href="Lec5-Binomial%20Heap.html">
 <span class="md-ellipsis">
     Lec5 Binomial Heap
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ADS/Lec6-Divide%20and%20Conquer.html">
+<a class="md-nav__link" href="Lec6-Divide%20and%20Conquer.html">
 <span class="md-ellipsis">
     Lec6 Divide and Conquer
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ADS/Lec7-Backtracking.html">
+<a class="md-nav__link" href="Lec7-Backtracking.html">
 <span class="md-ellipsis">
     Lec7 Backtracking
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../ADS/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0.html">
+<a class="md-nav__link" href="%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0.html">
 <span class="md-ellipsis">
     期末复习
   </span>
@@ -923,10 +952,10 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="index.html">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/index.html">
 <span class="md-ellipsis">
     计组
   </span>
@@ -935,157 +964,46 @@
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="true" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_4_3_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_4_3">
 <span class="md-nav__icon md-icon"></span>
             计组
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="1_Prelude.html">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/1_Prelude.html">
 <span class="md-ellipsis">
     1 Prelude
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="2_RISC-V%20ISA.html">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/2_RISC-V%20ISA.html">
 <span class="md-ellipsis">
     2 RISC V ISA
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="3_Arithmetic.html">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/3_Arithmetic.html">
 <span class="md-ellipsis">
     3 Arithmetic
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="4_Processor.html">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/4_Processor.html">
 <span class="md-ellipsis">
     4 Processor
   </span>
 </a>
 </li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    5 Memory
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="5_Memory.html">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E8%AE%A1%E7%BB%84/5_Memory.html">
 <span class="md-ellipsis">
     5 Memory
   </span>
 </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cache">
-<span class="md-ellipsis">
-      Cache
-    </span>
-</a>
-<nav aria-label="Cache" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#block-placement">
-<span class="md-ellipsis">
-      Block Placement
-    </span>
-</a>
-<nav aria-label="Block Placement" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct-mapped-cache">
-<span class="md-ellipsis">
-      Direct mapped cache
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#fully-associative">
-<span class="md-ellipsis">
-      Fully associative
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#set-associative">
-<span class="md-ellipsis">
-      Set associative
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#block-identification">
-<span class="md-ellipsis">
-      Block Identification
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#block-replacement">
-<span class="md-ellipsis">
-      Block replacement
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#write-strategy">
-<span class="md-ellipsis">
-      Write strategy
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#performance">
-<span class="md-ellipsis">
-      Performance
-    </span>
-</a>
-<nav aria-label="Performance" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#memory-width">
-<span class="md-ellipsis">
-      Memory Width
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#block-size">
-<span class="md-ellipsis">
-      Block size
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mesuring-cache-performance">
-<span class="md-ellipsis">
-      Mesuring Cache Performance
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -1394,100 +1312,18 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cache">
+<a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-      Cache
-    </span>
-</a>
-<nav aria-label="Cache" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#block-placement">
-<span class="md-ellipsis">
-      Block Placement
-    </span>
-</a>
-<nav aria-label="Block Placement" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct-mapped-cache">
-<span class="md-ellipsis">
-      Direct mapped cache
+      红黑树
     </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#fully-associative">
+<a class="md-nav__link" href="#b">
 <span class="md-ellipsis">
-      Fully associative
+      B+树
     </span>
 </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#set-associative">
-<span class="md-ellipsis">
-      Set associative
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#block-identification">
-<span class="md-ellipsis">
-      Block Identification
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#block-replacement">
-<span class="md-ellipsis">
-      Block replacement
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#write-strategy">
-<span class="md-ellipsis">
-      Write strategy
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#performance">
-<span class="md-ellipsis">
-      Performance
-    </span>
-</a>
-<nav aria-label="Performance" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#memory-width">
-<span class="md-ellipsis">
-      Memory Width
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#block-size">
-<span class="md-ellipsis">
-      Block size
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mesuring-cache-performance">
-<span class="md-ellipsis">
-      Mesuring Cache Performance
-    </span>
-</a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -1496,85 +1332,9 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>5 Memory</h1>
-<p><a href="https://classroom.zju.edu.cn/livingroom?course_id=49844&amp;sub_id=857572&amp;tenant_code=112">智云</a> </p>
-<p>24-5-08 (两种cache  cache performance)</p>
-<p>24-5-13(page table)  24-5-15(期中)</p>
-<h2 id="cache">Cache</h2>
-<h3 id="block-placement">Block Placement</h3>
-<p>1个word 是4 byte.  Cache的大小是若干KB，一个block是若干word.  得到block个数n。</p>
-<h4 id="direct-mapped-cache">Direct mapped cache</h4>
-<p>假设缓存有<span class="arithmatex">\(2^n\)</span>个block, block size是<span class="arithmatex">\(2^k\)</span>个 <strong>word</strong>     内存address是m位(默认是byte address)</p>
-<ul>
-<li>index: <span class="arithmatex">\(\log_2(\text{\#block})\)</span></li>
-<li>byte offset: <span class="arithmatex">\(\log_2(\text{block bytes})\)</span>    比如说下面是4-word block, 对应<strong>16个bytes</strong>, 所以byte offset=4</li>
-<li>tag: <span class="arithmatex">\(m-\text{index}-\text{byte\_offset}\)</span> 位   </li>
-<li>valid bit: 1位</li>
-<li>data bits:   <span class="arithmatex">\(2^k\times 32=2^{k+5}\)</span>  (一个words 32 bit)</li>
-</ul>
-<p>总大小是<span class="arithmatex">\(2^n(tag+data+valid)\)</span></p>
-<p><img alt="" src="https://xuan-insr.github.io/assets/1652753397820-7f30a36f-aab7-41b1-bbbf-89c151253a49.png"/></p>
-<p>注意4-word block 对应16个byte, 所以需要4位来索引每个byte, tag 那里才需要-2-2</p>
-<p><img alt="47c00f680644932018438dd23c5734fa.png" src="..\..\assets/images/47c00f680644932018438dd23c5734fa.png"/></p>
-<p>$$
-\lfloor address/\text{bytes per block} \rfloor \bmod blocknum
-$$
-一个block里的address范围  因为<code>16*75=1200</code></p>
-<p><img alt="a6edd2632c65330e97cb7f698a511138.png" src="..\..\assets/images/a6edd2632c65330e97cb7f698a511138.png"/></p>
-<h4 id="fully-associative">Fully associative</h4>
-<p>block可以去任何地方</p>
-<h4 id="set-associative">Set associative</h4>
-<p>cache分为多个set, 内存里每个block对应的set是确定的，但是set内部可以任意放 .  每个set里面的block个数称为set associativity</p>
-<p>index 就是用来确定放在哪个 set 中的。因此，index 的位数就对应着 set 的个数</p>
-<div class="arithmatex">\[
-\text{index bits}=\log_2(\#sets)=\log_2(\frac{\#blocks}{\text{associativity}})
-\]</div>
-<p><img alt="image.png" src="https://xuan-insr.github.io/assets/1652756607490-1017df1c-5566-4e2a-a28b-116f0e333638.png"/></p>
-<p>Directed map实际上就是1-way set , Fully-associative实际上就是n-way set</p>
-<p><img alt="94373f71c0f080140740b7d73652a928.png" src="..\..\assets/images/94373f71c0f080140740b7d73652a928.png"/>
-miss rate比direct map低</p>
-<p>set associativity对miss rate的影响</p>
-<p>如果每个set里面只有1个block  miss rate就会很高。 但是block多了, 找到对应的block就会很慢</p>
-<p><img alt="7810fa6bfb0506e9075873d76b5ad533.png" src="..\..\assets/images/7810fa6bfb0506e9075873d76b5ad533.png"/></p>
-<h3 id="block-identification">Block Identification</h3>
-<p>怎么判断hit/miss</p>
-<p>Direct mapped只需要找到内存地址对应的block，看下Tag是否跟当前地址对应</p>
-<p>Fully associative: 每次要和所有block比较</p>
-<p><img alt="image.png" src="https://xuan-insr.github.io/assets/1652756194622-6e4626af-f977-45b0-86dc-7cbfcef52bfd.png"/></p>
-<h3 id="block-replacement">Block replacement</h3>
-<p>DB也讲过</p>
-<ul>
-<li>Random replacement: 随机替换</li>
-<li>LRU: 选择上一次使用时间最早的替换</li>
-<li>FIFO: 选择进入时间最早的block替换</li>
-</ul>
-<h3 id="write-strategy">Write strategy</h3>
-<p>当cache里面的block被更新</p>
-<ul>
-<li>write through: 立刻把更改写到内存里 </li>
-<li>write back: 不是立即写到内存里。  等到这个block要被覆盖掉的时候再写到内存里。 由于对同一个 block 通常会被多次写入，因此这种方式消耗的总带宽是更小的。<ul>
-<li>要加入dirty bits来标记是否被修改</li>
-<li>使用write buffer</li>
-<li>如果write miss,有两种方式 <strong>1)write allocate</strong>，即像 read miss 一样先把 block 拿到 cache 里再写入<strong>2)write around</strong> (or <strong>no write allocate</strong>)，考虑到既然本来就要去一次 main memory，不如直接在里面写了，就不再拿到 cache 里了。</li>
-<li>write-back 只能使用 write allocate；一般来说，write-through 使用 write around，其原因是明显的。</li>
-</ul>
-</li>
-</ul>
-<h2 id="performance">Performance</h2>
-<h3 id="memory-width">Memory Width</h3>
-<p>假设内存宽度为1 word. cache block为4 word.  </p>
-<p>但是如果miss, 整个block都要更新。一共4个word,要访问内存4次。总时间是1+4(1+15)=65  带宽=16/65</p>
-<p>但是如果增大内存宽度为2word, 就可以减少miss的时候访存次数. 总时间变为1+2(1+15)  带宽=33/65</p>
-<p><img alt="1a545595619a06060a2e9990b6ed9a0d.png" src="..\..\assets/images/1a545595619a06060a2e9990b6ed9a0d.png"/></p>
-<h3 id="block-size">Block size</h3>
-<p>增加block size, 减少miss rate</p>
-<h3 id="mesuring-cache-performance">Mesuring Cache Performance</h3>
-<p><img alt="d597f63d8d1ab2a25a04819477e3b544.png" src="..\..\assets/images/d597f63d8d1ab2a25a04819477e3b544.png"/>
-如果CPI减少:</p>
-<p><img alt="5dff3d39b0f78625ce7bc30e3c43c95b.png" src="..\..\assets/images/5dff3d39b0f78625ce7bc30e3c43c95b.png"/>
-如果CPU时钟频率变快: <strong>内存的速度是不变的</strong>,<strong>所以miss penalty</strong> <strong>从100 cycle变到200 cycle</strong>   周期数需要重新计算</p>
-<p><img alt="e62b78d88a943725c5950a76a1955777.png" src="..\..\assets/images/e62b78d88a943725c5950a76a1955777.png"/></p>
-<p>这说明内存的速度会拖慢CPU的性能提高</p>
+<h1>Lec2 RBTree,BplusTree</h1>
+<h2 id="_1">红黑树</h2>
+<h2 id="b">B+树</h2>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
