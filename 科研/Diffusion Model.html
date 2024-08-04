@@ -5,33 +5,31 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://birchtree2.github.io/%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html" rel="canonical"/>
-<link href="%E5%9C%BA%E8%AE%BA_.html" rel="prev"/>
-<link href="%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html" rel="next"/>
-<link href="../../../assets/images/favicon.png" rel="icon"/>
+<link href="https://birchtree2.github.io/%E7%A7%91%E7%A0%94/Diffusion%20Model.html" rel="canonical"/>
+<link href="../%E5%B7%A5%E5%85%B7/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3/wsl2%E5%AE%89%E8%A3%85.html" rel="prev"/>
+<link href="AI4Bio/metrics.html" rel="next"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
-<title>曲面积分难题 - 时雨的笔记本</title>
-<link href="../../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
-<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<title>Diffusion Model - 时雨的笔记本</title>
+<link href="../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Noto Serif SC";--md-code-font:"Roboto Mono"}</style>
-<script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/katex.min.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </head>
 <body data-md-color-accent="cyan" data-md-color-primary="light-green" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
-          Skip to content
-        </a>
 </div>
 <div data-md-component="announce">
 </div>
 <header class="md-header md-header--shadow" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="时雨的笔记本" class="md-header__button md-logo" data-md-component="logo" href="../../../index.html" title="时雨的笔记本">
+<a aria-label="时雨的笔记本" class="md-header__button md-logo" data-md-component="logo" href="../index.html" title="时雨的笔记本">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
@@ -47,7 +45,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              曲面积分难题
+              Diffusion Model
             
           </span>
 </div>
@@ -114,7 +112,7 @@
 <div class="md-sidebar__inner">
 <nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
-<a aria-label="时雨的笔记本" class="md-nav__button md-logo" data-md-component="logo" href="../../../index.html" title="时雨的笔记本">
+<a aria-label="时雨的笔记本" class="md-nav__button md-logo" data-md-component="logo" href="../index.html" title="时雨的笔记本">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
 </a>
     时雨的笔记本
@@ -131,7 +129,7 @@
 </div>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../index.html">
+<a class="md-nav__link" href="../index.html">
 <span class="md-ellipsis">
     时雨的课程笔记
   </span>
@@ -152,7 +150,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%B8%80%E4%B8%8A/Python.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8A/Python.html">
 <span class="md-ellipsis">
     Python
   </span>
@@ -173,14 +171,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%B8%80%E4%B8%8A/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/C%E6%98%93%E9%94%99%E7%82%B9%E6%80%BB%E7%BB%93.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8A/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/C%E6%98%93%E9%94%99%E7%82%B9%E6%80%BB%E7%BB%93.html">
 <span class="md-ellipsis">
     C易错点总结(语法篇)
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%B8%80%E4%B8%8A/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/%E7%BC%96%E7%A8%8B%E9%A2%98%E6%B3%A8%E6%84%8F.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8A/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/%E7%BC%96%E7%A8%8B%E9%A2%98%E6%B3%A8%E6%84%8F.html">
 <span class="md-ellipsis">
     编程题注意
   </span>
@@ -192,7 +190,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%B8%80%E4%B8%8A/%E5%A4%A7%E8%8B%B1IV/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8A/%E5%A4%A7%E8%8B%B1IV/index.html">
 <span class="md-ellipsis">
     大英IV
   </span>
@@ -208,14 +206,14 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%B8%80%E4%B8%8A/%E5%A4%A7%E8%8B%B1IV/%E5%8D%95%E8%AF%8D.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8A/%E5%A4%A7%E8%8B%B1IV/%E5%8D%95%E8%AF%8D.html">
 <span class="md-ellipsis">
     大英四单词总结
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%B8%80%E4%B8%8A/%E5%A4%A7%E8%8B%B1IV/%E8%AF%BE%E6%96%87.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8A/%E5%A4%A7%E8%8B%B1IV/%E8%AF%BE%E6%96%87.html">
 <span class="md-ellipsis">
     大英四课文总结
   </span>
@@ -227,29 +225,29 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
 <span class="md-ellipsis">
     大一下
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
 <span class="md-nav__icon md-icon"></span>
             大一下
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
 <span class="md-ellipsis">
     微积分(甲)II
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_label" class="md-nav" data-md-level="2">
 <label class="md-nav__title" for="__nav_3_1">
 <span class="md-nav__icon md-icon"></span>
             微积分(甲)II
@@ -259,129 +257,107 @@
 <input class="md-nav__toggle md-toggle" id="__nav_3_1_1" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
 <span class="md-ellipsis">
-    多元函数微分学
+    1多元函数微分学
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-expanded="false" aria-labelledby="__nav_3_1_1_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_3_1_1">
 <span class="md-nav__icon md-icon"></span>
-            多元函数微分学
+            1多元函数微分学
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/1.0%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html">
 <span class="md-ellipsis">
-    习题(证明题、变量代换)
+    1.0空间解析几何
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%28%E4%BA%8C%29.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/1.1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E5%92%8C%E5%AF%BC%E6%95%B0.html">
 <span class="md-ellipsis">
-    多元函数微分学(二)
+    1.1多元函数的极限和导数
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/1.2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC.html">
 <span class="md-ellipsis">
-    多元函数微分学
+    1.2多元函数的极值
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/1.3%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html">
 <span class="md-ellipsis">
-    空间解析几何
+    1.3习题(证明题、变量代换)
   </span>
 </a>
 </li>
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_1_2" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
 <span class="md-ellipsis">
-    多元函数积分学
+    2多元函数积分学
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_1_2_label" class="md-nav" data-md-level="3">
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_2_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_3_1_2">
 <span class="md-nav__icon md-icon"></span>
-            多元函数积分学
+            2多元函数积分学
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86_.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.1%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
-    三重积分 
+    2.1二重积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.2%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
-    二重积分
+    2.2三重积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E5%9C%BA%E8%AE%BA_.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.3%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
-    场论 
-  </span>
-</a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
-<span class="md-ellipsis">
-    曲面积分难题
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html">
-<span class="md-ellipsis">
-    曲面积分难题
-  </span>
-</a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-<span class="md-ellipsis">
-      星形线，双纽线的性质
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
-<span class="md-ellipsis">
-    第一类曲线曲面积分
+    2.3第一类曲线曲面积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.4%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
-    第二类曲线积分
+    2.4第二类曲线积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.5%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
-    第二类曲面积分
+    2.5第二类曲面积分
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.6%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html">
+<span class="md-ellipsis">
+    2.6曲面积分难题
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.7%E5%9C%BA%E8%AE%BA.html">
+<span class="md-ellipsis">
+    2.7场论
   </span>
 </a>
 </li>
@@ -392,25 +368,25 @@
 <input class="md-nav__toggle md-toggle" id="__nav_3_1_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_1_3" id="__nav_3_1_3_label" tabindex="0">
 <span class="md-ellipsis">
-    级数
+    3级数
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-expanded="false" aria-labelledby="__nav_3_1_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_3_1_3">
 <span class="md-nav__icon md-icon"></span>
-            级数
+            3级数
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/3%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html">
 <span class="md-ellipsis">
     级数 习题
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/3%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0.html">
 <span class="md-ellipsis">
     级数
   </span>
@@ -425,7 +401,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/index.html">
 <span class="md-ellipsis">
     离散数学及其应用
   </span>
@@ -441,84 +417,84 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/1.Propositional%20Logic.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/1.Propositional%20Logic.html">
 <span class="md-ellipsis">
     1.Propositional Logic
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/10.Graph_.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/10.Graph_.html">
 <span class="md-ellipsis">
     10.Graph 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/11.Tree.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/11.Tree.html">
 <span class="md-ellipsis">
     11.Tree
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/2.Basic%20Structures.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/2.Basic%20Structures.html">
 <span class="md-ellipsis">
     2.Basic Structures
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/3.Algorithms.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/3.Algorithms.html">
 <span class="md-ellipsis">
     3.Algorithms
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/4.Number%20Theory_.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/4.Number%20Theory_.html">
 <span class="md-ellipsis">
     4.Number Theory 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/5.Mathematical%20Induction.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/5.Mathematical%20Induction.html">
 <span class="md-ellipsis">
     5.Mathematical Induction
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/6.Counting.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/6.Counting.html">
 <span class="md-ellipsis">
     6.Counting
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/8.%20Advanced%20Counting%20Techniques.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/8.%20Advanced%20Counting%20Techniques.html">
 <span class="md-ellipsis">
     8. Advanced Counting Techniques
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/9.Relation_.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/9.Relation_.html">
 <span class="md-ellipsis">
     9.Relation 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/ZJU%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8%202023%E6%98%A5%E5%A4%8F%E5%9B%9E%E5%BF%86%E9%A2%98.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/ZJU%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8%202023%E6%98%A5%E5%A4%8F%E5%9B%9E%E5%BF%86%E9%A2%98.html">
 <span class="md-ellipsis">
     ZJU离散数学及其应用 2023春夏回忆题
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E4%B8%8E%E5%8E%86%E5%B9%B4%E5%8D%B7%E9%A2%98%E7%9B%AE.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0%E4%B8%8E%E5%8E%86%E5%B9%B4%E5%8D%B7%E9%A2%98%E7%9B%AE.html">
 <span class="md-ellipsis">
     离散数学期末复习与历年卷题目
   </span>
@@ -530,7 +506,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/index.html">
 <span class="md-ellipsis">
     计算机系统概论
   </span>
@@ -546,21 +522,21 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/ICS%20Chapter%201-3.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/ICS%20Chapter%201-3.html">
 <span class="md-ellipsis">
     ICS Chapter 1 3
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/ICS%20Chapter%204%20and%20Chapter%205_.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/ICS%20Chapter%204%20and%20Chapter%205_.html">
 <span class="md-ellipsis">
     ICS Chapter 4 and Chapter 5 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BAICS%20Chapter%206%20and%20after.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%B8%80%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BA/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%AE%BAICS%20Chapter%206%20and%20after.html">
 <span class="md-ellipsis">
     计算机系统概论ICS Chapter 6 and after
   </span>
@@ -589,7 +565,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4_1" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%9B%BE%E5%83%8F%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%9B%BE%E5%83%8F%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/index.html">
 <span class="md-ellipsis">
     图像信息处理
   </span>
@@ -607,7 +583,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/index.html">
 <span class="md-ellipsis">
     大学物理(乙)II
   </span>
@@ -623,28 +599,28 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E5%85%89%E5%AD%A6.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E5%85%89%E5%AD%A6.html">
 <span class="md-ellipsis">
     光学
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E7%A3%81%E5%9C%BA.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E7%A3%81%E5%9C%BA.html">
 <span class="md-ellipsis">
     磁场
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E9%87%8F%E5%AD%90_.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E9%87%8F%E5%AD%90_.html">
 <span class="md-ellipsis">
     量子 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E9%9D%99%E7%94%B5%E5%9C%BA2_.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%28%E4%B9%99%29II/%E9%9D%99%E7%94%B5%E5%9C%BA2_.html">
 <span class="md-ellipsis">
     静电场2 
   </span>
@@ -656,7 +632,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E5%AE%9E%E9%AA%8C/index.html">
 <span class="md-ellipsis">
     大学物理实验
   </span>
@@ -674,7 +650,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/index.html">
 <span class="md-ellipsis">
     宏观经济学(甲)
   </span>
@@ -690,56 +666,56 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/1%20GDP.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/1%20GDP.html">
 <span class="md-ellipsis">
     1 GDP
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/2%20%E7%AE%80%E5%8D%95%E5%9B%BD%E6%B0%91%E6%94%B6%E5%85%A5%E5%86%B3%E5%AE%9A.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/2%20%E7%AE%80%E5%8D%95%E5%9B%BD%E6%B0%91%E6%94%B6%E5%85%A5%E5%86%B3%E5%AE%9A.html">
 <span class="md-ellipsis">
     2 简单国民收入决定
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/3%20IS-LM%E6%9B%B2%E7%BA%BF.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/3%20IS-LM%E6%9B%B2%E7%BA%BF.html">
 <span class="md-ellipsis">
     3 IS-LM曲线
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/4%20AD-AS%E6%9B%B2%E7%BA%BF.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/4%20AD-AS%E6%9B%B2%E7%BA%BF.html">
 <span class="md-ellipsis">
     4 AD-AS曲线
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/5%20%E5%A4%B1%E4%B8%9A%E3%80%81%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80%E3%80%81%E7%BB%8F%E6%B5%8E%E5%91%A8%E6%9C%9F.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/5%20%E5%A4%B1%E4%B8%9A%E3%80%81%E9%80%9A%E8%B4%A7%E8%86%A8%E8%83%80%E3%80%81%E7%BB%8F%E6%B5%8E%E5%91%A8%E6%9C%9F.html">
 <span class="md-ellipsis">
     5 失业、通货膨胀、经济周期
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/6%20%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/6%20%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E6%94%BF%E7%AD%96.html">
 <span class="md-ellipsis">
     6 宏观经济政策
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/7%20%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%95%BF%E7%90%86%E8%AE%BA.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/7%20%E7%BB%8F%E6%B5%8E%E5%A2%9E%E9%95%BF%E7%90%86%E8%AE%BA.html">
 <span class="md-ellipsis">
     7 经济增长理论
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/8%20%E5%BC%80%E6%94%BE%E6%9D%A1%E4%BB%B6%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E%E5%AD%A6%28%E7%94%B2%29/8%20%E5%BC%80%E6%94%BE%E6%9D%A1%E4%BB%B6%E5%AE%8F%E8%A7%82%E7%BB%8F%E6%B5%8E.html">
 <span class="md-ellipsis">
     8 开放条件宏观经济
   </span>
@@ -751,7 +727,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E6%95%B0%E5%AD%97%E9%80%BB%E8%BE%91%E8%AE%BE%E8%AE%A1/index.html">
 <span class="md-ellipsis">
     数字逻辑设计
   </span>
@@ -769,7 +745,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/index.html">
 <span class="md-ellipsis">
     数据结构基础
   </span>
@@ -785,7 +761,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/FDS%E5%A4%8D%E4%B9%A0.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%9F%BA%E7%A1%80/FDS%E5%A4%8D%E4%B9%A0.html">
 <span class="md-ellipsis">
     FDS复习
   </span>
@@ -797,7 +773,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4_7" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/index.html">
 <span class="md-ellipsis">
     概率论与数理统计
   </span>
@@ -813,7 +789,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E6%A6%82%E7%BB%9F%E6%80%BB%E7%BB%93.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/%E6%A6%82%E7%BB%9F%E6%80%BB%E7%BB%93.html">
 <span class="md-ellipsis">
     概统总结
   </span>
@@ -825,7 +801,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4_8" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/index.html">
 <span class="md-ellipsis">
     面向对象程序设计
   </span>
@@ -841,49 +817,49 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Class_.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Class_.html">
 <span class="md-ellipsis">
     Class 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Exception.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Exception.html">
 <span class="md-ellipsis">
     Exception
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Inheritance_.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Inheritance_.html">
 <span class="md-ellipsis">
     Inheritance 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Overloaded%20operator_.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Overloaded%20operator_.html">
 <span class="md-ellipsis">
     Overloaded operator 
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Polymorphism.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Polymorphism.html">
 <span class="md-ellipsis">
     Polymorphism
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Template.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/Template.html">
 <span class="md-ellipsis">
     Template
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%B7%9FOOP%E6%97%A0%E5%85%B3%E7%9A%84C%2B%2B%E7%89%B9%E6%80%A7.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8A/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/%E8%B7%9FOOP%E6%97%A0%E5%85%B3%E7%9A%84C%2B%2B%E7%89%B9%E6%80%A7.html">
 <span class="md-ellipsis">
     跟OOP无关的C++特性
   </span>
@@ -912,7 +888,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_1" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/index.html">
 <span class="md-ellipsis">
     ADS
   </span>
@@ -928,63 +904,63 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec1-AVL%2CSplay.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec1-AVL%2CSplay.html">
 <span class="md-ellipsis">
     Lec1 AVL,Splay
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec15-External%20Sorting.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec15-External%20Sorting.html">
 <span class="md-ellipsis">
     Lec15 External Sorting
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec2-RBTree%2CBplusTree.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec2-RBTree%2CBplusTree.html">
 <span class="md-ellipsis">
     Lec2 RBTree,BplusTree
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec3-Information%20Retrieval.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec3-Information%20Retrieval.html">
 <span class="md-ellipsis">
     Lec3 Information Retrieval
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec4-Heaps.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec4-Heaps.html">
 <span class="md-ellipsis">
     Lec4 Heaps
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec5-Binomial%20Heap.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec5-Binomial%20Heap.html">
 <span class="md-ellipsis">
     Lec5 Binomial Heap
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec6-Divide%20and%20Conquer.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec6-Divide%20and%20Conquer.html">
 <span class="md-ellipsis">
     Lec6 Divide and Conquer
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec7-Backtracking.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/Lec7-Backtracking.html">
 <span class="md-ellipsis">
     Lec7 Backtracking
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/ADS/%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0.html">
 <span class="md-ellipsis">
     期末复习
   </span>
@@ -996,7 +972,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_2" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/DB/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/DB/index.html">
 <span class="md-ellipsis">
     DB
   </span>
@@ -1012,21 +988,21 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/DB/Database%20design.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/DB/Database%20design.html">
 <span class="md-ellipsis">
     Database design
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/DB/ER%E5%9B%BE.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/DB/ER%E5%9B%BE.html">
 <span class="md-ellipsis">
     ER图
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/DB/SQL.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/DB/SQL.html">
 <span class="md-ellipsis">
     SQL
   </span>
@@ -1038,7 +1014,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_3" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/index.html">
 <span class="md-ellipsis">
     信息安全原理
   </span>
@@ -1054,28 +1030,28 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E5%AD%A6.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%85%AC%E9%92%A5%E5%AF%86%E7%A0%81%E5%AD%A6.html">
 <span class="md-ellipsis">
     公钥密码学
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%AE%89%E5%85%A8%E8%AE%BE%E5%A4%87.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%AE%89%E5%85%A8%E8%AE%BE%E5%A4%87.html">
 <span class="md-ellipsis">
     安全设备
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E5%AF%86%E7%A0%81%E5%AD%A6%E5%9F%BA%E7%A1%80.html">
 <span class="md-ellipsis">
     密码学基础
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8%E7%9A%84%E6%A6%82%E5%BF%B5.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E5%8E%9F%E7%90%86/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8%E7%9A%84%E6%A6%82%E5%BF%B5.html">
 <span class="md-ellipsis">
     计算机安全的概念
   </span>
@@ -1087,7 +1063,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_4" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/index.html">
 <span class="md-ellipsis">
     计算机组成
   </span>
@@ -1103,35 +1079,35 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/1_Prelude.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/1_Prelude.html">
 <span class="md-ellipsis">
     1 Prelude
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/2_RISC-V%20ISA.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/2_RISC-V%20ISA.html">
 <span class="md-ellipsis">
     2 RISC V ISA
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3_Arithmetic.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/3_Arithmetic.html">
 <span class="md-ellipsis">
     3 Arithmetic
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/4_Processor.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/4_Processor.html">
 <span class="md-ellipsis">
     4 Processor
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/5_Memory.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/5_Memory.html">
 <span class="md-ellipsis">
     5 Memory
   </span>
@@ -1143,7 +1119,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_5_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E9%A9%AC%E5%8E%9F/index.html">
+<a class="md-nav__link" href="../%E5%A4%A7%E4%BA%8C%E4%B8%8B/%E9%A9%AC%E5%8E%9F/index.html">
 <span class="md-ellipsis">
     马原
   </span>
@@ -1164,7 +1140,7 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_6" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
-<a class="md-nav__link" href="../../../%E5%B7%A5%E5%85%B7/index.html">
+<a class="md-nav__link" href="../%E5%B7%A5%E5%85%B7/index.html">
 <span class="md-ellipsis">
     工具
   </span>
@@ -1194,28 +1170,28 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion.html">
+<a class="md-nav__link" href="../%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion.html">
 <span class="md-ellipsis">
     Stable diffusion
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion%E8%BF%9B%E9%98%B6.html">
+<a class="md-nav__link" href="../%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/stable%20diffusion%E8%BF%9B%E9%98%B6.html">
 <span class="md-ellipsis">
     Stable diffusion进阶
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/sympy%E7%9A%84%E4%BD%BF%E7%94%A8.html">
+<a class="md-nav__link" href="../%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/sympy%E7%9A%84%E4%BD%BF%E7%94%A8.html">
 <span class="md-ellipsis">
     Sympy的使用
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90.html">
+<a class="md-nav__link" href="../%E5%B7%A5%E5%85%B7/%E4%B8%80%E4%BA%9B%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E5%B7%A5%E5%85%B7/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90.html">
 <span class="md-ellipsis">
     浏览器插件推荐
   </span>
@@ -1239,21 +1215,21 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%B7%A5%E5%85%B7/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/Linux%20bash.html">
+<a class="md-nav__link" href="../%E5%B7%A5%E5%85%B7/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/Linux%20bash.html">
 <span class="md-ellipsis">
     Linux bash
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%B7%A5%E5%85%B7/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/pip%E5%92%8Cconda%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html">
+<a class="md-nav__link" href="../%E5%B7%A5%E5%85%B7/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/pip%E5%92%8Cconda%E9%85%8D%E7%BD%AE%E7%8E%AF%E5%A2%83.html">
 <span class="md-ellipsis">
     Pip和conda配置环境
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%B7%A5%E5%85%B7/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html">
+<a class="md-nav__link" href="../%E5%B7%A5%E5%85%B7/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%9B%B8%E5%85%B3/vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html">
 <span class="md-ellipsis">
     Vscode调试配置总结
   </span>
@@ -1277,7 +1253,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%B7%A5%E5%85%B7/%E7%A1%AC%E4%BB%B6%E7%9B%B8%E5%85%B3/vivado.html">
+<a class="md-nav__link" href="../%E5%B7%A5%E5%85%B7/%E7%A1%AC%E4%BB%B6%E7%9B%B8%E5%85%B3/vivado.html">
 <span class="md-ellipsis">
     计组vivado使用
   </span>
@@ -1301,7 +1277,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E5%B7%A5%E5%85%B7/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3/wsl2%E5%AE%89%E8%A3%85.html">
+<a class="md-nav__link" href="../%E5%B7%A5%E5%85%B7/%E7%B3%BB%E7%BB%9F%E7%9B%B8%E5%85%B3/wsl2%E5%AE%89%E8%A3%85.html">
 <span class="md-ellipsis">
     WSL2
   </span>
@@ -1313,71 +1289,79 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_7" type="checkbox"/>
 <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
 <span class="md-ellipsis">
     科研
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_7_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_7">
 <span class="md-nav__icon md-icon"></span>
             科研
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="Diffusion%20Model.html">
+<span class="md-ellipsis">
+    Diffusion Model
+  </span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
 <span class="md-ellipsis">
     AI4Bio
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_1_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_1">
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
 <span class="md-nav__icon md-icon"></span>
             AI4Bio
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E7%A7%91%E7%A0%94/AI4Bio/metrics.html">
+<a class="md-nav__link" href="AI4Bio/metrics.html">
 <span class="md-ellipsis">
     Metrics
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E7%A7%91%E7%A0%94/AI4Bio/%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E5%BD%92%E6%A1%A3.html">
+<a class="md-nav__link" href="AI4Bio/%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E5%BD%92%E6%A1%A3.html">
 <span class="md-ellipsis">
     一些问题归档
   </span>
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7_1_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7_1_3" id="__nav_7_1_3_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
 <span class="md-ellipsis">
     Paper Reading
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_1_3_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_7_1_3">
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_3">
 <span class="md-nav__icon md-icon"></span>
             Paper Reading
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E7%A7%91%E7%A0%94/AI4Bio/Paper%20Reading/ESM.html">
+<a class="md-nav__link" href="AI4Bio/Paper%20Reading/ESM.html">
 <span class="md-ellipsis">
     ESM
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E7%A7%91%E7%A0%94/AI4Bio/Paper%20Reading/VFN.html">
+<a class="md-nav__link" href="AI4Bio/Paper%20Reading/VFN.html">
 <span class="md-ellipsis">
     VFN
   </span>
@@ -1385,30 +1369,6 @@
 </li>
 </ul>
 </nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
-<span class="md-ellipsis">
-    Diffusion Models
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_2">
-<span class="md-nav__icon md-icon"></span>
-            Diffusion Models
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E7%A7%91%E7%A0%94/Diffusion%20Models/Score%20Based.html">
-<span class="md-ellipsis">
-    Score Based
-  </span>
-</a>
 </li>
 </ul>
 </nav>
@@ -1428,7 +1388,7 @@
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E7%A7%91%E7%A0%94/RL/PPO.html">
+<a class="md-nav__link" href="RL/PPO.html">
 <span class="md-ellipsis">
     PPO
   </span>
@@ -1449,30 +1409,17 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
-<span class="md-ellipsis">
-      星形线，双纽线的性质
-    </span>
-</a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>曲面积分难题</h1>
-<h3 id="_1">星形线，双纽线的性质</h3>
-<p>星形线: <span class="arithmatex">\(x^{2/3}+y^{2/3}=1\)</span>
-参数方程<span class="arithmatex">\(x=\cos^3t,y=\sin^3 t\)</span></p>
-<p>曲线形成的柱面的面积,可以用<span class="arithmatex">\(\int zds\)</span>化成曲线积分</p>
+<h1>Diffusion Model</h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>参考宋飏博客<a href="https://yang-song.net/blog/2021/score/"> Generative Modeling by Estimating Gradients of the Data Distribution</a></p>
+</div>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
@@ -1532,10 +1479,11 @@
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
-<script src="../../../javascripts/mathjax.js"></script>
+<script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.indexes"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="../javascripts/katex.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/katex.min.js"></script>
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/contrib/auto-render.min.js"></script>
 </body>
 </html>

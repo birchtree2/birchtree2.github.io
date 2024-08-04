@@ -5,17 +5,18 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://birchtree2.github.io/%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html" rel="canonical"/>
-<link href="%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html" rel="prev"/>
-<link href="%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html" rel="next"/>
+<link href="https://birchtree2.github.io/%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/1.2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC.html" rel="canonical"/>
+<link href="1.1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E5%92%8C%E5%AF%BC%E6%95%B0.html" rel="prev"/>
+<link href="1.3%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html" rel="next"/>
 <link href="../../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
-<title>第一类曲线曲面积分 - 时雨的笔记本</title>
+<title>1.2多元函数的极值 - 时雨的笔记本</title>
 <link href="../../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Noto Serif SC";--md-code-font:"Roboto Mono"}</style>
+<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/katex.min.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </head>
 <body data-md-color-accent="cyan" data-md-color-primary="light-green" data-md-color-scheme="default" dir="ltr">
@@ -23,7 +24,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#taylor">
           Skip to content
         </a>
 </div>
@@ -47,7 +48,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              第一类曲线曲面积分
+              1.2多元函数的极值
             
           </span>
 </div>
@@ -255,90 +256,31 @@
             微积分(甲)II
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_3_1_1" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_1_1" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
 <span class="md-ellipsis">
-    多元函数微分学
+    1多元函数微分学
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_3_1_1_label" class="md-nav" data-md-level="3">
+<nav aria-expanded="true" aria-labelledby="__nav_3_1_1_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_3_1_1">
 <span class="md-nav__icon md-icon"></span>
-            多元函数微分学
+            1多元函数微分学
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html">
+<a class="md-nav__link" href="1.0%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html">
 <span class="md-ellipsis">
-    习题(证明题、变量代换)
+    1.0空间解析几何
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%28%E4%BA%8C%29.html">
+<a class="md-nav__link" href="1.1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E5%92%8C%E5%AF%BC%E6%95%B0.html">
 <span class="md-ellipsis">
-    多元函数微分学(二)
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">
-<span class="md-ellipsis">
-    多元函数微分学
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html">
-<span class="md-ellipsis">
-    空间解析几何
-  </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_1_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
-<span class="md-ellipsis">
-    多元函数积分学
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_1_2_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_1_2">
-<span class="md-nav__icon md-icon"></span>
-            多元函数积分学
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86_.html">
-<span class="md-ellipsis">
-    三重积分 
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">
-<span class="md-ellipsis">
-    二重积分
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="%E5%9C%BA%E8%AE%BA_.html">
-<span class="md-ellipsis">
-    场论 
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html">
-<span class="md-ellipsis">
-    曲面积分难题
+    1.1多元函数的极限和导数
   </span>
 </a>
 </li>
@@ -346,13 +288,13 @@
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    第一类曲线曲面积分
+    1.2多元函数的极值
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<a class="md-nav__link md-nav__link--active" href="%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link md-nav__link--active" href="1.2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC.html">
 <span class="md-ellipsis">
-    第一类曲线曲面积分
+    1.2多元函数的极值
   </span>
 </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
@@ -362,63 +304,84 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#taylor">
 <span class="md-ellipsis">
-      第一类曲线积分
+      多元函数的Taylor展开
     </span>
 </a>
-<nav aria-label="第一类曲线积分" class="md-nav">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      多元函数的极值
+    </span>
+</a>
+<nav aria-label="多元函数的极值" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      已知曲线参数方程
+      极值点的定义
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
-      已知曲线是平面曲线
+      极值的充分条件
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
-      隐函数型(如两曲线联立)
+      多元函数的最值
     </span>
 </a>
-</li>
-</ul>
-</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_5">
 <span class="md-ellipsis">
-      第一类曲面积分
+      条件极值
     </span>
 </a>
-<nav aria-label="第一类曲面积分" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#zzxy">
-<span class="md-ellipsis">
-      已知曲面方程z=z(x,y)
-    </span>
-</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_6">
 <span class="md-ellipsis">
-      已知曲面方程(隐函数)
+      场的方向导数和梯度
     </span>
 </a>
-</li>
+<nav aria-label="场的方向导数和梯度" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_7">
 <span class="md-ellipsis">
-      配套的积分技巧
+      场的方向导数*
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      梯度
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      曲线的切线和法平面*
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      曲面的切平面和法线
     </span>
 </a>
 </li>
@@ -429,16 +392,75 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="1.3%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html">
 <span class="md-ellipsis">
-    第二类曲线积分
+    1.3习题(证明题、变量代换)
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    2多元函数积分学
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+            2多元函数积分学
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.1%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">
+<span class="md-ellipsis">
+    2.1二重积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="../2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.2%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
-    第二类曲面积分
+    2.2三重积分
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.3%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<span class="md-ellipsis">
+    2.3第一类曲线曲面积分
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.4%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html">
+<span class="md-ellipsis">
+    2.4第二类曲线积分
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.5%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<span class="md-ellipsis">
+    2.5第二类曲面积分
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.6%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html">
+<span class="md-ellipsis">
+    2.6曲面积分难题
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.7%E5%9C%BA%E8%AE%BA.html">
+<span class="md-ellipsis">
+    2.7场论
   </span>
 </a>
 </li>
@@ -449,25 +471,25 @@
 <input class="md-nav__toggle md-toggle" id="__nav_3_1_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_1_3" id="__nav_3_1_3_label" tabindex="0">
 <span class="md-ellipsis">
-    级数
+    3级数
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-expanded="false" aria-labelledby="__nav_3_1_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_3_1_3">
 <span class="md-nav__icon md-icon"></span>
-            级数
+            3级数
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html">
+<a class="md-nav__link" href="../3%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html">
 <span class="md-ellipsis">
     级数 习题
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0.html">
+<a class="md-nav__link" href="../3%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0.html">
 <span class="md-ellipsis">
     级数
   </span>
@@ -1384,16 +1406,23 @@
             科研
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../%E7%A7%91%E7%A0%94/Diffusion%20Model.html">
+<span class="md-ellipsis">
+    Diffusion Model
+  </span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
 <span class="md-ellipsis">
     AI4Bio
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_1_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_1">
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
 <span class="md-nav__icon md-icon"></span>
             AI4Bio
           </label>
@@ -1413,15 +1442,15 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7_1_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7_1_3" id="__nav_7_1_3_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
 <span class="md-ellipsis">
     Paper Reading
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_1_3_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_7_1_3">
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_3">
 <span class="md-nav__icon md-icon"></span>
             Paper Reading
           </label>
@@ -1442,30 +1471,6 @@
 </li>
 </ul>
 </nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
-<span class="md-ellipsis">
-    Diffusion Models
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_2">
-<span class="md-nav__icon md-icon"></span>
-            Diffusion Models
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E7%A7%91%E7%A0%94/Diffusion%20Models/Score%20Based.html">
-<span class="md-ellipsis">
-    Score Based
-  </span>
-</a>
 </li>
 </ul>
 </nav>
@@ -1512,31 +1517,45 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_1">
+<a class="md-nav__link" href="#taylor">
 <span class="md-ellipsis">
-      第一类曲线积分
+      多元函数的Taylor展开
     </span>
 </a>
-<nav aria-label="第一类曲线积分" class="md-nav">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+<span class="md-ellipsis">
+      多元函数的极值
+    </span>
+</a>
+<nav aria-label="多元函数的极值" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      已知曲线参数方程
+      极值点的定义
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
-      已知曲线是平面曲线
+      极值的充分条件
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
-      隐函数型(如两曲线联立)
+      多元函数的最值
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_5">
+<span class="md-ellipsis">
+      条件极值
     </span>
 </a>
 </li>
@@ -1544,31 +1563,38 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
-<span class="md-ellipsis">
-      第一类曲面积分
-    </span>
-</a>
-<nav aria-label="第一类曲面积分" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#zzxy">
-<span class="md-ellipsis">
-      已知曲面方程z=z(x,y)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#_6">
 <span class="md-ellipsis">
-      已知曲面方程(隐函数)
+      场的方向导数和梯度
     </span>
 </a>
-</li>
+<nav aria-label="场的方向导数和梯度" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_7">
 <span class="md-ellipsis">
-      配套的积分技巧
+      场的方向导数*
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_8">
+<span class="md-ellipsis">
+      梯度
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_9">
+<span class="md-ellipsis">
+      曲线的切线和法平面*
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_10">
+<span class="md-ellipsis">
+      曲面的切平面和法线
     </span>
 </a>
 </li>
@@ -1582,68 +1608,131 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>第一类曲线曲面积分</h1>
-<h3 id="_1">第一类曲线积分</h3>
-<p><span class="arithmatex">\(\int_L f(x,y,z)ds\)</span>. 关键是表示ds
-<img alt="21edf58c362eb09dd3d4879b745f2b65.png" src="..\..\..\assets/images/21edf58c362eb09dd3d4879b745f2b65.png"/></p>
-<h4 id="_2">已知曲线参数方程</h4>
-<p><span class="arithmatex">\(x=x(t),y=y(t),z=z(t)\)</span></p>
+<h1>1.2多元函数的极值</h1>
+<p>注意复习曲线的切线和法平面，极值的判定定理</p>
+<h2 id="taylor">多元函数的Taylor展开</h2>
+<p>目的:把<span class="arithmatex">\(f(x_0+h,y_0+k)\)</span>表示为<span class="arithmatex">\(h ,k\)</span>的多项式. </p>
 <div class="arithmatex">\[
-\boxed{ds=\sqrt{x'(t)^2+y'(t)^2+z'(t)^2}dt} \\
-\int_L f(x,y,z)ds=\int_{t_1}^{t_2}f(x(t),y(t),z(t)) \sqrt{x'(t)^2+y'(t)^2+z'(t)^2}dt
+f(x_0+h,y_0+k)=f(x_0,y_0)+(h\frac{\partial}{\partial x}+k\frac{\partial}{\partial x})f(x_0,y_0)\\+\frac{1}{2!}(h\frac{\partial}{\partial x}+k\frac{\partial}{\partial x})^2f(x_0,y_0)+\dots +\frac{1}{n!}(h\frac{\partial}{\partial x}+k\frac{\partial}{\partial x})^nf(x_0,y_0)\\+\frac{1}{(n+1)!}(\frac{\partial}{\partial x}+\frac{\partial}{\partial y})^{n+1}f(x_0+\theta h,y_0+\theta k)
 \]</div>
-<p>注意参数上下限</p>
+<p>注意这里偏导算符的意义:</p>
+<div class="arithmatex">\[(h\frac{\partial}{\partial x}+k\frac{\partial}{\partial x})f(x_0,y_0)=f'_x(x_0,y_0)h+f'_y(x_0,y_0)k\]</div>
+<div class="arithmatex">\[(h\frac{\partial}{\partial x}+k\frac{\partial}{\partial x})^2f(x_0,y_0)=f''_{xx}(x_0,y_0)h^2+2f''_{xy}(x_0,y_0)hk+f''_{yy}f(x_0,y_0)k^2\]</div>
+<p>令<span class="arithmatex">\(n=0\)</span>,得到拉格朗日中值定理
+令<span class="arithmatex">\(x=x_0+h,y=y_0+h\)</span>, 把h,k换成<span class="arithmatex">\((x-x_0),(y-y_0)\)</span></p>
+<p><span class="arithmatex">\(f(x_0+hx,y_0+hy)\)</span></p>
 <blockquote>
-<p>习题9-4 1(3)   <span class="arithmatex">\((x^2+y^2)^2=a^2(x^2-y^2)\)</span> <span class="arithmatex">\(\int_C |y|ds\)</span></p>
+<p>计算寄巧
+- 前n项是多项式,余项是n+1阶导函数
+- 系数是偏导×二项式系数。如果所有n阶偏导都相等,就可以写成<span class="arithmatex">\(\frac{1}{n!}k(h+k)^n\)</span>
+- 记得除以<span class="arithmatex">\(\frac{1}{n!}\)</span></p>
 </blockquote>
-<p>极坐标<span class="arithmatex">\(r^2=a^2\cos2\theta\)</span>. <span class="arithmatex">\(ds=\sqrt{r^2+r'^2}d\theta\)</span></p>
-<h4 id="_3">已知曲线是平面曲线</h4>
-<div class="arithmatex">\[
-\boxed{ds=\sqrt{1+{y'_x}^2}}\\
-\boxed{ds=\sqrt{r(\theta)^2+r'(\theta)^2}}
-\]</div>
-<h4 id="_4">隐函数型(如两曲线联立)</h4>
-<p>用隐函数求导法</p>
-<h3 id="_5">第一类曲面积分</h3>
-<ol>
-<li>投影(投影到平面，找曲面的微元<span class="arithmatex">\(dS\)</span>和<span class="arithmatex">\(dxdy,dydz,dxdz\)</span>等的面积关系(夹角<span class="arithmatex">\(\cos \gamma\)</span>，转化为平面上的积分)</li>
-<li>代换（因为有曲面的限制条件，x,y,z中可以去掉一个,最终只剩两个变量变成二重积分)</li>
-</ol>
-<h4 id="zzxy">已知曲面方程z=z(x,y)</h4>
-<div class="arithmatex">\[
-\boxed{dS=\sqrt{1+{z'_x}^2+{z'_y}^2}dxdy}
-\]</div>
-<p>投影到哪个平面可以根据计算方便来,如dxdz,dydz都行.</p>
-<blockquote>
-<p>习题9-4 3 (1)(2)   作业本4.20</p>
-</blockquote>
-<h4 id="_6">已知曲面方程(隐函数)</h4>
-<p>隐函数求导</p>
-<blockquote>
-<p>eg.<span class="arithmatex">\(x^2+y^2+z^2=a^2\)</span></p>
-</blockquote>
-<p><span class="arithmatex">\(z'_x=-\frac{x}{z},z'_y=-\frac{y}{z}\)</span></p>
-<p>计算投影<span class="arithmatex">\(dS=\frac{\sqrt{x^2+y^2+z^2}}{z}dxdy\)</span>.</p>
-<p>代换消掉z,<span class="arithmatex">\(dS=\frac{a}{\sqrt{a^2-x^2-y^2}}dxdy\)</span></p>
-<blockquote>
-<p>eg <span class="arithmatex">\(x^2+y^2=z^2, z'_x=x/z\)</span> </p>
-</blockquote>
-<p><span class="arithmatex">\(dS=\sqrt{2}dxdy\)</span></p>
-<h4 id="_7">配套的积分技巧</h4>
-<blockquote>
-<p><a href="joplin://x-callback-url/openNote?id=76b8f03b1d31479f953ef8d9827af578">上学期的笔记</a></p>
-</blockquote>
-<p>（1)第一类曲线积分中常常见到<span class="arithmatex">\(\sqrt{a+bt}\)</span>. 令<span class="arithmatex">\(u=\sqrt{a+bt},t=\frac{u^2-a}{b},dt=\frac{2udu}{b}\)</span>. <span class="arithmatex">\(\color{red}{换完之后注意上下界会变},如t\in[0,1],u\in[\sqrt{a},\sqrt{a+b}]\)</span></p>
-<p>(2) 平方项的处理</p>
+<p><img alt="29229c20f31fc4c46cd4b7046a58d832.png" src="..\..\..\assets/images/29229c20f31fc4c46cd4b7046a58d832.png"/></p>
+<h2 id="_1">多元函数的极值</h2>
+<h3 id="_2">极值点的定义</h3>
+<p>定义: 在某邻域内<span class="arithmatex">\(f(P)\geq f(P_0)(\leq)\)</span></p>
+<p>驻点(稳定点): <span class="arithmatex">\(f'_x(x_0,y_0)=f'_y(x_0,y_0)=0\)</span></p>
+<p>极值点一定包含在稳定点或偏导数不存在的点中</p>
+<p>极值的必要条件: 若在<span class="arithmatex">\((x_0,y_0)\)</span>偏导数存在，且在<span class="arithmatex">\((x_0,y_0)\)</span>有极值，那么<span class="arithmatex">\(f'_x(x_0,y_0)=f'_y(x_0,y_0)=0\)</span> (对应一元函数的费马定理)</p>
 <ul>
-<li>凑平方的微分    <span class="arithmatex">\(\frac{xdx}{\sqrt{x^2\pm a^2}}=d(\sqrt{x^2\pm a^2})\)</span></li>
-<li>有时也可以尝试三角换元如<span class="arithmatex">\(\sqrt{a^2-x^2} \sqrt{a^2+x^2}\)</span></li>
+<li>驻点不一定是极值点. 如<span class="arithmatex">\(z=xy\)</span>在<span class="arithmatex">\((0,0)\)</span>. (邻域内有&gt;0和&lt;0的)</li>
+<li>极值点不一定可导. 如<span class="arithmatex">\(z=\sqrt{x^2+y^2}\)</span> </li>
 </ul>
-<p>计算：注意方程里的根号
-注意多项式积分1/n+1</p>
+<h3 id="_3">极值的充分条件</h3>
+<p>若在<span class="arithmatex">\((x_0,y_0)\)</span>有<strong>连续的二阶偏导数</strong>，且<span class="arithmatex">\(f'_x(x_0,y_0)=f'_y(x_0,y_0)=0\)</span> （驻点). 令<span class="arithmatex">\(A=f''_{xx}(x_0,y_0),B=f''_{xy}(x_0,y_0),C=f''_{yy}(x_0,y_0)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(AC-B^2&gt;0\)</span> 是极值点，且<span class="arithmatex">\(A&gt;0\)</span><strong>极小值</strong>点,<span class="arithmatex">\(A&lt;0\)</span><strong>极大值</strong>点</li>
+<li><span class="arithmatex">\(AC-B^2&lt;0\)</span> 不是极值点</li>
+<li><span class="arithmatex">\(AC-B^2=0\)</span> 无法确定</li>
+</ul>
+<p>证明：</p>
+<p>做二阶Taylor展开,有</p>
+<div class="arithmatex">\[
+f(x_0+h,y_0+k)-f(x_0,y_0)=\frac{1}{2}(A^2h^2+2ABhk+C^2k^2)+o(\rho^2)
+\]</div>
+<p>判断括号内的正负，这是一个二次型，对应二次型矩阵为<span class="arithmatex">\(\begin{pmatrix} A \ B \\ B \ C\end{pmatrix}\)</span>. 根据二次型正定性的判定，计算主子式:</p>
+<ul>
+<li>当<span class="arithmatex">\(\Delta_1=A&gt;0,\Delta_2=AC-B^2&gt;0\)</span>,二次型正定</li>
+<li>当<span class="arithmatex">\((-1)\Delta_1=-A&gt;0,\Delta_2=AC-B^2&gt;0\)</span>,二次型负定</li>
+</ul>
+<p>推广到n元函数，我们有
+<img alt="38556aea6b5b03b74e8f7bb52c65c2aa.png" src="..\..\..\assets/images/38556aea6b5b03b74e8f7bb52c65c2aa.png"/></p>
+<h3 id="_4">多元函数的最值</h3>
+<ol>
+<li>
+<p>先求一阶导，得到怀疑点(驻点or偏导数不存在的点) (这时候没必要区分极大极小，不需要求二阶导)</p>
+</li>
+<li>
+<p>再看边界上的点的函数值（换成条件极值）</p>
+</li>
+<li>
+<p>取最值</p>
+</li>
+</ol>
+<p><img alt="9475725273cc71f26d1352add09d7b6d.png" src="..\..\..\assets/images/9475725273cc71f26d1352add09d7b6d.png"/> （No.104）</p>
+<p>最大值是4</p>
+<h3 id="_5">条件极值</h3>
+<p>拉格朗日函数
+$$L=f(x,y,z)-\lambda \varphi(x,y,z)
+$$</p>
+<p>难点在解方程如何消元</p>
+<h2 id="_6">场的方向导数和梯度</h2>
+<p>数量场: 函数<span class="arithmatex">\(u(x,y,z)\)</span></p>
+<p>矢量场: 矢量的分量是位置坐标<span class="arithmatex">\(x,y,z\)</span>的函数</p>
+<h3 id="_7">场的方向导数*</h3>
+<p>是一个标量<span class="arithmatex">\(\frac{\partial u}{\partial \mathbf{l}}=\lim_{\rho \to 0} \frac{u(P)-u(P_0)}{\rho}\)</span></p>
+<p>定理: <strong>若u在点P0处可微</strong>,设l的方向向量为<span class="arithmatex">\((\cos \alpha,\cos\beta,\cos \gamma)\)</span>. 则方向导数
+$$
+\frac{\partial u}{\partial \mathbf{l}}=\frac{\partial u}{\partial x}\cos\alpha+\frac{\partial u}{\partial y}\cos\beta+\frac{\partial u}{\partial z}\cos\gamma
+$$</p>
+<p>可微-&gt;方向导数存在.反之不成立</p>
 <blockquote>
-<p>习题9-4 4.p;</p>
+<p>例: 求<span class="arithmatex">\(z=(x^3+y^3)^\frac{1}{3}\)</span>在(0,0)处沿任意方向的方向导数</p>
 </blockquote>
+<p>设方向向量<span class="arithmatex">\(\vec{l}=(\cos \alpha,\cos \beta),P=(\rho \cos \alpha,\rho \cos \beta)\)</span></p>
+<p><span class="arithmatex">\(\frac{\partial u}{\partial \vec{l}}=\lim_{\rho \to 0}\frac{\sqrt[3]{\rho^3\cos^3\alpha+\rho^3\cos^3}\beta}{\rho}=\sqrt[3]{\cos^3\alpha+\cos^3\beta}\)</span></p>
+<p>但是<span class="arithmatex">\(\lim_{\rho \to 0}\frac{\Delta z-0\Delta x-0\Delta y}{\rho}\)</span> 不存在(令<span class="arithmatex">\(\Delta y=k\Delta x\)</span>),所以不可微</p>
+<h3 id="_8">梯度</h3>
+<p>是一个矢量。方向沿着函数方向导数最大的方向
+$$
+\mathbf{grad}u=(\frac{\partial u}{\partial x},\frac{\partial u}{\partial y},\frac{\partial u}{\partial z})
+$$
+另外也可以利用Nabla算子<span class="arithmatex">\(\nabla=(\frac{\partial }{\partial x},\frac{\partial }{\partial y},\frac{\partial }{\partial z})\)</span>. 写成</p>
+<p><span class="arithmatex">\(\nabla u=\mathbf{grad} u\)</span></p>
+<h3 id="_9">曲线的切线和法平面*</h3>
+<p>切向量<span class="arithmatex">\(\vec{v}\)</span></p>
+<p>曲线参数形式: <span class="arithmatex">\(x=x(t),y=y(t),z=z(t)\)</span>,得
+$$
+\vec{v}=(x'(t),y'(t),z'(t))
+$$
+一般式<span class="arithmatex">\(F(x,y,z)=0,G(x,y,z)=0\)</span>. 用隐函数组求偏导的方式得到<span class="arithmatex">\(\frac{dy}{dx},\frac{dz}{dx}\)</span>
+$$
+\vec{v}=(1,\frac{dy}{dx},\frac{dz}{dx})
+$$
+有了切向量和曲线上一点坐标，就可以切线和法平面</p>
+<h3 id="_10">曲面的切平面和法线</h3>
+<p>法向量<span class="arithmatex">\(\vec{n}\)</span></p>
+<p>对于曲面方程<span class="arithmatex">\(F(x,y,z)=0\)</span>. 对<span class="arithmatex">\(x,y,z\)</span>分别求偏导
+$$
+\boxed{\vec{n}=(F'_x,F'_y,F'_z)}
+$$
+特殊情况：</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(z=f(x,y)\)</span>. 移项得<span class="arithmatex">\(f(x,y)-z=0\)</span>.  <span class="arithmatex">\(\boxed{\vec{n}=(f'_x,f'_y,\color{blue}{-1})}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=0\)</span>. <span class="arithmatex">\(\boxed{\vec{n}=(\frac{2x}{a^2},\frac{2y}{b^2},\frac{2z}{c^2})}\)</span>  切平面方程<span class="arithmatex">\(\frac{x_0x}{a^2}+\frac{y_0y}{b^2}+\frac{z_0z}{c^2}=0\)</span></p>
+</li>
+</ul>
+<p>求平行于某平面的切平面</p>
+<ol>
+<li>求出<span class="arithmatex">\(\vec{n}\)</span></li>
+<li>代入原方程解出<span class="arithmatex">\((x_0,y_0,z_0)\)</span>. 一般有两个解</li>
+</ol>
+<p><img alt="021909f7f0ff00b27d291b706c4f857c.png" src="..\..\..\assets/images/021909f7f0ff00b27d291b706c4f857c.png"/></p>
+<p>A错(不一定可微)
+BC都对</p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
@@ -1705,8 +1794,9 @@
 </div>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
-<script src="../../../javascripts/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="../../../javascripts/katex.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/katex.min.js"></script>
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/contrib/auto-render.min.js"></script>
 </body>
 </html>

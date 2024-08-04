@@ -5,17 +5,18 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://birchtree2.github.io/%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html" rel="canonical"/>
-<link href="%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html" rel="prev"/>
-<link href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86_.html" rel="next"/>
+<link href="https://birchtree2.github.io/%E5%A4%A7%E4%B8%80%E4%B8%8B/%E5%BE%AE%E7%A7%AF%E5%88%86%28%E7%94%B2%29II/2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/2.4%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html" rel="canonical"/>
+<link href="2.3%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html" rel="prev"/>
+<link href="2.5%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html" rel="next"/>
 <link href="../../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.0, mkdocs-material-9.5.28" name="generator"/>
-<title>空间解析几何 - 时雨的笔记本</title>
+<title>2.4第二类曲线积分 - 时雨的笔记本</title>
 <link href="../../../assets/stylesheets/main.6543a935.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Noto Serif SC";--md-code-font:"Roboto Mono"}</style>
+<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/katex.min.css" rel="stylesheet"/>
 <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
 </head>
 <body data-md-color-accent="cyan" data-md-color-primary="light-green" data-md-color-scheme="default" dir="ltr">
@@ -47,7 +48,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              空间解析几何
+              2.4第二类曲线积分
             
           </span>
 </div>
@@ -255,38 +256,83 @@
             微积分(甲)II
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_1_1" type="checkbox"/>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_1_1" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_1_1" id="__nav_3_1_1_label" tabindex="0">
 <span class="md-ellipsis">
-    多元函数微分学
+    1多元函数微分学
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="true" aria-labelledby="__nav_3_1_1_label" class="md-nav" data-md-level="3">
+<nav aria-expanded="false" aria-labelledby="__nav_3_1_1_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_3_1_1">
 <span class="md-nav__icon md-icon"></span>
-            多元函数微分学
+            1多元函数微分学
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html">
+<a class="md-nav__link" href="../1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/1.0%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html">
 <span class="md-ellipsis">
-    习题(证明题、变量代换)
+    1.0空间解析几何
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6%28%E4%BA%8C%29.html">
+<a class="md-nav__link" href="../1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/1.1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90%E5%92%8C%E5%AF%BC%E6%95%B0.html">
 <span class="md-ellipsis">
-    多元函数微分学(二)
+    1.1多元函数的极限和导数
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6.html">
+<a class="md-nav__link" href="../1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/1.2%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E5%80%BC.html">
 <span class="md-ellipsis">
-    多元函数微分学
+    1.2多元函数的极值
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../1%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E5%BE%AE%E5%88%86%E5%AD%A6/1.3%E4%B9%A0%E9%A2%98%28%E8%AF%81%E6%98%8E%E9%A2%98%E3%80%81%E5%8F%98%E9%87%8F%E4%BB%A3%E6%8D%A2%29.html">
+<span class="md-ellipsis">
+    1.3习题(证明题、变量代换)
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_3_1_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
+<span class="md-ellipsis">
+    2多元函数积分学
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_3_1_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_1_2">
+<span class="md-nav__icon md-icon"></span>
+            2多元函数积分学
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="2.1%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">
+<span class="md-ellipsis">
+    2.1二重积分
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="2.2%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86.html">
+<span class="md-ellipsis">
+    2.2三重积分
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="2.3%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
+<span class="md-ellipsis">
+    2.3第一类曲线曲面积分
   </span>
 </a>
 </li>
@@ -294,13 +340,13 @@
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
 <span class="md-ellipsis">
-    空间解析几何
+    2.4第二类曲线积分
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<a class="md-nav__link md-nav__link--active" href="%E7%A9%BA%E9%97%B4%E8%A7%A3%E6%9E%90%E5%87%A0%E4%BD%95.html">
+<a class="md-nav__link md-nav__link--active" href="2.4%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
-    空间解析几何
+    2.4第二类曲线积分
   </span>
 </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
@@ -312,128 +358,47 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-      向量的运算
+      按定义计算
     </span>
 </a>
-<nav aria-label="向量的运算" class="md-nav">
-<ul class="md-nav__list">
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      线性运算
+      格林公式
     </span>
 </a>
-</li>
+<nav aria-label="格林公式" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
-      数量积
+      简单应用
     </span>
 </a>
-</li>
+<nav aria-label="简单应用" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
-      向量积
+      曲线积分变成二重积分
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_5">
 <span class="md-ellipsis">
-      混合积
+      简化二重积分
     </span>
 </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_6">
 <span class="md-ellipsis">
-      二重矢积
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_7">
-<span class="md-ellipsis">
-      平面和直线方程
-    </span>
-</a>
-<nav aria-label="平面和直线方程" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_8">
-<span class="md-ellipsis">
-      平面方程
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_9">
-<span class="md-ellipsis">
-      直线方程
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_10">
-<span class="md-ellipsis">
-      点线面的距离和夹角
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_11">
-<span class="md-ellipsis">
-      求直线和平面方程
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_12">
-<span class="md-ellipsis">
-      平面束方程
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_13">
-<span class="md-ellipsis">
-      曲面方程
-    </span>
-</a>
-<nav aria-label="曲面方程" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_14">
-<span class="md-ellipsis">
-      一般的曲面方程
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_15">
-<span class="md-ellipsis">
-      二次曲面及其分类
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_16">
-<span class="md-ellipsis">
-      空间曲线
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_17">
-<span class="md-ellipsis">
-      空间曲线在平面上的投影
+      路径无关性
     </span>
 </a>
 </li>
@@ -443,69 +408,24 @@
 </ul>
 </nav>
 </li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_3_1_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_1_2" id="__nav_3_1_2_label" tabindex="0">
-<span class="md-ellipsis">
-    多元函数积分学
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_3_1_2_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_1_2">
-<span class="md-nav__icon md-icon"></span>
-            多元函数积分学
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E4%B8%89%E9%87%8D%E7%A7%AF%E5%88%86_.html">
+<a class="md-nav__link" href="2.5%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
 <span class="md-ellipsis">
-    三重积分 
+    2.5第二类曲面积分
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E4%BA%8C%E9%87%8D%E7%A7%AF%E5%88%86.html">
+<a class="md-nav__link" href="2.6%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html">
 <span class="md-ellipsis">
-    二重积分
+    2.6曲面积分难题
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E5%9C%BA%E8%AE%BA_.html">
+<a class="md-nav__link" href="2.7%E5%9C%BA%E8%AE%BA.html">
 <span class="md-ellipsis">
-    场论 
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86%E9%9A%BE%E9%A2%98.html">
-<span class="md-ellipsis">
-    曲面积分难题
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%B8%80%E7%B1%BB%E6%9B%B2%E7%BA%BF%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
-<span class="md-ellipsis">
-    第一类曲线曲面积分
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E7%BA%BF%E7%A7%AF%E5%88%86.html">
-<span class="md-ellipsis">
-    第二类曲线积分
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../%E5%A4%9A%E5%85%83%E5%87%BD%E6%95%B0%E7%A7%AF%E5%88%86%E5%AD%A6/%E7%AC%AC%E4%BA%8C%E7%B1%BB%E6%9B%B2%E9%9D%A2%E7%A7%AF%E5%88%86.html">
-<span class="md-ellipsis">
-    第二类曲面积分
+    2.7场论
   </span>
 </a>
 </li>
@@ -516,25 +436,25 @@
 <input class="md-nav__toggle md-toggle" id="__nav_3_1_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_1_3" id="__nav_3_1_3_label" tabindex="0">
 <span class="md-ellipsis">
-    级数
+    3级数
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-expanded="false" aria-labelledby="__nav_3_1_3_label" class="md-nav" data-md-level="3">
 <label class="md-nav__title" for="__nav_3_1_3">
 <span class="md-nav__icon md-icon"></span>
-            级数
+            3级数
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html">
+<a class="md-nav__link" href="../3%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0-%E4%B9%A0%E9%A2%98.html">
 <span class="md-ellipsis">
     级数 习题
   </span>
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0.html">
+<a class="md-nav__link" href="../3%E7%BA%A7%E6%95%B0/%E7%BA%A7%E6%95%B0.html">
 <span class="md-ellipsis">
     级数
   </span>
@@ -1451,16 +1371,23 @@
             科研
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../%E7%A7%91%E7%A0%94/Diffusion%20Model.html">
+<span class="md-ellipsis">
+    Diffusion Model
+  </span>
+</a>
+</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7_1" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
 <span class="md-ellipsis">
     AI4Bio
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_1_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_1">
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_7_2">
 <span class="md-nav__icon md-icon"></span>
             AI4Bio
           </label>
@@ -1480,15 +1407,15 @@
 </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7_1_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7_1_3" id="__nav_7_1_3_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
 <span class="md-ellipsis">
     Paper Reading
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_1_3_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_7_1_3">
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_3">
 <span class="md-nav__icon md-icon"></span>
             Paper Reading
           </label>
@@ -1509,30 +1436,6 @@
 </li>
 </ul>
 </nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
-<span class="md-ellipsis">
-    Diffusion Models
-  </span>
-<span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_2_label" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_7_2">
-<span class="md-nav__icon md-icon"></span>
-            Diffusion Models
-          </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../%E7%A7%91%E7%A0%94/Diffusion%20Models/Score%20Based.html">
-<span class="md-ellipsis">
-    Score Based
-  </span>
-</a>
 </li>
 </ul>
 </nav>
@@ -1581,128 +1484,47 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_1">
 <span class="md-ellipsis">
-      向量的运算
+      按定义计算
     </span>
 </a>
-<nav aria-label="向量的运算" class="md-nav">
-<ul class="md-nav__list">
+</li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
 <span class="md-ellipsis">
-      线性运算
+      格林公式
     </span>
 </a>
-</li>
+<nav aria-label="格林公式" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
 <span class="md-ellipsis">
-      数量积
+      简单应用
     </span>
 </a>
-</li>
+<nav aria-label="简单应用" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
 <span class="md-ellipsis">
-      向量积
+      曲线积分变成二重积分
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_5">
 <span class="md-ellipsis">
-      混合积
+      简化二重积分
     </span>
 </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_6">
 <span class="md-ellipsis">
-      二重矢积
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_7">
-<span class="md-ellipsis">
-      平面和直线方程
-    </span>
-</a>
-<nav aria-label="平面和直线方程" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_8">
-<span class="md-ellipsis">
-      平面方程
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_9">
-<span class="md-ellipsis">
-      直线方程
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_10">
-<span class="md-ellipsis">
-      点线面的距离和夹角
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_11">
-<span class="md-ellipsis">
-      求直线和平面方程
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_12">
-<span class="md-ellipsis">
-      平面束方程
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_13">
-<span class="md-ellipsis">
-      曲面方程
-    </span>
-</a>
-<nav aria-label="曲面方程" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_14">
-<span class="md-ellipsis">
-      一般的曲面方程
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_15">
-<span class="md-ellipsis">
-      二次曲面及其分类
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_16">
-<span class="md-ellipsis">
-      空间曲线
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_17">
-<span class="md-ellipsis">
-      空间曲线在平面上的投影
+      路径无关性
     </span>
 </a>
 </li>
@@ -1716,241 +1538,40 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1>空间解析几何</h1>
-<h2 id="_1">向量的运算</h2>
-<h3 id="_2">线性运算</h3>
-<p>本质是<span class="arithmatex">\(\mathbb{R}^3\)</span>上的线性空间。这一部分基本线代课上都讲过</p>
-<h3 id="_3">数量积</h3>
-<p><span class="arithmatex">\(a\cdot b=x_1x_2+y_1y_2+z_1z_2 \in \mathbb{R}\)</span></p>
-<p>几何意义</p>
+<h1>2.4第二类曲线积分</h1>
+<h2 id="_1">按定义计算</h2>
+<h2 id="_2">格林公式</h2>
+<div class="arithmatex">\[
+\oint_L Pdx+Qdy=\iint_D (\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y})dxdy
+\]</div>
+<h3 id="_3">简单应用</h3>
+<h4 id="_4">曲线积分变成二重积分</h4>
+<p>注意格林公式的使用条件: 有界闭区域、P,Q有一阶连续偏导数</p>
+<p><img alt="372df2da52a10d4227540c3dcc8e8bf0.png" src="..\..\..\assets/images/372df2da52a10d4227540c3dcc8e8bf0.png"/></p>
+<p>注意只有<span class="arithmatex">\((0,0) \notin D\)</span>时才能直接用格林公式，得到<span class="arithmatex">\(\oint_L=0\)</span>
+当<span class="arithmatex">\((0,0) \in D\)</span>
+<img alt="6e921f815a9fb7a152f4dcdb04816586.png" src="..\..\..\assets/images/6e921f815a9fb7a152f4dcdb04816586.png"/></p>
+<p><img alt="40539e67270d45b4e2d56f7ba5e07d03.png" src="..\..\..\assets/images/40539e67270d45b4e2d56f7ba5e07d03.png"/></p>
+<h4 id="_5">简化二重积分</h4>
+<p>引入辅助曲线(直线),把曲线变成封闭的</p>
 <ul>
-<li><span class="arithmatex">\(a\cdot b=|a||b|\cos &lt;a,b&gt;\)</span></li>
-<li><span class="arithmatex">\(a\cdot b=0 \leftrightarrow a ⊥b\)</span></li>
+<li>形如xdy的,在平行x轴/y轴的直线都好积分。但是要注意方向</li>
 </ul>
+<p><img alt="9fa55886bee78b86b53b9a7a5e43b4b2.png" src="..\..\..\assets/images/9fa55886bee78b86b53b9a7a5e43b4b2.png"/>
+沿AB的有<span class="arithmatex">\(dy=0\)</span>.沿BO的有x=0</p>
+<p>用格林公式求面积</p>
+<p><span class="arithmatex">\(Q=x,P=-y\)</span>.</p>
+<p><span class="arithmatex">\(\boxed{\iint_D dxdy=\frac{1}{2}\oint xdy-ydx}\)</span></p>
+<h3 id="_6">路径无关性</h3>
+<p>四个等价条件</p>
 <blockquote>
-<p>用向量方法证明三角形三条高交于一点
-<img alt="66cd34b779200fb2ff48106eb7480a84.png" src="..\..\..\assets/images/66cd34b779200fb2ff48106eb7480a84.png"/>
-已知<span class="arithmatex">\(\vec{AH}\cdot \vec{BC}=\vec{BH}\cdot \vec{AC}=0\)</span>, 求证<span class="arithmatex">\(\vec{CH}\cdot \vec{AB}=0\)</span></p>
+<p><span class="arithmatex">\(D\)</span>是单连通开区域</p>
+<p><span class="arithmatex">\(\int_L Pdx+Qdy\)</span>与路径无关</p>
+<p><span class="arithmatex">\(\oint_C Pdx+Qdy=0\)</span></p>
+<p>在D内<span class="arithmatex">\(\frac{\partial P}{\partial y}=\frac{\partial Q}{\partial x}\)</span></p>
+<p>在D内,存在<span class="arithmatex">\(u(x,y)\)</span>使得<span class="arithmatex">\(du=Pdx+Qdy\)</span></p>
 </blockquote>
-<p><span class="arithmatex">\(\vec{CH}\cdot \vec{AB}=(\vec{CA}+\vec{AH})\cdot(\vec{AH}+\vec{HB})=\vec{AH}\cdot (\vec{CA}+\vec{AH}+\vec{HB})\cdot\vec{CA}+\vec{HB}=0+0=0\)</span></p>
-<h3 id="_4">向量积</h3>
-<div class="arithmatex">\[a\times b=\left |\begin{array}{cccc}
-\bf{i} &amp;\bf{j}   &amp; \bf{k} \\
-x_1 &amp;y_1 &amp; z_1  \\
-x_2 &amp; y_2 &amp;z_2 \\
-\end{array}\right| \in \mathbb{R}^3
-\]</div>
-<p>几何意义:</p>
-<ul>
-<li><span class="arithmatex">\(|a\cdot b|=|a||b|\sin &lt;a,b&gt;\)</span>,即<span class="arithmatex">\(a,b\)</span>围成的平行四边形面积</li>
-<li><span class="arithmatex">\(a\times b=\vec{0} \leftrightarrow a//b\)</span></li>
-<li><span class="arithmatex">\(a\times b\)</span>与<span class="arithmatex">\(a,b\)</span>都垂直</li>
-</ul>
-<p>性质:</p>
-<ul>
-<li><span class="arithmatex">\(a\times b=-b\times a\)</span></li>
-</ul>
-<h3 id="_5">混合积</h3>
-<div class="arithmatex">\[a\cdot (b\times c) =\left |\begin{array}{cccc}
-x_1 &amp;y_1  &amp; z_1 \\
-x_2 &amp;y_2 &amp; z_2  \\
-x_3 &amp; y_3 &amp;z_3 \\
-\end{array}\right|
-\]</div>
-<p>证明根据行列式的展开</p>
-<p>几何意义
-- <span class="arithmatex">\(a,b,c\)</span><strong>共面的充要条件</strong>是<span class="arithmatex">\(a\cdot (b\times c)=0\)</span>. 证明: 共面,则三个向量线性相关,秩&lt;3
-- <span class="arithmatex">\(|a\cdot (b\times c)|\)</span>是以<span class="arithmatex">\(a,b,c\)</span>为棱的<strong>平行六面体体积</strong></p>
-<p>性质：</p>
-<ul>
-<li>顺次调换混合积中的矢量，混合积结果不变(行列式做了2次行交换)</li>
-<li>对调混合积中的矢量，混合积结果反号(做了1次行交换)</li>
-</ul>
-<h3 id="_6">二重矢积</h3>
-<p><span class="arithmatex">\(a\times (b\times c)\)</span>称为二重矢积</p>
-<p>性质:</p>
-<ul>
-<li>与b,c共面的矢量（右手定则)</li>
-<li>既然共面,那如何线性表示? <span class="arithmatex">\(a\times(b\times c)=(a\cdot c)b-(a\cdot b)c\)</span></li>
-</ul>
-<h2 id="_7">平面和直线方程</h2>
-<h3 id="_8">平面方程</h3>
-<p>已知法向量<span class="arithmatex">\((A,B,C)\)</span>,平面上一点<span class="arithmatex">\((x_0,y_0,z_0)\)</span></p>
-<p>由内积为0推出点向式 <span class="arithmatex">\(A(x-x_0)+B(y-y_0)+C(z-z_0)=0\)</span> </p>
-<p>由此可推出一般式 <span class="arithmatex">\(Ax+By+Cz+D=0\)</span></p>
-<p><strong>求平面方程:</strong>
-- 已知三点,用<span class="arithmatex">\(\vec{AB}\times \vec{AC}\)</span>
-- 已知一点和一条直线. 用<span class="arithmatex">\(\vec{PM}\times \vec{v}\)</span>,M是直线上任取一点</p>
-<h3 id="_9">直线方程</h3>
-<p>已知方向向量<span class="arithmatex">\((l,m,n)\)</span>,平面上一点<span class="arithmatex">\((x_0,y_0,z_0)\)</span>
-参数式方程:</p>
-<div class="arithmatex">\[\begin{cases} x=x_0+lt \\ y=y_0+mt \\ z=z_0+nt\end{cases}
-\]</div>
-<p>点向式方程(又叫<strong>对称式方程</strong>):</p>
-<div class="arithmatex">\[\frac{x-x_0}{l}=\frac{y-y_0}{m}=\frac{z-z_0}{n} \\
-\]</div>
-<p>如果<span class="arithmatex">\(l,m,n\)</span>中有一个为0,那就拆出一个<span class="arithmatex">\(x=x_0\)</span></p>
-<p>一般式方程(两平面方程联立):</p>
-<div class="arithmatex">\[\begin{cases} A_1x+B_1y+C_1z+D_1=0 \\ A_2x+B_2y+C_2z+D_2=0\end{cases}
-\]</div>
-<p>这几种方程的联系: 因为两个平面不平行才能确定直线,故法向量线性无关, <span class="arithmatex">\(r(a,b,c,d)=r(a,b,c)=2\)</span>.  那么联立后形成的非齐次线性方程组必有解，且只有一个自由变量。把自由变量用基础解系的方式写出,就变成了参数式方程。进而化成点向式方程</p>
-<p>注意一般式方程中两平面的<strong>法向量叉乘<span class="arithmatex">\(v_1\times v_2\)</span>就是直线的方向向量</strong>。</p>
-<h3 id="_10">点线面的距离和夹角</h3>
-<p>梦回高中...</p>
-<p>(1)点到直线的距离：<strong>别忘了减法求出<span class="arithmatex">\(P_0P\)</span></strong>:</p>
-<div class="arithmatex">\[h=\frac{|\vec{P_0P}\times \mathbf{v}|}{|\mathbf{v}|}
-\]</div>
-<p>(2)点在直线上的投影:</p>
-<p>除了用距离做.也可以设出过点<span class="arithmatex">\(P(x_0,y_0,z_0)\)</span>,法向量为直线方向向量的平面方程<span class="arithmatex">\(l(x-x_0)+m(y-y_0)+n(z-z_0)=0\)</span>. 再与直线的一般式联立。</p>
-<p>(3)点在平面上的投影: 设出方向向量为平面法向量的直线，联立求交点。
-(3-1)<strong>点关于平面对称点</strong>: 设出垂直于平面的直线，求交点。遇到光的反射之类的问题同理</p>
-<p>(4)线线角: <span class="arithmatex">\(\cos \theta=|\cos&lt;\mathbf{v_1},\mathbf{v_2}&gt;|\)</span>
-(5)线面角: <span class="arithmatex">\(\sin \theta=|\cos&lt;\mathbf{v},\mathbf{n}&gt;|\)</span>
-(6)二面角 :<span class="arithmatex">\(\cos \theta=\cos(\mathbf{n_1},\mathbf{n_2})\)</span>
-注意<strong>线、面的夹角都取锐角</strong></p>
-<p>(7)异面直线间的距离:</p>
-<div class="arithmatex">\[d=\frac{|\vec{M_1M_2}\cdot(\bf{v_1\times v_2)|}}{|\bf{v_1\times v_2}|}
-\]</div>
-<p>对应平行六面体的高。</p>
-<p>(7-1)求两异面直线公垂线与直线交点</p>
-<p>过<span class="arithmatex">\(L_2\)</span>作平行于<span class="arithmatex">\(L_1\)</span>的平面<span class="arithmatex">\(\pi\)</span> ，法向量满足<span class="arithmatex">\(v_1\times v_2=n\)</span>。过<span class="arithmatex">\(L_1\)</span>作垂直于<span class="arithmatex">\(\pi\)</span>的平面<span class="arithmatex">\(\pi_1\)</span>,法向量<span class="arithmatex">\(n_1=v_1\times n\)</span>. 联立<span class="arithmatex">\(\pi_1\)</span>和<span class="arithmatex">\(L_2\)</span>就可以得到公垂线与<span class="arithmatex">\(L_2\)</span>交点。另一点同理</p>
-<p>(7-2)求两异面直线公垂线方程</p>
-<p>(7-1)<strong>求两异面直线公垂线方程</strong></p>
-<p>同7-1求出过<span class="arithmatex">\(L_1\)</span>的<span class="arithmatex">\(\pi_1\)</span>,再求出过<span class="arithmatex">\(L_2\)</span>的<span class="arithmatex">\(\pi_2\)</span>，两平面交线就是公垂线。</p>
-<p>(8)<strong>直线在平面上的投影直线</strong>:</p>
-<p>法一：先求过直线L且垂直于平面π的平面<span class="arithmatex">\(\pi_1\)</span>。 则<strong><span class="arithmatex">\(\pi_1\)</span>的法向量与直线L的方向向量,平面π的法向量都垂直</strong>。 <span class="arithmatex">\(\bf{n_1}=v\times n\)</span>. 然后在L上任取一点写出<span class="arithmatex">\(\pi_1\)</span>的方程，再加上平面π方程写出一般式方程即可</p>
-<p>法二：平面束方程</p>
-<h3 id="_11">求直线和平面方程</h3>
-<p>(直线的比较难，一般通过构造过直线的平面求交点或交线):
-<img alt="9e69a26fffa8932a2956ef0e5f09b70b.png" src="..\..\..\assets/images/9e69a26fffa8932a2956ef0e5f09b70b.png"/>
-注意有两解<span class="arithmatex">\(6x+y+6z=\pm6\)</span>
-<img alt="0ff76697fe1e67b4600e01753332bec5.png" src="..\..\..\assets/images/0ff76697fe1e67b4600e01753332bec5.png"/></p>
-<p><img alt="a8645908364f4a22d924c0ffe00166ce.png" src="..\..\..\assets/images/a8645908364f4a22d924c0ffe00166ce.png"/></p>
-<p>过M0作垂直于l的平面,解得交点
-<img alt="f827772ecc84d78b67a32416a4a39db3.png" src="..\..\..\assets/images/f827772ecc84d78b67a32416a4a39db3.png"/>
-过P0作平行于<span class="arithmatex">\(\pi\)</span>的平面</p>
-<h3 id="_12">平面束方程</h3>
-<p>类比高中的直线束方程。
-<span class="arithmatex">\(\lambda f(x,y,z)+\mu g(x,y,z)=0\)</span>表示通过一条直线的所有平面(<span class="arithmatex">\(\lambda,\mu\)</span>不同时为零，且两方程系数不成比例)。其中直线方程<span class="arithmatex">\(\begin{cases} f(x,y,z)=0\\g(x,y,z)=0\end{cases}\)</span></p>
-<p><img alt="e9434ea36f976b36c41fe7a776ca328f.png" src="..\..\..\assets/images/e9434ea36f976b36c41fe7a776ca328f.png"/></p>
-<p><img alt="41928bd65809a0a3c97d226809dbcca6.png" src="..\..\..\assets/images/41928bd65809a0a3c97d226809dbcca6.png"/>
-<img alt="4e0f8a59720a282f285175e57f914a41.png" src="..\..\..\assets/images/4e0f8a59720a282f285175e57f914a41.png"/></p>
-<p><strong>如果写成<span class="arithmatex">\(\lambda f+g\)</span>的形式，注意单独检验<span class="arithmatex">\(\lambda f\)</span></strong></p>
-<p>例: 求两平面的角平分面。先设出平面束方程,然后<span class="arithmatex">\(\frac{|n_1\cdot n|}{|n_1|}=\frac{|n_2\cdot n|}{|n_2|}\)</span></p>
-<p>注意有两解
-<img alt="9330e2301e04b8b72a19a8b48d8ef232.png" src="..\..\..\assets/images/9330e2301e04b8b72a19a8b48d8ef232.png"/></p>
-<h2 id="_13">曲面方程</h2>
-<h3 id="_14">一般的曲面方程</h3>
-<p><strong>球面方程</strong>: <span class="arithmatex">\((x-x_0)^2+(y-y_0)^2+(z-z_0)^2=R^2\)</span></p>
-<p><strong>柱面方程</strong>: 平行于定直线且沿定曲线<span class="arithmatex">\(C\)</span>(称为<strong>准线</strong>)移动的直线(称为<strong>母线</strong>)形成的曲面</p>
-<p>设<span class="arithmatex">\(\begin{cases} F(x,y)=0\\z=0\end{cases}\)</span>. 母线的方向向量为<span class="arithmatex">\((a,b,c)\)</span>. 曲面上一点坐标为<span class="arithmatex">\((x,y,z)\)</span>.母线交<span class="arithmatex">\(xOy\)</span>平面 <span class="arithmatex">\(\frac{x-x_0}{a}=\frac{y-y_0}{b}=\frac{z}{c}\)</span>. 代入方程</p>
-<div class="arithmatex">\[\boxed{F(x-\frac{a}{c}z,y-\frac{b}{c}z)=0}
-\]</div>
-<p>特别的, <span class="arithmatex">\(F(x,y)=0\)</span>表示母线平行z轴的柱面. <span class="arithmatex">\(F(x,z)=0\)</span>同理。平面也是一个特殊的柱面，如<span class="arithmatex">\(z=1\)</span>准线是<span class="arithmatex">\(xOz\)</span>平面上<span class="arithmatex">\(z=1\)</span>,母线平行于y轴</p>
-<p><strong>锥面方程</strong>: 过空间定点O,沿不过O的曲线为准线移动的直线形成的曲面</p>
-<p>设<strong>顶点为原点</strong>,准线为<span class="arithmatex">\(\begin{cases}F(x,y)=0\\z=h \end{cases}\)</span>,母线的方向向量为<span class="arithmatex">\((a,b,c)\)</span></p>
-<p><span class="arithmatex">\(x/x_0=z/h,y/y_0=z/h\)</span>. </p>
-<div class="arithmatex">\[\boxed{F(\frac{h}{z}x,\frac{h}{z}y)=0}
-\]</div>
-<p>例: <span class="arithmatex">\(z=c,\frac{x^2}{a^2}+\frac{y^2}{b^2}=0\)</span>, 得椭圆锥面方程<span class="arithmatex">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=0\)</span></p>
-<p><strong>旋转曲面</strong>:</p>
-<p>以<span class="arithmatex">\(z\)</span>轴为旋转轴, <span class="arithmatex">\(yOz\)</span>平面上的曲线<span class="arithmatex">\(F(y,z)=0\)</span>为母线 <span class="arithmatex">\((x,y,z)\)</span>和<span class="arithmatex">\((0,y_0,z_0)\)</span></p>
-<p>有<span class="arithmatex">\(z=z_0,\sqrt{x^2+y^2}=|y_0|\)</span>. 所以有</p>
-<div class="arithmatex">\[\boxed{F(\pm\sqrt{x^2+y^2},z)=0}
-\]</div>
-<blockquote>
-<p>例母线是<span class="arithmatex">\(z=y\cot \alpha\)</span>,绕Oz轴</p>
-</blockquote>
-<p><span class="arithmatex">\(z^2=(x^2+y^2)\cot^2\alpha\)</span>就是圆锥面。圆锥的半顶角为<span class="arithmatex">\(\alpha\)</span></p>
-<blockquote>
-<p>【重要!】例：母线是<span class="arithmatex">\(\frac{x-1}{0}=\frac{y}{1}=\frac{z-1}{2}\)</span>,绕Oz轴旋转得到的曲面</p>
-</blockquote>
-<p>还是用定义,先化成<strong>参数方程</strong><span class="arithmatex">\(\begin{cases}x=1\\y=t\\z=2t+1 \end{cases}\)</span></p>
-<p>点M绕z轴旋转得到 <span class="arithmatex">\(\begin{cases}x^2+y^2=1+t^2\\z=2t+1 \end{cases}\)</span></p>
-<p>消去<span class="arithmatex">\(t\)</span>即可。这是一个单叶双曲面</p>
-<h3 id="_15">二次曲面及其分类</h3>
-<table>
-<thead>
-<tr>
-<th>对应二次型的秩和正惯性系数</th>
-<th>方程</th>
-<th>名称</th>
-<th>图片</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>r=3,p=3</td>
-<td><span class="arithmatex">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1\)</span></td>
-<td>椭球面</td>
-<td></td>
-</tr>
-<tr>
-<td>r=3,p=2</td>
-<td><span class="arithmatex">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=-1\)</span></td>
-<td>单叶双曲面</td>
-<td></td>
-</tr>
-<tr>
-<td>r=3,p=2</td>
-<td><span class="arithmatex">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=0\)</span></td>
-<td>二次锥面</td>
-<td></td>
-</tr>
-<tr>
-<td>r=3,p=2</td>
-<td><span class="arithmatex">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=-1\)</span></td>
-<td>双叶双曲面</td>
-<td></td>
-</tr>
-<tr>
-<td>r=2,p=2</td>
-<td><span class="arithmatex">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}=z\)</span></td>
-<td>椭圆抛物面</td>
-<td></td>
-</tr>
-<tr>
-<td>r=2,p=2</td>
-<td><span class="arithmatex">\(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1\)</span></td>
-<td>椭圆柱面</td>
-<td></td>
-</tr>
-<tr>
-<td>r=2,p=1</td>
-<td><span class="arithmatex">\(z=\frac{x^2}{a^2}-\frac{y^2}{b^2}\)</span></td>
-<td>双曲抛物面(马鞍面)</td>
-<td></td>
-</tr>
-<tr>
-<td>r=2,p=1</td>
-<td><span class="arithmatex">\(\frac{x^2}{a^2}-\frac{y^2}{b^2}=1\)</span></td>
-<td>双曲柱面</td>
-<td></td>
-</tr>
-<tr>
-<td>r=1</td>
-<td><span class="arithmatex">\(x^2=2py\)</span></td>
-<td>抛物柱面</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p>退化成平面、直线、点甚至空集的不考虑        <a href="https://zhuanlan.zhihu.com/p/128039622">参考资料</a> </p>
-<h3 id="_16">空间曲线</h3>
-<ul>
-<li>
-<p>表示为两曲面方程联立</p>
-</li>
-<li>
-<p>参数方程</p>
-</li>
-</ul>
-<h3 id="_17">空间曲线在平面上的投影</h3>
-<p>对于空间曲线<span class="arithmatex">\(\begin{cases}f(x,y,z)=0\\g(x,y,z)=0 \end{cases}\)</span>,消去<span class="arithmatex">\(z\)</span>得<span class="arithmatex">\(F(x,y)=0\)</span>. 这是一个母线垂直z轴的柱面方程,且曲线上的任意一点都在这个柱面上。那么曲线<span class="arithmatex">\(\begin{cases} F(x,y)=0\\z=0\end{cases}\)</span>就是空间曲线在xOy平面上的投影</p>
-<blockquote>
-<p>例: 曲线<span class="arithmatex">\(\begin{cases}x^2+y^2+z^2=1\\z=\frac{1}{2} \end{cases}\)</span>在各个平面上投影</p>
-</blockquote>
-<p>注意曲线在<span class="arithmatex">\(z=1/2\)</span>上，故在xOz和yOz上的投影都是线段。<span class="arithmatex">\(\begin{cases}y=0\\z=\frac{1}{2}\\|x|\leq \frac{\sqrt{3}}{4} \end{cases}\)</span></p>
+<p>路径无关的积分求解</p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
@@ -2012,8 +1633,9 @@ x_3 &amp; y_3 &amp;z_3 \\
 </div>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
-<script src="../../../javascripts/mathjax.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="../../../javascripts/katex.js"></script>
+<script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/katex.min.js"></script>
+<script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/KaTeX/0.15.2/contrib/auto-render.min.js"></script>
 </body>
 </html>
