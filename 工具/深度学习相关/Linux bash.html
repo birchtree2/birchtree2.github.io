@@ -1343,6 +1343,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#wget">
+<span class="md-ellipsis">
+      wget
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1378,6 +1385,13 @@
 <a class="md-nav__link" href="vscode%E8%B0%83%E8%AF%95%E9%85%8D%E7%BD%AE%E6%80%BB%E7%BB%93.html">
 <span class="md-ellipsis">
     Vscode调试配置总结
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E5%BD%92%E6%A1%A3.html">
+<span class="md-ellipsis">
+    一些问题归档
   </span>
 </a>
 </li>
@@ -1477,23 +1491,16 @@
   </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../%E7%A7%91%E7%A0%94/AI4Bio/%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E5%BD%92%E6%A1%A3.html">
-<span class="md-ellipsis">
-    一些问题归档
-  </span>
-</a>
-</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_7_2_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_7_2_3" id="__nav_7_2_3_label" tabindex="0">
+<input class="md-nav__toggle md-toggle" id="__nav_7_2_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_7_2_2" id="__nav_7_2_2_label" tabindex="0">
 <span class="md-ellipsis">
     Paper Reading
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-expanded="false" aria-labelledby="__nav_7_2_3_label" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_7_2_3">
+<nav aria-expanded="false" aria-labelledby="__nav_7_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_7_2_2">
 <span class="md-nav__icon md-icon"></span>
             Paper Reading
           </label>
@@ -1666,6 +1673,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#wget">
+<span class="md-ellipsis">
+      wget
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -1707,6 +1721,7 @@
 <ul>
 <li><code>ls -a</code>查看隐藏文件：以“.”开头的文件或目录默认被视为隐藏文件或目录，通常是一些系统配置文件。</li>
 <li><code>ls -l</code> 查看文件和目录的详细信息，包括文件权限，文件数量，文件所有者，文件大小（以字节为单位），和最近修改的时间。如果想以更易读的方式查看文件大小（例如KB，MB等），可以使用<code>ls -lh</code></li>
+<li><code>du -sh dir</code> 查看目录总大小(ls只能看文件)。<code>du -sh dir/*</code>查看目录下所有子目录大小</li>
 </ul>
 <h3 id="_3">解压文件</h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># .tar.gz 和 .tgz</span>
@@ -1793,12 +1808,29 @@
 <h3 id="scp">scp拷贝文件</h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-13-1"><a href="#__codelineno-13-1" id="__codelineno-13-1" name="__codelineno-13-1"></a>scp<span class="w"> </span>-r<span class="w"> </span>/path/to/local/file<span class="w"> </span>username@hostname:/path/to/remote/file
 </span></code></pre></div>
+<h3 id="wget">wget</h3>
+<blockquote>
+<p>wget </p>
+</blockquote>
+<ul>
+<li>
+<p>wget网址里面含有&amp;,+等特殊字符，把网址用""括起来</p>
+</li>
+<li>
+<p><code>-O</code> 选项(大写字母!!! )用于指定下载内容的输出文件。
+示例：</p>
+</li>
+</ul>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>wget -O output_file.txt http://example.com/file.txt
+</span></code></pre></div>
+上述命令将下载 http://example.com/file.txt 并将其内容保存到本地文件 output_file.txt 中。</p>
+<p>-o 选项(小写字母 o)则用于将 wget 的日志消息输出到指定的文件中。<strong>它不会影响下载的文件内容</strong>，只会指定日志的存放位置。</p>
 <h2 id="git">git</h2>
 <h3 id="_13">远程仓库</h3>
 <ol>
 <li><strong>添加远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-14-1"><a href="#__codelineno-14-1" id="__codelineno-14-1" name="__codelineno-14-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>&lt;repository-url&gt;<span class="w"> </span><span class="c1">#添加</span>
-</span><span id="__span-14-2"><a href="#__codelineno-14-2" id="__codelineno-14-2" name="__codelineno-14-2"></a>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>origin<span class="w"> </span>&lt;new-repository-url&gt;<span class="w"> </span><span class="c1">#修改</span>
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a>git<span class="w"> </span>remote<span class="w"> </span>add<span class="w"> </span>origin<span class="w"> </span>&lt;repository-url&gt;<span class="w"> </span><span class="c1">#添加</span>
+</span><span id="__span-15-2"><a href="#__codelineno-15-2" id="__codelineno-15-2" name="__codelineno-15-2"></a>git<span class="w"> </span>remote<span class="w"> </span>set-url<span class="w"> </span>origin<span class="w"> </span>&lt;new-repository-url&gt;<span class="w"> </span><span class="c1">#修改</span>
 </span></code></pre></div>
    这里的<code>origin</code>是远程仓库的默认短名称，<code>&lt;repository-url&gt;</code>是你想要连接的远程仓库的URL。</li>
 </ol>
@@ -1806,7 +1838,7 @@
 <ol>
 <li>
 <p><strong>列出所有远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a>git<span class="w"> </span>remote<span class="w"> </span>-v
 </span></code></pre></div>
 <code>-v</code>参数表示显示远程仓库的详细信息，包括它们的URL。</p>
 </li>
@@ -1814,19 +1846,19 @@
 <p><strong>拉取远程仓库的更新并自动合并</strong>：</p>
 </li>
 </ol>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-16-1"><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>branch-name
+<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a>git<span class="w"> </span>pull<span class="w"> </span>origin<span class="w"> </span>branch-name
 </span></code></pre></div>
    这个命令会从远程仓库的<code>branch-name</code>分支拉取内容并尝试自动合并到当前分支。</p>
 <ol>
 <li>
 <p><strong>推送本地更改到远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-17-1"><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>branch-name
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a>git<span class="w"> </span>push<span class="w"> </span>origin<span class="w"> </span>branch-name
 </span></code></pre></div>
    将分支<code>branch-name</code>的内容推送到远程仓库。</p>
 </li>
 <li>
 <p><strong>推送当前分支的所有本地更改到远程仓库</strong>：
-   <div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a>git<span class="w"> </span>push
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a>git<span class="w"> </span>push
 </span></code></pre></div>
    如果当前分支与远程分支有跟踪关系，这个命令会默认推送当前分支。</p>
 </li>
@@ -1834,29 +1866,11 @@
 <p><strong>从远程仓库拉取内容</strong>/手动合并：</p>
 </li>
 </ol>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a>git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span><span class="c1">#拉取，不合并</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a>git<span class="w"> </span>fetch<span class="w"> </span>origin<span class="w"> </span><span class="c1">#拉取，不合并</span>
 </span></code></pre></div>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-20-1"><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a>git<span class="w"> </span>merge<span class="w"> </span>origin/branch-name
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-21-1"><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a>git<span class="w"> </span>merge<span class="w"> </span>origin/branch-name
 </span></code></pre></div>
 <p>将远程仓库的<code>branch-name</code>分支合并到当前分支。</p>
-<p>git remote add origin xxx //xxx为远程仓库地址如上</p>
-<p>git remote -v  //查看是否添加成功</p>
-<p>git fetch origin  //向远程仓库拉取内容</p>
-<p>git branch -a //查看远程分支</p>
-<p>//操作一：切换分支
-git checkout xxx //xxx分支名
-//提交文件
-git add . //将所有文件放入暂存区
-git commit -m xxx //xxx描述信息 添加描述并提交
-git push</p>
-<p>//操作二：创建分支并切换
-git checkout -b xxx //xxx新分支
-git add xxx //xxx文件名
-git commit  -m xxx //xxx描述</p>
-<p>//当第一次上传时，git push 如下
-git push --set-upstream origin xxx //xxx为新分支的名，由于新分支没有历史流，远程没有记录，所以需要--set-upstream
-或
-git push -u origin xxx </p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">
