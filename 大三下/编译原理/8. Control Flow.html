@@ -2314,14 +2314,18 @@
 <li>JUMP(l)   无条件</li>
 </ul>
 <h3 id="basic-block">Basic Block</h3>
-<p>基本块划分
-- 第一条语句是LABEL
-- 最后一条语句是JUMP或者CJUMP
-- 没有其他的LABEL,JUMP,CJUMP</p>
-<p>划分算法: 按顺序扫描语句序列
-- 如果是LABEL就开始
-- 如果是JUMP或CJUMP 就结束当前块。下一条语句，和JUMP的目标语句都开始一个新的块
-这样划分完之后，如果一个块开头没有LABEL,就加一个LABEL. 如果结尾没有JUMP/CJUMP, 就加一个JUMP到下一个块的LABEL</p>
+<p>基本块划分</p>
+<ul>
+<li>第一条语句是LABEL</li>
+<li>最后一条语句是JUMP或者CJUMP</li>
+<li>没有其他的LABEL,JUMP,CJUMP</li>
+</ul>
+<p>划分算法: 按顺序扫描语句序列</p>
+<ul>
+<li>如果是LABEL就开始</li>
+<li>如果是JUMP或CJUMP 就结束当前块。下一条语句，和JUMP的目标语句都开始一个新的块
+这样划分完之后，如果一个块开头没有LABEL,就加一个LABEL. 如果结尾没有JUMP/CJUMP, 就加一个JUMP到下一个块的LABEL</li>
+</ul>
 <h3 id="trace">Trace</h3>
 <p>目标是将程序的基本块组织成一系列的<strong>迹 (traces)</strong>。一个迹是一个基本块序列，如果程序执行到达迹的第一个基本块，那么它会按照顺序执行迹中的所有基本块，直到遇到一个分支到迹外的基本块。</p>
 <p><img alt="" src="images/Pasted%20image%2020250508150915.png"/></p>

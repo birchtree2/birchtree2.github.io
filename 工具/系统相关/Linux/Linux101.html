@@ -2650,10 +2650,14 @@
 <p>终端中Ctrl+Z暂停命令, Ctrl+C停止</p>
 <h3 id="tmux">tmux</h3>
 <ol>
-<li>启动tmux会话   train_session是我们自己指定的名字
+<li>
+<p>启动tmux会话   train_session是我们自己指定的名字
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>tmux<span class="w"> </span>new<span class="w"> </span>-s<span class="w"> </span>train_session
-</span></code></pre></div></li>
-<li>在新的终端里面运行命令</li>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>在新的终端里面运行命令</p>
+</li>
 <li>分离到后台运行: Ctrl + B 然后按 D</li>
 <li>重新连接
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>tmux<span class="w"> </span>attach<span class="w"> </span>-t<span class="w"> </span>train_session
@@ -2663,11 +2667,13 @@
 <div class="language-shell highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>tmux<span class="w"> </span>ls<span class="w"> </span>
 </span></code></pre></div></p>
 <p>删除会话：在窗口里<code>Ctrl+B, 然后按Shift+6</code>。 或者在外部<code>tmux kill-session -t &lt;session_name&gt;</code></p>
-<p>设置默认终端为zsh:
-1. 先获取路径<code>which zsh</code>
-2. <code>nano ~/.tmux.conf</code>， 添加这一行
+<p>设置默认终端为zsh:</p>
+<ol>
+<li>先获取路径<code>which zsh</code></li>
+<li><code>nano ~/.tmux.conf</code>， 添加这一行
 <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>set -g default-shell /bin/zsh
-</span></code></pre></div></p>
+</span></code></pre></div></li>
+</ol>
 <p>然后重新开一个tmux会话，旧的会话不会改变</p>
 <div class="admonition warning">
 <p class="admonition-title">下面的方法已过时</p>
@@ -2820,19 +2826,37 @@
 <li><code>--progress</code>: 显示传输进度条。</li>
 </ul>
 <p>核心注意点：斜杠 <code>/</code> 
-这是 <code>rsync</code> 最容易出错的地方：
-- <strong>源路径末尾有 <code>/</code></strong>：仅同步目录下的<strong>内容</strong>。
-    - 例：<code>rsync -a src/ dst/</code> -&gt; 把 src 里的东西拷贝到 dst。
-- <strong>源路径末尾无 <code>/</code></strong>：同步<strong>目录本身</strong>。
-    - 例：<code>rsync -a src dst/</code> -&gt; 在 dst 下创建一个 src 文件夹。</p>
-<p>常用高级选项
-- <strong>--delete</strong>: <strong>慎用！</strong> 如果源端删除了某个文件，<strong>目标端也同步删除</strong>。使目标端成为源端的完全镜像。
-- <strong>--exclude</strong>: 排除不需要同步的文件。
-    - 例：<code>--exclude=".git"</code> 或 <code>--exclude="node_modules"</code>。<br/>
-- <strong>-e ssh</strong>: 通过 SSH 进行远程同步。
-- <strong>--remove-source-files</strong>:  <code>rsync</code> 在文件传输并校验成功后，从 <strong>发送端</strong> 删除这些<strong>已传输的文件</strong>。只删除文件，保留原有目录结构
+这是 <code>rsync</code> 最容易出错的地方：</p>
+<ul>
+<li>
+<p><strong>源路径末尾有 <code>/</code></strong>：仅同步目录下的<strong>内容</strong>。</p>
+<ul>
+<li>例：<code>rsync -a src/ dst/</code> -&gt; 把 src 里的东西拷贝到 dst。</li>
+</ul>
+</li>
+<li>
+<p><strong>源路径末尾无 <code>/</code></strong>：同步<strong>目录本身</strong>。</p>
+<ul>
+<li>例：<code>rsync -a src dst/</code> -&gt; 在 dst 下创建一个 src 文件夹。</li>
+</ul>
+</li>
+</ul>
+<p>常用高级选项</p>
+<ul>
+<li><strong>--delete</strong>: <strong>慎用！</strong> 如果源端删除了某个文件，<strong>目标端也同步删除</strong>。使目标端成为源端的完全镜像。</li>
+<li>
+<p><strong>--exclude</strong>: 排除不需要同步的文件。</p>
+<ul>
+<li>例：<code>--exclude=".git"</code> 或 <code>--exclude="node_modules"</code>。  </li>
+</ul>
+</li>
+<li>
+<p><strong>-e ssh</strong>: 通过 SSH 进行远程同步。</p>
+</li>
+<li><strong>--remove-source-files</strong>:  <code>rsync</code> 在文件传输并校验成功后，从 <strong>发送端</strong> 删除这些<strong>已传输的文件</strong>。只删除文件，保留原有目录结构
 <div class="language-text highlight"><pre><span></span><code><span id="__span-20-1"><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a>rsync -av --remove-source-files /path/to/source/ /path/to/destination/
-</span></code></pre></div></p>
+</span></code></pre></div></li>
+</ul>
 <h2 id="_12">用户管理</h2>
 <ul>
 <li>
@@ -2857,7 +2881,7 @@
 </ul>
 <p><div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a>wget -O output_file.txt http://example.com/file.txt
 </span></code></pre></div>
-上述命令将下载 http://example.com/file.txt 并将其内容保存到本地文件 output_file.txt 中。</p>
+上述命令将下载 <a href="http://example.com/file.txt">http://example.com/file.txt</a> 并将其内容保存到本地文件 output_file.txt 中。</p>
 <ul>
 <li>-o 选项(小写)则用于将 wget 的日志消息输出到指定的文件中。<strong>它不会影响下载的文件内容</strong>，只会指定日志的存放位置。</li>
 </ul>

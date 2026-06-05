@@ -2421,9 +2421,11 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="_1">访问控制子层</h1>
-<p>IEEE802定义的局域网参考模型(对应OSI的物理层，数据链路层)  把数据链路层拆分为两个子层
-- 逻辑链路控制(LLC): 与传输介质无关,如组帧,差错检测
-- 访问控制(MAC): 与传输介质有关  </p>
+<p>IEEE802定义的局域网参考模型(对应OSI的物理层，数据链路层)  把数据链路层拆分为两个子层</p>
+<ul>
+<li>逻辑链路控制(LLC): 与传输介质无关,如组帧,差错检测</li>
+<li>访问控制(MAC): 与传输介质有关  </li>
+</ul>
 <h2 id="_2">随机访问</h2>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -2435,19 +2437,25 @@
 <p>TDM,ALOHA,CSMA,CSMA/CD 中，只有TDM是无冲突的</p>
 </div>
 <h3 id="aloha">ALOHA</h3>
-<p>ALOHA 在传输帧的时候，<strong>不会侦听</strong> 信道是否繁忙（区分于 CSMA)。当发生碰撞（collision）时，冲突的信号源会选择等待一个随机长的时间再发送。
-- Pure ALOHA：时间轴是连续的。其信道最高利用率为 <strong>18.4%</strong>
-    - 设每个帧发送时间为<span class="arithmatex">\(T\)</span>, 单位时间同时发的帧数为<span class="arithmatex">\(\lambda\)</span> (就是泊松分布的参数)<br/>
-    - 如果某个帧在<span class="arithmatex">\(t\)</span> 时刻开始发送没有冲突，就说明<span class="arithmatex">\([t-T,t+T]\)</span> 时间内没有帧发送，代入泊松分布的公式, 时间2T内没有帧到达的概率为 <span class="arithmatex">\(e^{-2\lambda T}\)</span>
-    - 令<span class="arithmatex">\(\lambda T=G\)</span>  吞吐量<span class="arithmatex">\(S=Ge^{-2G}\)</span>
-- Slotted ALOHA：时间轴是离散的。 其信道最高利用率为 <strong>36.8%</strong>      (因为没有冲突只要求在T时间内没有帧发送,吞吐量<span class="arithmatex">\(S=Ge^{-G}\)</span>)
-关键是记住信道利用率</p>
+<p>ALOHA 在传输帧的时候，<strong>不会侦听</strong> 信道是否繁忙（区分于 CSMA)。当发生碰撞（collision）时，冲突的信号源会选择等待一个随机长的时间再发送。</p>
+<ul>
+<li>Pure ALOHA：时间轴是连续的。其信道最高利用率为 <strong>18.4%</strong><ul>
+<li>设每个帧发送时间为<span class="arithmatex">\(T\)</span>, 单位时间同时发的帧数为<span class="arithmatex">\(\lambda\)</span> (就是泊松分布的参数)  </li>
+<li>如果某个帧在<span class="arithmatex">\(t\)</span> 时刻开始发送没有冲突，就说明<span class="arithmatex">\([t-T,t+T]\)</span> 时间内没有帧发送，代入泊松分布的公式, 时间2T内没有帧到达的概率为 <span class="arithmatex">\(e^{-2\lambda T}\)</span></li>
+<li>令<span class="arithmatex">\(\lambda T=G\)</span>  吞吐量<span class="arithmatex">\(S=Ge^{-2G}\)</span></li>
+</ul>
+</li>
+<li>Slotted ALOHA：时间轴是离散的。 其信道最高利用率为 <strong>36.8%</strong>      (因为没有冲突只要求在T时间内没有帧发送,吞吐量<span class="arithmatex">\(S=Ge^{-G}\)</span>)
+关键是记住信道利用率</li>
+</ul>
 <h3 id="csma">CSMA</h3>
 <p>发送前监听信道是否空闲。</p>
-<p>按照监听时刻的状态:
-- 1-坚持CSMA:  如果空闲直接发送, 否则继续监听直到空闲
-- 非坚持：  如果空闲直接发送，否则等待一段随机时间再监听
-- p-坚持(只适用于时分复用):     如果空闲有概率p发送,1-p概率推迟到下一个时隙。否则继续监听直到空闲  </p>
+<p>按照监听时刻的状态:</p>
+<ul>
+<li>1-坚持CSMA:  如果空闲直接发送, 否则继续监听直到空闲</li>
+<li>非坚持：  如果空闲直接发送，否则等待一段随机时间再监听</li>
+<li>p-坚持(只适用于时分复用):     如果空闲有概率p发送,1-p概率推迟到下一个时隙。否则继续监听直到空闲  </li>
+</ul>
 <h3 id="csmacd">CSMA/CD</h3>
 <h4 id="_3">最短帧长</h4>
 <p><span class="arithmatex">\(\tau\)</span>是传输时延,最短帧长为 <span class="arithmatex">\(2\times \tau\times \text{Data Rate}\)</span> </p>
@@ -2459,9 +2467,11 @@
 <p>王道P86
 (1)封装成帧
 (2)检测信道: 若信道空闲，则开始发送。若信道忙,则持续监听直到空闲
-(3)发送过程中: 持续检测
-- 发送
-- 发送失败: 在争用期<span class="arithmatex">\(2\tau\)</span> 内检测到冲突。等待一段随机时间后,再回到(2)。令<span class="arithmatex">\(k=\min\{重传次数,10\}\)</span>  从<span class="arithmatex">\([0,1,\dots 2^{k-1}]\)</span>中随机取一个数r, 等待时间为<span class="arithmatex">\(2r\tau\)</span>。如果重传次数达到16,则停止重传并报错</p>
+(3)发送过程中: 持续检测</p>
+<ul>
+<li>发送</li>
+<li>发送失败: 在争用期<span class="arithmatex">\(2\tau\)</span> 内检测到冲突。等待一段随机时间后,再回到(2)。令<span class="arithmatex">\(k=\min\{重传次数,10\}\)</span>  从<span class="arithmatex">\([0,1,\dots 2^{k-1}]\)</span>中随机取一个数r, 等待时间为<span class="arithmatex">\(2r\tau\)</span>。如果重传次数达到16,则停止重传并报错</li>
+</ul>
 <h3 id="csmaca">CSMA/CA</h3>
 <p>见王道</p>
 <h2 id="_5">局域网</h2>
@@ -2480,28 +2490,39 @@
 </div>
 <p><img alt="" src="images/Pasted%20image%2020241103095954.png"/>
 头部6+6+2为目的地MAC地址,源MAC地址,类型(交给上层的协议类型,如IP)   尾部4字节是32位CRC码。物理层在帧前面插入的8字节前导码</p>
-<p>分类
-- 数字为同轴电缆(5,2表示单端传输距离500m或185m)    BaseT表示双绞线,BaseF表示光纤</p>
+<p>分类</p>
+<ul>
+<li>数字为同轴电缆(5,2表示单端传输距离500m或185m)    BaseT表示双绞线,BaseF表示光纤</li>
+</ul>
 <h3 id="vlan">VLAN</h3>
 <p>一个VLAN构成一个广播域。不同VLAN之间的机器在数据链路层不能连通</p>
 <p>划分VLAN的方式: <strong>基于交换机接口,基于MAC地址,基于IP</strong></p>
-<p>跨越两个交换机的VLAN:
-- 交换机接口之间的链路成为干线链路, 传送的帧是802.1Q帧
-- 在交换机之间,要插入VLAN标签,不然交换机2不知道要转发给哪个VLAN. 因此以太网最大帧长从1518B变成1522B</p>
+<p>跨越两个交换机的VLAN:</p>
+<ul>
+<li>交换机接口之间的链路成为干线链路, 传送的帧是802.1Q帧</li>
+<li>在交换机之间,要插入VLAN标签,不然交换机2不知道要转发给哪个VLAN. 因此以太网最大帧长从1518B变成1522B</li>
+</ul>
 <h2 id="_6">数据链路层设备</h2>
 <p>网络接口卡(Network interface card,NIC)  又称网络适配器(Adapter) , 工作在数据链路层,进行数据的串并转换</p>
 <p>网桥(bridge)：</p>
-<p>以太网交换机(switch)
-- 用户通信时独占带宽    比如带宽10Mbps, 10个接口，每个用户都是10Mbps</p>
-<p>物理层设备 <br/>
-- 集线器(hub) 不能独占带宽</p>
-<p>冲突域和广播域
-- Collision Domain（冲突域）：一组设备之间可能发生数据包碰撞（即冲突）的区域。在这些设备中，任何两个设备同时尝试发送数据时，都会导致数据包相互干扰。</p>
-<div class="language-text highlight"><pre><span></span><code>- 一个集线器所连接的所有设备构成一个冲突域。
-- 网桥所连接的每个网段独自构成一个冲突域。
-- 使用交换机时，每个端口连接的设备独自构成一个冲突域。
-</code></pre></div>
+<p>以太网交换机(switch)</p>
 <ul>
+<li>用户通信时独占带宽    比如带宽10Mbps, 10个接口，每个用户都是10Mbps</li>
+</ul>
+<p>物理层设备   </p>
+<ul>
+<li>集线器(hub) 不能独占带宽</li>
+</ul>
+<p>冲突域和广播域</p>
+<ul>
+<li>
+<p>Collision Domain（冲突域）：一组设备之间可能发生数据包碰撞（即冲突）的区域。在这些设备中，任何两个设备同时尝试发送数据时，都会导致数据包相互干扰。</p>
+<ul>
+<li>一个集线器所连接的所有设备构成一个冲突域。</li>
+<li>网桥所连接的每个网段独自构成一个冲突域。</li>
+<li>使用交换机时，每个端口连接的设备独自构成一个冲突域。</li>
+</ul>
+</li>
 <li>
 <p>Broadcast Domian（广播域）：某个设备或者端口发送一个广播帧，能到达的计算机和端口的集合。不同的局域网是独立的广播域。</p>
 <ul>

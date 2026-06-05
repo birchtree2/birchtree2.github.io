@@ -2503,9 +2503,11 @@
 <p>记为"M""w"   “M”相当于把图灵机表示为“程序”  "w"是程序的输入</p>
 <h2 id="undecidability">Undecidability</h2>
 <p>递归语言(Recursive,REC) <span class="arithmatex">\(\subseteq\)</span>  递归可数(RE)  <span class="arithmatex">\(\subseteq\)</span> ?</p>
-<p>下面的说法含义是一样的：
-- decidable=recursive
-- undecidable=not recursive(可能RE,也可能not RE)</p>
+<p>下面的说法含义是一样的：</p>
+<ul>
+<li>decidable=recursive</li>
+<li>undecidable=not recursive(可能RE,也可能not RE)</li>
+</ul>
 <h3 id="_3">规约</h3>
 <p>定义: 存在一个recursive 的函数         <span class="arithmatex">\(f:\Sigma_A^* \to \Sigma_B^*\)</span>  使得<span class="arithmatex">\(\forall x \in \Sigma_A^*,x \in A \Leftrightarrow f(x)\in B\)</span>
 则称把A规约到B，记为<span class="arithmatex">\(A\leq B\)</span></p>
@@ -2515,19 +2517,21 @@
 </div>
 <p>若<span class="arithmatex">\(A\leq B\)</span>, 则<span class="arithmatex">\(\bar{A}\leq \bar{B}\)</span></p>
 <h3 id="rere">RE但非递归的语言/非RE的语言</h3>
-<p>存在性:<br/>
-- 所有 TM 的集合是可数的，但所有语言的集合是不可数的(利用对角化)
-- 每个TM只能半判定一种语言 (RE)
-- 所以一定存在不是RE的语言</p>
+<p>存在性:  </p>
+<ul>
+<li>所有 TM 的集合是可数的，但所有语言的集合是不可数的(利用对角化)</li>
+<li>每个TM只能半判定一种语言 (RE)</li>
+<li>所以一定存在不是RE的语言</li>
+</ul>
 <p>构造：</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p><span class="arithmatex">\(H_d=\)</span>{"M": M is a TM that does not halt on "M"}   不是RE</p>
+<p>$H_d=<code>${"M": M is a TM that does not halt on "M"}</code>   不是RE</p>
 <p>H={"M""w", M is a TM that halts on w}  是RE但不是REC
-<span class="arithmatex">\(\bar{H}=\)</span>{"M""w",M is a TM that does not halts on w} 不是RE</p>
+$\bar{H}=<code>${"M""w",M is a TM that does not halts on w}</code> 不是RE</p>
 </div>
 <p>证明H是RE的。只需要构造UTM  run M on w</p>
-<p>证明H不是REC的  构造<span class="arithmatex">\(H_d=\)</span>{"M": M is a TM that does not halt on "M"}      把图灵机M自身的编码(字符串“M”) 放在M上跑, 不停机      </p>
+<p>证明H不是REC的  构造$H_d=<code>${"M": M is a TM that does not halt on "M"}</code>      把图灵机M自身的编码(字符串“M”) 放在M上跑, 不停机      </p>
 <ol>
 <li>假设H是递归的, 那么<span class="arithmatex">\(H_d\)</span>也是递归的。  证明:  因为H是递归的，存在<span class="arithmatex">\(M_H\)</span>判定H,   那么run <span class="arithmatex">\(M_H\)</span> on "M""M"  (相当于 w是M的编码) .  如果<span class="arithmatex">\(M_H\)</span> 接受"M""M", 那就说明M is a TM that halts on w,  不符合<span class="arithmatex">\(H_d\)</span>的条件, 那就拒绝"M"。反之就接受"M"。  因为H递归, <span class="arithmatex">\(M_H\)</span>能在有限时间内接受或拒绝, 所以<span class="arithmatex">\(H_d\)</span>也是递归的</li>
 <li><span class="arithmatex">\(H_d\)</span>不是RE的。 证明：  如果<span class="arithmatex">\(H_d\)</span>是RE的, 那么存在<span class="arithmatex">\(M_D\)</span>半判定H.   run <span class="arithmatex">\(M_D\)</span> on "<span class="arithmatex">\(M_D\)</span>"    如果停机, 根据半判定的定义,字符串 "<span class="arithmatex">\(M_D\)</span>" <span class="arithmatex">\(\in H_d\)</span>     但是根据语言<span class="arithmatex">\(H_d\)</span>的定义   那么<span class="arithmatex">\(M_D\)</span> is a TM that does not halt on "<span class="arithmatex">\(M_D\)</span>"  矛盾   </li>
@@ -2544,10 +2548,12 @@
 - 如果A不是REC，那么B不是REC
 - 如果B是RE,那么A也是RE</p>
 </div>
-<p>证明A不是REC：
-- 找到  <span class="arithmatex">\(B\leq A\)</span>, 其中 B不是REC。  (比如B是H)<br/>
-- Rice's Theorem
-- 定义  对角化</p>
+<p>证明A不是REC：</p>
+<ul>
+<li>找到  <span class="arithmatex">\(B\leq A\)</span>, 其中 B不是REC。  (比如B是H)  </li>
+<li>Rice's Theorem</li>
+<li>定义  对角化</li>
+</ul>
 <p><strong>注意方向! A的“难度”至少跟B相当</strong>  是把B规约到A</p>
 <div class="admonition example">
 <p class="admonition-title">常见的不可判定问题(但是RE)</p>
@@ -2559,8 +2565,10 @@
 <p>L1证明: 对于H中的M,w     构造图灵机M<em> 无论输入是什么,都相当于出run M on w。如果M</em>  halts on e,就说明 M* halts on w.  反之同理。 <br/>
 证明: 构造一台机器M2 不管输入什么都直接停机    那只需要判断M和M2是不是一样就可。 <br/>
 所以L1-L4都不是recursive的</p>
-<p>注意L3是非RE的
-- 把<span class="arithmatex">\(\bar{H}\)</span>规约到L3</p>
+<p>注意L3是非RE的</p>
+<ul>
+<li>把<span class="arithmatex">\(\bar{H}\)</span>规约到L3</li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>把A规约到B：  假设有一个图灵机能判定B , 怎么用这个图灵机解决问题A？  </p>
@@ -2579,50 +2587,68 @@ L(M')=\begin{cases}
 L(U)=H, \text{M halts on w}
 \end{cases}
 $$
-然后run " M' "  on <span class="arithmatex">\(\bar{R_{TM}}\)</span>对应的图灵机
-- 如果接受,就说明<span class="arithmatex">\(L(M')\)</span>不是正则的。  考虑L(M')的两种情况。空集一定是正则语言。而下面的语言是H。那就说明M halts on w
-- 否则就说明M does not halts on w
-这样就把H规约到  <span class="arithmatex">\(\bar{R_{TM}}\)</span></p>
+然后run " M' "  on <span class="arithmatex">\(\bar{R_{TM}}\)</span>对应的图灵机</p>
+<ul>
+<li>如果接受,就说明<span class="arithmatex">\(L(M')\)</span>不是正则的。  考虑L(M')的两种情况。空集一定是正则语言。而下面的语言是H。那就说明M halts on w</li>
+<li>否则就说明M does not halts on w
+这样就把H规约到  <span class="arithmatex">\(\bar{R_{TM}}\)</span></li>
+</ul>
 <p>这些问题本质上都是在问图灵机M半判定的语言 L(M) 具有什么性质</p>
 <div class="admonition warning">
 <p class="admonition-title">Rice's Theorem</p>
-<p><span class="arithmatex">\(R(P)=\)</span>{"M", M is a TM with L(M) having property P}
-令<span class="arithmatex">\(\mathcal{L}(P)\)</span> 为具有性质P的所有 RE 语言的合集
+<p><span class="arithmatex">\(R(P)=<code>${"M", M is a TM with L(M) having property P}</code>
+令\)</span>\mathcal{L}(P)$ 为具有性质P的所有 RE 语言的合集
 - 如果<span class="arithmatex">\(\mathcal{L}(P)\)</span>  是RE语言的 <strong>非空真子集</strong>, 那么 R(P) 不是recursive(不可判定)
 - 如果<span class="arithmatex">\(\mathcal{L}(P)\)</span> 是空集或者包含所有RE语言  那么 R(P)是recursive的</p>
 </div>
-<p>该定理只能判断不是Recursive, <strong>不能判断是不是RE</strong>
-- 从补集 <span class="arithmatex">\(\bar{H}\)</span> 规约</p>
+<p>该定理只能判断不是Recursive, <strong>不能判断是不是RE</strong></p>
+<ul>
+<li>从补集 <span class="arithmatex">\(\bar{H}\)</span> 规约</li>
+</ul>
 <h3 id="re">证明不是RE</h3>
-<p>证明A不是RE
-- 找到<span class="arithmatex">\(B\leq A\)</span>  其中B不是RE (比如Hd)
-- 使用定理 <span class="arithmatex">\(A\)</span>是REC当且仅当<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(\bar{A}\)</span>都是RE</p>
+<p>证明A不是RE</p>
+<ul>
+<li>找到<span class="arithmatex">\(B\leq A\)</span>  其中B不是RE (比如Hd)</li>
+<li>使用定理 <span class="arithmatex">\(A\)</span>是REC当且仅当<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(\bar{A}\)</span>都是RE</li>
+</ul>
 <h3 id="rec_1">证明是REC</h3>
-<p>证明A是RE
-- 找到<span class="arithmatex">\(A\leq B\)</span>   B是REC
-- 证明<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(\bar{A}\)</span> 都是RE
-- 用定义构造图灵机</p>
+<p>证明A是RE</p>
+<ul>
+<li>找到<span class="arithmatex">\(A\leq B\)</span>   B是REC</li>
+<li>证明<span class="arithmatex">\(A\)</span>和<span class="arithmatex">\(\bar{A}\)</span> 都是RE</li>
+<li>用定义构造图灵机</li>
+</ul>
 <h3 id="re_1">证明是RE</h3>
-<p>证明A是RE
-- 找到<span class="arithmatex">\(A\leq B\)</span>   B是RE
-- 用定义构造图灵机</p>
+<p>证明A是RE</p>
+<ul>
+<li>找到<span class="arithmatex">\(A\leq B\)</span>   B是RE</li>
+<li>用定义构造图灵机</li>
+</ul>
 <blockquote>
 <p>A={"M", M is a TM that halts on some input} 是RE的</p>
 </blockquote>
 <p><img alt="" src="images/Pasted%20image%2020241229111845.png"/></p>
 <h3 id="_4">总结</h3>
-<p>思路
-- Rice定理只能判定不是REC。 不能判定是不是RE。如果要证明not-RE 还是要用规约的方法
-- 把<span class="arithmatex">\(H,\bar{H}\)</span> 规约到<span class="arithmatex">\(L\)</span>   本质上是找一个函数<span class="arithmatex">\(f(M,w)=M'\)</span>  讨论图灵机<span class="arithmatex">\(M'\)</span>输入<span class="arithmatex">\(x\)</span> <span class="arithmatex">\(L(M')\)</span>是什么,是否满足<span class="arithmatex">\(L\)</span>的性质P
-    - 一般是找性质P的特例(充分条件)      比如接受所有长度为偶数的字符串=&gt;接受所有字符串</p>
+<p>思路</p>
+<ul>
+<li>Rice定理只能判定不是REC。 不能判定是不是RE。如果要证明not-RE 还是要用规约的方法</li>
+<li>把<span class="arithmatex">\(H,\bar{H}\)</span> 规约到<span class="arithmatex">\(L\)</span>   本质上是找一个函数<span class="arithmatex">\(f(M,w)=M'\)</span>  讨论图灵机<span class="arithmatex">\(M'\)</span>输入<span class="arithmatex">\(x\)</span> <span class="arithmatex">\(L(M')\)</span>是什么,是否满足<span class="arithmatex">\(L\)</span>的性质P<ul>
+<li>一般是找性质P的特例(充分条件)      比如接受所有长度为偶数的字符串=&gt;接受所有字符串</li>
+</ul>
+</li>
+</ul>
 <p>常见的构造:</p>
 <p><span class="arithmatex">\(f(M,w)=M'\)</span> <br/>
-<span class="arithmatex">\(M'\)</span> on input x: run M on w(注意不是x!!) . 如果停机就accept.
-- "M""w" <span class="arithmatex">\(\in H\)</span>   则<span class="arithmatex">\(L(M')=\)</span>所有字符串
-- "M""w" <span class="arithmatex">\(\notin H\)</span>,  则<span class="arithmatex">\(L(M')=\emptyset\)</span></p>
-<p><span class="arithmatex">\(M'\)</span> on input x: run M on w for |x| steps 如果停机就reject, 否则accept
-- "M""w" <span class="arithmatex">\(\in \bar{H}\)</span>   则<span class="arithmatex">\(L(M')=\)</span>所有字符串
-- "M""w" <span class="arithmatex">\(\notin \bar{H}\)</span>,  则<span class="arithmatex">\(L(M')=\emptyset\)</span></p>
+<span class="arithmatex">\(M'\)</span> on input x: run M on w(注意不是x!!) . 如果停机就accept.</p>
+<ul>
+<li>"M""w" <span class="arithmatex">\(\in H\)</span>   则<span class="arithmatex">\(L(M')=\)</span>所有字符串</li>
+<li>"M""w" <span class="arithmatex">\(\notin H\)</span>,  则<span class="arithmatex">\(L(M')=\emptyset\)</span></li>
+</ul>
+<p><span class="arithmatex">\(M'\)</span> on input x: run M on w for |x| steps 如果停机就reject, 否则accept</p>
+<ul>
+<li>"M""w" <span class="arithmatex">\(\in \bar{H}\)</span>   则<span class="arithmatex">\(L(M')=\)</span>所有字符串</li>
+<li>"M""w" <span class="arithmatex">\(\notin \bar{H}\)</span>,  则<span class="arithmatex">\(L(M')=\emptyset\)</span></li>
+</ul>
 <p>空集<span class="arithmatex">\(\emptyset\)</span> 是finite的</p>
 <p>一般集合大小&gt;= xxx 是RE   如果是=或者&lt; 就not-RE</p>
 <h2 id="turing-enumable">Turing enumable</h2>
@@ -2630,15 +2656,19 @@ $$
 <blockquote>
 <p>L是图灵可枚举的当且仅当他是RE的</p>
 </blockquote>
-<p>左推右: 假设M枚举L:  构造自动机M‘  对于输入x: 
-1. run M to enumerate L
-2. 对于M枚举的字符串w 如果w=x则停机。 
-M'半判定L</p>
-<p>右推左: 假设M半判定L, 构造自动机M'
-1. M’ 在M字母表的第1个字符串(按字典序) 运行M 1步
-2. M‘ 在前2个字符串 运行M 2步
-3. M‘ 在前2个字符串 运行M 3步  以此类推...
-当M’找到M接受字符串wi之后，转到状态q里显示w,并把wi记录下来。然后重新开始,如果新找到的字符串与之前找到的相同,就继续找，直到找到一个没出现过的。</p>
+<p>左推右: 假设M枚举L:  构造自动机M‘  对于输入x: </p>
+<ol>
+<li>run M to enumerate L</li>
+<li>对于M枚举的字符串w 如果w=x则停机。 
+M'半判定L</li>
+</ol>
+<p>右推左: 假设M半判定L, 构造自动机M'</p>
+<ol>
+<li>M’ 在M字母表的第1个字符串(按字典序) 运行M 1步</li>
+<li>M‘ 在前2个字符串 运行M 2步</li>
+<li>M‘ 在前2个字符串 运行M 3步  以此类推...
+当M’找到M接受字符串wi之后，转到状态q里显示w,并把wi记录下来。然后重新开始,如果新找到的字符串与之前找到的相同,就继续找，直到找到一个没出现过的。</li>
+</ol>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>在前i个字符串 run M i步 判断是否接受

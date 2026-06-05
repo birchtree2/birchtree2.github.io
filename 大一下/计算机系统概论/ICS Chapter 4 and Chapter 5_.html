@@ -2477,7 +2477,7 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1>ICS Chapter 4 and Chapter 5 </h1>
-<p>https://www.yuque.com/isshikixiu/codes/ics#xLzvZ</p>
+<p><a href="https://www.yuque.com/isshikixiu/codes/ics#xLzvZ">https://www.yuque.com/isshikixiu/codes/ics#xLzvZ</a></p>
 <h2 id="chapter-4">Chapter 4</h2>
 <h3 id="von-neumann-machine">von Neumann machine</h3>
 <ul>
@@ -2508,13 +2508,17 @@
 </ul>
 <p>指令执行的六个阶段(4.3.2)</p>
 <ol>
-<li>FETCH<ol>
+<li>
+<p>FETCH</p>
+<ol>
 <li>MAR ←PC</li>
 <li>访问内存,结果放入MDR</li>
 <li>IR ←MDR</li>
 </ol>
 </li>
-<li>Decode</li>
+<li>
+<p>Decode</p>
+</li>
 <li>Evaluate Address</li>
 <li>Fetch operands  用到MAR,MDR</li>
 <li>Execute</li>
@@ -2540,9 +2544,11 @@
 <h3 id="addandnot">ADD,AND,NOT</h3>
 <p><strong>注意Imm5范围是[-16,15]</strong></p>
 <h3 id="ldldildr">LD,LDI,LDR</h3>
-<p>汇编
- - <code>LD DR,LABEL</code> (汇编器会自动计算PCoffset，但如果距离太远就会报错) <code>DR=mem[LABEL]</code></p>
+<p>汇编</p>
 <ul>
+<li>
+<p><code>LD DR,LABEL</code> (汇编器会自动计算PCoffset，但如果距离太远就会报错) <code>DR=mem[LABEL]</code></p>
+</li>
 <li>
 <p><code>LDI DR,LABEL</code> <code>DR=mem[mem[LABEL]]</code> (可以实现任意地址的跳转)</p>
 </li>

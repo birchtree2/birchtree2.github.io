@@ -2641,7 +2641,7 @@
 <p class="admonition-title">Warning</p>
 <p>通过修改<code>~/.codex/config.toml</code>和环境变量实现，不需要cc-switch等复杂的gui工具</p>
 </div>
-<p>以中转站 https://api.ikuncode.cc 为例</p>
+<p>以中转站 <a href="https://api.ikuncode.cc">https://api.ikuncode.cc</a> 为例</p>
 <h4 id="_2">接口差异</h4>
 <ul>
 <li>codex 0.81.0+ 版本强制使用 WebSocket (WSS) 协议 连接 GPT-5.5 官方服务器。 /v1/responses</li>
@@ -2677,11 +2677,13 @@
 <h4 id="api-key-zshrc">注入 API Key (~/.zshrc)</h4>
 <p><strong>操作</strong>：添加 <code>export IKUN_CODEX_API_KEY='sk-xxxxxx'</code> 并执行 <code>source ~/.zshrc</code>
 <strong>原因</strong>：Codex 优先通过环境变量读取密钥。变量名必须与配置文件中的 <code>env_key</code> 严格对应。</p>
-<p>核心避坑总结
-- <strong>401 Unauthorized</strong>：通常是请求由于系统代理飞向了 OpenAI 官方，需 <code>proxyoff</code> 关闭终端代理后再运行。
-- <strong>ENOENT 报错</strong>：核心二进制文件下载不全，需卸载后重新 <code>npm install</code>。
-- <strong>GPT-5.5 欢迎语</strong>：0.131.0+ 版本的硬编码，若看到此提示且报错，说明版本过高，必须降级到 0.80.0。
-- <strong>不要更新</strong>：严禁执行 <code>npm update -g</code>，否则新版协议会彻底锁死官方接口。</p>
+<p>核心避坑总结</p>
+<ul>
+<li><strong>401 Unauthorized</strong>：通常是请求由于系统代理飞向了 OpenAI 官方，需 <code>proxyoff</code> 关闭终端代理后再运行。</li>
+<li><strong>ENOENT 报错</strong>：核心二进制文件下载不全，需卸载后重新 <code>npm install</code>。</li>
+<li><strong>GPT-5.5 欢迎语</strong>：0.131.0+ 版本的硬编码，若看到此提示且报错，说明版本过高，必须降级到 0.80.0。</li>
+<li><strong>不要更新</strong>：严禁执行 <code>npm update -g</code>，否则新版协议会彻底锁死官方接口。</li>
+</ul>
 <h2 id="skills">skills</h2>
 <p>去githubs搜各种skills
 然后git clone到 <code>~/.codex/skills/</code>下 或者 <code>~/.claude/skills/</code>下</p>
@@ -2711,8 +2713,10 @@ everything-claude-code</p>
 </span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">cd</span><span class="w"> </span>clash-for-linux-install<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">  </span><span class="o">&amp;&amp;</span><span class="w"> </span>bash<span class="w"> </span>install.sh
 </span></code></pre></div>
-<p>粘贴订阅链接
-- 最好用subconverter的rule转换一下</p>
+<p>粘贴订阅链接</p>
+<ul>
+<li>最好用subconverter的rule转换一下</li>
+</ul>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>clashsub<span class="w"> </span>add<span class="w"> </span><span class="s1">'https://subconv.xxxxxx.com/sub?target=clash&amp;url=https%3A%2F%2Fhq45e.xxxxxxd-sub.one%2Flink%2xxxxxxxxxx%3Fclash%3D3%26extend%3D1&amp;emoji=true&amp;udp=true&amp;sort=false&amp;scv=false&amp;list=false'</span>
 </span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="c1">#注意clashsub add这种带转换的链接要用引号括起来</span>
 </span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="c1">#instll.sh里面贴链接的时候不加引号</span>
@@ -2758,7 +2762,7 @@ everything-claude-code</p>
 <p>5个人开一个vps? 走那个服务器就不会被封
 sub2api
 linux do 找一些抽奖</p>
-<p>https://api.ikuncode.cc
+<p><a href="https://api.ikuncode.cc">https://api.ikuncode.cc</a>
 <a href="https://github.com/ding113/claude-code-hub">GitHub - ding113/claude-code-hub: 一个现代化的 Claude Code &amp; Codex API 代理服务，提供智能负载均衡、用户管理和使用统计功能。 · GitHub</a> 把中转站的集合</p>
 <h2 id="obsidian-codexclaude">obsidian 结合codex/claude</h2>
 <p><strong>1. 准备工作：</strong><br/>
@@ -2791,19 +2795,18 @@ linux do 找一些抽奖</p>
 </li>
 </ul>
 <p><strong>3.环境变量报错排查</strong>。如果启动的时候出现/bin/sh找不到npx的报错。是gui程序启动时没加载到环境变量的问题。首先尝试在终端里<code>open /Applications/Obsidian.app</code>。一般来说这样就成功了。
-但是每次都要启动终端命令很麻烦。我们可以利用mac的自动操作功能创建一个专门的“启动器”图标，你可以把它放进 Dock 栏，点击它时，它会先加载路径再打开 Obsidian。
-1. 按下 Command + 空格，搜索并打开 <strong>“自动操作” (Automator)</strong>。
-2. 点击左下角的 <strong>“新建文稿”</strong>，选择 <strong>“应用程序” (Application)</strong>。
-3. 在左侧搜索栏搜索 <strong>“运行 Shell 脚本” (Run Shell Script)</strong>，双击它添加到右侧。
-4. 在脚本框中，删除所有内容，粘贴以下代码：</p>
-<div class="language-text highlight"><pre><span></span><code>```
-export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
-open -a "Obsidian"
-```
-
-(这一行的作用是手动把 Homebrew 的路径塞进启动环境里)
-</code></pre></div>
+但是每次都要启动终端命令很麻烦。我们可以利用mac的自动操作功能创建一个专门的“启动器”图标，你可以把它放进 Dock 栏，点击它时，它会先加载路径再打开 Obsidian。</p>
 <ol>
+<li>按下 Command + 空格，搜索并打开 <strong>“自动操作” (Automator)</strong>。</li>
+<li>点击左下角的 <strong>“新建文稿”</strong>，选择 <strong>“应用程序” (Application)</strong>。</li>
+<li>在左侧搜索栏搜索 <strong>“运行 Shell 脚本” (Run Shell Script)</strong>，双击它添加到右侧。</li>
+<li>
+<p>在脚本框中，删除所有内容，粘贴以下代码：</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a>export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+</span><span id="__span-9-2"><a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a>open -a "Obsidian"
+</span></code></pre></div>
+<p>(这一行的作用是手动把 Homebrew 的路径塞进启动环境里)</p>
+</li>
 <li>
 <p>点击菜单栏的 <strong>文件 -&gt; 存储</strong>，起名为 <strong>“Obsidian Launcher”</strong>（或者直接叫 Obsidian，存储位置选择 <strong>应用程序</strong> 文件夹）。</p>
 </li>
@@ -2814,8 +2817,10 @@ open -a "Obsidian"
 <li>点击左上角的小图标，按 Command + C 复制。</li>
 <li>找到你新建的 “Obsidian Launcher”，右键 -&gt; 显示简介。</li>
 <li>点击左上角的小图标，按 Command + V 粘贴。</li>
-<li><strong>最后：</strong> 把这个新的 “Obsidian Launcher” 拖到你的 Dock 栏，以后点击它启动即可。</li>
 </ul>
+</li>
+<li>
+<p><strong>最后：</strong> 把这个新的 “Obsidian Launcher” 拖到你的 Dock 栏，以后点击它启动即可。</p>
 </li>
 </ol>
 <h2 id="deepwiki">deepwiki</h2>

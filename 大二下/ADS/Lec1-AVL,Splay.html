@@ -2482,8 +2482,10 @@
 <p>Lec1: AVL+Splay</p>
 <h2 id="avl">AVL</h2>
 <h3 id="_1">定义</h3>
-<p><span class="arithmatex">\(h(x)\)</span>:  以<span class="arithmatex">\(x\)</span>为根的子树的最大深度
-- 空树<span class="arithmatex">\(h=-1\)</span>   单个点<span class="arithmatex">\(h=0\)</span></p>
+<p><span class="arithmatex">\(h(x)\)</span>:  以<span class="arithmatex">\(x\)</span>为根的子树的最大深度</p>
+<ul>
+<li>空树<span class="arithmatex">\(h=-1\)</span>   单个点<span class="arithmatex">\(h=0\)</span></li>
+</ul>
 <p>平衡因子 <span class="arithmatex">\(BF(x)=h(lson(x))-h(rson(x))\)</span>
  一棵满足条件的AVL树 <span class="arithmatex">\(\forall x, BF(x) \in \{-1,0,1 \}\)</span></p>
 <h3 id="_2">复杂度分析</h3>
@@ -2963,9 +2965,11 @@
 <blockquote>
 <p>如果有空位，就插入。否则新建一个大小为原来2倍的表，把原有元素复制进去. 假设最后表是满的</p>
 </blockquote>
-<p>复制的操作对应势能减小。可以设势能为表中的空位个数的相反数  开始时为-1,最后为0,满足放缩条件。
-- 情况1  <span class="arithmatex">\(a_i=1, \Phi_i-\Phi_{i-1}=1\)</span>
-- 情况2 <span class="arithmatex">\(a_i=k, \Phi_i-\Phi_{i-1}=(-k)-0=-k\)</span></p>
+<p>复制的操作对应势能减小。可以设势能为表中的空位个数的相反数  开始时为-1,最后为0,满足放缩条件。</p>
+<ul>
+<li>情况1  <span class="arithmatex">\(a_i=1, \Phi_i-\Phi_{i-1}=1\)</span></li>
+<li>情况2 <span class="arithmatex">\(a_i=k, \Phi_i-\Phi_{i-1}=(-k)-0=-k\)</span></li>
+</ul>
 <p>总时间<span class="arithmatex">\(O(n)\)</span>, 平均下来每次是<span class="arithmatex">\(O(1)\)</span></p>
 <h3 id="splay_2">Splay</h3>
 <p>定义势函数 </p>

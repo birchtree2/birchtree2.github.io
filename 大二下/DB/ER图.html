@@ -2401,28 +2401,38 @@
 <h3 id="weak-entity-set">Weak Entity set*</h3>
 <p>弱实体集weak entity set：一些实体集的属性不足以形成主键</p>
 <ul>
-<li>用于表示一些关系中的依赖性，弱实体集需要和强实体集关联才有意义    如course和section.  section的主键是(course_id,sec_id,year),包含了course的主键course_id.   不存在没有class的section<ul>
+<li>
+<p>用于表示一些关系中的依赖性，弱实体集需要和强实体集关联才有意义    如course和section.  section的主键是(course_id,sec_id,year),包含了course的主键course_id.   不存在没有class的section</p>
+<ul>
 <li>被依赖的强实体集叫做identifying entity set, 对应的关系叫做identifying relationship</li>
 <li>那么就把属于强实体集的属性course_id放到实体course里面, 弱实体section只存储其他的属性(用<strong>下划线</strong>标识，称为discriminator/partial key)</li>
 </ul>
 </li>
-<li>经常出现在一对多的关系中，在ER图中需要用<strong>双菱形</strong>表示identifying relationship</li>
+<li>
+<p>经常出现在一对多的关系中，在ER图中需要用<strong>双菱形</strong>表示identifying relationship</p>
+</li>
 </ul>
 <h3 id="reduction-to-schema">Reduction to schema*</h3>
 <p>怎么把E-R图转化为sql的表</p>
 <ul>
-<li>每个实体集(矩形)都建一个表<ul>
+<li>
+<p>每个实体集(矩形)都建一个表</p>
+<ul>
 <li>强实体集直接用原来的属性建表</li>
 <li>弱实体集=某个强实体集的属性+partial key</li>
 </ul>
 </li>
-<li>每个关系(菱形)根据mapping判断<ul>
+<li>
+<p>每个关系(菱形)根据mapping判断</p>
+<ul>
 <li><strong>多对多一定要单独建表</strong>  如<code>advisor(s_id,i_id)</code>      那就有student,instructor,advisor 3个表</li>
 <li>一对多: 大部分情况不建表，把"一"作为"多"的foreign key.  如<code>[instructor]--&lt;inst_dept&gt;--&gt;[department]</code>.  那就<code>instructor(dept_name)</code>       但是单横线可能会引入null值, 如果不想要null值， 可以单独建表也可。</li>
 <li>弱实体集的identifying relationship不用建表(建弱实体集的表就可以了)</li>
 </ul>
 </li>
-<li>组合属性: 取最底层的信息</li>
+<li>
+<p>组合属性: 取最底层的信息</p>
+</li>
 <li>多值属性(<code>{}</code>)  单独建表：每个值占一行。如一个老师有多个电话,建一个表<code>phone(teacher_id,phone_number)</code></li>
 </ul>
 <h3 id="aggregation">Aggregation</h3>

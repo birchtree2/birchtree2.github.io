@@ -2413,13 +2413,15 @@
 <li><span class="arithmatex">\(\triangleright\)</span> 代表纸带的最左端  </li>
 <li><span class="arithmatex">\(\sqcup\)</span> 代表空格</li>
 </ul>
-<p><span class="arithmatex">\(M=(K,\Sigma,\delta,s,H)\)</span>
-- <span class="arithmatex">\(K\)</span>是状态集合
-- <span class="arithmatex">\(\Sigma\)</span> 是纸带上的所有符号。包括空格和最左端标记
-- s是起始状态
-- H是终止状态集合
-- 转移函数<span class="arithmatex">\(\delta: (K-H)\times \Sigma \to K \times({\leftarrow,\rightarrow})\)</span>
-不能向纸带上写 <span class="arithmatex">\(\triangleright\)</span>,    读到<span class="arithmatex">\(\triangleright\)</span> 只能右移</p>
+<p><span class="arithmatex">\(M=(K,\Sigma,\delta,s,H)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(K\)</span>是状态集合</li>
+<li><span class="arithmatex">\(\Sigma\)</span> 是纸带上的所有符号。包括空格和最左端标记</li>
+<li>s是起始状态</li>
+<li>H是终止状态集合</li>
+<li>转移函数<span class="arithmatex">\(\delta: (K-H)\times \Sigma \to K \times({\leftarrow,\rightarrow})\)</span>
+不能向纸带上写 <span class="arithmatex">\(\triangleright\)</span>,    读到<span class="arithmatex">\(\triangleright\)</span> 只能右移</li>
+</ul>
 <h3 id="_3">格局</h3>
 <p>左边必须有<span class="arithmatex">\(\triangleright\)</span>    右边表示读写头右边的位置 到 <strong>最后一个非空格字符</strong> 的串。 如果读写头右边没有非空格字符,就是e
 <img alt="" src="images/Pasted%20image%2020250103150255.png"/></p>
@@ -2470,12 +2472,18 @@
 <p>解释: 从右往左, 如果是1就把这一位变成0,然后继续左移(进位). 如果是0,就把这一位设为1,结束。如果是空格,就说明多了一位,要整体右移(SR表示右移机)     最后的<span class="arithmatex">\(L_{\sqcup}\)</span>是为了让读写头回到最左边。</p>
 <h2 id="_6">递归语言</h2>
 <p>对于字符串<span class="arithmatex">\(w\)</span>,起始格局为<span class="arithmatex">\((s,\triangleright\underline{\sqcup}w)\)</span> </p>
-<p>半判定
-- 语言中的字符串会停机，不属于语言的字符串不停机</p>
-<p>判定
-- H={y,n}, 语言中的字符串停机到y, 不属于语言的字符串停机到n</p>
+<p>半判定</p>
 <ul>
-<li>有图灵机判定一个语言，则称这个语言是 recursive / decidable 的</li>
+<li>语言中的字符串会停机，不属于语言的字符串不停机</li>
+</ul>
+<p>判定</p>
+<ul>
+<li>
+<p>H={y,n}, 语言中的字符串停机到y, 不属于语言的字符串停机到n</p>
+</li>
+<li>
+<p>有图灵机判定一个语言，则称这个语言是 recursive / decidable 的</p>
+</li>
 <li>有图灵机半判定一个语言，则称这个语言是 recursively enumerable / recognizable 的</li>
 </ul>
 <div class="admonition warning">
@@ -2486,39 +2494,53 @@
 <p><img alt="" src="images/Pasted%20image%2020241222194046.png"/></p>
 <h2 id="_7">图灵机的变种</h2>
 <p>定义: k条纸带,每个纸带都有一个读写头,。</p>
-<p>K带图灵机等价于单带图灵机，思路:
-- 构建新的symbol 把k条带上同一位置的k个字符(包括下划线标记)合成为一个字符 </p>
+<p>K带图灵机等价于单带图灵机，思路:</p>
 <ul>
-<li>two-way infinite tape 纸带两侧都无限长的图灵机<ul>
+<li>
+<p>构建新的symbol 把k条带上同一位置的k个字符(包括下划线标记)合成为一个字符 </p>
+</li>
+<li>
+<p>two-way infinite tape 纸带两侧都无限长的图灵机</p>
+<ul>
 <li>可以用双带图灵机模拟，也就可以用标准图灵机模拟</li>
 </ul>
 </li>
-<li>multiple head 多读写头图灵机<ul>
+<li>
+<p>multiple head 多读写头图灵机</p>
+<ul>
 <li>用下划线标记每个头的位置，然后操作之前先扫一遍，获取所有头的位置</li>
 </ul>
 </li>
-<li>2-dimensional tape 二维纸带图灵机<ul>
+<li>
+<p>2-dimensional tape 二维纸带图灵机</p>
+<ul>
 <li>从左上角开始沿反对角线编号，延展成一维纸带</li>
 </ul>
 </li>
-<li>random access 随机访问图灵机<ul>
+<li>
+<p>random access 随机访问图灵机</p>
+<ul>
 <li>每次移动读写头可以不止一步</li>
 <li>将多步移动拆成多次单步移动即可</li>
 </ul>
 </li>
 </ul>
 <h3 id="_8">非确定性图灵机</h3>
-<p>判定:  <span class="arithmatex">\(H=\set{y,n}\)</span>
-1. 对于任意字符串<span class="arithmatex">\(w\in \Sigma_0^*\)</span> 存在常数<span class="arithmatex">\(N\)</span>, 不存在格局<span class="arithmatex">\(c\)</span>  使得<span class="arithmatex">\((s,\triangleright \underline{\sqcup}w) \vdash^N_M c\)</span>   (N步内停机, 即树高不超过N)
-2. <span class="arithmatex">\(w\in L\)</span> 当且仅当 <span class="arithmatex">\((s,\triangleright \underline{\sqcup}w) \vdash^N_M (y,...)\)</span>   (有一条分支可以停机到状态y)</p>
+<p>判定:  <span class="arithmatex">\(H=\set{y,n}\)</span></p>
+<ol>
+<li>对于任意字符串<span class="arithmatex">\(w\in \Sigma_0^*\)</span> 存在常数<span class="arithmatex">\(N\)</span>, 不存在格局<span class="arithmatex">\(c\)</span>  使得<span class="arithmatex">\((s,\triangleright \underline{\sqcup}w) \vdash^N_M c\)</span>   (N步内停机, 即树高不超过N)</li>
+<li><span class="arithmatex">\(w\in L\)</span> 当且仅当 <span class="arithmatex">\((s,\triangleright \underline{\sqcup}w) \vdash^N_M (y,...)\)</span>   (有一条分支可以停机到状态y)</li>
+</ol>
 <div class="admonition example">
 <p class="admonition-title">NTM判断所有合数构成的语言</p>
 <p>假设输入字符串为 w，则先猜测两个数，得到 ⊳⌴w⌴p⌴q，然后将 p 和 q 相乘，如果等于 ww 则停机到 y，否则停机到 n，满足第二个条件。猜测是有限的，而且都可以有限步停机，满足第一个条件</p>
 </div>
-<p>3-tape DTM模拟NTM
-1. 装输入
-2. 模拟NTM 每一步根据3选择用哪个转换
-3. 是一个01串  枚举在树上向左/向右走</p>
+<p>3-tape DTM模拟NTM</p>
+<ol>
+<li>装输入</li>
+<li>模拟NTM 每一步根据3选择用哪个转换</li>
+<li>是一个01串  枚举在树上向左/向右走</li>
+</ol>
 <h2 id="_9">语法</h2>
 <blockquote>
 <p>一个语言由一个 Grammar 产生，当且仅当它被某个 TM semidecided，即它是 RE 的。</p>

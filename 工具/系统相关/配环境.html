@@ -2673,13 +2673,17 @@
 <p><a href="https://www.jianshu.com/p/3e56648b55c6">env</a></p>
 <h2 id="conda">conda</h2>
 <h3 id="conda_1">安装conda</h3>
-<p>先到<a href="https://docs.conda.io/en/latest/miniconda.html">miniconda的官网</a>找到对应的下载链接，然后用<code>wget</code>安装。
-- 如果下载速度很慢，可以用<a href="https://mirrors.zju.edu.cn/docs/anaconda/miniconda">镜像源</a>, 找到-latest-linux x86_64</p>
-<p><div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>wget<span class="w">  </span>https://mirrors.zju.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+<p>先到<a href="https://docs.conda.io/en/latest/miniconda.html">miniconda的官网</a>找到对应的下载链接，然后用<code>wget</code>安装。</p>
+<ul>
+<li>如果下载速度很慢，可以用<a href="https://mirrors.zju.edu.cn/docs/anaconda/miniconda">镜像源</a>, 找到-latest-linux x86_64</li>
+</ul>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>wget<span class="w">  </span>https://mirrors.zju.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
 </span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>bash<span class="w"> </span>Miniconda3-latest-Linux-x86_64.sh<span class="w"> </span>
 </span></code></pre></div>
-1. 按ENTER浏览用户协议</p>
 <ol>
+<li>
+<p>按ENTER浏览用户协议</p>
+</li>
 <li>
 <p>之后一路选择yes, 环境会创建到~/miniconda3/envs</p>
 </li>
@@ -2811,10 +2815,12 @@
 </span><span id="__span-15-5"><a href="#__codelineno-15-5" id="__codelineno-15-5" name="__codelineno-15-5"></a>./.venv/bin/python main.py
 </span></code></pre></div></p>
 <h3 id="_3">项目管理</h3>
-<p>如果你是新项目，建议使用 uv 的项目管理模式，这样运行起来更强大：
-1. <strong>初始化项目：</strong> uv init my_project
-2. <strong>添加依赖：</strong> uv add package_name (这会自动更新 pyproject.toml 并安装包package_name)
-3. <strong>运行：</strong> uv run main.py</p>
+<p>如果你是新项目，建议使用 uv 的项目管理模式，这样运行起来更强大：</p>
+<ol>
+<li><strong>初始化项目：</strong> uv init my_project</li>
+<li><strong>添加依赖：</strong> uv add package_name (这会自动更新 pyproject.toml 并安装包package_name)</li>
+<li><strong>运行：</strong> uv run main.py</li>
+</ol>
 <h3 id="uvtorch">uv和torch</h3>
 <ol>
 <li>uv init</li>
@@ -2840,7 +2846,7 @@
 <h2 id="cuda">系统cuda</h2>
 <p>有些pip包，如flash-attention需要用nvcc等编译</p>
 <h3 id="_4">修改环境变量</h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/cuda-11.8:<span class="si">${</span><span class="nv">LD_LIBRARY_PATH</span><span class="si">}</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/cuda-11.8:<span class="sb">`</span><span class="si">${</span><span class="nv">LD_LIBRARY_PATH</span><span class="si">}</span><span class="sb">`</span>
 </span></code></pre></div>
 <blockquote>
 <p>in _lazy_init
@@ -2861,26 +2867,32 @@ pip 默认启用“构建隔离”（Build Isolation），会创建一个临时�
 <h3 id="nvidia-mps">NVIDIA MPS</h3>
 <p>当在多用户共享的服务器上运行 PyTorch 时，如果遇到 <code>Error 805: MPS client failed to connect to the MPS control daemon</code> 报错，通常是因为系统环境变量或默认设置尝试连接一个由其他用户启动、且当前用户无权访问的 NVIDIA MPS 服务，导致 <code>torch.cuda.is_available()</code> 返回 <code>False</code>。</p>
 <p><strong>NVIDIA MPS（Multi-Process Service）是一种允许多个进程同时共享单块 GPU 资源的技术</strong>（比如，在一个卡上运行多个占用资源很少的小进程）。它通过一个后台守护进程（Daemon）来统一调度显卡任务。在默认情况下，MPS 会在 <code>/tmp/nvidia-mps</code> 路径下创建一个通信管道。如果实验室的其他同学开启了 MPS，这个文件夹的所有权就属于该同学。当你启动 CUDA 程序时，驱动会自动检测到这个路径并尝试连接，但由于权限不足，连接会立即失败并抛出 805 错误。</p>
-<p><strong>如果由于他人开启 MPS 导致你无法使用显卡</strong>，最简单的解决方法是“逻辑隔离”。通过设置环境变量强制让你的程序去一个不存在的路径寻找 MPS，从而触发驱动的自动降级机制，使其回退到正常的非 MPS 模式。你可以在终端执行以下操作，或将其添加到 <code>~/.bashrc</code> 和 <code>~/.zshrc</code> 中以永久生效：
-*   执行 <code>export CUDA_MPS_PIPE_DIRECTORY=/tmp/nvidia-mps-$USER-fake</code>。
-*   这行代码会将 MPS 管道指向一个以你用户名命名的虚假路径，避开了默认的冲突路径。
-*   修改配置后，记得执行 <code>source ~/.bashrc</code> 或 <code>source ~/.zshrc</code> 使其生效。</p>
-<p><strong>如果你确实需要使用 MPS 功能</strong>，为了不干扰实验室的其他同学，应当建立私有的 MPS 环境。这需要你手动指定私有的管道和日志路径，确保不占用默认的 <code>/tmp/nvidia-mps</code> 位置：
-*   设置私有变量：<code>export CUDA_MPS_PIPE_DIRECTORY=/tmp/nvidia-mps-$USER</code>。
-*   设置日志路径：<code>export CUDA_MPS_LOG_DIRECTORY=/tmp/nvidia-mps-log-$USER</code>。
-*   创建对应目录：<code>mkdir -p $CUDA_MPS_PIPE_DIRECTORY $CUDA_MPS_LOG_DIRECTORY</code>。
-*   启动服务：<code>nvidia-cuda-mps-control -d</code>。
-*   注意：开启 MPS 通常需要显卡处于独占模式（Exclusive Process），这可能需要管理员权限。使用完毕后请务必执行 <code>echo quit | nvidia-cuda-mps-control</code> 关闭服务，否则该显卡将一直处于独占状态，导致他人无法正常使用。</p>
-<p>在排查此类问题时，以下命令是定位故障的关键工具：
-*   <code>nvidia-smi</code>：检查显卡状态、当前显存占用以及 <code>Compute M.</code>（计算模式）是否为 <code>Default</code> 或 <code>Exclusive</code>。
-*   <code>env | grep -i cuda</code>：检查环境变量中是否意外设置了 MPS 相关路径或特定的显卡限制。
-*   <code>ls -la /tmp/nvidia-mps</code>：确认该文件夹是否存在，并观察其所属用户（Owner）是谁。
-*   <code>ps -ef | grep mps</code>：查看系统中是否正有 <code>nvidia-cuda-mps-control</code> 或 <code>nvidia-cuda-mps-server</code> 进程在运行。
-*   <code>sudo dmesg | grep -i "NVRM"</code>：查看系统内核日志，确认是否发生了硬件层面的报错（如 Xid 错误），这有助于判断是软件配置问题还是驱动/硬件故障。</p>
+<p><strong>如果由于他人开启 MPS 导致你无法使用显卡</strong>，最简单的解决方法是“逻辑隔离”。通过设置环境变量强制让你的程序去一个不存在的路径寻找 MPS，从而触发驱动的自动降级机制，使其回退到正常的非 MPS 模式。你可以在终端执行以下操作，或将其添加到 <code>~/.bashrc</code> 和 <code>~/.zshrc</code> 中以永久生效：</p>
+<ul>
+<li>执行 <code>export CUDA_MPS_PIPE_DIRECTORY=/tmp/nvidia-mps-$USER-fake</code>。</li>
+<li>这行代码会将 MPS 管道指向一个以你用户名命名的虚假路径，避开了默认的冲突路径。</li>
+<li>修改配置后，记得执行 <code>source ~/.bashrc</code> 或 <code>source ~/.zshrc</code> 使其生效。</li>
+</ul>
+<p><strong>如果你确实需要使用 MPS 功能</strong>，为了不干扰实验室的其他同学，应当建立私有的 MPS 环境。这需要你手动指定私有的管道和日志路径，确保不占用默认的 <code>/tmp/nvidia-mps</code> 位置：</p>
+<ul>
+<li>设置私有变量：<code>export CUDA_MPS_PIPE_DIRECTORY=/tmp/nvidia-mps-$USER</code>。</li>
+<li>设置日志路径：<code>export CUDA_MPS_LOG_DIRECTORY=/tmp/nvidia-mps-log-$USER</code>。</li>
+<li>创建对应目录：<code>mkdir -p $CUDA_MPS_PIPE_DIRECTORY $CUDA_MPS_LOG_DIRECTORY</code>。</li>
+<li>启动服务：<code>nvidia-cuda-mps-control -d</code>。</li>
+<li>注意：开启 MPS 通常需要显卡处于独占模式（Exclusive Process），这可能需要管理员权限。使用完毕后请务必执行 <code>echo quit | nvidia-cuda-mps-control</code> 关闭服务，否则该显卡将一直处于独占状态，导致他人无法正常使用。</li>
+</ul>
+<p>在排查此类问题时，以下命令是定位故障的关键工具：</p>
+<ul>
+<li><code>nvidia-smi</code>：检查显卡状态、当前显存占用以及 <code>Compute M.</code>（计算模式）是否为 <code>Default</code> 或 <code>Exclusive</code>。</li>
+<li><code>env | grep -i cuda</code>：检查环境变量中是否意外设置了 MPS 相关路径或特定的显卡限制。</li>
+<li><code>ls -la /tmp/nvidia-mps</code>：确认该文件夹是否存在，并观察其所属用户（Owner）是谁。</li>
+<li><code>ps -ef | grep mps</code>：查看系统中是否正有 <code>nvidia-cuda-mps-control</code> 或 <code>nvidia-cuda-mps-server</code> 进程在运行。</li>
+<li><code>sudo dmesg | grep -i "NVRM"</code>：查看系统内核日志，确认是否发生了硬件层面的报错（如 Xid 错误），这有助于判断是软件配置问题还是驱动/硬件故障。</li>
+</ul>
 <h2 id="_5">各种包的安装</h2>
 <h4 id="vllm">vllm</h4>
 <p><a href="https://docs.vllm.ai/en/latest/getting_started/installation/gpu.html#pre-built-wheels">GPU - vLLM</a>
-记得加上--extra-index-url https://download.pytorch.org/whl/cu128 (换成对应的cuda版本)</p>
+记得加上--extra-index-url <a href="https://download.pytorch.org/whl/cu128">https://download.pytorch.org/whl/cu128</a> (换成对应的cuda版本)</p>
 <h4 id="esmesmfold">ESM和ESMFold</h4>
 <p>ESM和ESMFold都已经封装成了包,直接pip install,不需要clone代码</p>
 <p>ESM(只需要语言模型当encoder的情况):

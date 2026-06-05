@@ -999,17 +999,6 @@
     </span>
 </a>
 </li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-<span class="md-ellipsis">
-      原始递归函数都是可计算的
-    </span>
-</a>
-<nav aria-label="原始递归函数都是可计算的" class="md-nav">
-<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#-">
 <span class="md-ellipsis">
@@ -2300,17 +2289,6 @@
     </span>
 </a>
 </li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-<span class="md-ellipsis">
-      原始递归函数都是可计算的
-    </span>
-</a>
-<nav aria-label="原始递归函数都是可计算的" class="md-nav">
-<ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#-">
 <span class="md-ellipsis">
@@ -2331,28 +2309,41 @@
 <h1>5 函数可计算性</h1>
 <h2 id="_1">原始递归函数</h2>
 <h3 id="_2">基本函数</h3>
-<p>合成方法
-- 函数的复合
-- 递归定义  <span class="arithmatex">\(f(n_1\dots n_k,0)=g(n_1\dots n_k)\)</span> <span class="arithmatex">\(f(n_1\dots n_k,m+1)=h(n_1\dots n_k,f(n_1\dots n_k,m)\)</span>  (通俗解释,f(n,m+1)由f(n,m)和n决定)</p>
+<p>合成方法</p>
+<ul>
+<li>函数的复合</li>
+<li>递归定义  <span class="arithmatex">\(f(n_1\dots n_k,0)=g(n_1\dots n_k)\)</span> <span class="arithmatex">\(f(n_1\dots n_k,m+1)=h(n_1\dots n_k,f(n_1\dots n_k,m)\)</span>  (通俗解释,f(n,m+1)由f(n,m)和n决定)</li>
+</ul>
 <h3 id="_3">原始递归函数</h3>
 <p>原始递归函数由基本函数的复合/递归得到的函数全体</p>
-<p><span class="arithmatex">\(plus(n,m)=n+m\)</span> 
-- 用递归 <span class="arithmatex">\(plus(n,0)=n,plus(n,m+1)=succ(plus(n,m+1))\)</span></p>
+<p><span class="arithmatex">\(plus(n,m)=n+m\)</span> </p>
+<ul>
+<li>用递归 <span class="arithmatex">\(plus(n,0)=n,plus(n,m+1)=succ(plus(n,m+1))\)</span></li>
+</ul>
 <p><span class="arithmatex">\(mult(n,m)=mn\)</span>  对<span class="arithmatex">\(plus(n,m)\)</span>递归</p>
-<p>前驱函数<span class="arithmatex">\(succ(0)=0,succ(n+1)=n\)</span>
-- <span class="arithmatex">\(succ(0)=0\)</span>
-- <span class="arithmatex">\(pred(n+1)=n=id_{2,1}(n,pred(n))\)</span></p>
-<p><span class="arithmatex">\(m\sim n=\max \{m-n,0\}\)</span>
-- <span class="arithmatex">\(m\sim 0=m\)</span>
-- <span class="arithmatex">\(m\sim(n+1)=succ(m\sim n)\)</span>   利用succ(0)=0</p>
+<p>前驱函数<span class="arithmatex">\(succ(0)=0,succ(n+1)=n\)</span></p>
+<ul>
+<li><span class="arithmatex">\(succ(0)=0\)</span></li>
+<li><span class="arithmatex">\(pred(n+1)=n=id_{2,1}(n,pred(n))\)</span></li>
+</ul>
+<p><span class="arithmatex">\(m\sim n=\max \{m-n,0\}\)</span></p>
+<ul>
+<li><span class="arithmatex">\(m\sim 0=m\)</span></li>
+<li><span class="arithmatex">\(m\sim(n+1)=succ(m\sim n)\)</span>   利用succ(0)=0</li>
+</ul>
 <p><span class="arithmatex">\(iszero(n): iszero(0)=1,iszero(n)=0\)</span></p>
-<p>分段函数  <span class="arithmatex">\(p,q\)</span>只能取0或1
-- <span class="arithmatex">\(f=p \cdot g+(1\sim p)\cdot h\)</span></p>
+<p>分段函数  <span class="arithmatex">\(p,q\)</span>只能取0或1</p>
+<ul>
+<li><span class="arithmatex">\(f=p \cdot g+(1\sim p)\cdot h\)</span></li>
+</ul>
 <p><span class="arithmatex">\(digit(m,n,p)=div(rem(n,p^m),p^{m\sim 1}))\)</span></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 </div>
-<h2 id="_4">原始递归函数都是可计算的</h2>
+<p>原始递归函数都是可计算的</p>
+<ul>
+<li></li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>存在不是原始递归函数 但可计算的函数
@@ -2366,11 +2357,13 @@
 </div>
 <p>证明: 假设C可判定, 那么C'=一元可计算函数也是可判定的</p>
 <p>C' is lexicographically Turing enumerable (根据recursive language 的性质)</p>
-<p>构造一台TM M：
-- 给定自然数n, 枚举<span class="arithmatex">\(g_1,g_2\dots g_n\)</span>
-- 得到了函数<span class="arithmatex">\(g_n\)</span>之后, 计算<span class="arithmatex">\(g_n(n)\)</span>
-- 返回<span class="arithmatex">\(g_n(n)+1\)</span>
-设这个图灵机计算的函数为<span class="arithmatex">\(g*\)</span>. 那么<span class="arithmatex">\(g^*(n)\)</span> 跟C‘中任意一个函数都不同</p>
+<p>构造一台TM M：</p>
+<ul>
+<li>给定自然数n, 枚举<span class="arithmatex">\(g_1,g_2\dots g_n\)</span></li>
+<li>得到了函数<span class="arithmatex">\(g_n\)</span>之后, 计算<span class="arithmatex">\(g_n(n)\)</span></li>
+<li>返回<span class="arithmatex">\(g_n(n)+1\)</span>
+设这个图灵机计算的函数为<span class="arithmatex">\(g*\)</span>. 那么<span class="arithmatex">\(g^*(n)\)</span> 跟C‘中任意一个函数都不同</li>
+</ul>
 <p>本质还是diagonization argument
 n=     1 2 3 
 g1     a  b  a

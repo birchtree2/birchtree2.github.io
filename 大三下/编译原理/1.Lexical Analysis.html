@@ -2336,34 +2336,41 @@
 <article class="md-content__inner md-typeset">
 <h1>1.Lexical Analysis</h1>
 <h2 id="regular-expression">Regular Expression</h2>
-<p>定义
-- <code>a</code>:  字符a
-- <code>M|N</code> : M或N
-- <code>MN</code>  M和N连接
-- <code>M*</code>   &gt;=0个M
-- <code>M+</code>  &gt;=1个M
-- <code>M?</code> 0个或1个M
-- <code>[a-zA-Z]</code>
-- <code>.</code>   除了换行符之外的任意字符
-- <code>"a.+*"</code>   引号表示字面字符串</p>
-<p>消除歧义歧义:
-- longest match:  选择能够匹配某一个表达式的最长字串
-- rule priority: 从上到下</p>
+<p>定义</p>
+<ul>
+<li><code>a</code>:  字符a</li>
+<li><code>M|N</code> : M或N</li>
+<li><code>MN</code>  M和N连接</li>
+<li><code>M*</code>   &gt;=0个M</li>
+<li><code>M+</code>  &gt;=1个M</li>
+<li><code>M?</code> 0个或1个M</li>
+<li><code>[a-zA-Z]</code></li>
+<li><code>.</code>   除了换行符之外的任意字符</li>
+<li><code>"a.+*"</code>   引号表示字面字符串</li>
+</ul>
+<p>消除歧义歧义:</p>
+<ul>
+<li>longest match:  选择能够匹配某一个表达式的最长字串</li>
+<li>rule priority: 从上到下</li>
+</ul>
 <h2 id="dfa">DFA</h2>
 <p>priority的实现:  根据优先级，选择state的label</p>
 <p>longest match的实现:  记录last final state, 以及处于final sate时的输入位置。
 如果当前状态下，输入的字符无法转移。则return, 并更新input position (|：input position
-⊥: automaton position   T: last final)
-    - <img alt="" src="images/Pasted%20image%2020250421161657.png"/></p>
+⊥: automaton position   T: last final)</p>
+<div class="language-text highlight"><pre><span></span><code>- ![](images/Pasted%20image%2020250421161657.png)
+</code></pre></div>
 <h2 id="nfa">NFA</h2>
 <p><a href="../../计算理论/1%20正则语言.md">1 正则语言</a></p>
 <h3 id="nfa_1">正则表达式转NFA</h3>
 <p><img alt="" src="images/Pasted%20image%2020250421153718.png"/></p>
 <h3 id="nfadfa">NFA转DFA</h3>
 <p>[!important] 
-定义<span class="arithmatex">\(E(q)\)</span> 为M中所有可以从q通过空串转移到的状态。<span class="arithmatex">\(\{p\in K|(q,e) (p,e)\}\)</span>
-1. <span class="arithmatex">\(K'=2^K\)</span> 2. <span class="arithmatex">\(\Sigma=\Sigma'\)</span> 3. <span class="arithmatex">\(s'=E(s)\)</span> 4. <span class="arithmatex">\(F'=\{Q|Q \subseteq K,Q\cap F \neq \emptyset\}\)</span>
-5. 对于任意集合<span class="arithmatex">\(Q\subseteq K\)</span>, <span class="arithmatex">\(a\in\ \Sigma\)</span> <strong>对Q中元素q,找到(q,a)在NFA的转移p</strong></p>
+定义<span class="arithmatex">\(E(q)\)</span> 为M中所有可以从q通过空串转移到的状态。<span class="arithmatex">\(\{p\in K|(q,e) (p,e)\}\)</span></p>
+<ol>
+<li><span class="arithmatex">\(K'=2^K\)</span> 2. <span class="arithmatex">\(\Sigma=\Sigma'\)</span> 3. <span class="arithmatex">\(s'=E(s)\)</span> 4. <span class="arithmatex">\(F'=\{Q|Q \subseteq K,Q\cap F \neq \emptyset\}\)</span></li>
+<li>对于任意集合<span class="arithmatex">\(Q\subseteq K\)</span>, <span class="arithmatex">\(a\in\ \Sigma\)</span> <strong>对Q中元素q,找到(q,a)在NFA的转移p</strong></li>
+</ol>
 <div class="arithmatex">\[\begin{aligned} \delta'(Q,a)=\bigcup \{E(p)|q \in Q,(q,a,p)\in \delta\} \end{aligned}\]</div>
 <blockquote></blockquote>
 <h3 id="nfa_2">NFA最小化</h3>

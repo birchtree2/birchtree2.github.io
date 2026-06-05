@@ -2458,41 +2458,55 @@
 遍历X在左边的所有
 <img alt="" src="images/Pasted%20image%2020250319114049.png"/></p>
 <p>FOLLOW(X): if S -&gt;* βXtδ, then t ∈ Follow(X)   t代表字符串X 紧跟着出现的终结符
-<img alt="" src="images/Pasted%20image%2020250319114109.png"/>
-- 第一条比较好理解
-- 第二条是因为 Y-&gt;Xβ  当β是空的时候, Y后面跟的字符 也是 X后面可能跟的字符</p>
+<img alt="" src="images/Pasted%20image%2020250319114109.png"/></p>
+<ul>
+<li>第一条比较好理解</li>
+<li>第二条是因为 Y-&gt;Xβ  当β是空的时候, Y后面跟的字符 也是 X后面可能跟的字符</li>
+</ul>
 <h4 id="ll1-parsing-table">LL(1) parsing table</h4>
 <p>parsing table:行是非终结符<span class="arithmatex">\(X\)</span>,  列是终结符<span class="arithmatex">\(t\)</span></p>
-<p>对于每条规则<span class="arithmatex">\(X\to \gamma\)</span> <br/>
-- <span class="arithmatex">\(\forall t \in \text{First}(\gamma)\)</span>   把规则填入X行t列
-- 如果<span class="arithmatex">\(\gamma\)</span> 是Nullable, <span class="arithmatex">\(\forall t \in \text{Follow}(X)\)</span>    把规则填入X行t列</p>
-<p>LL(1) grammar: 获得的parsing table的每一栏只没有重复的规则
-- Left-to-right parse, Left-most derivation, 1 symbol lookahead</p>
+<p>对于每条规则<span class="arithmatex">\(X\to \gamma\)</span> </p>
+<ul>
+<li><span class="arithmatex">\(\forall t \in \text{First}(\gamma)\)</span>   把规则填入X行t列</li>
+<li>如果<span class="arithmatex">\(\gamma\)</span> 是Nullable, <span class="arithmatex">\(\forall t \in \text{Follow}(X)\)</span>    把规则填入X行t列</li>
+</ul>
+<p>LL(1) grammar: 获得的parsing table的每一栏只没有重复的规则</p>
+<ul>
+<li>Left-to-right parse, Left-most derivation, 1 symbol lookahead</li>
+</ul>
 <p>对于LL(k)  则每列不是1个终结符, 而是k个终结符</p>
 <h4 id="eliminate-left-recursion">Eliminate Left Recursion</h4>
 <p>left recursion的定义:  左边 = 右边第一个非终结符
-比如<span class="arithmatex">\(A\to Aa, A\to b\)</span>
-- <span class="arithmatex">\(\text{First}(a)\subseteq \text{First}(Aa)\)</span>  则parsing table里面必然有重复</p>
+比如<span class="arithmatex">\(A\to Aa, A\to b\)</span></p>
+<ul>
+<li><span class="arithmatex">\(\text{First}(a)\subseteq \text{First}(Aa)\)</span>  则parsing table里面必然有重复</li>
+</ul>
 <p>通过重写规则消除左递归: <span class="arithmatex">\(A\to bA',A'\to aA', A'\to\)</span> </p>
 <h4 id="error-recovery">Error Recovery</h4>
 <h2 id="lr0">LR(0)</h2>
 <p>bottom-up parsing: 把输入字符串逐渐变回起始符号S</p>
 <h3 id="lr0-parsing">LR(0) parsing</h3>
-<p>一些符号:
-- .代表parser的位置
-- 为了处理EOF 加入一条规则S'-&gt;.S$    $代表EOF  S'是新的起始符号  S是原来的</p>
-<p>The parser performs several actions:
-- shift: push next input onto top of stack
-- reduce R:  top of stack should match RHS of rule R (e.g., X -&gt; A B C) pop the RHS from the top of stack (e.g., pop C B A) push the LHS onto the stack (e.g., push X)
-- error
-- accept: shift $ and can reduce what remains on stack</p>
+<p>一些符号:</p>
+<ul>
+<li>.代表parser的位置</li>
+<li>为了处理EOF 加入一条规则S'-&gt;.S$    $代表EOF  S'是新的起始符号  S是原来的</li>
+</ul>
+<p>The parser performs several actions:</p>
+<ul>
+<li>shift: push next input onto top of stack</li>
+<li>reduce R:  top of stack should match RHS of rule R (e.g., X -&gt; A B C) pop the RHS from the top of stack (e.g., pop C B A) push the LHS onto the stack (e.g., push X)</li>
+<li>error</li>
+<li>accept: shift $ and can reduce what remains on stack</li>
+</ul>
 <h3 id="closure">Closure</h3>
-<p><img alt="" src="images/Pasted%20image%2020250316131126.png"/>
-- closure: 如果.后面立刻跟着非终结符X,就把他取出来
-- goto: 把.向右移动一个格子  不管X是终结符还是非终结符
-- reduce:  .在最后了  就根据对应的规则编号
-- accept: S'-&gt;S.$
-<img alt="" src="images/Pasted%20image%2020250316132302.png"/></p>
+<p><img alt="" src="images/Pasted%20image%2020250316131126.png"/></p>
+<ul>
+<li>closure: 如果.后面立刻跟着非终结符X,就把他取出来</li>
+<li>goto: 把.向右移动一个格子  不管X是终结符还是非终结符</li>
+<li>reduce:  .在最后了  就根据对应的规则编号</li>
+<li>accept: S'-&gt;S.$
+<img alt="" src="images/Pasted%20image%2020250316132302.png"/></li>
+</ul>
 <h3 id="lr0-parsing-table">LR(0) parsing table</h3>
 <p>构建parsing table</p>
 <p><img alt="" src="images/Pasted%20image%2020250316132539.png"/></p>
@@ -2508,10 +2522,12 @@
 <img alt="" src="images/Pasted%20image%2020250318222747.png"/></p>
 <h2 id="lr1">LR(1)</h2>
 <p>扩展状态, 每个状态是(A-&gt;B,z)   前面是规则 后面是lookahead 字符，代表要往后看1格是什么字符，然后决定转移。</p>
-<p><img alt="" src="images/Pasted%20image%2020250316133019.png"/>
-- closure  1变成X的推导, 2变成 FIRST(βz)<br/>
-- goto     1的.向右移动     2字符不变
-- reduce 如果lookahead 是z，则利用这条规则reduce</p>
+<p><img alt="" src="images/Pasted%20image%2020250316133019.png"/></p>
+<ul>
+<li>closure  1变成X的推导, 2变成 FIRST(βz)  </li>
+<li>goto     1的.向右移动     2字符不变</li>
+<li>reduce 如果lookahead 是z，则利用这条规则reduce</li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">LL(1)中first的算法</p>
 <p><img alt="" src="images/Pasted%20image%2020250316133408.png"/></p>

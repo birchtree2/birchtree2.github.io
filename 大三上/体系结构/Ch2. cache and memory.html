@@ -2572,19 +2572,25 @@
 先定义三个比较器代表AB,AC,BC的大小顺序。如果替换的是C,就有ABC,BAC两种。代入写出表达式
 <img alt="" src="images/Pasted%20image%2020241024114801.png"/></p>
 <h3 id="stack-replacement">stack replacement</h3>
-<p>命中率随着缓存大小n 增大非下降的算法称为 stack replacement 算法。
-- LRU是，FIFO不是
+<p>命中率随着缓存大小n 增大非下降的算法称为 stack replacement 算法。</p>
+<ul>
+<li>LRU是，FIFO不是
 <span class="arithmatex">\(B_t(n)\)</span> 表示时间t,大小为n的缓存里的序列
-<span class="arithmatex">\(B_t(n)\in B_t(n+1)\)</span>, 则命中率</p>
+<span class="arithmatex">\(B_t(n)\in B_t(n+1)\)</span>, 则命中率</li>
+</ul>
 <h2 id="write-strategy">Write Strategy</h2>
 <ul>
-<li>Write Hit<ul>
+<li>
+<p>Write Hit</p>
+<ul>
 <li><strong>Write Through</strong>：直接写到Cache和内存。(内存和Cache内容同步,不需要dirty bit)
     写到内存的时间较长，这个过程需要 <strong>Write Stall</strong>，或者使用 <strong>Write Buffer</strong>。</li>
 <li><strong>Write Back</strong>：只在 Cache 中写，同时通过一个额外的 dirty bit 表示这个块已经被修改。只有要替换的时候,才把dirty的块写入内存</li>
 </ul>
 </li>
-<li>Write Miss<ul>
+<li>
+<p>Write Miss</p>
+<ul>
 <li><strong>Write Around</strong>(no write allocate)：直接写到内存。</li>
 <li><strong>Write Allocate</strong>：将要写的块从内存读到 Cache 中(如果是dirty需要先写回内存)，再写Cache。</li>
 </ul>
@@ -2593,9 +2599,11 @@
 <p>Write through和Write around配对
 Write back和Write allocate</p>
 <h2 id="cache">Cache性能分析</h2>
-<p>参考下计组笔记和A4
-- Cache miss的分类
-- block size,cache size等对性能的影响</p>
+<p>参考下计组笔记和A4</p>
+<ul>
+<li>Cache miss的分类</li>
+<li>block size,cache size等对性能的影响</li>
+</ul>
 <h3 id="_1">计算题</h3>
 <p><img alt="" src="images/Pasted%20image%2020241223142223.png"/>
 <span class="arithmatex">\(CPI=1.1+ 0.3*0.1*50 + 1*0.01*50=3.1\)</span>
@@ -2605,10 +2613,12 @@ Write back和Write allocate</p>
 记得算指令</p>
 <p>多级缓存</p>
 <p><img alt="" src="images/Pasted%20image%2020241230151021.png"/>
-这里有两种miss rate
-- 公式里的L2 miss rate是local miss rate(分母是访问L2的次数)
-- 但是也有global miss rate(分母是所有内存访问的次数)
-- 比如1000次内存访问, 40次L1miss 20次L2 miss.  那公式里的local miss rate L2 就是 20/40=0.5  global miss rate是20/1000=0.02</p>
+这里有两种miss rate</p>
+<ul>
+<li>公式里的L2 miss rate是local miss rate(分母是访问L2的次数)</li>
+<li>但是也有global miss rate(分母是所有内存访问的次数)</li>
+<li>比如1000次内存访问, 40次L1miss 20次L2 miss.  那公式里的local miss rate L2 就是 20/40=0.5  global miss rate是20/1000=0.02</li>
+</ul>
 <h3 id="_2">具体的代码</h3>
 <p><img alt="" src="images/4876cb2b72e64b1d0d816bfc7235b3b.jpg"/>
 <img alt="" src="images/1d32e277f4726c4b8d042fc35c6a028.png"/>
@@ -2618,16 +2628,22 @@ Write back和Write allocate</p>
 <p><img alt="" src="images/Pasted%20image%2020241230145512.png"/></p>
 <p>Cache miss的分类
 <img alt="" src="images/Pasted%20image%2020241230145537.png"/></p>
-<p>Larger block size:
-- 好处: 减小compulsory miss (空间局部性)
-- 坏处: 增加conflict miss(总大小不变, 块变少了), 增加miss penalty
-- 所以随着块大小增大不一定好</p>
-<p>Larger Cache:
-- 好处: 减小capacity miss
-- 坏处: 功耗大, hit time增加</p>
-<p>Higher associativity:
-- 好处: 减小miss rate
--  a direct-mapped cache of size N has about the same miss rate as a two-way set associativecache of size N/2. This held in three C’s figures(指三种miss) for cache sizes less than 128 KiB</p>
+<p>Larger block size:</p>
+<ul>
+<li>好处: 减小compulsory miss (空间局部性)</li>
+<li>坏处: 增加conflict miss(总大小不变, 块变少了), 增加miss penalty</li>
+<li>所以随着块大小增大不一定好</li>
+</ul>
+<p>Larger Cache:</p>
+<ul>
+<li>好处: 减小capacity miss</li>
+<li>坏处: 功耗大, hit time增加</li>
+</ul>
+<p>Higher associativity:</p>
+<ul>
+<li>好处: 减小miss rate</li>
+<li>a direct-mapped cache of size N has about the same miss rate as a two-way set associativecache of size N/2. This held in three C’s figures(指三种miss) for cache sizes less than 128 KiB</li>
+</ul>
 <h3 id="_3">高级优化</h3>
 <h4 id="reduce-hit-time-4"><strong>Reduce hit time (4)</strong></h4>
 <ol>
@@ -2716,11 +2732,13 @@ Write back和Write allocate</p>
 </ol>
 <p><img alt="" src="images/Pasted%20image%2020241031100753.png"/></p>
 <h2 id="_4">虚拟内存</h2>
-<p>类比Cache的4个问题
-- block placement:  fully associative。因为miss penalty太大了。
-- block identification: Page table
-- replacement:LRU...
-- write:  用write-back, 有dirty bit. 如果每次写磁盘,代价太高不能接受。</p>
+<p>类比Cache的4个问题</p>
+<ul>
+<li>block placement:  fully associative。因为miss penalty太大了。</li>
+<li>block identification: Page table</li>
+<li>replacement:LRU...</li>
+<li>write:  用write-back, 有dirty bit. 如果每次写磁盘,代价太高不能接受。</li>
+</ul>
 <h3 id="_5">分页/分段</h3>
 <p>见OS笔记</p>
 <p>页是一维的(只需要页号)。 内部碎片。</p>
@@ -2729,10 +2747,12 @@ Write back和Write allocate</p>
 <h3 id="_6">地址转换</h3>
 <p>注意这里既有单位是Page的TLB，也有单位是block的Cache
 <a href="https://classroom.zju.edu.cn/livingroom?course_id=64651&amp;sub_id=1404286&amp;tenant_code=112">常瑞ppt 49/82</a></p>
-<p>page size 8KB   page offset 13bit
-- TLB: 根据256entry, index 8位, 那么TLB tag=虚拟地址64-8-13=43.     TLB data=物理地址41-13=21
-- L1 cache: 64B的block, block offset=6  大小8KB对应<span class="arithmatex">\(2^7\)</span>个block, index=7   L1 tag=TLB tag=43   L1 data=64*8=512
-- L2 cache   offset=6  大小4MB 对应index=16</p>
+<p>page size 8KB   page offset 13bit</p>
+<ul>
+<li>TLB: 根据256entry, index 8位, 那么TLB tag=虚拟地址64-8-13=43.     TLB data=物理地址41-13=21</li>
+<li>L1 cache: 64B的block, block offset=6  大小8KB对应<span class="arithmatex">\(2^7\)</span>个block, index=7   L1 tag=TLB tag=43   L1 data=64*8=512</li>
+<li>L2 cache   offset=6  大小4MB 对应index=16</li>
+</ul>
 <p><img alt="" src="images/Pasted%20image%2020241223183342.png"/></p>
 <p>Virtual indexed physically tagged</p>
 <p>8KB offset=13  VPN=30  PPN=25

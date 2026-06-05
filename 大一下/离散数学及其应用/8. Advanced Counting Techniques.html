@@ -2610,10 +2610,12 @@ a_n=c_1a_{n-1}+\dots c_ka_{n-k}
 <li>逐项积分/求导</li>
 <li>生成函数的组合意义</li>
 </ul>
-<p>根据生成函数求数列： 泰勒展开，常见的结论，还要对式子做因式分解等。如<span class="arithmatex">\(\frac{1}{1-4x^2}=\frac{1}{1+2x}+\frac{1}{1-2x}\)</span>
-- 本质是把函数展开成幂级数后<span class="arithmatex">\(x^n\)</span>的系数
-- 提公因数,拆成<span class="arithmatex">\(x^mf(x)\)</span>,其中<span class="arithmatex">\(f(x)\)</span>是比较好求的形式,如<span class="arithmatex">\(\frac{1}{(1-x)^m}\)</span>
-- 指数比较小的直接枚举. 注意如果指数大于n的项就直接舍去</p>
+<p>根据生成函数求数列： 泰勒展开，常见的结论，还要对式子做因式分解等。如<span class="arithmatex">\(\frac{1}{1-4x^2}=\frac{1}{1+2x}+\frac{1}{1-2x}\)</span></p>
+<ul>
+<li>本质是把函数展开成幂级数后<span class="arithmatex">\(x^n\)</span>的系数</li>
+<li>提公因数,拆成<span class="arithmatex">\(x^mf(x)\)</span>,其中<span class="arithmatex">\(f(x)\)</span>是比较好求的形式,如<span class="arithmatex">\(\frac{1}{(1-x)^m}\)</span></li>
+<li>指数比较小的直接枚举. 注意如果指数大于n的项就直接舍去</li>
+</ul>
 <blockquote>
 <p><span class="arithmatex">\(a_n=n+1\)</span>, <span class="arithmatex">\(f(x)=\frac{1}{(1-x)^2}\)</span></p>
 </blockquote>
@@ -2687,9 +2689,11 @@ S(n,m)=\frac{1}{m!}\sum_{k=0}^m (-1)^kC_m^k (m-k)^n
 <div class="arithmatex">\[
 S(r,2)=\frac{2^n-2}{2}\\ S(r,r-1)=C(r,2)\\ S(r+1,n)=S(r,n-1)+nS(r,n)
 \]</div>
-<p>变式: 
-- 如果盒子是不同的，就不用除以<span class="arithmatex">\(m!\)</span>
-- 如果允许盒子为空，那么就是<span class="arithmatex">\(\sum_{k=1}^m S(n,k)\)</span></p>
+<p>变式: </p>
+<ul>
+<li>如果盒子是不同的，就不用除以<span class="arithmatex">\(m!\)</span></li>
+<li>如果允许盒子为空，那么就是<span class="arithmatex">\(\sum_{k=1}^m S(n,k)\)</span></li>
+</ul>
 <blockquote>
 <p>In how many ways can seven different jobs be assigned
 to four different employees so that each employee is assigned at least one job and the most difficult job is assigned to the best employee?</p>

@@ -2328,11 +2328,13 @@
 <p>物理地址: 实际访问内存的地址。由操作系统和硬件翻译</p>
 <h3 id="_3">地址绑定</h3>
 <p><a href="https://pages.cs.wisc.edu/~remzi/OSTEP/Chinese/15.pdf">pages.cs.wisc.edu/~remzi/OSTEP/Chinese/15.pdf</a></p>
-<p>每个 CPU 需要两个硬件寄存器：基址（base）寄存器。和界限（bound）寄存 器，有时称为限制（limit）寄存器
-- 程序执行时, 操作系统会决定其在物理内存中的实际加载地址，并将起始地址记录在基址寄存器中。
-- 运行时, phy addr=vir addr+base
-- 如果进程需要访问超过limit或者为负数的虚拟地址，CPU 将触发异常
-- 可以在进程运行时改变进程的地址空间</p>
+<p>每个 CPU 需要两个硬件寄存器：基址（base）寄存器。和界限（bound）寄存 器，有时称为限制（limit）寄存器</p>
+<ul>
+<li>程序执行时, 操作系统会决定其在物理内存中的实际加载地址，并将起始地址记录在基址寄存器中。</li>
+<li>运行时, phy addr=vir addr+base</li>
+<li>如果进程需要访问超过limit或者为负数的虚拟地址，CPU 将触发异常</li>
+<li>可以在进程运行时改变进程的地址空间</li>
+</ul>
 <p>这种方法也被称为动态 (基于硬件) 重定位。</p>
 <div class="admonition note">
 <p class="admonition-title">静态(基于软件)重定位</p>

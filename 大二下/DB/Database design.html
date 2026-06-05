@@ -2497,12 +2497,16 @@
 <ul>
 <li>Relation Schema 关系模式 <span class="arithmatex">\(R=(A_1,A_2\dots A_n)\)</span> <span class="arithmatex">\(A_i\)</span>是属性  关系模式是对关系的一种抽象 </li>
 <li>关系 <span class="arithmatex">\(r(R)\)</span> <span class="arithmatex">\(R\)</span>上的具体关系(一系列满足R的元素组成的集合)</li>
-<li>super key超键  定义：<ul>
+<li>
+<p>super key超键  定义：</p>
+<ul>
 <li>超键可以是多个属性的组合</li>
 <li>如果A是关系R的一个超键，那么(A, B)也是关系R的一个超键 </li>
 </ul>
 </li>
-<li>candidate key候选键：如果K是R的一个超键，而任何K的真子集不是R的一个超键，那么K就是R的一个候选键</li>
+<li>
+<p>candidate key候选键：如果K是R的一个超键，而任何K的真子集不是R的一个超键，那么K就是R的一个候选键</p>
+</li>
 </ul>
 <h2 id="_1">函数依赖</h2>
 <p>考虑这个表<code>inst_dept(ID,name,dept_name,building)</code></p>
@@ -2597,13 +2601,17 @@
 </blockquote>
 <h3 id="bcnf_1">BCNF分解算法</h3>
 <p>思路: 如果<span class="arithmatex">\(a\to b\)</span>是R上非平凡的函数依赖，则把R分解为<span class="arithmatex">\((a\cup b)\)</span> 和<span class="arithmatex">\(R-(b-a)\)</span></p>
-<p>tips:
- - 如果<span class="arithmatex">\(a\cap b=\emptyset\)</span>  则<span class="arithmatex">\(b-a=b\)</span>    分解为<span class="arithmatex">\(ab,R-b\)</span>
- - 需要对R找到非平凡函数依赖，方法是对每个函数依赖的左边求闭包，看是否等于<span class="arithmatex">\(R\)</span> </p>
+<p>tips:</p>
+<ul>
+<li>如果<span class="arithmatex">\(a\cap b=\emptyset\)</span>  则<span class="arithmatex">\(b-a=b\)</span>    分解为<span class="arithmatex">\(ab,R-b\)</span></li>
+<li>需要对R找到非平凡函数依赖，方法是对每个函数依赖的左边求闭包，看是否等于<span class="arithmatex">\(R\)</span> </li>
+</ul>
 <p><img alt="image-20240412200720497" src="https://s2.loli.net/2024/04/14/kKuNF9WzfpgVwT6.png"/></p>
-<p>性质:
-- 一定是无损分解
-- 分解出的关系模式一定也是BCNF</p>
+<p>性质:</p>
+<ul>
+<li>一定是无损分解</li>
+<li>分解出的关系模式一定也是BCNF</li>
+</ul>
 <p>问题:  不好检查关系是否满足函数依赖关系。因为<span class="arithmatex">\(AB\to C\)</span>被拆掉了，要检查就要join <span class="arithmatex">\((A,B)\)</span>和<span class="arithmatex">\((B,C)\)</span> 。把BCNF的限制放松，得到3NF</p>
 <h2 id="3nf">3NF</h2>
 <p><span class="arithmatex">\(R^+\)</span>上的所有函数依赖<span class="arithmatex">\(a\to b\)</span>, 满足下面任意一条:</p>
@@ -2618,9 +2626,11 @@
 <li>计算Fc, 对于Fc中每个函数依赖<span class="arithmatex">\(a\to b\)</span>，都生成</li>
 </ol>
 <p><img alt="image-20240415223843944" src="..\..\assets/images\image-20240415223843944.png"/></p>
-<p>性质
-- 一定是无损分解
-- 一定是依赖保持</p>
+<p>性质</p>
+<ul>
+<li>一定是无损分解</li>
+<li>一定是依赖保持</li>
+</ul>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">

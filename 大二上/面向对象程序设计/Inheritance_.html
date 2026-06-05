@@ -2417,10 +2417,12 @@
 </span></code></pre></div>
 <p>如果父类和子类有相同的变量名，<strong>优先调用子类的</strong>。</p>
 <h3 id="ctors">c'tors</h3>
-<p>调用顺序:
-1. 构造<strong>基类</strong>（可能继续递归下去，先构造基类的基类，基类的成员变量... 
-2. <strong>成员变量</strong>的构造函数
-3. 派生类的构造函数</p>
+<p>调用顺序:</p>
+<ol>
+<li>构造<strong>基类</strong>（可能继续递归下去，先构造基类的基类，基类的成员变量... </li>
+<li><strong>成员变量</strong>的构造函数</li>
+<li>派生类的构造函数</li>
+</ol>
 <p>What is not inherited?</p>
 <ul>
 <li><strong>构造函数没有被继承</strong>，但父类的构造会被自动调用。析构同理。</li>

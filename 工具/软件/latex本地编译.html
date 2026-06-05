@@ -2376,16 +2376,20 @@
 </tbody>
 </table>
 <ol>
-<li><strong>安装基础软件</strong>：
+<li>
+<p><strong>安装基础软件</strong>：
     在终端执行以下命令（需先安装 <a href="https://brew.sh/">Homebrew</a>）：
     <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># 安装 BasicTeX 核心</span>
 </span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>brew<span class="w"> </span>install<span class="w"> </span>--cask<span class="w"> </span>basictex
-</span></code></pre></div></li>
-<li><strong>配置系统全局路径（关键）</strong>：
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>配置系统全局路径（关键）</strong>：
     BasicTeX 安装后，系统默认找不到 <code>xelatex</code> 等命令。执行此命令将 TeX 工具同步到系统 <code>/usr/local/bin</code>，可根治 VS Code 报 <code>ENOENT</code> 错误：
     <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>sudo<span class="w"> </span>/usr/local/texlive/2026basic/bin/universal-darwin/tlmgr<span class="w"> </span>path<span class="w"> </span>add
 </span></code></pre></div>
-<em>(注：路径中 <code>2026basic</code> 请根据你安装的实际年份微调)</em></li>
+<em>(注：路径中 <code>2026basic</code> 请根据你安装的实际年份微调)</em></p>
+</li>
 </ol>
 <hr/>
 <h3 id="optimization-packages">二、 环境优化与宏包补全 (Optimization &amp; Packages)</h3>
@@ -2394,29 +2398,41 @@
 <p>或者直接使用zjuthesis自带的developer container, 在配好的docker环境里面用</p>
 </div>
 <ol>
-<li><strong>给包管理器换源</strong>：
+<li>
+<p><strong>给包管理器换源</strong>：
     默认源在国外，下载极慢且易断连。切换至清华大学镜像：
     <div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>sudo<span class="w"> </span>tlmgr<span class="w"> </span>option<span class="w"> </span>repository<span class="w"> </span>https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/tlnet
-</span></code></pre></div></li>
-<li><strong>一键补齐 <code>zjuthesis</code> 依赖包</strong>：
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>一键补齐 <code>zjuthesis</code> 依赖包</strong>：
     BasicTeX 只有核心包，需手动安装论文模板必需的排版插件：
     <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>sudo<span class="w"> </span>tlmgr<span class="w"> </span>install<span class="w"> </span>xecjk<span class="w"> </span>realscripts<span class="w"> </span>ms<span class="w"> </span>biblatex<span class="w"> </span>biber<span class="w"> </span>environ<span class="w"> </span>trimspaces<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>zhnumber<span class="w"> </span>unicode-math<span class="w"> </span>xstring<span class="w"> </span>enumitem<span class="w"> </span>caption<span class="w"> </span>fancyhdr<span class="w"> </span>geometry<span class="w"> </span>xcolor<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a>graphicx<span class="w"> </span>titling<span class="w"> </span>tocloft<span class="w"> </span>datetime2<span class="w"> </span>tracklang<span class="w"> </span>csquotes<span class="w"> </span>notoccite<span class="w"> </span><span class="se">\</span>
 </span><span id="__span-3-4"><a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a>algorithm2e<span class="w"> </span>algorithmicx<span class="w"> </span>listings<span class="w"> </span>xifthen<span class="w"> </span>ifmtarg<span class="w"> </span>mwe<span class="w"> </span>biblatex-gb7714-2015
-</span></code></pre></div></li>
-<li><strong>命令行手动编译（用于调试）</strong>：<br/>
-    当 VS Code 报错信息不明确时，直接在项目根目录打开终端执行。如果这里能通，说明是插件配置问题；如果这里报错，说明缺宏包或语法有误：</li>
-<li><strong>常规编译</strong>：使用 latexmk 自动处理参考文献和多次迭代。</li>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>命令行手动编译（用于调试）</strong>：<br/>
+    当 VS Code 报错信息不明确时，直接在项目根目录打开终端执行。如果这里能通，说明是插件配置问题；如果这里报错，说明缺宏包或语法有误：</p>
+</li>
+<li>
+<p><strong>常规编译</strong>：使用 latexmk 自动处理参考文献和多次迭代。</p>
+</li>
 </ol>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>latexmk -xelatex -outdir=out zjuthesis
 </span></code></pre></div>
 <ul>
-<li><strong>彻底清理缓存</strong>：当由于字体修改或旧文件导致编译死循环时使用。
+<li>
+<p><strong>彻底清理缓存</strong>：当由于字体修改或旧文件导致编译死循环时使用。
 <div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>latexmk -C -outdir=out
-</span></code></pre></div></li>
-<li><strong>“打地鼠”技巧</strong>：
-    若编译仍提示 <code>XXX.sty not found</code>，请先搜索再安装：<ul>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>“打地鼠”技巧</strong>：
+    若编译仍提示 <code>XXX.sty not found</code>，请先搜索再安装：</p>
+<ul>
 <li>搜索：<code>tlmgr search --global --file XXX.sty</code></li>
 <li>安装：<code>sudo tlmgr install &lt;搜索到的包名&gt;</code></li>
 <li><em>提示：若提示 example-image 找不到，请确保已安装 <code>mwe</code> 包。</em></li>
@@ -2463,42 +2479,56 @@
 <h3 id="zjuthesis-template-tweaks">四、 zjuthesis 模板避坑指南 (Template Tweaks)</h3>
 <p>在正式开始写论文前，请对 <code>zjuthesis.tex</code> 进行微调：</p>
 <ol>
-<li><strong>中文字体修正（必做）</strong>：
-    在 <code>\documentclass</code> 选项中加入 <code>fontset=macnew</code>。<ul>
+<li>
+<p><strong>中文字体修正（必做）</strong>：
+    在 <code>\documentclass</code> 选项中加入 <code>fontset=macnew</code>。</p>
+<ul>
 <li><strong>原因</strong>：这会强制调用 macOS 系统自带的华文宋体/黑体，避免因找不到 Windows 字体导致的排版 Bug。</li>
 </ul>
 </li>
-<li><strong>严禁空行</strong>：
-    在 <code>\documentclass[...]</code> 的方括号内，参数之间<strong>绝对不能有空行</strong>。<ul>
+<li>
+<p><strong>严禁空行</strong>：
+    在 <code>\documentclass[...]</code> 的方括号内，参数之间<strong>绝对不能有空行</strong>。</p>
+<ul>
 <li><strong>现象</strong>：若有空行会报 <code>! Paragraph ended before \@fileswith@ptions was complete</code>。</li>
 </ul>
 </li>
-<li><strong>根目录清理</strong>：
-    若编译逻辑出现死循环或字体不更新，请先运行终端命令 <code>latexmk -C -outdir=out</code> 或点击编辑器里的垃圾桶图标清理缓存。</li>
+<li>
+<p><strong>根目录清理</strong>：
+    若编译逻辑出现死循环或字体不更新，请先运行终端命令 <code>latexmk -C -outdir=out</code> 或点击编辑器里的垃圾桶图标清理缓存。</p>
+</li>
 </ol>
 <hr/>
 <h3 id="vs-code-interface">五、 VS Code 界面操作与指南 (Interface)</h3>
 <p>打开 <code>.tex</code> 文件后，点击左侧侧边栏的 <strong>“TeX 图标”</strong> 唤起面板：</p>
 <ol>
-<li><strong>Build LaTeX Project (编译)</strong><ul>
+<li>
+<p><strong>Build LaTeX Project (编译)</strong></p>
+<ul>
 <li><strong>位置</strong>：面板顶部 <code>COMMANDS</code> 栏第一个按钮。</li>
 <li><strong>快捷键</strong>：<code>Cmd + Alt + B</code>。</li>
 <li><strong>原理</strong>：调用配置中的 <code>latexmk</code> 指令。</li>
 <li><strong>注意</strong>：<strong>光标必须在 .tex 代码编辑区</strong>（不能在下方的 Output 输出面板），否则插件找不到 Root 文件。</li>
 </ul>
 </li>
-<li><strong>View LaTeX PDF (预览)</strong><ul>
+<li>
+<p><strong>View LaTeX PDF (预览)</strong></p>
+<ul>
 <li><strong>位置</strong>：<code>View LaTeX PDF</code> 按钮。</li>
 <li><strong>快捷键</strong>：<code>Cmd + Alt + V</code>。</li>
 <li><strong>效果</strong>：PDF 将在 VS Code 内部标签页（tab）实时预览。</li>
 </ul>
 </li>
-<li><strong>Clean up (清理临时文件)</strong><ul>
+<li>
+<p><strong>Clean up (清理临时文件)</strong></p>
+<ul>
 <li><strong>图标</strong>：面板工具栏上的 <strong>垃圾桶</strong>。</li>
 <li><strong>对应设置</strong>：执行 <code>clean.command</code>。编译出错时这是重启的第一步。</li>
 </ul>
 </li>
-<li><strong>Structure (大纲视图)</strong><ul>
+<li>
+<p><strong>Structure (大纲视图)</strong></p>
+<ul>
 <li><strong>功能</strong>：展示论文目录结构，点击标题可实现文中快速跳转。</li>
 </ul>
 </li>
@@ -2509,7 +2539,7 @@
 <p>然后在vscode的侧边栏里选择一个pdf, 点击打开方式- 为<code>*.pdf</code>配置默认编辑器，选择vscode-pdf</p>
 <p><img alt="" src="images/Pasted%20image%2020260508171132.png"/></p>
 <h2 id="ppt">制作ppt</h2>
-<p>【学习天地】都什么年代了，还在写传统PPT？使用Markdown与LLM协作快速制作幻灯片！ https://www.cc98.org/topic/6474082 复制本链接到浏览器或者打开【CC98】微信小程序查看~</p>
+<p>【学习天地】都什么年代了，还在写传统PPT？使用Markdown与LLM协作快速制作幻灯片！ <a href="https://www.cc98.org/topic/6474082">https://www.cc98.org/topic/6474082</a> 复制本链接到浏览器或者打开【CC98】微信小程序查看~</p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->
 <script async="" crossorigin="anonymous" data-category="Announcements" data-category-id="DIC_kwDOJAbQXc4Ccrda" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="birchtree2/birchtree2.github.io" data-repo-id="R_kgDOJAbQXQ" data-strict="0" data-theme="preferred_color_scheme" src="https://giscus.app/client.js">

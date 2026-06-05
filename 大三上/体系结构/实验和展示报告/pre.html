@@ -2228,12 +2228,16 @@
 <p><a href="https://dl.acm.org/doi/abs/10.1145/1118299.1118482">Finding optimal L1 cache configuration for embedded systems | Proceedings of the 2006 Asia and South Pacific Design Automation Conference</a></p>
 <p><a href="https://dl.acm.org/doi/abs/10.1145/563519.563522">Cache performance for selected SPEC CPU2000 benchmarks | ACM SIGARCH Computer Architecture News</a></p>
 <p>缓存访问的</p>
-<p>small
-- size
-- associativity
-减小size和associativity 可以减少hit time和功耗</p>
-<p>simple
-- Direct mapped cache可以减少hit time, 因为根据地址可以唯一确定对应的缓存块并比较tag. 而如果用fully-associative或set-associative,就需要和多个缓存的块比较tag,才能判断是否命中。</p>
+<p>small</p>
+<ul>
+<li>size</li>
+<li>associativity
+减小size和associativity 可以减少hit time和功耗</li>
+</ul>
+<p>simple</p>
+<ul>
+<li>Direct mapped cache可以减少hit time, 因为根据地址可以唯一确定对应的缓存块并比较tag. 而如果用fully-associative或set-associative,就需要和多个缓存的块比较tag,才能判断是否命中。</li>
+</ul>
 <p>First Optimization: Small and Simple First-Level Caches to Reduce Hit Time and Power The pressure of both a fast clock cycle and power limitations encourages limited size for first-level caches. Similarly, use of lower levels of associativity can reduce both hit time and power, although such trade-offs are more complex than those involving size. The critical timing path in a cache hit is the three-step process of addressing the tag memory using the index portion of the address, comparing the read tag value to the address, andsetting the multiplexor to choose thecorrectdata item if thecache is set associative. Direct-mapped caches can overlap the tag check with the transmis sion of the data, effectively reducing hit time. Furthermore, lower levels of associa tivity will usually reduce power because fewer cache lines must be accessed</p>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->

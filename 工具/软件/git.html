@@ -2339,10 +2339,12 @@
 <blockquote>
 <p>git clone   卡住</p>
 </blockquote>
-<p>解决方法:
-1. 别忘了网址最后的.git
-2. 先Ctrl+C,尝试再跑一次
-3. <code>git config --global http.sslVerify "false"</code></p>
+<p>解决方法:</p>
+<ol>
+<li>别忘了网址最后的.git</li>
+<li>先Ctrl+C,尝试再跑一次</li>
+<li><code>git config --global http.sslVerify "false"</code></li>
+</ol>
 <blockquote>
 <p>git推送大型文件</p>
 </blockquote>
@@ -2403,25 +2405,35 @@
 <h3 id="githubsshpat">Github私有仓库配置ssh和pat</h3>
 <p>这里是 GitHub 两种主流登录方式的简短配置攻略：</p>
 <h4 id="1-ssh">1. SSH 方式（推荐：一次配置，永久免密）</h4>
-<p>最适合长期开发。由于 22 端口常被封锁，建议直接配置 443 端口。
-*   <strong>生成密钥</strong>：执行 <code>ssh-keygen -t ed25519</code>，一路回车，将 <code>~/.ssh/id_ed25519.pub</code> 的内容添加到 GitHub 的 SSH Keys 设置中。
-*   <strong>修改配置</strong>：编辑 <code>~/.ssh/config</code> 文件，写入以下内容以强制走 443 端口：
+<p>最适合长期开发。由于 22 端口常被封锁，建议直接配置 443 端口。</p>
+<ul>
+<li><strong>生成密钥</strong>：执行 <code>ssh-keygen -t ed25519</code>，一路回车，将 <code>~/.ssh/id_ed25519.pub</code> 的内容添加到 GitHub 的 SSH Keys 设置中。</li>
+<li>
+<p><strong>修改配置</strong>：编辑 <code>~/.ssh/config</code> 文件，写入以下内容以强制走 443 端口：
     <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>Host github.com
 </span><span id="__span-7-2"><a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>  Hostname ssh.github.com
 </span><span id="__span-7-3"><a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a>  Port 443
 </span><span id="__span-7-4"><a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a>  User git
-</span></code></pre></div>
-*   <strong>使用</strong>：克隆仓库使用 <code>git@github.com:用户/仓库.git</code> 这种格式。</p>
+</span></code></pre></div></p>
+</li>
+<li>
+<p><strong>使用</strong>：克隆仓库使用 <code>git@github.com:用户/仓库.git</code> 这种格式。</p>
+</li>
+</ul>
 <h4 id="2-https">2. HTTPS 方式（灵活：适合临时或代理环境）</h4>
 <p>GitHub 已禁用普通密码，必须使用 <strong>PAT (Personal Access Token)</strong>。</p>
 <ul>
 <li><strong>获取 Token</strong>：在 GitHub [Settings] -&gt; [Developer settings] -&gt; [Tokens (classic)] 中生成一个 Token，勾选 <code>repo</code> 权限并<strong>保存生成的字符串</strong>。</li>
-<li><strong>登录使用</strong>：有时执行 <code>git push</code> 等命令会弹出登录框：<ul>
+<li>
+<p><strong>登录使用</strong>：有时执行 <code>git push</code> 等命令会弹出登录框：</p>
+<ul>
 <li><strong>Username</strong>: 输入 GitHub 用户名。</li>
 <li><strong>Password</strong>: <strong>粘贴刚才保存的 Token</strong>（不要输入你的登录密码）。</li>
 </ul>
 </li>
-<li><strong>持久化</strong>：执行 <code>git config --global credential.helper store</code>，下次输入后即可记住 Token，无需重复粘贴。</li>
+<li>
+<p><strong>持久化</strong>：执行 <code>git config --global credential.helper store</code>，下次输入后即可记住 Token，无需重复粘贴。</p>
+</li>
 </ul>
 <p><strong>如何选择？</strong> 频繁提交代码首选 <strong>SSH</strong>；临时在他人电脑上拉取代码或网络环境极度受限时选 <strong>HTTPS</strong>。</p>
 <h2 id="_2">杂项</h2>

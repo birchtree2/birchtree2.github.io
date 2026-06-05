@@ -2324,9 +2324,11 @@
 x当前节点   t父节点</p>
 <p><img alt="" src="images/Pasted%20image%2020250529201017.png"/></p>
 <h2 id="_1">引用计数</h2>
-<p><img alt="" src="images/Pasted%20image%2020250529195713.png"/>
-- 如何处理r的成员r.fi
-- 因此我们在r.count=0时只把r加入free list, 不递归处理r.fi。延迟到r被重新分配时, 再将r.fi.count-1</p>
+<p><img alt="" src="images/Pasted%20image%2020250529195713.png"/></p>
+<ul>
+<li>如何处理r的成员r.fi</li>
+<li>因此我们在r.count=0时只把r加入free list, 不递归处理r.fi。延迟到r被重新分配时, 再将r.fi.count-1</li>
+</ul>
 <h3 id="copying-collection">Copying Collection</h3>
 <h2 id="__comments">Comments</h2>
 <!-- Insert generated snippet here -->

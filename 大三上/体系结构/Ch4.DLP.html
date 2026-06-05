@@ -2324,9 +2324,11 @@
 <p>SISD: 单指令单数据   单个处理器 可以利用指令级并行提高
 SIMD: 一条指令多数据流 SIMD三种变体：Vector，向量处理，以vector为基本粒度；SIMD，AVX指令集，支持多数据并行处理；GPU, SIMT异构体系。
 MIMD: 多个处理器之间实现的   每个处理器做的是不同任务</p>
-<p>这一章讲SIMD<br/>
-- 不会考array processor<br/>
-- 重点考vector processor</p>
+<p>这一章讲SIMD  </p>
+<ul>
+<li>不会考array processor  </li>
+<li>重点考vector processor</li>
+</ul>
 <h2 id="simd-vector">SIMD: vector</h2>
 <p>读题, 根据题目分析</p>
 <h3 id="_1">处理方式</h3>
@@ -2335,15 +2337,21 @@ MIMD: 多个处理器之间实现的   每个处理器做的是不同任务</p>
 <p>D=A(B+C)</p>
 </div>
 <ul>
-<li>Horizontal processing <br/>
+<li>
+<p>Horizontal processing <br/>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>d[i]=a[i]*(b[i]+c[i]);
 </span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>d[i+1]=a[i+1]*(b[i+1]+c[i+1]);
-</span></code></pre></div></li>
-<li>Vertical processing
+</span></code></pre></div></p>
+</li>
+<li>
+<p>Vertical processing
 <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>K=B+C
 </span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>D=A*K
-</span></code></pre></div></li>
-<li>但是vertical要求每个向量不能太大。分组  组内纵向，组间横向</li>
+</span></code></pre></div></p>
+</li>
+<li>
+<p>但是vertical要求每个向量不能太大。分组  组内纵向，组间横向</p>
+</li>
 </ul>
 <h3 id="_2">冲突</h3>
 <ul>

@@ -2499,12 +2499,16 @@
 - 如果<span class="arithmatex">\(w,v\in L\)</span> 则<span class="arithmatex">\(wv\in L\)</span></p>
 </div>
 <h3 id="cfg_1">CFG的定义</h3>
-<p>形式化定义 <span class="arithmatex">\(G=(V,\Sigma,S,R)\)</span>
-- <span class="arithmatex">\(V\)</span>是字母表(除了a,b等字符(一般用小写), 还有表示抽象的串的字符(一般用大写))
-- <span class="arithmatex">\(\Sigma\subseteq V\)</span> <strong>终结符号</strong>(terminal)
-    - <span class="arithmatex">\(V-\Sigma\)</span> 非终结符号(nonterminal)
-- <span class="arithmatex">\(S\subseteq (V-\Sigma)\)</span> 起始符号
-- <span class="arithmatex">\(R\subseteq (V-\Sigma)\times V^*\)</span>  规则(有限个)   <span class="arithmatex">\(V^*\)</span>相当于用抽象的串和字符组合得到的新串。 </p>
+<p>形式化定义 <span class="arithmatex">\(G=(V,\Sigma,S,R)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(V\)</span>是字母表(除了a,b等字符(一般用小写), 还有表示抽象的串的字符(一般用大写))</li>
+<li><span class="arithmatex">\(\Sigma\subseteq V\)</span> <strong>终结符号</strong>(terminal)<ul>
+<li><span class="arithmatex">\(V-\Sigma\)</span> 非终结符号(nonterminal)</li>
+</ul>
+</li>
+<li><span class="arithmatex">\(S\subseteq (V-\Sigma)\)</span> 起始符号</li>
+<li><span class="arithmatex">\(R\subseteq (V-\Sigma)\times V^*\)</span>  规则(有限个)   <span class="arithmatex">\(V^*\)</span>相当于用抽象的串和字符组合得到的新串。 </li>
+</ul>
 <p>推导(Derivation):   <span class="arithmatex">\(xAy\Rightarrow_G xuy\)</span> 当<span class="arithmatex">\((A,u)\in R\)</span>  (derive in one step)。   注意和自动机的格局不同, 是从S出发,推到具体的字符串w</p>
 <p><span class="arithmatex">\(G\)</span> 生成 <span class="arithmatex">\(w \in \Sigma^*\)</span> if <span class="arithmatex">\(S \Rightarrow_G^* w\)</span>    (注意w是由终结符号构成的串)</p>
 <p><img alt="" src="images/Pasted%20image%2020250103142524.png"/></p>
@@ -2521,9 +2525,11 @@
 <p>合法括号序列对应的CFG<br/>
 <span class="arithmatex">\(S\to SS| (S) | e\)</span></p>
 </div>
-<p>定义一棵parse tree
-- 内部节点是非终结符号
-- 叶子节点是终结符号或者e</p>
+<p>定义一棵parse tree</p>
+<ul>
+<li>内部节点是非终结符号</li>
+<li>叶子节点是终结符号或者e</li>
+</ul>
 <p>所有叶子节点连接成的串称为yield of the parse tree</p>
 <p>ambiguity:
 <img alt="" src="images/Pasted%20image%2020241116204555.png"/>
@@ -2540,22 +2546,26 @@
 </blockquote>
 <p>证明: 生成长度为n的字符串的n个字符,需要用n次规则3,  需要n个非终结符号。而1不增加非终结符号, 2会增加1个,从1个起始符号S开始，需要用n-1次规则2。所以总共用了2n-1次</p>
 <blockquote>
-<p>每个CFG都可以转化成等价CNF形式
-1.  <span class="arithmatex">\(?\to S\)</span>.   新建起始符号<span class="arithmatex">\(S_0\)</span>, 规则<span class="arithmatex">\(S_0\to S\)</span>
-2. <span class="arithmatex">\(A\to e,A\neq S\)</span>.     对于右边有A的规则, 加入去掉一个A的新规则
-3. <span class="arithmatex">\(A\to B,B\in V-\Sigma\)</span>  删除这条规则,且所有B在左边的规则, 都要将B改成A
-4. <span class="arithmatex">\(A\to u_1u_2u_3\)</span>  新建非终结符号 <span class="arithmatex">\(A\to u_1V,V\to u_2u_3\)</span>
-5. <span class="arithmatex">\(A\to u_1u_2,u_2\in\Sigma\)</span>   新建非终结符号<span class="arithmatex">\(V,A\to u_1V,V\to u_2\)</span> </p>
+<p>每个CFG都可以转化成等价CNF形式</p>
 </blockquote>
+<ol>
+<li><span class="arithmatex">\(?\to S\)</span>.   新建起始符号<span class="arithmatex">\(S_0\)</span>, 规则<span class="arithmatex">\(S_0\to S\)</span></li>
+<li><span class="arithmatex">\(A\to e,A\neq S\)</span>.     对于右边有A的规则, 加入去掉一个A的新规则</li>
+<li><span class="arithmatex">\(A\to B,B\in V-\Sigma\)</span>  删除这条规则,且所有B在左边的规则, 都要将B改成A</li>
+<li><span class="arithmatex">\(A\to u_1u_2u_3\)</span>  新建非终结符号 <span class="arithmatex">\(A\to u_1V,V\to u_2u_3\)</span></li>
+<li><span class="arithmatex">\(A\to u_1u_2,u_2\in\Sigma\)</span>   新建非终结符号<span class="arithmatex">\(V,A\to u_1V,V\to u_2\)</span> </li>
+</ol>
 <h3 id="cflcfl">CFL的性质&amp;常见的CFL</h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>CFL在并 , 连接和Kleene star下封闭。在交、补下不封闭</p>
 </div>
-<p>证明:
-- 并:  增加起始符号S, <span class="arithmatex">\(S\to S_1,S\to S_2\)</span>
-- 连接: 同理增加起始符号<span class="arithmatex">\(S,S\to S_1S_2\)</span>
-- Kleene star: <span class="arithmatex">\(S\to e,S\to SS_1\)</span></p>
+<p>证明:</p>
+<ul>
+<li>并:  增加起始符号S, <span class="arithmatex">\(S\to S_1,S\to S_2\)</span></li>
+<li>连接: 同理增加起始符号<span class="arithmatex">\(S,S\to S_1S_2\)</span></li>
+<li>Kleene star: <span class="arithmatex">\(S\to e,S\to SS_1\)</span></li>
+</ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>正则语言和CFL的交是CFL
@@ -2575,9 +2585,13 @@
 <h2 id="pushdown-automatapda">Pushdown Automata(PDA)</h2>
 <p>思路: 给NFA加一个栈    <em>类比用栈判断合法括号序列?</em></p>
 <h3 id="pda">PDA的定义</h3>
-<p><span class="arithmatex">\(P=(K,\Sigma,\Gamma,\Delta,s,F)\)</span>
-- <span class="arithmatex">\(\Gamma\)</span>  栈里面出现的符号集合
-    - <span class="arithmatex">\(\Delta\)</span> 转移关系   <span class="arithmatex">\((K\times(\Sigma \cup \set{e})\times \Gamma^*) \to (K\times \Gamma^*)\)</span></p>
+<p><span class="arithmatex">\(P=(K,\Sigma,\Gamma,\Delta,s,F)\)</span></p>
+<ul>
+<li><span class="arithmatex">\(\Gamma\)</span>  栈里面出现的符号集合<ul>
+<li><span class="arithmatex">\(\Delta\)</span> 转移关系   <span class="arithmatex">\((K\times(\Sigma \cup \set{e})\times \Gamma^*) \to (K\times \Gamma^*)\)</span></li>
+</ul>
+</li>
+</ul>
 <p><span class="arithmatex">\((p,x,\alpha)\vdash (q,y,\beta)\)</span>
 <span class="arithmatex">\(((p,a,\gamma),(q,\eta))\in \Delta\)</span> <span class="arithmatex">\(x=ay,\alpha=\gamma\tau,\beta=\eta\tau\)</span>
     意思是,读取字符串字符<span class="arithmatex">\(a\)</span>, pop了字符串<span class="arithmatex">\(\gamma\)</span>, push了字符串<span class="arithmatex">\(\eta\)</span>

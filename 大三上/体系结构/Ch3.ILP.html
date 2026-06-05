@@ -2444,18 +2444,22 @@
 <article class="md-content__inner md-typeset">
 <h1>Ch3.ILP</h1>
 <h2 id="dynamic-scheduling">Dynamic Scheduling</h2>
-<p>把ID拆成2个阶段
-- Issue(IS): 按顺序读指令, decode, 检测是否有结构冲突(使用相同部件,如加法器)。
-- Read operand(RO): 等到没有数据冲突,就读操作数 （乱序执行</p>
+<p>把ID拆成2个阶段</p>
+<ul>
+<li>Issue(IS): 按顺序读指令, decode, 检测是否有结构冲突(使用相同部件,如加法器)。</li>
+<li>Read operand(RO): 等到没有数据冲突,就读操作数 （乱序执行</li>
+</ul>
 <p>乱序执行会导致 WAR和WAW hazard (普通流水线中不会有问题,但是乱序之后会有。比如乱序先写后读)</p>
 <h3 id="_1">总结</h3>
 <p><img alt="" src="images/Pasted%20image%2020241225162744.png"/></p>
-<p>Toma: 
-- EX结束的时候的时间  = 操作数WB的时间+执行时间
-- 不受部件限制,受保留站大小限制。（故t=2的时候第二条指令就IS了,不用等第一条执行完)
-- Scoreboard在EX段乱序执行 而Tomasulo在RO段乱序
-- 因为有寄存器重命名，所以WAR和WAW不需要等
-<img alt="" src="images/Pasted%20image%2020241225162825.png"/></p>
+<p>Toma: </p>
+<ul>
+<li>EX结束的时候的时间  = 操作数WB的时间+执行时间</li>
+<li>不受部件限制,受保留站大小限制。（故t=2的时候第二条指令就IS了,不用等第一条执行完)</li>
+<li>Scoreboard在EX段乱序执行 而Tomasulo在RO段乱序</li>
+<li>因为有寄存器重命名，所以WAR和WAW不需要等
+<img alt="" src="images/Pasted%20image%2020241225162825.png"/></li>
+</ul>
 <p>ROB: 只需要加一列 顺序提交  commit(n)=max(WB(n)+1,commit(n-1)+1)
 <img alt="" src="images/Pasted%20image%2020241225162955.png"/></p>
 <p>要看条件   填时间  /  可能会考某一个时刻的表状态。</p>
@@ -2469,15 +2473,19 @@
 3,4在等待2的F2  5在等3,所以不能进入RO.    6的ADD和SUB都用到加法器,有结构冲突,所以不能进入IS</p>
 <h4 id="func-comp-status-reg-status">Func Comp Status&amp; Reg Status</h4>
 <p>已经WB的不记录,只记录当前正在运行的。</p>
-<p><img alt="" src="images/Pasted%20image%2020241107105114.png"/>
-- busy 代表当前这个单元是否有指令正在使用。op 表示这个单元正在被哪类指令使用。
-- Fi 为目的，Fj、Fk 为源操作数
-- Qj, Qk 代表源操作数来自哪个部件如 Mult1 的 Qj=Integer 说明来自整数部件（此时正在执行 Load 指令）
-- Rj、Rk 代表源操作数的状态
-    - yes: operands is ready but no ready. 没读是因为在等其他操作数。比如mul f0,f2,f4的f4
-    - no &amp; Qj=null: operand is read.  指令已经过了RO阶段,在EX或WB。比如第二条指令的R3
-    - no &amp; Qj!=null: operand is not ready.
-        其他指令会修改这个操作数，而且还没有执行完毕。</p>
+<p><img alt="" src="images/Pasted%20image%2020241107105114.png"/></p>
+<ul>
+<li>busy 代表当前这个单元是否有指令正在使用。op 表示这个单元正在被哪类指令使用。</li>
+<li>Fi 为目的，Fj、Fk 为源操作数</li>
+<li>Qj, Qk 代表源操作数来自哪个部件如 Mult1 的 Qj=Integer 说明来自整数部件（此时正在执行 Load 指令）</li>
+<li>Rj、Rk 代表源操作数的状态<ul>
+<li>yes: operands is ready but no ready. 没读是因为在等其他操作数。比如mul f0,f2,f4的f4</li>
+<li>no &amp; Qj=null: operand is read.  指令已经过了RO阶段,在EX或WB。比如第二条指令的R3</li>
+<li>no &amp; Qj!=null: operand is not ready.
+    其他指令会修改这个操作数，而且还没有执行完毕。</li>
+</ul>
+</li>
+</ul>
 <p>Register Status: 每个寄存器要被哪个部件写
 <img alt="" src="images/Pasted%20image%2020241107110554.png"/></p>
 <p>接下来  指令2WB了,指令3,4可以RO,EX。且加法比乘法快,所以指令4先WB, 这样指令6可以先执行,指令5还在等指令3
@@ -2589,10 +2597,12 @@ Mult2  进入保留站的时候F6已经读了出来并放在Vk中, F0依赖Mult1
 <h2 id="_2">分支预测</h2>
 <p>2-bit branch predictor</p>
 <h3 id="2-level-predictor">2-level predictor</h3>
-<p>(m,n) branch predictor:   <a href="https://en.wikipedia.org/wiki/Branch_predictor#Two-level_predictor">Branch predictor - Wikipedia</a>
-- 对于一条指令，维护他最近m次的历史分支结果(跳转/不跳转)  (01串)
-- 预测表: 包含<span class="arithmatex">\(2^m\)</span>个条目, 每个条目是一个n位的状态机(如果n=2就是2-bit branch predictor)
-- 利用历史分支结果 查预测表中的条目，根据状态机预测</p>
+<p>(m,n) branch predictor:   <a href="https://en.wikipedia.org/wiki/Branch_predictor#Two-level_predictor">Branch predictor - Wikipedia</a></p>
+<ul>
+<li>对于一条指令，维护他最近m次的历史分支结果(跳转/不跳转)  (01串)</li>
+<li>预测表: 包含<span class="arithmatex">\(2^m\)</span>个条目, 每个条目是一个n位的状态机(如果n=2就是2-bit branch predictor)</li>
+<li>利用历史分支结果 查预测表中的条目，根据状态机预测</li>
+</ul>
 <p>为每条分支指令维护一个预测表代价太大。只维护一个表，用{ m位分支历史, 指令地址的低k位 }来索引, 每个条目同样是一个n位状态机。</p>
 <p>预测表总bit数 = <span class="arithmatex">\(2^m\times n\times\)</span> 指令地址选择的数量</p>
 <h2 id="__comments">Comments</h2>

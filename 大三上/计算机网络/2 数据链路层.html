@@ -2474,9 +2474,11 @@ d个bit纠错码: 海明距离为2d+1</p>
 <h2 id="_5">流量控制</h2>
 <p><a href="https://obsidian.zerokei.top/Hub/Data%20Link%20Layer/">参考资料</a></p>
 <h3 id="-">停止-等待</h3>
-<p>两种差错
-1. 发送的数据损坏，被接收方丢弃
-2. 数据成功发送，但是收不到确认帧</p>
+<p>两种差错</p>
+<ol>
+<li>发送的数据损坏，被接收方丢弃</li>
+<li>数据成功发送，但是收不到确认帧</li>
+</ol>
 <p>发送方增加一个计时器(timer)，如果经过一段时间没有收到接收端确认，发送方将超时，于是再次发送该帧。发送方每次发送1个帧，收到确认帧后重传。序列号只有0/1两种。ACK0/ACK1表示收到了0/1帧。如果出现2个相同序列号，就说明是重传</p>
 <p><span class="arithmatex">\(W_T=W_R=1\)</span></p>
 <div class="admonition example">
@@ -2533,13 +2535,15 @@ d个bit纠错码: 海明距离为2d+1</p>
 <p><img alt="" src="images/Pasted%20image%2020241113145634.png"/>
 <img alt="" src="images/Pasted%20image%2020241113145644.png"/></p>
 </div>
-<p>王道P74原题改了数据,注意这里ackn表示收到的最后一个包是n-1. 发送端同理
-1. R3,3 表示确认收到0,1,2   3个帧 <br/>
-2. 4bit  帧序列号范围0-15   3,4还没确认收到,所以从5到15,以及0,1,2都可以用, 共13个
-3. R2,2 确认0,1
-4. 2,3,4都没有收到确认,需要重发。注意发送端的y=3  因为同样表示需要确认序列号为y-1的包
-5. 1000bit  0.1ms    <span class="arithmatex">\(n=15,RTT=0.96,T_D=T_A=0.1\)</span>  (因为是two-way data transmission,接送方也在发送数据帧,且大小也是1000bit, 同时捎带确认信息)
-      <span class="arithmatex">\(\eta=\min(1,\frac{nT_D}{T_D+RTT+T_A})=100\%\)</span></p>
+<p>王道P74原题改了数据,注意这里ackn表示收到的最后一个包是n-1. 发送端同理</p>
+<ol>
+<li>R3,3 表示确认收到0,1,2   3个帧   </li>
+<li>4bit  帧序列号范围0-15   3,4还没确认收到,所以从5到15,以及0,1,2都可以用, 共13个</li>
+<li>R2,2 确认0,1</li>
+<li>2,3,4都没有收到确认,需要重发。注意发送端的y=3  因为同样表示需要确认序列号为y-1的包</li>
+<li>1000bit  0.1ms    <span class="arithmatex">\(n=15,RTT=0.96,T_D=T_A=0.1\)</span>  (因为是two-way data transmission,接送方也在发送数据帧,且大小也是1000bit, 同时捎带确认信息)
+      <span class="arithmatex">\(\eta=\min(1,\frac{nT_D}{T_D+RTT+T_A})=100\%\)</span></li>
+</ol>
 <h3 id="sr">选择重传(SR)</h3>
 <p>接收端只把出错的的帧丢弃，其后面的数据帧保存在缓存中，并向发送端回复NAK；发送端接收到NAK时，只重传出错的帧</p>
 <p><span class="arithmatex">\(W_T+W_R\leq 2^{n},W_R\leq W_{T}\)</span>   所以取<span class="arithmatex">\(2^{n-1}\)</span></p>

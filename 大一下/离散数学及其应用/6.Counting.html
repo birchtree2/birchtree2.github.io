@@ -2484,15 +2484,17 @@ Suppose that <span class="arithmatex">\(\max \{i_i,d_k\}\leq n\)</span>,with <sp
 </p>
 </blockquote>
 <h3 id="ramsey-number">Ramsey number</h3>
-<p>https://math.mit.edu/~apost/courses/18.204_2018/ramsey-numbers.pdf</p>
+<p><a href="https://math.mit.edu/~apost/courses/18.204_2018/ramsey-numbers.pdf">https://math.mit.edu/~apost/courses/18.204_2018/ramsey-numbers.pdf</a></p>
 <p>The minimum number of people at a party such that for all cases, there are either m mutual friends or n mutual enemies
 (people=vertices, relation=edges, color the edge in two color,the least number of vertices that a graph must have so that in any red-blue coloring, there exists either a red
 <span class="arithmatex">\(K_s\)</span> or a blue <span class="arithmatex">\(K_t\)</span>(<span class="arithmatex">\(K_n\)</span>代表完全图))</p>
 <p><span class="arithmatex">\(R(2,n)=n\)</span></p>
 <p><span class="arithmatex">\(R(3,3)=6, R(3,4)=9,R(4,4)=18,R(3,5)=14\)</span></p>
-<p>证明思路:
-- 先证明<span class="arithmatex">\(R(s,t)&gt;n-1\)</span>, 只需要找一个<span class="arithmatex">\(n-1\)</span>个点的,既没有<span class="arithmatex">\(K_s\)</span>也没有<span class="arithmatex">\(K_t\)</span>的图
-- 再证明<span class="arithmatex">\(R(s,t)=n\)</span>.  一般要选一个点<span class="arithmatex">\(v\)</span>出来，考虑剩下的和<span class="arithmatex">\(v\)</span>是friends 还是enemies</p>
+<p>证明思路:</p>
+<ul>
+<li>先证明<span class="arithmatex">\(R(s,t)&gt;n-1\)</span>, 只需要找一个<span class="arithmatex">\(n-1\)</span>个点的,既没有<span class="arithmatex">\(K_s\)</span>也没有<span class="arithmatex">\(K_t\)</span>的图</li>
+<li>再证明<span class="arithmatex">\(R(s,t)=n\)</span>.  一般要选一个点<span class="arithmatex">\(v\)</span>出来，考虑剩下的和<span class="arithmatex">\(v\)</span>是friends 还是enemies</li>
+</ul>
 <blockquote>
 <p><span class="arithmatex">\(R(s,t)\leq R(s,t-1)+R(s-1,t)\)</span></p>
 <p>if <span class="arithmatex">\(R(s,t-1),R(s-1,t)\)</span> is even, <span class="arithmatex">\(R(s,t)\leq R(s,t-1)+R(s-1,t)\)</span></p>

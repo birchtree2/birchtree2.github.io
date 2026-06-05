@@ -2580,15 +2580,19 @@ x=7
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>print(x,end="") #不带任何字符
 </span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>print(x,end=" ") #带空格
 </span></code></pre></div></p>
-<p>格式化输出:
-- 都转成str，再用+
-- 用格式化字符串<code>print("%d + %d"%(a,b))</code>
-- format</p>
+<p>格式化输出:</p>
+<ul>
+<li>都转成str，再用+</li>
+<li>用格式化字符串<code>print("%d + %d"%(a,b))</code></li>
+<li>format</li>
+</ul>
 <p><div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"*   *</span><span class="se">\n\</span>
-</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="s2">*   *</span><span class="se">\n\</span>
-</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="s2">*****</span><span class="se">\n\</span>
-</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="s2">*   *</span><span class="se">\n\</span>
-</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="s2">*   *"</span><span class="p">)</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="o">*</span>   <span class="o">*</span>\<span class="n">n</span>\
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="o">*****</span>\<span class="n">n</span>\
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a href="#__codelineno-1-6" id="__codelineno-1-6" name="__codelineno-1-6"></a><span class="o">*</span>   <span class="o">*</span>\<span class="n">n</span>\
+</span><span id="__span-1-7"><a href="#__codelineno-1-7" id="__codelineno-1-7" name="__codelineno-1-7"></a><span class="o">*</span>   <span class="o">*</span><span class="s2">")</span>
 </span></code></pre></div>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"price = </span><span class="si">{:.2f}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">x</span><span class="p">));</span>
 </span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="nb">print</span><span class="p">(</span><span class="s2">"price = </span><span class="si">%.2f</span><span class="s2">"</span><span class="o">%</span><span class="p">(</span><span class="n">x</span><span class="p">))</span> <span class="c1">#格式和C类似</span>
@@ -2665,9 +2669,11 @@ s*n表示x重复n次</p>
 <h2 id="_11">[重要!]循环</h2>
 <p><mark><code>range(a,b)表示a,a+1...b-1</code>
 <code>range(n)</code>表示<code>0,1,2...n-1</code></mark>
-<code>for i in range(0,10,1)</code> = C语言的<code>for(i=0;i&lt;10;i++)</code>  . 
-- <mark><strong>记得写range</strong>,<strong>左闭右开!!!!</strong></mark>,注意range实际上返回一个list
-<code>for i in A</code></p>
+<code>for i in range(0,10,1)</code> = C语言的<code>for(i=0;i&lt;10;i++)</code>  . </p>
+<ul>
+<li><mark><strong>记得写range</strong>,<strong>左闭右开!!!!</strong></mark>,注意range实际上返回一个list
+<code>for i in A</code></li>
+</ul>
 <p><code>for i in range(1,n+1,1)</code> 访问[1,n]</p>
 <h2 id="_12">函数</h2>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">math</span>

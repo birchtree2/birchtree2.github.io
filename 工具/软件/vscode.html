@@ -2391,21 +2391,37 @@
 <h2 id="_2">调试配置</h2>
 <p>利用在.vscode中创建launch.json和task.json。可以实现一键运行或调试程序</p>
 <h3 id="_3">说明</h3>
-<p>常用的一些变量
-- <strong><span class="arithmatex">\({workspaceFolder}**: 在 VS Code 中打开的文件夹的根路径。
-- **\)</span>{file}</strong>: 当前正在编辑器中打开（具有焦点）的文件的完整路径。
-- <strong><span class="arithmatex">\({fileDirname}**: 当前打开文件所在的文件夹路径。
-- **\)</span>{fileBasenameNoExtension}</strong>: 当前打开文件的文件名，但不包含扩展名（例如 test.cpp 变为 test）。
-- <strong>${cwd}</strong>: 任务运行器或调试器启动时的当前工作目录。
-常用的参数
-- <strong>args</strong>: 传给程序的命令行参数。每一个空格分隔的字符串都必须作为数组的一个独立元素。
-    - <strong>重要提示</strong>：不要把整个命令写在一起。
-    - 正确示例：<code>"args": ["--batch_size", "16", "--lr", "1e-4"]</code>
-- <strong>环境变量设置</strong>:
-    - <strong>Python (env)</strong>: 使用对象格式。常用于指定 GPU 或 Python 路径。
-        - 示例：<code>"env": { "CUDA_VISIBLE_DEVICES": "0", "PYTHONPATH": "${workspaceFolder}" }</code>
-    - <strong>C++ (environment)</strong>: 使用包含 name/value 对象的数组格式。
-        - 示例：<code>"environment": [{"name": "LD_LIBRARY_PATH", "value": "/usr/local/cuda/lib64"}]</code></p>
+<p>常用的一些变量</p>
+<ul>
+<li><strong><code>${workspaceFolder}</code></strong>: 在 VS Code 中打开的文件夹的根路径。</li>
+<li><strong><code>${file}</code></strong>: 当前正在编辑器中打开（具有焦点）的文件的完整路径。</li>
+<li><strong><code>${fileDirname}</code></strong>: 当前打开文件所在的文件夹路径。</li>
+<li><strong><code>${fileBasenameNoExtension}</code></strong>: 当前打开文件的文件名，但不包含扩展名（例如 test.cpp 变为 test）。</li>
+<li>
+<p><strong><code>${cwd}</code></strong>: 任务运行器或调试器启动时的当前工作目录。
+常用的参数</p>
+</li>
+<li>
+<p><strong>args</strong>: 传给程序的命令行参数。每一个空格分隔的字符串都必须作为数组的一个独立元素。</p>
+<ul>
+<li><strong>重要提示</strong>：不要把整个命令写在一起。</li>
+<li>正确示例：<code>"args": ["--batch_size", "16", "--lr", "1e-4"]</code></li>
+</ul>
+</li>
+<li>
+<p><strong>环境变量设置</strong>:</p>
+<ul>
+<li><strong>Python (env)</strong>: 使用对象格式。常用于指定 GPU 或 Python 路径。<ul>
+<li>示例：<code>"env": { "CUDA_VISIBLE_DEVICES": "0", "PYTHONPATH": "${workspaceFolder}" }</code></li>
+</ul>
+</li>
+<li><strong>C++ (environment)</strong>: 使用包含 name/value 对象的数组格式。<ul>
+<li>示例：<code>"environment": [{"name": "LD_LIBRARY_PATH", "value": "/usr/local/cuda/lib64"}]</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 <h3 id="_4">例子</h3>
 <h4 id="python">python</h4>
 <div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="p">{</span>

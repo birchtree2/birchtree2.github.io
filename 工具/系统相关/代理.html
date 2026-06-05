@@ -2612,7 +2612,7 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>http://124.222.176.41/convert/https://8dc9m.no-mad-world.club/link/JfIG9whVrYv4DKE7?clash=3&amp;name=iKuuu_V2
 </span></code></pre></div>
 <h2 id="_1">订阅转换</h2>
-<p>【编程技术】开箱即用的ZJU-Rule分享 https://www.cc98.org/topic/6167086 复制本链接到浏览器或者打开【CC98】微信小程序查看~</p>
+<p>【编程技术】开箱即用的ZJU-Rule分享 <a href="https://www.cc98.org/topic/6167086">https://www.cc98.org/topic/6167086</a> 复制本链接到浏览器或者打开【CC98】微信小程序查看~</p>
 <h2 id="winmac-clash-verge-rev">Win/Mac: clash verge rev</h2>
 <p><a href="https://clash-verge.org/zh-CN">Clash Verge - 现代化跨平台代理客户端 | 开源免费支持多协议</a></p>
 <p>对rule支持的比较好</p>
@@ -2623,9 +2623,11 @@
 <img alt="" src="images/e7d731d41a204a21e510400ddf7b7a8a.png"/></p>
 <p><img alt="" src="images/574ab150efee90fbcc3e562aa714ecb5.png"/></p>
 <p>直连代理: 对应访问外网的代理，如clash的地址</p>
-<p>如果需要ssh访问校内服务器，有两种方式
-- 其他设置-端口转发（如把10.2.3.4转发到127.0.0.1:xxxx)，然后改ssh配置文件(HostName 127.0.0.1, Port xxxx)
-- （推荐）开启TUN模式，如下图。断开vpn后重新连接，然后输入sudo密码。这样就可以直接ssh内网地址</p>
+<p>如果需要ssh访问校内服务器，有两种方式</p>
+<ul>
+<li>其他设置-端口转发（如把10.2.3.4转发到127.0.0.1:xxxx)，然后改ssh配置文件(HostName 127.0.0.1, Port xxxx)</li>
+<li>（推荐）开启TUN模式，如下图。断开vpn后重新连接，然后输入sudo密码。这样就可以直接ssh内网地址</li>
+</ul>
 <p><img alt="" src="images/img_v3_0210i_cac3c8bf-e406-41b7-9019-2abafe50e33g.jpg"/></p>
 <p><img alt="" src="images/Pasted%20image%2020260408162903.png"/></p>
 <h2 id="android">Android</h2>
@@ -2693,10 +2695,12 @@
 <div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>ps aux | grep mihomo
 </span></code></pre></div></p>
 <p>重新设置端口。不需要重启，实时生效。</p>
-<p><img alt="" src="images/Pasted%20image%2020260402104739.png"/>
-- http_proxy：使用 port 指定的值。
-- all_proxy：使用 socks-port 指定的值。
-- 当 port/socks-port 未指定时，使用 mixed-port。mixed-port在桌面/浏览器确实方便，但是在服务器端非http协议、websocket等场景里会有一些问题。所以建议是使用http端口和socks端口分开配置的方法。参考<a href="https://github.com/nelvko/clash-for-linux-install/issues/385">[Q&amp;A] clashon这条是不是默认写死sockets走7890混合口 配置文件已经给到了sockets7891 但是查看代理信息还是走的7890 没法单独设置吗 · Issue #385 · nelvko/clash-for-linux-install</a></p>
+<p><img alt="" src="images/Pasted%20image%2020260402104739.png"/></p>
+<ul>
+<li>http_proxy：使用 port 指定的值。</li>
+<li>all_proxy：使用 socks-port 指定的值。</li>
+<li>当 port/socks-port 未指定时，使用 mixed-port。mixed-port在桌面/浏览器确实方便，但是在服务器端非http协议、websocket等场景里会有一些问题。所以建议是使用http端口和socks端口分开配置的方法。参考<a href="https://github.com/nelvko/clash-for-linux-install/issues/385">[Q&amp;A] clashon这条是不是默认写死sockets走7890混合口 配置文件已经给到了sockets7891 但是查看代理信息还是走的7890 没法单独设置吗 · Issue #385 · nelvko/clash-for-linux-install</a></li>
+</ul>
 <p>在远程机器上，在<code>~/.bashrc</code>和<code>~/.zshrc</code>的末尾加上</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c1"># 代理配置函数</span>
 </span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="nv">PROXY_ADDR</span><span class="o">=</span><span class="s2">"http://10.71.106.228:9890"</span><span class="w"> </span><span class="c1">#对应clash运行的机器</span>
@@ -2731,13 +2735,15 @@
 </span></code></pre></div>
 <h2 id="ubuntu-v2raya-bug">Ubuntu: v2rayA (bug较多不推荐)</h2>
 <p>服务器环境: Ubuntu 24.04 LTS (服务器版本，无桌面环境)</p>
-<p>代理软件: 
-- V2Ray-core (核心)
-- v2rayA (Web GUI 管理器)</p>
+<p>代理软件: </p>
+<ul>
+<li>V2Ray-core (核心)</li>
+<li>v2rayA (Web GUI 管理器)</li>
+</ul>
 <h3 id="1-v2ray-core">1 安装 V2Ray-core</h3>
 <p>v2rayA 需要一个 V2Ray 或 Xray 核心作为后端。建议用 <strong>V2Ray-core</strong> </p>
 <p>下载 V2Ray-core 最新版本：</p>
-<p>访问 V2Ray 的 GitHub Releases 页面 (https://github.com/v2fly/v2ray-core/releases)，找到最新的稳定版本。</p>
+<p>访问 V2Ray 的 GitHub Releases 页面 (<a href="https://github.com/v2fly/v2ray-core/releases">https://github.com/v2fly/v2ray-core/releases</a>)，找到最新的稳定版本。</p>
 <p>找到类似 v2ray-linux-64.zip 的文件（适用于 AMD64/x86_64 架构）。</p>
 <p>在服务器上执行以下命令下载（请替换为最新的版本号）(<strong>如果无法连接github, 本地下载后scp传上去</strong>)</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>cd /tmp
@@ -2769,7 +2775,7 @@
 <h3 id="2-v2raya">2 安装 v2rayA</h3>
 <p>v2rayA 提供了 Web GUI，方便管理 V2Ray-core。</p>
 <p>下载 v2rayA .deb 包：</p>
-<p>访问 v2rayA 的 GitHub Releases 页面 (https://github.com/v2rayA/v2rayA/releases)。</p>
+<p>访问 v2rayA 的 GitHub Releases 页面 (<a href="https://github.com/v2rayA/v2rayA/releases">https://github.com/v2rayA/v2rayA/releases</a>)。</p>
 <p>找到并下载最新的适用于 debian_x64 的 .deb 文件。</p>
 <p>在服务器上执行以下命令下载（请替换为最新的版本号）：</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a href="#__codelineno-15-1" id="__codelineno-15-1" name="__codelineno-15-1"></a>cd /tmp
@@ -2821,7 +2827,7 @@
 <p>在你的本地电脑上打开浏览器。</p>
 </li>
 <li>
-<p>在地址栏输入： http://127.0.0.1:2017</p>
+<p>在地址栏输入： <a href="http://127.0.0.1:2017">http://127.0.0.1:2017</a></p>
 </li>
 <li>
 <p>首次访问，设置管理员用户名和密码。 请务必设置强密码。</p>
@@ -2859,9 +2865,11 @@
 <p>```
 永久启用的方法需要修改 /etc/sysctl.conf</p>
 </blockquote>
-<p>参考issue:
-- <a href="https://github.com/v2rayA/v2rayA/discussions/1466">failed to start v2ray-core: unexpected exiting: check the log for more information**** · v2rayA/v2rayA · Discussion #1466 · GitHub</a>
-- <a href="https://github.com/v2rayA/v2rayA/discussions/1604">Failed to connect to proxy if IPv6 disabled · v2rayA/v2rayA · Discussion #1604 · GitHub</a></p>
+<p>参考issue:</p>
+<ul>
+<li><a href="https://github.com/v2rayA/v2rayA/discussions/1466">failed to start v2ray-core: unexpected exiting: check the log for more information**** · v2rayA/v2rayA · Discussion #1466 · GitHub</a></li>
+<li><a href="https://github.com/v2rayA/v2rayA/discussions/1604">Failed to connect to proxy if IPv6 disabled · v2rayA/v2rayA · Discussion #1604 · GitHub</a></li>
+</ul>
 <h3 id="5">5 验证代理是否工作</h3>
 <p>在服务器命令行中验证代理是否生效。</p>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-25-1"><a href="#__codelineno-25-1" id="__codelineno-25-1" name="__codelineno-25-1"></a>curl -I https://www.google.com

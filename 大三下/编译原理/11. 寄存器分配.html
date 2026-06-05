@@ -2275,12 +2275,16 @@
 <p><img alt="" src="images/Pasted%20image%2020250529114622.png"/></p>
 <p>假设一共K个寄存器</p>
 <p>Simplify:  每次随便选一个度数小于K的节点压入栈，然后删掉这个点和相连的所有边。不断迭代直到整张图删完。</p>
-<p>Spill: 如果到某一步，发现节点度数&gt;=K (称为significant node) 那 <strong>可能</strong> 不能用K个寄存器放下了 
-- 如果选择颜色时邻居恰好用K种不同颜色染色，那就必定有冲突(称为actual spill)。要把这个变量放到栈上。
-- 但是如果邻居有相同颜色，也有可能不需要spill   这种情况称为potential spill</p>
-<p>Select: 不断弹栈并尝试分配颜色
-- 如果度数都<k, 就一定能成功。有="">=K也可能成功。
-- 如果真的出现冲突(actual spill)  不给这个节点分配颜色，但继续递归处理其他节点</k,></p>
+<p>Spill: 如果到某一步，发现节点度数&gt;=K (称为significant node) 那 <strong>可能</strong> 不能用K个寄存器放下了 </p>
+<ul>
+<li>如果选择颜色时邻居恰好用K种不同颜色染色，那就必定有冲突(称为actual spill)。要把这个变量放到栈上。</li>
+<li>但是如果邻居有相同颜色，也有可能不需要spill   这种情况称为potential spill</li>
+</ul>
+<p>Select: 不断弹栈并尝试分配颜色</p>
+<ul>
+<li>如果度数都<k, 就一定能成功。有="">=K也可能成功。</k,></li>
+<li>如果真的出现冲突(actual spill)  不给这个节点分配颜色，但继续递归处理其他节点</li>
+</ul>
 <p>Actual spill会产生新的临时变量(load-store用到）和live rage，那么就需要重做liveness analysis</p>
 <h3 id="coalece">Coalece</h3>
 <p>mov a,b   就把a,b连虚线边。删除的时候不能删move-related nodes</p>

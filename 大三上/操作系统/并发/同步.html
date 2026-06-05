@@ -2492,9 +2492,11 @@ total是共享变量, 内存中, 所以需要临时的寄存器
 </span><span id="__span-2-7"><a href="#__codelineno-2-7" id="__codelineno-2-7" name="__codelineno-2-7"></a><span class="w">    </span><span class="cm">/* Remainder Section */</span><span class="w"> </span>
 </span><span id="__span-2-8"><a href="#__codelineno-2-8" id="__codelineno-2-8" name="__codelineno-2-8"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>缺点:
-- 可能饥饿: 因为等待进程中任意选择一个进入临界区。因此不满足bounded-waiting
-- 可能死锁</p>
+<p>缺点:</p>
+<ul>
+<li>可能饥饿: 因为等待进程中任意选择一个进入临界区。因此不满足bounded-waiting</li>
+<li>可能死锁</li>
+</ul>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
 </span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="w">    </span><span class="cm">/* Entry Section */</span><span class="w"> </span>
 </span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="w">    </span><span class="n">waiting</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span><span class="w"> </span>
@@ -2537,12 +2539,16 @@ total是共享变量, 内存中, 所以需要临时的寄存器
 </span><span id="__span-4-17"><a href="#__codelineno-4-17" id="__codelineno-4-17" name="__codelineno-4-17"></a><span class="p">}</span>
 </span></code></pre></div>
 <h2 id="semaphore">semaphore (信号量)</h2>
-<p>一个 semaphore <code>S</code> 是一个整型变量，它除了初始化外只能通过两个 atomic 操作 <code>wait()</code> 和 <code>signal()</code> （原称为 <code>P()</code> 和 <code>V()</code> ）来访问。
-- 初始值代表最多可用的资源数
-- S&gt;0,代表还有S个资源可用
-- S&lt;0,代表有|S|个进程在排队</p>
+<p>一个 semaphore <code>S</code> 是一个整型变量，它除了初始化外只能通过两个 atomic 操作 <code>wait()</code> 和 <code>signal()</code> （原称为 <code>P()</code> 和 <code>V()</code> ）来访问。</p>
 <ul>
-<li>计数型信号量</li>
+<li>初始值代表最多可用的资源数</li>
+<li>S&gt;0,代表还有S个资源可用</li>
+<li>
+<p>S&lt;0,代表有|S|个进程在排队</p>
+</li>
+<li>
+<p>计数型信号量</p>
+</li>
 <li>二值信号量 0/1</li>
 </ul>
 <div class="admonition example">
@@ -2570,9 +2576,12 @@ total是共享变量, 内存中, 所以需要临时的寄存器
 <h2 id="_2">经典同步问题</h2>
 <h3 id="bounded-buffer">Bounded buffer</h3>
 <p>给定两个进程：producer 和 consumer，它们共用大小为BUF_SIZE 的 buffer。Producer 生产数据放入 buffer，consumer 从 buffer 取出数据从而使用之。</p>
-<p>三个信号量
-- mutex  二值0/1  控制对缓冲区的访问
-- full       代表缓冲区中空闲个数,<buf_size的时候才能放 -="" empty="" 代表缓冲区中非空闲位置个数,="">0的时候才能取</buf_size的时候才能放></p>
+<p>三个信号量</p>
+<ul>
+<li>mutex  二值0/1  控制对缓冲区的访问</li>
+<li>full       代表缓冲区中空闲个数,&lt;BUF_SIZE的时候才能放</li>
+<li>empty  代表缓冲区中非空闲位置个数, &gt;0的时候才能取</li>
+</ul>
 <p>因为信号量显然只能实现单方向的比较</p>
 <div class="language-c highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="n">semaphore</span><span class="w"> </span><span class="n">mutex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="c1">//互斥锁 </span>
 </span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="n">semaphore</span><span class="w"> </span><span class="n">nempty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BUFFER_SIZE</span><span class="p">;</span><span class="w">  </span><span class="c1">//buffer中空位的个数</span>
@@ -2598,8 +2607,10 @@ total是共享变量, 内存中, 所以需要临时的寄存器
 </span><span id="__span-6-22"><a href="#__codelineno-6-22" id="__codelineno-6-22" name="__codelineno-6-22"></a><span class="w">    </span><span class="p">}</span>
 </span><span id="__span-6-23"><a href="#__codelineno-6-23" id="__codelineno-6-23" name="__codelineno-6-23"></a><span class="p">})</span>
 </span></code></pre></div>
-<p>wait的顺序:
-- full的  empty变为n-1, full变成1</p>
+<p>wait的顺序:</p>
+<ul>
+<li>full的  empty变为n-1, full变成1</li>
+</ul>
 <h3 id="readers-writers">Readers-Writers</h3>
 <p>多个reader可以同时读, 但是writer写的时候不能有其他writer和reader</p>
 <p>同时被获取也同时被释放，因此其实我们可以合并为一个信号量，不妨叫做 <code>write_lock</code></p>

@@ -2389,13 +2389,17 @@
 <p><a href="https://www.jianshu.com/p/3e56648b55c6">env</a></p>
 <h2 id="conda">conda</h2>
 <h3 id="conda_1">安装conda</h3>
-<p>先到<a href="https://docs.conda.io/en/latest/miniconda.html">miniconda的官网</a>找到对应的下载链接，然后用<code>wget</code>安装。
-- 如果下载速度很慢，可以用<a href="https://mirrors.zju.edu.cn/docs/anaconda/miniconda">镜像源</a>, 找到-latest-linux x86_64</p>
-<p><div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>wget<span class="w">  </span>https://mirrors.zju.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
+<p>先到<a href="https://docs.conda.io/en/latest/miniconda.html">miniconda的官网</a>找到对应的下载链接，然后用<code>wget</code>安装。</p>
+<ul>
+<li>如果下载速度很慢，可以用<a href="https://mirrors.zju.edu.cn/docs/anaconda/miniconda">镜像源</a>, 找到-latest-linux x86_64</li>
+</ul>
+<div class="language-sh highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>wget<span class="w">  </span>https://mirrors.zju.edu.cn/anaconda/miniconda/Miniconda3-latest-Linux-x86_64.sh
 </span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>bash<span class="w"> </span>Miniconda3-latest-Linux-x86_64.sh<span class="w"> </span>
 </span></code></pre></div>
-1. 按ENTER浏览用户协议</p>
 <ol>
+<li>
+<p>按ENTER浏览用户协议</p>
+</li>
 <li>
 <p>之后一路选择yes, 环境会创建到~/miniconda3/envs</p>
 </li>

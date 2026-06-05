@@ -2334,16 +2334,20 @@
 <h3 id="stack-frame">Stack Frame</h3>
 <p>栈帧(frame)</p>
 <h4 id="frame-resident-variables">frame-resident variables</h4>
-<p>A variable escapes if:(需要被放在内存上)
-- it is passed by reference, 
-- its address is taken (using C’s &amp; operator)
-- or it is accessed from a nested function
-Escaping variables must be written to memory.</p>
+<p>A variable escapes if:(需要被放在内存上)</p>
+<ul>
+<li>it is passed by reference, </li>
+<li>its address is taken (using C’s &amp; operator)</li>
+<li>or it is accessed from a nested function
+Escaping variables must be written to memory.</li>
+</ul>
 <h3 id="static-link">Static Link</h3>
-<p>如何处理嵌套函数，一般有三种方法
-1. Whenever a function f is called, it can be passed a pointer to the frame of the function <strong>statically enclosing</strong> f; thispointer is the <strong>static link</strong>.
-2. A global array can be maintained, containing-in position i-a pointer to the frame of the <strong>most recently entered procedure</strong> whose static nesting depth is i. This array is called a <strong>display</strong>.
-3. When g calls f, each variable of g that is actually accessedby f (or by any function nested inside f) <strong>is passed to f as an extra argument</strong>. This is called <strong>lambda lifting</strong>.</p>
+<p>如何处理嵌套函数，一般有三种方法</p>
+<ol>
+<li>Whenever a function f is called, it can be passed a pointer to the frame of the function <strong>statically enclosing</strong> f; thispointer is the <strong>static link</strong>.</li>
+<li>A global array can be maintained, containing-in position i-a pointer to the frame of the <strong>most recently entered procedure</strong> whose static nesting depth is i. This array is called a <strong>display</strong>.</li>
+<li>When g calls f, each variable of g that is actually accessedby f (or by any function nested inside f) <strong>is passed to f as an extra argument</strong>. This is called <strong>lambda lifting</strong>.</li>
+</ol>
 <p>重点讲static link.  习题6.7 讲的是display</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>

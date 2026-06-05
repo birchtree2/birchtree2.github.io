@@ -2337,18 +2337,24 @@
 <hr/>
 <p>title: Stable Diffusion部署
 date: 2023-4-4 18:13:58
-tags:
-- python
-- pytorch
-categories:
-- [机器学习]
+tags:</p>
+<ul>
+<li>python</li>
+<li>
+<p>pytorch
+categories:</p>
+</li>
+<li>
+<p>[机器学习]
 excerpt: Windows和Ubuntu下的部署方法</p>
+</li>
+</ul>
 <hr/>
 <h1 id="stable-diffusion">Stable Diffusion部署</h1>
 <p>分别介绍了在window下和Ubuntu服务器下的部署方法</p>
 <h2 id="windows">本地(Windows)</h2>
 <p>直接b站下整合包即可。
-https://www.bilibili.com/video/BV1ne4y1V7QU</p>
+<a href="https://www.bilibili.com/video/BV1ne4y1V7QU">https://www.bilibili.com/video/BV1ne4y1V7QU</a></p>
 <h2 id="ubuntu-1804">服务器(Ubuntu 18.04)</h2>
 <p>参考<a href="https://birchtree2.github.io/2023/02/22/%E9%85%8D%E7%BD%AEpytorch%E7%8E%AF%E5%A2%83/">Ubuntu下配置pytorch环境</a></p>
 <p>1.conda新建虚拟环境,注意python版本</p>
@@ -2369,11 +2375,13 @@ https://www.bilibili.com/video/BV1ne4y1V7QU</p>
 <p>安装相关依赖</p>
 </li>
 </ol>
-<p><div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">torch</span><span class="o">==</span><span class="m">1</span>.12.1+cu113<span class="w"> </span><span class="nv">torchvision</span><span class="o">==</span><span class="m">0</span>.13.1+cu113
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span><span class="nv">torch</span><span class="o">==</span><span class="m">1</span>.12.1+cu113<span class="w"> </span><span class="nv">torchvision</span><span class="o">==</span><span class="m">0</span>.13.1+cu113
 </span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements_versions.txt
 </span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
 </span></code></pre></div>
-4. 启动(第一次的时候还要安装几个依赖的包)</p>
+<ol>
+<li>启动(第一次的时候还要安装几个依赖的包)</li>
+</ol>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>python<span class="w"> </span>launch.py
 </span></code></pre></div>
 <h3 id="_2">无梯子</h3>

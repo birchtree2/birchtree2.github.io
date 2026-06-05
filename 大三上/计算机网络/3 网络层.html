@@ -2419,9 +2419,11 @@ C类:192.168.0.0  192.268.255.255</p>
 <p>普通路由器仅工作在网络层，NAT路由器需要查看和转发传输层的端口号</p>
 </blockquote>
 <h3 id="_2">子网划分</h3>
-<p>每个子网的可用IP地址数  <span class="arithmatex">\(2^n-2\)</span> <br/>
-- n是主机号长度=32-子网号长度-网络号长度
-- 全0和全1保留</p>
+<p>每个子网的可用IP地址数  <span class="arithmatex">\(2^n-2\)</span> </p>
+<ul>
+<li>n是主机号长度=32-子网号长度-网络号长度</li>
+<li>全0和全1保留</li>
+</ul>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>A network on the Internet has a subnet mask of 255.255.240.0. What is the maximum number of address can be used for a single host?
@@ -2520,11 +2522,13 @@ A 192.168.13.0   B  192.168.11.26  C 192.168.13.255  D 192.168.13.26
 <p>彻底解决IP地址不足的问题</p>
 <blockquote>
 <p>Which is not a legal IPV6 address?
-- 8300::1382:4567:89AB:CDEF
-- 1382:4567:89AB:CDEF
-- ::211.31.20.46
-- 2A43:0000:0000:0000:0123:4567:89AB:CDEF</p>
+- 8300::1382:4567:89AB:CDEF</p>
 </blockquote>
+<ul>
+<li>1382:4567:89AB:CDEF</li>
+<li>::211.31.20.46</li>
+<li>2A43:0000:0000:0000:0123:4567:89AB:CDEF</li>
+</ul>
 <p>IP分片</p>
 <p><img alt="" src="images/Pasted%20image%2020250110153453.png"/></p>
 <p>IP层数据=TCP数据900+TCP头部20=920</p>

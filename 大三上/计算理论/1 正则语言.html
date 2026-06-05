@@ -2679,7 +2679,7 @@ L_1L_2=\{w_1w_2|w_1\in L_1,w_2\in L_2\}
 <p class="admonition-title">Warning</p>
 <p><span class="arithmatex">\(\boxed{L\emptyset=\emptyset}\)</span> <br/>
 因为找不到上面式子中对应的w2，所以最后结果为空
-注意区分<span class="arithmatex">\(\emptyset\)</span>, <span class="arithmatex">\(e\)</span>(空串) <span class="arithmatex">\({e}\)</span>(空串组成的语言) </p>
+注意区分<span class="arithmatex">\(\emptyset\)</span>, <span class="arithmatex">\(e\)</span>(空串) <code>${e}</code>$(空串组成的语言) </p>
 </div>
 <h4 id="kleene-star">Kleene Star</h4>
 <ul>
@@ -2700,8 +2700,10 @@ L_1L_2=\{w_1w_2|w_1\in L_1,w_2\in L_2\}
 <p>Finite representation:  用<span class="arithmatex">\(\cup\)</span>, <span class="arithmatex">\(\circ\)</span> <span class="arithmatex">\(^*\)</span>(闭包) 和<span class="arithmatex">\(\Sigma\)</span></p>
 <p>正则表达式(Regular expression): all strings over the alphabet <span class="arithmatex">\(\Sigma \cup \{(,),\cup,*\}\)</span>   (用一个字符串去表示一个语言)</p>
 <p>正则表达式的递归定义:</p>
-<p>正则语言(Regular Language): 能用正则表达式表示的语言。
-- 在<span class="arithmatex">\(\cup,\circ,*\)</span> 下封闭.</p>
+<p>正则语言(Regular Language): 能用正则表达式表示的语言。</p>
+<ul>
+<li>在<span class="arithmatex">\(\cup,\circ,*\)</span> 下封闭.</li>
+</ul>
 <p><span class="arithmatex">\(L=\{a^nb^n|n \geq 0\}\)</span> 不是正则语言   (无法表示a,b个数相等)</p>
 <p><span class="arithmatex">\(a^*(ba^*)^*=\{a,b\}^*\)</span></p>
 <h2 id="dfa">DFA</h2>
@@ -2713,8 +2715,10 @@ L_1L_2=\{w_1w_2|w_1\in L_1,w_2\in L_2\}
 <li><span class="arithmatex">\(F\subseteq K\)</span> 是终止状态集合</li>
 <li><span class="arithmatex">\(\delta\)</span> 是转移 <strong>函数</strong> <span class="arithmatex">\(K\times \Sigma \to K\)</span></li>
 </ul>
-<p>自动机对应的语言 <span class="arithmatex">\(L(M)=\{M \text{  accepts  } w,w \in \Sigma^*\}\)</span>
-- Every DFA accepts one and only one language.</p>
+<p>自动机对应的语言 <span class="arithmatex">\(L(M)=\{M \text{  accepts  } w,w \in \Sigma^*\}\)</span></p>
+<ul>
+<li>Every DFA accepts one and only one language.</li>
+</ul>
 <h3 id="configuration">configuration</h3>
 <blockquote>
 <p>A configuration of a finite automaton 𝑴 tells the  current state and the inputs to be read in the future.</p>
@@ -2818,10 +2822,12 @@ L_1L_2=\{w_1w_2|w_1\in L_1,w_2\in L_2\}
 <blockquote>
 <p><span class="arithmatex">\(L=a^n, n\text{ is prime}\)</span></p>
 </blockquote>
-<p><span class="arithmatex">\(L_0\)</span>是正则语言
-- <span class="arithmatex">\(L=\{w^R,w\in L_0\}\)</span>  是
--  <span class="arithmatex">\(L=\{ww^R,w\in L_0\}\)</span>  不是
--  <span class="arithmatex">\(L=\{ww,w\in L_0\}\)</span>  不是</p>
+<p><span class="arithmatex">\(L_0\)</span>是正则语言</p>
+<ul>
+<li><span class="arithmatex">\(L=\{w^R,w\in L_0\}\)</span>  是</li>
+<li><span class="arithmatex">\(L=\{ww^R,w\in L_0\}\)</span>  不是</li>
+<li><span class="arithmatex">\(L=\{ww,w\in L_0\}\)</span>  不是</li>
+</ul>
 <p><a href="https://blog.csdn.net/shulianghan/article/details/111401011">【计算理论】计算理论总结 ( 泵引理 Pumping 证明 ) ★★-CSDN博客</a></p>
 <p><a href="https://blog.csdn.net/qq_44714521/article/details/123826337">【编译原理】泵引理_泵引理证明不是正则语言-CSDN博客</a></p>
 <h2 id="__comments">Comments</h2>
