@@ -1,0 +1,19 @@
+/* LXGW WenKai Screen — Chinese + Latin body font */
+:root {
+  --md-text-font: "LXGW WenKai Screen", "LXGW WenKai", sans-serif;
+  --md-code-font: "JetBrains Mono", "Fira Code", "Roboto Mono", monospace;
+}
+
+/* Slightly increase base font size for better CJK readability */
+.md-typeset {
+  font-size: 0.8rem;
+  line-height: 1.8;
+}
+
+/* Tighten heading line-height for CJK */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  line-height: 1.4;
+  font-weight: 600;
+}
