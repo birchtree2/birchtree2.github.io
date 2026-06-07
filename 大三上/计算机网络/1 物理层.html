@@ -2421,7 +2421,7 @@
 比特率: 单位时间传输的比特数(b/s) <br/>
 两者关系<span class="arithmatex">\(R_b=R_B\log_2 V\)</span>    V是不同码元的个数,  <span class="arithmatex">\(\log_2V\)</span>个是用来表示码元的比特数(用二进制来表示)</p>
 <h3 id="_2">采样定理</h3>
-<p>奈奎斯特定理: 在理想（无噪声）低通（有限带宽）信道中，最大数据传输速率为 <span class="arithmatex">\(2W\log_2 V\)</span> (b/s). <span class="arithmatex">\(W\)</span>为模拟带宽, <span class="arithmatex">\(V\)</span>为码元个数(如果有V个码元, 就需要<span class="arithmatex">\(\log_2 V\)</span>个bit来表示)</p>
+<p>奈奎斯特定理: 在理想（无噪声）低通（有限带宽）信道中，最大数据传输速率为 <span class="arithmatex">\(2W\log_2 V\)</span> (b/s). <span class="arithmatex">\(W\)</span>为模拟带宽, <span class="arithmatex">\(V\)</span>为码元个数(如果有V个码元, 就需要<span class="arithmatex">\(\log_2 V\)</span>个bit来表示。带宽的单位是Hz ( <span class="arithmatex">\(s^{-1}\)</span> )。</p>
 <p>香农定理: 在信噪比为<span class="arithmatex">\(S/N\)</span>的通道中, 最大数据率 <span class="arithmatex">\(W\log_2(1+S/N)\)</span> 
          其中 <span class="arithmatex">\(1\mathrm{dB}=10\log_{10}(S/N)\)</span>
          与信号电平级数、采样速率无关</p>
@@ -2434,9 +2434,11 @@
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
-<p>If a binary signal is sent over a 18-kHz channel whose signal-to-noise ratio is 19 dB, what is the maximum achievable data rate?</p>
+<p>Q: If a binary signal is sent over a 18-kHz channel whose signal-to-noise ratio is 19 dB, what is the maximum achievable data rate?
+A: 根据DB的定义 <span class="arithmatex">\(S/N=10^{1.9}\)</span>
+<span class="arithmatex">\(2W\log_2 V=36\)</span> kbps , <span class="arithmatex">\(W\log_2(1+S/N)=114\)</span> kbps, 所以最大数据率为36kbps</p>
 <p>Q:二进制信号在4kHz信道,信噪比为127:1, 最大数据率为？
-A: 由香农定理得28kbps，但还要考虑奈奎斯特定理<span class="arithmatex">\(V=1,2W\log_2V=8\)</span>kbps,所以最大数据率为8kbps </p>
+A: 由香农定理得28kbps，但还要考虑奈奎斯特定理 <span class="arithmatex">\(V=2,2W\log_2V=8\)</span> kbps,所以最大数据率为8kbps </p>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -2499,7 +2501,8 @@ $$
 答案：T1 是 <span class="arithmatex">\(29/193=13\%\)</span>   E1是2/32=6%</p>
 <p>An E1 channel contains 32 PCM time slots, the data rate of each time slot channel is
 答案：注意问的是每个信道,所以要除以32, 64kbps</p>
-<p>A 100-km-long cable runs at the T1 data rate. The propagation speed in the cable is 2/3 the speed of light in vacuum. How many bits fit in the cable?</p>
+<p>A 100-km-long cable runs at the T1 data rate. The propagation speed in the cable is 2/3 the speed of light in vacuum. How many bits fit in the cable?
+用距离/速度得到时间，再乘上T1的数据率即可</p>
 </div>
 <p>香农定理: 极限
 码分, CDMA, 信号编码   电话网络</p>
